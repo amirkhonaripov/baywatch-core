@@ -1,0 +1,30 @@
+[
+ {
+  "id": "uz_rf:valid/AAE0181237_car-front_2025-12-21_21-55-33_jpg.rf.55aad8eb8bfc7b82364cf3e765b162ca.jpg",
+  "component": "ident.e2e",
+  "file": "uz_real_00_misread.jpg",
+  "category": "misread text",
+  "description": "verified label 40J035QA vs prediction '40D035QA' (plate pixelated here on purpose)"
+ },
+ {
+  "id": "uz_rf:valid/AAF2341946_car-front_2025-12-20_14-55-29_jpg.rf.7f633792725a308755a5da668b8ad3ed.jpg",
+  "component": "ident.e2e",
+  "file": "uz_real_01_misread.jpg",
+  "category": "misread text",
+  "description": "verified label 60V039JA vs prediction '60U039JA' (plate pixelated here on purpose)"
+ },
+ {
+  "id": "uz_rf:valid/AAF3062913_car-front_2025-12-03_16-44-38_jpg.rf.a022de974f71c1467fbfcec03f58e977.jpg",
+  "component": "ident.e2e",
+  "file": "uz_real_02_misread.jpg",
+  "category": "misread text",
+  "description": "verified label 90R430NA vs prediction '90K430NA' (plate pixelated here on purpose)"
+ },
+ {
+  "id": "uz_rf:valid/AAF4207854_car-rear_2025-12-22_18-29-46_jpg.rf.b5d940e4f2ac8c5f233bddeb0637c19f.jpg",
+  "component": "ident.e2e",
+  "file": "uz_real_03_misread.jpg",
+  "category": "misread text",
+  "description": "verified label 40X789FA vs prediction '40X769FA' (plate pixelated here on purpose)"
+ }
+]

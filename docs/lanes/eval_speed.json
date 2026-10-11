@@ -1,0 +1,321 @@
+[
+  {
+    "stage": "pipeline total (1 frame, analyze())",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed (seen.pipeline.default_pipeline)",
+    "batch": 1,
+    "p50_ms": 100.08,
+    "p95_ms": 137.39,
+    "fps": 9.99,
+    "notes": "models: {'rfdetr-large-flow': 'rfdetr-large-flow-v1/torch', 'ident-plate': '0.1.0', 'Scene router (SigLIP2 + linear probe)': 'siglip2-so400m-patch14-384+blend-v1', 'ops-cascade': 'ops-bay-states@0.1+none', 'seen-inspect': '0.1.0'}; GPU memory held by the process after warm-up: 19472.0 MiB GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "pipeline stage: vehicle_detector",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 13.54,
+    "p95_ms": 22.22,
+    "fps": 73.86,
+    "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "pipeline stage: ident_det",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 7.8,
+    "p95_ms": 9.65,
+    "fps": 128.21,
+    "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "pipeline stage: ident_ocr",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 3.19,
+    "p95_ms": 5.44,
+    "fps": 313.31,
+    "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "pipeline stage: router",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 26.2,
+    "p95_ms": 43.83,
+    "fps": 38.17,
+    "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "pipeline stage: ops_parts",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 12.03,
+    "p95_ms": 16.06,
+    "fps": 83.12,
+    "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "pipeline stage: ops_embed",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 5.98,
+    "p95_ms": 7.23,
+    "fps": 167.14,
+    "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "pipeline stage: ops_head",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 0.17,
+    "p95_ms": 0.22,
+    "fps": 5724.17,
+    "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "pipeline stage: inspect.damage_ms",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 45.81,
+    "p95_ms": 60.86,
+    "fps": 21.83,
+    "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "pipeline stage: inspect.tyre_dot_ms",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 13.44,
+    "p95_ms": 15.94,
+    "fps": 74.38,
+    "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "ident.get_predictor: ident-plate",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as shipped by lane",
+    "batch": 1,
+    "p50_ms": 8.51,
+    "p95_ms": 9.12,
+    "fps": 117.51,
+    "notes": "version 0.1.0; context = baseline RF-DETR detections GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "flow.get_predictor: rfdetr-large-flow",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as shipped by lane",
+    "batch": 1,
+    "p50_ms": 6.53,
+    "p95_ms": 6.97,
+    "fps": 153.11,
+    "notes": "version rfdetr-large-flow-v1/torch; context = baseline RF-DETR detections GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "flow.get_router: Scene router (SigLIP2 + linear probe)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as shipped by lane",
+    "batch": 1,
+    "p50_ms": 7.99,
+    "p95_ms": 8.16,
+    "fps": 125.16,
+    "notes": "version siglip2-so400m-patch14-384+blend-v1; context = baseline RF-DETR detections GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "ops.get_predictor: ops-bay-states",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as shipped by lane",
+    "batch": 1,
+    "p50_ms": 18.34,
+    "p95_ms": 24.27,
+    "fps": 54.52,
+    "notes": "version 0.1; context = baseline RF-DETR detections GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "inspect.get_predictor: seen-inspect",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as shipped by lane",
+    "batch": 1,
+    "p50_ms": 47.92,
+    "p95_ms": 53.87,
+    "fps": 20.87,
+    "notes": "version 0.1.0; context = baseline RF-DETR detections GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "pipeline cold start (new process to first result)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 1159.4,
+    "cold_start_s": 8.88,
+    "notes": "median of 2 fresh processes, weights cached on local disk: interpreter 0.0s, imports 0.6s, model load 7.1s, first inference 1.16s (p50_ms = first inference), second inference 89 ms. Excludes container start and weight download. GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB. IO pressure at start of bench: full: avg10=0.00 avg60=0.16 avg300=0.41 total=17852377795 (shared HDD; model load is IO-bound)."
+  },
+  {
+    "stage": "streams: gate cameras @ 5 fps per camera",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "default pipeline x 1 worker thread(s)",
+    "batch": 1,
+    "p50_ms": 155.9,
+    "p95_ms": 240.9,
+    "fps": 9.82,
+    "notes": "max sustained cameras = 2 (<=1% dropped/late, p95 end-to-end <= 1s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "streams: bay cameras @ 1 fps per camera",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "default pipeline x 1 worker thread(s)",
+    "batch": 1,
+    "p50_ms": 394.8,
+    "p95_ms": 651.0,
+    "fps": 9.66,
+    "notes": "max sustained cameras = 10 (<=1% dropped/late, p95 end-to-end <= 2s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "streams: gate cameras @ 5 fps per camera",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "default pipeline x 2 worker thread(s)",
+    "batch": 1,
+    "p50_ms": 108.7,
+    "p95_ms": 152.8,
+    "fps": 9.87,
+    "notes": "max sustained cameras = 2 (<=1% dropped/late, p95 end-to-end <= 1s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "streams: bay cameras @ 1 fps per camera",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "default pipeline x 2 worker thread(s)",
+    "batch": 1,
+    "p50_ms": 238.8,
+    "p95_ms": 423.1,
+    "fps": 13.64,
+    "notes": "max sustained cameras = 14 (<=1% dropped/late, p95 end-to-end <= 2s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "streams: gate cameras @ 5 fps per camera",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "default pipeline x 4 worker thread(s)",
+    "batch": 1,
+    "p50_ms": 106.8,
+    "p95_ms": 164.3,
+    "fps": 9.85,
+    "notes": "max sustained cameras = 2 (<=1% dropped/late, p95 end-to-end <= 1s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "streams: bay cameras @ 1 fps per camera",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "default pipeline x 4 worker thread(s)",
+    "batch": 1,
+    "p50_ms": 378.9,
+    "p95_ms": 897.2,
+    "fps": 15.01,
+    "notes": "max sustained cameras = 16 (<=1% dropped/late, p95 end-to-end <= 2s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "plate (fast-alpr detector + OCR, per frame)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "ONNX Runtime CUDA EP (fp32, reference)",
+    "batch": 1,
+    "p50_ms": 3.32,
+    "p95_ms": 4.38,
+    "fps": 301.0,
+    "notes": "10 plates on 24 images; identical plate texts to the CUDA fp32 reference on 24/24 images; active providers [['CUDAExecutionProvider', 'CPUExecutionProvider'], ['CUDAExecutionProvider', 'CPUExecutionProvider']] GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "plate (fast-alpr detector + OCR, per frame)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "library default providers (as in seen.baseline)",
+    "batch": 1,
+    "p50_ms": 3.33,
+    "p95_ms": 4.39,
+    "fps": 300.73,
+    "notes": "10 plates on 24 images; identical plate texts to the CUDA fp32 reference on 24/24 images; active providers [['CUDAExecutionProvider', 'CPUExecutionProvider'], ['CUDAExecutionProvider', 'CPUExecutionProvider']] GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "plate (fast-alpr detector + OCR, per frame)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "ONNX Runtime CPU EP",
+    "batch": 1,
+    "p50_ms": 14.12,
+    "p95_ms": 21.37,
+    "fps": 70.8,
+    "notes": "10 plates on 24 images; identical plate texts to the CUDA fp32 reference on 23/24 images; active providers [['CPUExecutionProvider'], ['CPUExecutionProvider']] GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "plate (fast-alpr detector + OCR, per frame)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "ONNX Runtime TensorRT EP (fp16)",
+    "batch": 1,
+    "p50_ms": 1.66,
+    "p95_ms": 2.1,
+    "fps": 601.29,
+    "notes": "10 plates on 24 images; identical plate texts to the CUDA fp32 reference on 23/24 images; active providers [['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'CPUExecutionProvider'], ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'CPUExecutionProvider']] GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "vehicle_detector (RF-DETR base, 560px)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "PyTorch (rfdetr.predict, fp32)",
+    "batch": 1,
+    "p50_ms": 5.89,
+    "p95_ms": 6.04,
+    "fps": 169.73,
+    "notes": "reference for parity GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "vehicle_detector (RF-DETR base, 560px)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "PyTorch fp16 (rfdetr.inference, torchscript)",
+    "batch": 1,
+    "p50_ms": 3.89,
+    "p95_ms": 3.92,
+    "fps": 257.24,
+    "notes": "parity vs PyTorch fp32 on 24 images: mAP50 1.000, matched 1.000, mean |dconf| 0.0018; trace+cast 1.2s GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "vehicle_detector (RF-DETR base, 560px)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "ONNX Runtime CUDA EP (fp32)",
+    "batch": 1,
+    "p50_ms": 6.17,
+    "p95_ms": 7.96,
+    "fps": 162.04,
+    "notes": "parity vs PyTorch on 24 images: mAP50 1.000, matched 1.000, mean |dconf| 0.0030; first call incl. session/engine build 1.3s GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "vehicle_detector (RF-DETR base, 560px)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "ONNX Runtime TensorRT EP (fp32/tf32)",
+    "batch": 1,
+    "p50_ms": 4.71,
+    "p95_ms": 5.37,
+    "fps": 212.24,
+    "notes": "parity vs PyTorch on 24 images: mAP50 1.000, matched 1.000, mean |dconf| 0.0028; first call incl. session/engine build 1.2s GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "vehicle_detector (RF-DETR base, 560px)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "ONNX Runtime TensorRT EP (fp16)",
+    "batch": 1,
+    "p50_ms": 3.51,
+    "p95_ms": 3.63,
+    "fps": 285.08,
+    "notes": "parity vs PyTorch on 24 images: mAP50 0.175, matched 0.263, mean |dconf| 0.3455; first call incl. session/engine build 0.7s GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  },
+  {
+    "stage": "vehicle_detector (RF-DETR base, 560px)",
+    "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+    "runtime": "ONNX Runtime TensorRT EP (fp16, LayerNorm in fp32)",
+    "batch": 1,
+    "p50_ms": 3.48,
+    "p95_ms": 3.53,
+    "fps": 287.04,
+    "notes": "parity vs PyTorch on 24 images: mAP50 0.246, matched 0.271, mean |dconf| 0.3012; first call incl. session/engine build 0.8s GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+  }
+]

@@ -1,0 +1,44 @@
+[
+ {
+  "id": "dot_date_code_wrong_00",
+  "component": "inspect.dot_chars.dot_chars",
+  "file": "dot_date_code_wrong_00.jpg",
+  "category": "date_code_wrong",
+  "description": "GT '41485382622' read as '414853826222'"
+ },
+ {
+  "id": "dot_date_code_wrong_01",
+  "component": "inspect.dot_chars.dot_chars",
+  "file": "dot_date_code_wrong_01.jpg",
+  "category": "date_code_wrong",
+  "description": "GT '41485382622' read as '414853826222'"
+ },
+ {
+  "id": "dot_date_code_wrong_02",
+  "component": "inspect.dot_chars.dot_chars",
+  "file": "dot_date_code_wrong_02.jpg",
+  "category": "date_code_wrong",
+  "description": "GT '1744217' read as '1744317'"
+ },
+ {
+  "id": "dot_string_wrong_00",
+  "component": "inspect.dot_chars.dot_chars",
+  "file": "dot_string_wrong_00.jpg",
+  "category": "string_wrong",
+  "description": "GT 'EMD0TU2LLLMLR5107' read as 'EF2DOTN2LLLMLR3107'"
+ },
+ {
+  "id": "dot_string_wrong_01",
+  "component": "inspect.dot_chars.dot_chars",
+  "file": "dot_string_wrong_01.jpg",
+  "category": "string_wrong",
+  "description": "GT '026X0918' read as '026K0918'"
+ },
+ {
+  "id": "dot_string_wrong_02",
+  "component": "inspect.dot_chars.dot_chars",
+  "file": "dot_string_wrong_02.jpg",
+  "category": "string_wrong",
+  "description": "GT '235/55R18100V' read as '225/55R18100T'"
+ }
+]

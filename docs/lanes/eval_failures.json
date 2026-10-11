@@ -1,0 +1,613 @@
+[
+  {
+    "id": "jury:jury_002",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_002.jpg",
+    "description": "Lamborghini parked in Tashkent; Uzbek plate legible: routed 'unknown' (expected street/closeup). Licence CC BY 4.0, https://commons.wikimedia.org/wiki/File:Black_Lamborghini_in_Uzbekistan.jpg",
+    "category": "uz_car"
+  },
+  {
+    "id": "jury:jury_006",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_006.jpg",
+    "description": "Chevrolet Captiva at night, phone photo with motion blur; Uzbek plate partly legible: routed 'unknown' (expected street/closeup/gate); visible plate not read. Licence CC0, https://commons.wikimedia.org/wiki/File:Captiva_4.jpg",
+    "category": "uz_car"
+  },
+  {
+    "id": "jury:jury_016",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_016.jpg",
+    "description": "Soviet postage stamp (Tashkent): printed drawing with tiny cars: visit created without a vehicle. Licence Public domain, https://commons.wikimedia.org/wiki/File:1950_CPA_1486.jpg",
+    "category": "tricky"
+  },
+  {
+    "id": "jury:jury_017",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_017.jpg",
+    "description": "dyno power chart with a small motorcycle picture: routed 'motorcycle' (expected unknown); visit created without a vehicle. Licence CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Ducati-Monster-1200-S-Dyno-Curve.webp",
+    "category": "tricky"
+  },
+  {
+    "id": "jury:jury_018",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_018.jpg",
+    "description": "1930s Ford advertisement: drawing of a car on a lift plus text: routed 'bay' (expected unknown). Licence Public domain, https://commons.wikimedia.org/wiki/File:1934-02_OBRAS_P13.jpg",
+    "category": "tricky"
+  },
+  {
+    "id": "jury:jury_019",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_019.jpg",
+    "description": "scanned newspaper column (document): routed 'closeup' (expected unknown). Licence Public domain, https://commons.wikimedia.org/wiki/File:Stolen_Automobile_Kills_One_Child_in_The_Daily_Item_of_Port_Chester,_New_York_on_February_25,_1919.jpg",
+    "category": "document"
+  },
+  {
+    "id": "jury:jury_020",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_020.jpg",
+    "description": "1:18 scale model of a Ferrari 250 GTO on white (toy, not a vehicle): visit created without a vehicle. Licence CC BY-SA 2.0 de, https://commons.wikimedia.org/wiki/File:Ferrari_250_GTO,_CMC-Model_1-18_(vorn_links_2017-03-23).JPG",
+    "category": "tricky"
+  },
+  {
+    "id": "jury:jury_021",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_021.jpg",
+    "description": "toy shop window with many small car models: visit created without a vehicle. Licence CC BY 4.0, https://commons.wikimedia.org/wiki/File:Shop_window_with_collection_of_toys,_dolls,_car_models_etc._in_Munich,_Germany_(2023).jpg",
+    "category": "tricky"
+  },
+  {
+    "id": "jury:jury_022",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_022.jpg",
+    "description": "pen drawing of an early car on a postcard: routed 'closeup' (expected unknown). Licence Public domain, https://commons.wikimedia.org/wiki/File:Illustration_of_car_(NBY_5627).jpg",
+    "category": "tricky"
+  },
+  {
+    "id": "jury:jury_038",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_038.jpg",
+    "description": "multi-storey car park interior with parked cars: routed 'unknown' (expected gate/street/bay). Licence CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Interior_of_Rupert_Street_parking_garage_-_DSC_8057.jpg",
+    "category": "parking_gate"
+  },
+  {
+    "id": "jury:jury_072",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_072.jpg",
+    "description": "foggy car park at night, lamps only, no vehicle visible: visit created without a vehicle. Licence CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Foggy_night_at_the_parking_lot.jpg",
+    "category": "night_rain"
+  },
+  {
+    "id": "jury:jury_078",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_078.jpg",
+    "description": "bicycle parked by a graffiti door (bicycle is not a vehicle class): routed 'motorcycle' (expected unknown/street). Licence CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Parked_bicycle_with_graffitied_building_facade_and_doors_in_Amsterdam.jpg",
+    "category": "non_car"
+  },
+  {
+    "id": "jury:jury_085",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_085.jpg",
+    "description": "timelapse filmed from inside a car going through an automatic wash; no vehicle visible from outside: visit created without a vehicle. Licence CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Timelapse-wasstraat_van_Slingelandtstraat.webm",
+    "category": "video"
+  },
+  {
+    "id": "jury:jury_086",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_086.jpg",
+    "description": "frame at 8s of jury_085: timelapse filmed from inside a car going through an automatic wash; no vehicle visible from outside: visit created without a vehicle. Licence CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Timelapse-wasstraat_van_Slingelandtstraat.webm",
+    "category": "video_frame"
+  },
+  {
+    "id": "jury:jury_088",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_088.jpg",
+    "description": "frame at 25s of jury_087: supermarket car park behind a wall, low resolution (633 px): routed 'unknown' (expected gate/street). Licence CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Estacionamiento_de_un_Supermercado_Ley,_Mazatl%C3%A1n,_11_de_junio_de_2022.webm",
+    "category": "video_frame"
+  },
+  {
+    "id": "jury:jury_093",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_093.jpg",
+    "description": "night traffic jam in heavy rain, Mymensingh: auto-rickshaws, dark: routed 'unknown' (expected street). Licence CC0, https://commons.wikimedia.org/wiki/File:%E0%A6%AE%E0%A6%AF%E0%A6%BC%E0%A6%AE%E0%A6%A8%E0%A6%B8%E0%A6%BF%E0%A6%82%E0%A6%B9%E0%A7%87%E0%A6%B0_%E0%A6%9C%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AE_%E0%A6%93_%E0%A6%AC%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%BF.webm",
+    "category": "video"
+  },
+  {
+    "id": "jury:jury_094",
+    "component": "e2e jury set",
+    "image_uri": "lanes/eval_gallery/eval/jury_094.jpg",
+    "description": "frame at 11s of jury_093: night traffic jam in heavy rain, Mymensingh: auto-rickshaws, dark: routed 'unknown' (expected street); no visit although a vehicle is present. Licence CC0, https://commons.wikimedia.org/wiki/File:%E0%A6%AE%E0%A6%AF%E0%A6%BC%E0%A6%AE%E0%A6%A8%E0%A6%B8%E0%A6%BF%E0%A6%82%E0%A6%B9%E0%A7%87%E0%A6%B0_%E0%A6%9C%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%AE_%E0%A6%93_%E0%A6%AC%E0%A7%83%E0%A6%B7%E0%A7%8D%E0%A6%9F%E0%A6%BF.webm",
+    "category": "video_frame"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_cloudy_0",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.cloudy",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_cloudy_0.jpg",
+    "description": "rfdetr-large on MVI_40855 (cloudy): 17 of 36 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "cloudy misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_cloudy_1",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.cloudy",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_cloudy_1.jpg",
+    "description": "rfdetr-large on MVI_40714 (cloudy): 14 of 40 GT vehicles missed at IoU 0.5 / score >= 0.4, 3 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "cloudy misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_cloudy_2",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.cloudy",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_cloudy_2.jpg",
+    "description": "rfdetr-large on MVI_39501 (cloudy): 9 of 12 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "cloudy misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_night_0",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.night",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_night_0.jpg",
+    "description": "rfdetr-large on MVI_40761 (night): 9 of 10 GT vehicles missed at IoU 0.5 / score >= 0.4, 1 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "night misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_night_1",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.night",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_night_1.jpg",
+    "description": "rfdetr-large on MVI_40772 (night): 9 of 27 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "night misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_night_2",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.night",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_night_2.jpg",
+    "description": "rfdetr-large on MVI_40775 (night): 6 of 20 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "night misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_rainy_0",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.rainy",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_rainy_0.jpg",
+    "description": "rfdetr-large on MVI_40864 (rainy): 15 of 35 GT vehicles missed at IoU 0.5 / score >= 0.4, 1 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "rainy misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_rainy_1",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.rainy",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_rainy_1.jpg",
+    "description": "rfdetr-large on MVI_40903 (rainy): 14 of 29 GT vehicles missed at IoU 0.5 / score >= 0.4, 3 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "rainy misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_rainy_2",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.rainy",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_rainy_2.jpg",
+    "description": "rfdetr-large on MVI_40892 (rainy): 13 of 20 GT vehicles missed at IoU 0.5 / score >= 0.4, 1 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "rainy misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_sunny_0",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.sunny",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_sunny_0.jpg",
+    "description": "rfdetr-large on MVI_39031 (sunny): 9 of 12 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "sunny misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_sunny_1",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.sunny",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_sunny_1.jpg",
+    "description": "rfdetr-large on MVI_39311 (sunny): 8 of 18 GT vehicles missed at IoU 0.5 / score >= 0.4, 3 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "sunny misses"
+  },
+  {
+    "id": "flow_det_detrac_test_s5_sunny_2",
+    "component": "flow.det.detrac_test_s5.rfdetr-large.sunny",
+    "image_uri": "lanes/eval_gallery/flow/detrac_test_s5_rfdetr-large_sunny_2.jpg",
+    "description": "rfdetr-large on MVI_39361 (sunny): 6 of 13 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+    "category": "sunny misses"
+  },
+  {
+    "id": "flow_occ_cnrext_rainy_0_rfdetr-large",
+    "component": "flow.occ.cnrext.rfdetr-large.rainy",
+    "image_uri": "lanes/eval_gallery/flow/occ_cnrext_rainy_0_rfdetr-large.jpg",
+    "description": "rfdetr-large on cnrext:rainy/2016-02-12/cam7/2016-02-12_1025.jpg: 10 of 46 slots wrong (conf>=0.2, overlap>=0.4). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: small cars missed without tiling"
+  },
+  {
+    "id": "flow_occ_cnrext_rainy_0_rfdetr-large+tile",
+    "component": "flow.occ.cnrext.rfdetr-large+tile.rainy",
+    "image_uri": "lanes/eval_gallery/flow/occ_cnrext_rainy_0_rfdetr-large_tile.jpg",
+    "description": "rfdetr-large+tile on cnrext:rainy/2016-02-12/cam7/2016-02-12_1025.jpg: 1 of 46 slots wrong (conf>=0.05, overlap>=0.4). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: after tiling"
+  },
+  {
+    "id": "flow_occ_cnrext_rainy_1_rfdetr-large",
+    "component": "flow.occ.cnrext.rfdetr-large.rainy",
+    "image_uri": "lanes/eval_gallery/flow/occ_cnrext_rainy_1_rfdetr-large.jpg",
+    "description": "rfdetr-large on cnrext:rainy/2015-12-22/cam1/2015-12-22_1618.jpg: 10 of 35 slots wrong (conf>=0.2, overlap>=0.4). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: small cars missed without tiling"
+  },
+  {
+    "id": "flow_occ_cnrext_rainy_1_rfdetr-large+tile",
+    "component": "flow.occ.cnrext.rfdetr-large+tile.rainy",
+    "image_uri": "lanes/eval_gallery/flow/occ_cnrext_rainy_1_rfdetr-large_tile.jpg",
+    "description": "rfdetr-large+tile on cnrext:rainy/2015-12-22/cam1/2015-12-22_1618.jpg: 9 of 35 slots wrong (conf>=0.05, overlap>=0.4). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: after tiling"
+  },
+  {
+    "id": "flow_occ_pklot_rainy_0_rfdetr-large",
+    "component": "flow.occ.pklot.rfdetr-large.rainy",
+    "image_uri": "lanes/eval_gallery/flow/occ_pklot_rainy_0_rfdetr-large.jpg",
+    "description": "rfdetr-large on pklot:PUCPR/rainy/2012-10-25_08_58_20.jpg: 74 of 100 slots wrong (conf>=0.2, overlap>=0.15). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: small cars missed without tiling"
+  },
+  {
+    "id": "flow_occ_pklot_rainy_0_rfdetr-large+tile",
+    "component": "flow.occ.pklot.rfdetr-large+tile.rainy",
+    "image_uri": "lanes/eval_gallery/flow/occ_pklot_rainy_0_rfdetr-large_tile.jpg",
+    "description": "rfdetr-large+tile on pklot:PUCPR/rainy/2012-10-25_08_58_20.jpg: 1 of 100 slots wrong (conf>=0.1, overlap>=0.3). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: after tiling"
+  },
+  {
+    "id": "flow_occ_pklot_rainy_1_rfdetr-large",
+    "component": "flow.occ.pklot.rfdetr-large.rainy",
+    "image_uri": "lanes/eval_gallery/flow/occ_pklot_rainy_1_rfdetr-large.jpg",
+    "description": "rfdetr-large on pklot:PUCPR/rainy/2012-10-25_09_23_22.jpg: 74 of 100 slots wrong (conf>=0.2, overlap>=0.15). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: small cars missed without tiling"
+  },
+  {
+    "id": "flow_occ_pklot_rainy_1_rfdetr-large+tile",
+    "component": "flow.occ.pklot.rfdetr-large+tile.rainy",
+    "image_uri": "lanes/eval_gallery/flow/occ_pklot_rainy_1_rfdetr-large_tile.jpg",
+    "description": "rfdetr-large+tile on pklot:PUCPR/rainy/2012-10-25_09_23_22.jpg: 0 of 100 slots wrong (conf>=0.1, overlap>=0.3). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: after tiling"
+  },
+  {
+    "id": "flow_occ_pklot_sunny_0_rfdetr-large",
+    "component": "flow.occ.pklot.rfdetr-large.sunny",
+    "image_uri": "lanes/eval_gallery/flow/occ_pklot_sunny_0_rfdetr-large.jpg",
+    "description": "rfdetr-large on pklot:PUCPR/sunny/2012-09-19_10_03_27.jpg: 63 of 100 slots wrong (conf>=0.2, overlap>=0.15). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: small cars missed without tiling"
+  },
+  {
+    "id": "flow_occ_pklot_sunny_0_rfdetr-large+tile",
+    "component": "flow.occ.pklot.rfdetr-large+tile.sunny",
+    "image_uri": "lanes/eval_gallery/flow/occ_pklot_sunny_0_rfdetr-large_tile.jpg",
+    "description": "rfdetr-large+tile on pklot:PUCPR/sunny/2012-09-19_10_03_27.jpg: 0 of 100 slots wrong (conf>=0.1, overlap>=0.3). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: after tiling"
+  },
+  {
+    "id": "flow_occ_pklot_sunny_1_rfdetr-large",
+    "component": "flow.occ.pklot.rfdetr-large.sunny",
+    "image_uri": "lanes/eval_gallery/flow/occ_pklot_sunny_1_rfdetr-large.jpg",
+    "description": "rfdetr-large on pklot:PUCPR/sunny/2012-09-19_07_55_52.jpg: 59 of 100 slots wrong (conf>=0.2, overlap>=0.15). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: small cars missed without tiling"
+  },
+  {
+    "id": "flow_occ_pklot_sunny_1_rfdetr-large+tile",
+    "component": "flow.occ.pklot.rfdetr-large+tile.sunny",
+    "image_uri": "lanes/eval_gallery/flow/occ_pklot_sunny_1_rfdetr-large_tile.jpg",
+    "description": "rfdetr-large+tile on pklot:PUCPR/sunny/2012-09-19_07_55_52.jpg: 0 of 100 slots wrong (conf>=0.1, overlap>=0.3). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+    "category": "occupancy: after tiling"
+  },
+  {
+    "id": "flow_router_00",
+    "component": "router.so400m.blend",
+    "image_uri": "lanes/eval_gallery/flow/router_00_street_as_unknown.jpg",
+    "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'unknown' with p=0.99. Faces blurred with seen.blur.",
+    "category": "router: street -> unknown"
+  },
+  {
+    "id": "flow_router_01",
+    "component": "router.so400m.blend",
+    "image_uri": "lanes/eval_gallery/flow/router_01_street_as_unknown.jpg",
+    "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'unknown' with p=0.98. Faces blurred with seen.blur.",
+    "category": "router: street -> unknown"
+  },
+  {
+    "id": "flow_router_02",
+    "component": "router.so400m.blend",
+    "image_uri": "lanes/eval_gallery/flow/router_02_closeup_as_unknown.jpg",
+    "description": "held-out source commons_engines (wikimedia_commons): true scene 'closeup', router answered 'unknown' with p=0.52. Faces blurred with seen.blur.",
+    "category": "router: closeup -> unknown"
+  },
+  {
+    "id": "flow_router_03",
+    "component": "router.so400m.blend",
+    "image_uri": "lanes/eval_gallery/flow/router_03_closeup_as_unknown.jpg",
+    "description": "held-out source commons_wheels (wikimedia_commons): true scene 'closeup', router answered 'unknown' with p=0.52. Faces blurred with seen.blur.",
+    "category": "router: closeup -> unknown"
+  },
+  {
+    "id": "flow_router_04",
+    "component": "router.so400m.blend",
+    "image_uri": "lanes/eval_gallery/flow/router_04_wash_as_bay.jpg",
+    "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'bay' with p=0.91. Faces blurred with seen.blur.",
+    "category": "router: wash -> bay"
+  },
+  {
+    "id": "flow_router_05",
+    "component": "router.so400m.blend",
+    "image_uri": "lanes/eval_gallery/flow/router_05_wash_as_bay.jpg",
+    "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'bay' with p=0.91. Faces blurred with seen.blur.",
+    "category": "router: wash -> bay"
+  },
+  {
+    "id": "flow_router_06",
+    "component": "router.so400m.blend",
+    "image_uri": "lanes/eval_gallery/flow/router_06_wash_as_unknown.jpg",
+    "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'unknown' with p=0.52. Faces blurred with seen.blur.",
+    "category": "router: wash -> unknown"
+  },
+  {
+    "id": "flow_router_07",
+    "component": "router.so400m.blend",
+    "image_uri": "lanes/eval_gallery/flow/router_07_wash_as_unknown.jpg",
+    "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'unknown' with p=0.51. Faces blurred with seen.blur.",
+    "category": "router: wash -> unknown"
+  },
+  {
+    "id": "flow_router_08",
+    "component": "router.so400m.blend",
+    "image_uri": "lanes/eval_gallery/flow/router_08_street_as_motorcycle.jpg",
+    "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'motorcycle' with p=0.72. Faces blurred with seen.blur.",
+    "category": "router: street -> motorcycle"
+  },
+  {
+    "id": "flow_router_09",
+    "component": "router.so400m.blend",
+    "image_uri": "lanes/eval_gallery/flow/router_09_street_as_motorcycle.jpg",
+    "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'motorcycle' with p=0.61. Faces blurred with seen.blur.",
+    "category": "router: street -> motorcycle"
+  },
+  {
+    "id": "uz_rf:valid/AAE0181237_car-front_2025-12-21_21-55-33_jpg.rf.55aad8eb8bfc7b82364cf3e765b162ca.jpg",
+    "component": "ident.e2e",
+    "image_uri": "lanes/eval_gallery/ident/uz_real_00_misread.jpg",
+    "description": "verified label 40J035QA vs prediction '40D035QA' (plate pixelated here on purpose)",
+    "category": "misread text"
+  },
+  {
+    "id": "uz_rf:valid/AAF2341946_car-front_2025-12-20_14-55-29_jpg.rf.7f633792725a308755a5da668b8ad3ed.jpg",
+    "component": "ident.e2e",
+    "image_uri": "lanes/eval_gallery/ident/uz_real_01_misread.jpg",
+    "description": "verified label 60V039JA vs prediction '60U039JA' (plate pixelated here on purpose)",
+    "category": "misread text"
+  },
+  {
+    "id": "uz_rf:valid/AAF3062913_car-front_2025-12-03_16-44-38_jpg.rf.a022de974f71c1467fbfcec03f58e977.jpg",
+    "component": "ident.e2e",
+    "image_uri": "lanes/eval_gallery/ident/uz_real_02_misread.jpg",
+    "description": "verified label 90R430NA vs prediction '90K430NA' (plate pixelated here on purpose)",
+    "category": "misread text"
+  },
+  {
+    "id": "uz_rf:valid/AAF4207854_car-rear_2025-12-22_18-29-46_jpg.rf.b5d940e4f2ac8c5f233bddeb0637c19f.jpg",
+    "component": "ident.e2e",
+    "image_uri": "lanes/eval_gallery/ident/uz_real_03_misread.jpg",
+    "description": "verified label 40X789FA vs prediction '40X769FA' (plate pixelated here on purpose)",
+    "category": "misread text"
+  },
+  {
+    "id": "inspect:dmg_B_syndcar_false_positive_02",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/dmg_B_syndcar_false_positive_02.jpg",
+    "description": "dmg B syndcar false positive 02"
+  },
+  {
+    "id": "inspect:dmg_B_syndcar_missed_damage_00",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/dmg_B_syndcar_missed_damage_00.jpg",
+    "description": "dmg B syndcar missed damage 00"
+  },
+  {
+    "id": "inspect:dmg_B_syndcar_wrong_class_04",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/dmg_B_syndcar_wrong_class_04.jpg",
+    "description": "dmg B syndcar wrong class 04"
+  },
+  {
+    "id": "inspect:dot_date_code_wrong_00",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/dot_date_code_wrong_00.jpg",
+    "description": "dot date code wrong 00"
+  },
+  {
+    "id": "inspect:dot_date_code_wrong_02",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/dot_date_code_wrong_02.jpg",
+    "description": "dot date code wrong 02"
+  },
+  {
+    "id": "inspect:dot_string_wrong_00",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/dot_string_wrong_00.jpg",
+    "description": "dot string wrong 00"
+  },
+  {
+    "id": "inspect:dot_string_wrong_01",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/dot_string_wrong_01.jpg",
+    "description": "dot string wrong 01"
+  },
+  {
+    "id": "inspect:dot_string_wrong_02",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/dot_string_wrong_02.jpg",
+    "description": "dot string wrong 02"
+  },
+  {
+    "id": "inspect:tyre_sameer_defective_predicted_good_00",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/tyre_sameer_defective_predicted_good_00.jpg",
+    "description": "tyre sameer defective predicted good 00"
+  },
+  {
+    "id": "inspect:tyre_sameer_good_predicted_defective_00",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/tyre_sameer_good_predicted_defective_00.jpg",
+    "description": "tyre sameer good predicted defective 00"
+  },
+  {
+    "id": "inspect:tyre_warcoder_defective_predicted_good_00",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/tyre_warcoder_defective_predicted_good_00.jpg",
+    "description": "tyre warcoder defective predicted good 00"
+  },
+  {
+    "id": "inspect:tyre_warcoder_good_predicted_defective_00",
+    "component": "inspect",
+    "image_uri": "lanes/eval_gallery/inspect/tyre_warcoder_good_predicted_defective_00.jpg",
+    "description": "tyre warcoder good predicted defective 00"
+  },
+  {
+    "id": "ops_car_present_-OJPETY9Bis_035|A",
+    "component": "ops/car_present",
+    "image_uri": "lanes/eval_gallery/ops/car_present_-OJPETY9Bis_035_A.jpg",
+    "description": "car_present: hand label 0, predicted p=0.84 (false alarm); clip -OJPETY9Bis, bay A",
+    "category": "false alarm"
+  },
+  {
+    "id": "ops_car_present_JIEX2ruxZKM_044|A",
+    "component": "ops/car_present",
+    "image_uri": "lanes/eval_gallery/ops/car_present_JIEX2ruxZKM_044_A.jpg",
+    "description": "car_present: hand label 0, predicted p=0.93 (false alarm); clip JIEX2ruxZKM, bay A",
+    "category": "false alarm"
+  },
+  {
+    "id": "ops_hood_open_2mhugD9KYjI_009|A",
+    "component": "ops/hood_open",
+    "image_uri": "lanes/eval_gallery/ops/hood_open_2mhugD9KYjI_009_A.jpg",
+    "description": "hood_open: hand label 1, predicted p=0.23 (missed); clip 2mhugD9KYjI, bay A",
+    "category": "missed"
+  },
+  {
+    "id": "ops_hood_open_JIEX2ruxZKM_002|B",
+    "component": "ops/hood_open",
+    "image_uri": "lanes/eval_gallery/ops/hood_open_JIEX2ruxZKM_002_B.jpg",
+    "description": "hood_open: hand label 1, predicted p=0.11 (missed); clip JIEX2ruxZKM, bay B",
+    "category": "missed"
+  },
+  {
+    "id": "ops_person_at_car_JIEX2ruxZKM_020|B",
+    "component": "ops/person_at_car",
+    "image_uri": "lanes/eval_gallery/ops/person_at_car_JIEX2ruxZKM_020_B.jpg",
+    "description": "person_at_car: hand label 0, predicted p=0.97 (false alarm); clip JIEX2ruxZKM, bay B",
+    "category": "false alarm"
+  },
+  {
+    "id": "ops_person_at_car_e4O3X9gli1s_024|A",
+    "component": "ops/person_at_car",
+    "image_uri": "lanes/eval_gallery/ops/person_at_car_e4O3X9gli1s_024_A.jpg",
+    "description": "person_at_car: hand label 0, predicted p=0.96 (false alarm); clip e4O3X9gli1s, bay A",
+    "category": "false alarm"
+  },
+  {
+    "id": "ops_person_under_car_-OJPETY9Bis_055|A",
+    "component": "ops/person_under_car",
+    "image_uri": "lanes/eval_gallery/ops/person_under_car_-OJPETY9Bis_055_A.jpg",
+    "description": "person_under_car: hand label 1, predicted p=0.03 (missed); clip -OJPETY9Bis, bay A",
+    "category": "missed"
+  },
+  {
+    "id": "ops_person_under_car_2mhugD9KYjI_037|A",
+    "component": "ops/person_under_car",
+    "image_uri": "lanes/eval_gallery/ops/person_under_car_2mhugD9KYjI_037_A.jpg",
+    "description": "person_under_car: hand label 1, predicted p=0.02 (missed); clip 2mhugD9KYjI, bay A",
+    "category": "missed"
+  },
+  {
+    "id": "ops_raised_2mhugD9KYjI_018|B",
+    "component": "ops/raised",
+    "image_uri": "lanes/eval_gallery/ops/raised_2mhugD9KYjI_018_B.jpg",
+    "description": "raised: hand label 0, predicted p=0.96 (false alarm); clip 2mhugD9KYjI, bay B",
+    "category": "false alarm"
+  },
+  {
+    "id": "ops_raised_JIEX2ruxZKM_042|B",
+    "component": "ops/raised",
+    "image_uri": "lanes/eval_gallery/ops/raised_JIEX2ruxZKM_042_B.jpg",
+    "description": "raised: hand label 0, predicted p=0.88 (false alarm); clip JIEX2ruxZKM, bay B",
+    "category": "false alarm"
+  },
+  {
+    "id": "ops_wheel_off_BZsVY9FUUOo_024|A",
+    "component": "ops/wheel_off",
+    "image_uri": "lanes/eval_gallery/ops/wheel_off_BZsVY9FUUOo_024_A.jpg",
+    "description": "wheel_off: hand label 1, predicted p=0.12 (missed); clip BZsVY9FUUOo, bay A",
+    "category": "missed"
+  },
+  {
+    "id": "ops_wheel_off_e4O3X9gli1s_043|A",
+    "component": "ops/wheel_off",
+    "image_uri": "lanes/eval_gallery/ops/wheel_off_e4O3X9gli1s_043_A.jpg",
+    "description": "wheel_off: hand label 1, predicted p=0.18 (missed); clip e4O3X9gli1s, bay A",
+    "category": "missed"
+  },
+  {
+    "id": "ops_work_BZsVY9FUUOo_036|A",
+    "component": "ops/work",
+    "image_uri": "lanes/eval_gallery/ops/work_BZsVY9FUUOo_036_A.jpg",
+    "description": "work: hand label 1, predicted p=0.22 (missed); clip BZsVY9FUUOo, bay A",
+    "category": "missed"
+  },
+  {
+    "id": "ops_work_wWSNERw5oME_050|align",
+    "component": "ops/work",
+    "image_uri": "lanes/eval_gallery/ops/work_wWSNERw5oME_050_align.jpg",
+    "description": "work: hand label 1, predicted p=0.16 (missed); clip wWSNERw5oME, bay align",
+    "category": "missed"
+  },
+  {
+    "id": "decoder_low_accuracy_acc70_sim2000_0000",
+    "component": "sim.noise_test.hmm_fitted",
+    "image_uri": "lanes/eval_gallery/sim/decoder_low_accuracy_acc70_sim2000_0000.jpg",
+    "description": "Synthetic visit sim2000_0000 at 70% per-frame accuracy (~10 s errors): onsets drift by tens of seconds and short work/idle structure is lost; key-event F1 at +-10 s is 0.36 at this setting.",
+    "category": "decoder_low_frame_accuracy"
+  },
+  {
+    "id": "decoder_sustained_errors_60s_acc80_sim2000_0002",
+    "component": "sim.noise_test.hmm_fitted",
+    "image_uri": "lanes/eval_gallery/sim/decoder_sustained_errors_60s_acc80_sim2000_0002.jpg",
+    "description": "Synthetic visit sim2000_0002, simulated per-frame accuracy 80% with errors lasting ~60 s: the HMM cannot tell a minute-long wrong prediction from a real state change, so spurious or merged lift/bonnet/idle segments appear. Grid result: key-event F1 0.38 at this setting (vs 0.66 with ~10 s errors).",
+    "category": "decoder_sustained_errors"
+  },
+  {
+    "id": "missed_car_floor_ep06_test_bay1_000207",
+    "component": "e2e.synthetic",
+    "image_uri": "lanes/eval_gallery/sim/missed_car_floor_ep06_test_bay1_000207.jpg",
+    "description": "ep06_test bay1 frame 207: ground truth car_present=True (raised=False); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline).",
+    "category": "missed_car_floor"
+  },
+  {
+    "id": "missed_car_floor_ep06_test_bay1_000270",
+    "component": "e2e.synthetic",
+    "image_uri": "lanes/eval_gallery/sim/missed_car_floor_ep06_test_bay1_000270.jpg",
+    "description": "ep06_test bay1 frame 270: ground truth car_present=True (raised=False); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline).",
+    "category": "missed_car_floor"
+  },
+  {
+    "id": "missed_car_floor_ep06_test_bay1_000625",
+    "component": "e2e.synthetic",
+    "image_uri": "lanes/eval_gallery/sim/missed_car_floor_ep06_test_bay1_000625.jpg",
+    "description": "ep06_test bay1 frame 625: ground truth car_present=True (raised=False); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline).",
+    "category": "missed_car_floor"
+  },
+  {
+    "id": "missed_car_lifted_ep08_test_bay1_000360",
+    "component": "e2e.synthetic",
+    "image_uri": "lanes/eval_gallery/sim/missed_car_lifted_ep08_test_bay1_000360.jpg",
+    "description": "ep08_test bay1 frame 360: ground truth car_present=True (raised=True); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline).",
+    "category": "missed_car_lifted"
+  },
+  {
+    "id": "missed_car_lifted_ep08_test_bay2_000334",
+    "component": "e2e.synthetic",
+    "image_uri": "lanes/eval_gallery/sim/missed_car_lifted_ep08_test_bay2_000334.jpg",
+    "description": "ep08_test bay2 frame 334: ground truth car_present=True (raised=True); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline).",
+    "category": "missed_car_lifted"
+  },
+  {
+    "id": "missed_car_lifted_ep09_test_bay2_000791",
+    "component": "e2e.synthetic",
+    "image_uri": "lanes/eval_gallery/sim/missed_car_lifted_ep09_test_bay2_000791.jpg",
+    "description": "ep09_test bay2 frame 791: ground truth car_present=True (raised=True); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline).",
+    "category": "missed_car_lifted"
+  }
+]

@@ -1,0 +1,40 @@
+[
+  {
+    "pool": "prep/flow/router/records_cams.jsonl",
+    "jury_ids": []
+  },
+  {
+    "pool": "prep/flow/router/records_cctv.jsonl",
+    "jury_ids": []
+  },
+  {
+    "pool": "prep/flow/router/records_commons.jsonl",
+    "jury_ids": [
+      "jury_018",
+      "jury_040",
+      "jury_041",
+      "jury_043",
+      "jury_044",
+      "jury_046",
+      "jury_047",
+      "jury_049",
+      "jury_050"
+    ]
+  },
+  {
+    "pool": "prep/flow/router/records_rf.jsonl",
+    "jury_ids": []
+  },
+  {
+    "pool": "raw/ops_commons/meta.csv",
+    "jury_ids": [
+      "jury_018",
+      "jury_041",
+      "jury_043",
+      "jury_044",
+      "jury_046",
+      "jury_047",
+      "jury_049"
+    ]
+  }
+]

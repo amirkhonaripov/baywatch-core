@@ -1,0 +1,58 @@
+[
+ {
+  "id": "missed_car_lifted_ep08_test_bay1_000360",
+  "component": "e2e.synthetic",
+  "file": "missed_car_lifted_ep08_test_bay1_000360.jpg",
+  "category": "missed_car_lifted",
+  "description": "ep08_test bay1 frame 360: ground truth car_present=True (raised=True); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline)."
+ },
+ {
+  "id": "missed_car_lifted_ep08_test_bay2_000334",
+  "component": "e2e.synthetic",
+  "file": "missed_car_lifted_ep08_test_bay2_000334.jpg",
+  "category": "missed_car_lifted",
+  "description": "ep08_test bay2 frame 334: ground truth car_present=True (raised=True); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline)."
+ },
+ {
+  "id": "missed_car_lifted_ep09_test_bay2_000791",
+  "component": "e2e.synthetic",
+  "file": "missed_car_lifted_ep09_test_bay2_000791.jpg",
+  "category": "missed_car_lifted",
+  "description": "ep09_test bay2 frame 791: ground truth car_present=True (raised=True); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline)."
+ },
+ {
+  "id": "missed_car_floor_ep06_test_bay1_000207",
+  "component": "e2e.synthetic",
+  "file": "missed_car_floor_ep06_test_bay1_000207.jpg",
+  "category": "missed_car_floor",
+  "description": "ep06_test bay1 frame 207: ground truth car_present=True (raised=False); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline)."
+ },
+ {
+  "id": "missed_car_floor_ep06_test_bay1_000270",
+  "component": "e2e.synthetic",
+  "file": "missed_car_floor_ep06_test_bay1_000270.jpg",
+  "category": "missed_car_floor",
+  "description": "ep06_test bay1 frame 270: ground truth car_present=True (raised=False); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline)."
+ },
+ {
+  "id": "missed_car_floor_ep06_test_bay1_000625",
+  "component": "e2e.synthetic",
+  "file": "missed_car_floor_ep06_test_bay1_000625.jpg",
+  "category": "missed_car_floor",
+  "description": "ep06_test bay1 frame 625: ground truth car_present=True (raised=False); best in-zone vehicle confidence none. Renders are stylised Kenney models; the detector is COCO-pretrained RF-DETR (default pipeline)."
+ },
+ {
+  "id": "decoder_sustained_errors_60s_acc80_sim2000_0002",
+  "component": "sim.noise_test.hmm_fitted",
+  "file": "decoder_sustained_errors_60s_acc80_sim2000_0002.png",
+  "category": "decoder_sustained_errors",
+  "description": "Synthetic visit sim2000_0002, simulated per-frame accuracy 80% with errors lasting ~60 s: the HMM cannot tell a minute-long wrong prediction from a real state change, so spurious or merged lift/bonnet/idle segments appear. Grid result: key-event F1 0.38 at this setting (vs 0.66 with ~10 s errors)."
+ },
+ {
+  "id": "decoder_low_accuracy_acc70_sim2000_0000",
+  "component": "sim.noise_test.hmm_fitted",
+  "file": "decoder_low_accuracy_acc70_sim2000_0000.png",
+  "category": "decoder_low_frame_accuracy",
+  "description": "Synthetic visit sim2000_0000 at 70% per-frame accuracy (~10 s errors): onsets drift by tens of seconds and short work/idle structure is lost; key-event F1 at +-10 s is 0.36 at this setting."
+ }
+]

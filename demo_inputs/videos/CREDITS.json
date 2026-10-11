@@ -1,0 +1,17 @@
+{
+ "bay_lift_cctv.mp4": {
+  "credit": "Two-post lift bay timelapse, YouTube -OJPETY9Bis, CC BY",
+  "frames": 250,
+  "note": "faces blurred; 10 fps, 960 px; intro title cards removed"
+ },
+ "bay_tyre_shop_cctv.mp4": {
+  "credit": "Vianor tyre shop CCTV, YouTube e4O3X9gli1s, CC BY",
+  "frames": 275,
+  "note": "faces blurred; 10 fps, 960 px; intro title cards removed"
+ },
+ "gate_car_park.mp4": {
+  "credit": "Estacionamiento de un Supermercado Ley, Mazatlán (Wikimedia Commons), CC BY-SA 4.0",
+  "frames": 200,
+  "note": "faces blurred; 10 fps, 960 px"
+ }
+}

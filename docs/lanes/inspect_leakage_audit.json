@@ -1,0 +1,92 @@
+{
+ "inspect_damage vs damage/train_files_A.txt": {
+  "verdict": "PASS",
+  "n_test": 5570,
+  "n_test_hashed": 5570,
+  "path_overlap": 0,
+  "near_dup_strict_train_files": 0,
+  "near_dup_strict_test_items": 0,
+  "near_dup_loose_train_files": 0,
+  "near_dup_loose_test_items": 0,
+  "leaked_strict_test_ids": [],
+  "leaked_loose_test_ids": [],
+  "examples": [],
+  "A_only_component": {
+   "n_test": 2266,
+   "n_test_hashed": 2266,
+   "path_overlap": 0,
+   "near_dup_strict_train_files": 0,
+   "near_dup_strict_test_items": 0,
+   "near_dup_loose_train_files": 0,
+   "near_dup_loose_test_items": 0,
+   "leaked_strict_test_ids": [],
+   "leaked_loose_test_ids": [],
+   "verdict": "PASS"
+  }
+ },
+ "inspect_damage vs damage/train_files_B.txt": {
+  "verdict": "PASS",
+  "n_test": 5570,
+  "n_test_hashed": 5570,
+  "path_overlap": 0,
+  "near_dup_strict_train_files": 0,
+  "near_dup_strict_test_items": 0,
+  "near_dup_loose_train_files": 0,
+  "near_dup_loose_test_items": 0,
+  "leaked_strict_test_ids": [],
+  "leaked_loose_test_ids": [],
+  "examples": []
+ },
+ "inspect_parts vs parts/train_files.txt": {
+  "verdict": "PASS",
+  "n_test": 1274,
+  "n_test_hashed": 1274,
+  "path_overlap": 0,
+  "near_dup_strict_train_files": 0,
+  "near_dup_strict_test_items": 0,
+  "near_dup_loose_train_files": 0,
+  "near_dup_loose_test_items": 0,
+  "leaked_strict_test_ids": [],
+  "leaked_loose_test_ids": [],
+  "examples": []
+ },
+ "inspect_tyre vs tyre_dino_lr/train_files.txt": {
+  "verdict": "PASS",
+  "n_test": 2758,
+  "n_test_hashed": 2758,
+  "path_overlap": 0,
+  "near_dup_strict_train_files": 0,
+  "near_dup_strict_test_items": 0,
+  "near_dup_loose_train_files": 0,
+  "near_dup_loose_test_items": 0,
+  "leaked_strict_test_ids": [],
+  "leaked_loose_test_ids": [],
+  "examples": []
+ },
+ "inspect_dot vs chars/train_files.txt": {
+  "verdict": "PASS",
+  "n_test": 655,
+  "n_test_hashed": 655,
+  "path_overlap": 0,
+  "near_dup_strict_train_files": 0,
+  "near_dup_strict_test_items": 0,
+  "near_dup_loose_train_files": 0,
+  "near_dup_loose_test_items": 0,
+  "leaked_strict_test_ids": [],
+  "leaked_loose_test_ids": [],
+  "examples": []
+ },
+ "inspect_dot vs region/train_files.txt": {
+  "verdict": "PASS",
+  "n_test": 655,
+  "n_test_hashed": 655,
+  "path_overlap": 0,
+  "near_dup_strict_train_files": 0,
+  "near_dup_strict_test_items": 0,
+  "near_dup_loose_train_files": 0,
+  "near_dup_loose_test_items": 0,
+  "leaked_strict_test_ids": [],
+  "leaked_loose_test_ids": [],
+  "examples": []
+ }
+}

@@ -1,0 +1,14 @@
+clip,k_from,k_to,k_step,roi_id,x1,y1,x2,y2,note
+e4O3X9gli1s,0,69,1,A,0.26,0.08,0.60,0.72,central tyre-shop bay (CAM-3)
+-OJPETY9Bis,0,69,1,A,0.36,0.15,0.72,0.73,central two-post lift bay
+JIEX2ruxZKM,0,69,1,A,0.44,0.18,0.80,0.80,front bay between blue posts
+JIEX2ruxZKM,0,69,2,B,0.27,0.06,0.53,0.42,back-left two-post lift
+2mhugD9KYjI,0,69,1,A,0.30,0.40,0.62,0.80,central lift bay
+2mhugD9KYjI,0,69,2,B,0.12,0.55,0.42,1.00,front-left bay (alignment rack)
+BZsVY9FUUOo,0,69,1,A,0.08,0.22,0.38,0.62,left two-post lift bay
+BZsVY9FUUOo,0,69,2,B,0.64,0.20,0.97,0.62,right two-post lift bay
+wWSNERw5oME,6,19,1,side,0.00,0.40,0.70,1.00,montage segment: low side view of a parked car
+wWSNERw5oME,20,33,1,ov1,0.44,0.12,0.72,0.82,montage segment: overhead view 1
+wWSNERw5oME,34,45,1,bmw,0.10,0.20,0.48,0.90,montage segment: picture-in-picture tyre change
+wWSNERw5oME,46,53,1,align,0.15,0.10,0.68,0.95,montage segment: alignment lift
+wWSNERw5oME,54,67,1,ov2,0.16,0.18,0.47,0.80,montage segment: overhead view 2

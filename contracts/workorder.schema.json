@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://seen.local/contracts/workorder.schema.json",
+  "title": "WorkOrderContracts",
+  "type": "object",
+  "properties": {
+    "catalogue": { "$ref": "#/$defs/Catalogue" },
+    "work_order": { "$ref": "#/$defs/WorkOrder" }
+  },
+  "$defs": {
+    "Verifiability": {
+      "type": "string",
+      "enum": ["full", "partial", "none"],
+      "description": "full = all required operations are visible to a bay camera; partial = some evidence visible but cannot prove completion; none = not observable by camera."
+    },
+    "Operation": {
+      "type": "object",
+      "required": ["code", "title"],
+      "properties": {
+        "code": { "type": "string", "enum": ["car_in_bay", "lift_raise", "wheel_removal", "hood_open", "under_car_work", "person_at_car", "wash"] },
+        "title": { "type": "string" },
+        "min_duration_s": { "type": "number", "description": "Minimum observed duration for the operation to count as evidence." }
+      }
+    },
+    "CatalogueItem": {
+      "type": "object",
+      "required": ["code", "title_en", "operations_required", "verifiability"],
+      "properties": {
+        "code": { "type": "string" },
+        "title_en": { "type": "string" },
+        "title_ru": { "type": "string" },
+        "title_uz": { "type": "string" },
+        "operations_required": { "type": "array", "items": { "type": "string" } },
+        "verifiability": { "$ref": "#/$defs/Verifiability" },
+        "note": { "type": "string", "description": "What the camera can and cannot prove for this item." },
+        "source": { "type": "string", "description": "Where the item comes from (public service menu URL)." }
+      }
+    },
+    "Catalogue": {
+      "type": "object",
+      "required": ["version", "operations", "items"],
+      "properties": {
+        "version": { "type": "string" },
+        "operations": { "type": "array", "items": { "$ref": "#/$defs/Operation" } },
+        "items": { "type": "array", "items": { "$ref": "#/$defs/CatalogueItem" } }
+      }
+    },
+    "WorkOrder": {
+      "type": "object",
+      "required": ["id", "lines"],
+      "properties": {
+        "id": { "type": "string" },
+        "plate_text": { "type": "string" },
+        "lines": { "type": "array", "items": { "type": "string", "description": "CatalogueItem.code" } }
+      }
+    }
+  }
+}

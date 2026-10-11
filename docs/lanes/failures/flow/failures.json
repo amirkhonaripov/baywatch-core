@@ -1,0 +1,240 @@
+[
+ {
+  "id": "flow_det_detrac_test_s5_cloudy_0",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.cloudy",
+  "file": "detrac_test_s5_rfdetr-large_cloudy_0.jpg",
+  "description": "rfdetr-large on MVI_40855 (cloudy): 17 of 36 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "cloudy misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_cloudy_1",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.cloudy",
+  "file": "detrac_test_s5_rfdetr-large_cloudy_1.jpg",
+  "description": "rfdetr-large on MVI_40714 (cloudy): 14 of 40 GT vehicles missed at IoU 0.5 / score >= 0.4, 3 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "cloudy misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_cloudy_2",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.cloudy",
+  "file": "detrac_test_s5_rfdetr-large_cloudy_2.jpg",
+  "description": "rfdetr-large on MVI_39501 (cloudy): 9 of 12 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "cloudy misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_night_0",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.night",
+  "file": "detrac_test_s5_rfdetr-large_night_0.jpg",
+  "description": "rfdetr-large on MVI_40761 (night): 9 of 10 GT vehicles missed at IoU 0.5 / score >= 0.4, 1 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "night misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_night_1",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.night",
+  "file": "detrac_test_s5_rfdetr-large_night_1.jpg",
+  "description": "rfdetr-large on MVI_40772 (night): 9 of 27 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "night misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_night_2",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.night",
+  "file": "detrac_test_s5_rfdetr-large_night_2.jpg",
+  "description": "rfdetr-large on MVI_40775 (night): 6 of 20 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "night misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_rainy_0",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.rainy",
+  "file": "detrac_test_s5_rfdetr-large_rainy_0.jpg",
+  "description": "rfdetr-large on MVI_40864 (rainy): 15 of 35 GT vehicles missed at IoU 0.5 / score >= 0.4, 1 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "rainy misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_rainy_1",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.rainy",
+  "file": "detrac_test_s5_rfdetr-large_rainy_1.jpg",
+  "description": "rfdetr-large on MVI_40903 (rainy): 14 of 29 GT vehicles missed at IoU 0.5 / score >= 0.4, 3 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "rainy misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_rainy_2",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.rainy",
+  "file": "detrac_test_s5_rfdetr-large_rainy_2.jpg",
+  "description": "rfdetr-large on MVI_40892 (rainy): 13 of 20 GT vehicles missed at IoU 0.5 / score >= 0.4, 1 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "rainy misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_sunny_0",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.sunny",
+  "file": "detrac_test_s5_rfdetr-large_sunny_0.jpg",
+  "description": "rfdetr-large on MVI_39031 (sunny): 9 of 12 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "sunny misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_sunny_1",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.sunny",
+  "file": "detrac_test_s5_rfdetr-large_sunny_1.jpg",
+  "description": "rfdetr-large on MVI_39311 (sunny): 8 of 18 GT vehicles missed at IoU 0.5 / score >= 0.4, 3 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "sunny misses"
+ },
+ {
+  "id": "flow_det_detrac_test_s5_sunny_2",
+  "component": "flow.det.detrac_test_s5.rfdetr-large.sunny",
+  "file": "detrac_test_s5_rfdetr-large_sunny_2.jpg",
+  "description": "rfdetr-large on MVI_39361 (sunny): 6 of 13 GT vehicles missed at IoU 0.5 / score >= 0.4, 0 false positives. Red = missed GT, cyan = detected GT, yellow = false positive, grey = ignored region.",
+  "category": "sunny misses"
+ },
+ {
+  "id": "flow_occ_pklot_rainy_0_rfdetr-large",
+  "component": "flow.occ.pklot.rfdetr-large.rainy",
+  "file": "occ_pklot_rainy_0_rfdetr-large.jpg",
+  "description": "rfdetr-large on pklot:PUCPR/rainy/2012-10-25_08_58_20.jpg: 74 of 100 slots wrong (conf>=0.2, overlap>=0.15). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: small cars missed without tiling"
+ },
+ {
+  "id": "flow_occ_pklot_rainy_0_rfdetr-large+tile",
+  "component": "flow.occ.pklot.rfdetr-large+tile.rainy",
+  "file": "occ_pklot_rainy_0_rfdetr-large_tile.jpg",
+  "description": "rfdetr-large+tile on pklot:PUCPR/rainy/2012-10-25_08_58_20.jpg: 1 of 100 slots wrong (conf>=0.1, overlap>=0.3). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: after tiling"
+ },
+ {
+  "id": "flow_occ_pklot_rainy_1_rfdetr-large",
+  "component": "flow.occ.pklot.rfdetr-large.rainy",
+  "file": "occ_pklot_rainy_1_rfdetr-large.jpg",
+  "description": "rfdetr-large on pklot:PUCPR/rainy/2012-10-25_09_23_22.jpg: 74 of 100 slots wrong (conf>=0.2, overlap>=0.15). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: small cars missed without tiling"
+ },
+ {
+  "id": "flow_occ_pklot_rainy_1_rfdetr-large+tile",
+  "component": "flow.occ.pklot.rfdetr-large+tile.rainy",
+  "file": "occ_pklot_rainy_1_rfdetr-large_tile.jpg",
+  "description": "rfdetr-large+tile on pklot:PUCPR/rainy/2012-10-25_09_23_22.jpg: 0 of 100 slots wrong (conf>=0.1, overlap>=0.3). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: after tiling"
+ },
+ {
+  "id": "flow_occ_pklot_sunny_0_rfdetr-large",
+  "component": "flow.occ.pklot.rfdetr-large.sunny",
+  "file": "occ_pklot_sunny_0_rfdetr-large.jpg",
+  "description": "rfdetr-large on pklot:PUCPR/sunny/2012-09-19_10_03_27.jpg: 63 of 100 slots wrong (conf>=0.2, overlap>=0.15). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: small cars missed without tiling"
+ },
+ {
+  "id": "flow_occ_pklot_sunny_0_rfdetr-large+tile",
+  "component": "flow.occ.pklot.rfdetr-large+tile.sunny",
+  "file": "occ_pklot_sunny_0_rfdetr-large_tile.jpg",
+  "description": "rfdetr-large+tile on pklot:PUCPR/sunny/2012-09-19_10_03_27.jpg: 0 of 100 slots wrong (conf>=0.1, overlap>=0.3). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: after tiling"
+ },
+ {
+  "id": "flow_occ_pklot_sunny_1_rfdetr-large",
+  "component": "flow.occ.pklot.rfdetr-large.sunny",
+  "file": "occ_pklot_sunny_1_rfdetr-large.jpg",
+  "description": "rfdetr-large on pklot:PUCPR/sunny/2012-09-19_07_55_52.jpg: 59 of 100 slots wrong (conf>=0.2, overlap>=0.15). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: small cars missed without tiling"
+ },
+ {
+  "id": "flow_occ_pklot_sunny_1_rfdetr-large+tile",
+  "component": "flow.occ.pklot.rfdetr-large+tile.sunny",
+  "file": "occ_pklot_sunny_1_rfdetr-large_tile.jpg",
+  "description": "rfdetr-large+tile on pklot:PUCPR/sunny/2012-09-19_07_55_52.jpg: 0 of 100 slots wrong (conf>=0.1, overlap>=0.3). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: after tiling"
+ },
+ {
+  "id": "flow_occ_cnrext_rainy_0_rfdetr-large",
+  "component": "flow.occ.cnrext.rfdetr-large.rainy",
+  "file": "occ_cnrext_rainy_0_rfdetr-large.jpg",
+  "description": "rfdetr-large on cnrext:rainy/2016-02-12/cam7/2016-02-12_1025.jpg: 10 of 46 slots wrong (conf>=0.2, overlap>=0.4). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: small cars missed without tiling"
+ },
+ {
+  "id": "flow_occ_cnrext_rainy_0_rfdetr-large+tile",
+  "component": "flow.occ.cnrext.rfdetr-large+tile.rainy",
+  "file": "occ_cnrext_rainy_0_rfdetr-large_tile.jpg",
+  "description": "rfdetr-large+tile on cnrext:rainy/2016-02-12/cam7/2016-02-12_1025.jpg: 1 of 46 slots wrong (conf>=0.05, overlap>=0.4). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: after tiling"
+ },
+ {
+  "id": "flow_occ_cnrext_rainy_1_rfdetr-large",
+  "component": "flow.occ.cnrext.rfdetr-large.rainy",
+  "file": "occ_cnrext_rainy_1_rfdetr-large.jpg",
+  "description": "rfdetr-large on cnrext:rainy/2015-12-22/cam1/2015-12-22_1618.jpg: 10 of 35 slots wrong (conf>=0.2, overlap>=0.4). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: small cars missed without tiling"
+ },
+ {
+  "id": "flow_occ_cnrext_rainy_1_rfdetr-large+tile",
+  "component": "flow.occ.cnrext.rfdetr-large+tile.rainy",
+  "file": "occ_cnrext_rainy_1_rfdetr-large_tile.jpg",
+  "description": "rfdetr-large+tile on cnrext:rainy/2015-12-22/cam1/2015-12-22_1618.jpg: 9 of 35 slots wrong (conf>=0.05, overlap>=0.4). Red = occupied slot predicted vacant, yellow = vacant predicted occupied, green = correct occupied, blue = correct vacant.",
+  "category": "occupancy: after tiling"
+ },
+ {
+  "id": "flow_router_00",
+  "component": "router.so400m.blend",
+  "file": "router_00_street_as_unknown.jpg",
+  "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'unknown' with p=0.99. Faces blurred with seen.blur.",
+  "category": "router: street -> unknown"
+ },
+ {
+  "id": "flow_router_01",
+  "component": "router.so400m.blend",
+  "file": "router_01_street_as_unknown.jpg",
+  "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'unknown' with p=0.98. Faces blurred with seen.blur.",
+  "category": "router: street -> unknown"
+ },
+ {
+  "id": "flow_router_02",
+  "component": "router.so400m.blend",
+  "file": "router_02_closeup_as_unknown.jpg",
+  "description": "held-out source commons_engines (wikimedia_commons): true scene 'closeup', router answered 'unknown' with p=0.52. Faces blurred with seen.blur.",
+  "category": "router: closeup -> unknown"
+ },
+ {
+  "id": "flow_router_03",
+  "component": "router.so400m.blend",
+  "file": "router_03_closeup_as_unknown.jpg",
+  "description": "held-out source commons_wheels (wikimedia_commons): true scene 'closeup', router answered 'unknown' with p=0.52. Faces blurred with seen.blur.",
+  "category": "router: closeup -> unknown"
+ },
+ {
+  "id": "flow_router_04",
+  "component": "router.so400m.blend",
+  "file": "router_04_wash_as_bay.jpg",
+  "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'bay' with p=0.91. Faces blurred with seen.blur.",
+  "category": "router: wash -> bay"
+ },
+ {
+  "id": "flow_router_05",
+  "component": "router.so400m.blend",
+  "file": "router_05_wash_as_bay.jpg",
+  "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'bay' with p=0.91. Faces blurred with seen.blur.",
+  "category": "router: wash -> bay"
+ },
+ {
+  "id": "flow_router_06",
+  "component": "router.so400m.blend",
+  "file": "router_06_wash_as_unknown.jpg",
+  "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'unknown' with p=0.52. Faces blurred with seen.blur.",
+  "category": "router: wash -> unknown"
+ },
+ {
+  "id": "flow_router_07",
+  "component": "router.so400m.blend",
+  "file": "router_07_wash_as_unknown.jpg",
+  "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'unknown' with p=0.51. Faces blurred with seen.blur.",
+  "category": "router: wash -> unknown"
+ },
+ {
+  "id": "flow_router_08",
+  "component": "router.so400m.blend",
+  "file": "router_08_street_as_motorcycle.jpg",
+  "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'motorcycle' with p=0.72. Faces blurred with seen.blur.",
+  "category": "router: street -> motorcycle"
+ },
+ {
+  "id": "flow_router_09",
+  "component": "router.so400m.blend",
+  "file": "router_09_street_as_motorcycle.jpg",
+  "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'motorcycle' with p=0.61. Faces blurred with seen.blur.",
+  "category": "router: street -> motorcycle"
+ }
+]

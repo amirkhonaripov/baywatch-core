@@ -1,0 +1,100 @@
+[
+ {
+  "id": "ops_car_present_JIEX2ruxZKM_044|A",
+  "component": "ops/car_present",
+  "file": "car_present_JIEX2ruxZKM_044_A.jpg",
+  "category": "false alarm",
+  "description": "car_present: hand label 0, predicted p=0.93 (false alarm); clip JIEX2ruxZKM, bay A"
+ },
+ {
+  "id": "ops_car_present_-OJPETY9Bis_035|A",
+  "component": "ops/car_present",
+  "file": "car_present_-OJPETY9Bis_035_A.jpg",
+  "category": "false alarm",
+  "description": "car_present: hand label 0, predicted p=0.84 (false alarm); clip -OJPETY9Bis, bay A"
+ },
+ {
+  "id": "ops_raised_2mhugD9KYjI_018|B",
+  "component": "ops/raised",
+  "file": "raised_2mhugD9KYjI_018_B.jpg",
+  "category": "false alarm",
+  "description": "raised: hand label 0, predicted p=0.96 (false alarm); clip 2mhugD9KYjI, bay B"
+ },
+ {
+  "id": "ops_raised_JIEX2ruxZKM_042|B",
+  "component": "ops/raised",
+  "file": "raised_JIEX2ruxZKM_042_B.jpg",
+  "category": "false alarm",
+  "description": "raised: hand label 0, predicted p=0.88 (false alarm); clip JIEX2ruxZKM, bay B"
+ },
+ {
+  "id": "ops_wheel_off_BZsVY9FUUOo_024|A",
+  "component": "ops/wheel_off",
+  "file": "wheel_off_BZsVY9FUUOo_024_A.jpg",
+  "category": "missed",
+  "description": "wheel_off: hand label 1, predicted p=0.12 (missed); clip BZsVY9FUUOo, bay A"
+ },
+ {
+  "id": "ops_wheel_off_e4O3X9gli1s_043|A",
+  "component": "ops/wheel_off",
+  "file": "wheel_off_e4O3X9gli1s_043_A.jpg",
+  "category": "missed",
+  "description": "wheel_off: hand label 1, predicted p=0.18 (missed); clip e4O3X9gli1s, bay A"
+ },
+ {
+  "id": "ops_hood_open_JIEX2ruxZKM_002|B",
+  "component": "ops/hood_open",
+  "file": "hood_open_JIEX2ruxZKM_002_B.jpg",
+  "category": "missed",
+  "description": "hood_open: hand label 1, predicted p=0.11 (missed); clip JIEX2ruxZKM, bay B"
+ },
+ {
+  "id": "ops_hood_open_2mhugD9KYjI_009|A",
+  "component": "ops/hood_open",
+  "file": "hood_open_2mhugD9KYjI_009_A.jpg",
+  "category": "missed",
+  "description": "hood_open: hand label 1, predicted p=0.23 (missed); clip 2mhugD9KYjI, bay A"
+ },
+ {
+  "id": "ops_person_at_car_JIEX2ruxZKM_020|B",
+  "component": "ops/person_at_car",
+  "file": "person_at_car_JIEX2ruxZKM_020_B.jpg",
+  "category": "false alarm",
+  "description": "person_at_car: hand label 0, predicted p=0.97 (false alarm); clip JIEX2ruxZKM, bay B"
+ },
+ {
+  "id": "ops_person_at_car_e4O3X9gli1s_024|A",
+  "component": "ops/person_at_car",
+  "file": "person_at_car_e4O3X9gli1s_024_A.jpg",
+  "category": "false alarm",
+  "description": "person_at_car: hand label 0, predicted p=0.96 (false alarm); clip e4O3X9gli1s, bay A"
+ },
+ {
+  "id": "ops_person_under_car_2mhugD9KYjI_037|A",
+  "component": "ops/person_under_car",
+  "file": "person_under_car_2mhugD9KYjI_037_A.jpg",
+  "category": "missed",
+  "description": "person_under_car: hand label 1, predicted p=0.02 (missed); clip 2mhugD9KYjI, bay A"
+ },
+ {
+  "id": "ops_person_under_car_-OJPETY9Bis_055|A",
+  "component": "ops/person_under_car",
+  "file": "person_under_car_-OJPETY9Bis_055_A.jpg",
+  "category": "missed",
+  "description": "person_under_car: hand label 1, predicted p=0.03 (missed); clip -OJPETY9Bis, bay A"
+ },
+ {
+  "id": "ops_work_wWSNERw5oME_050|align",
+  "component": "ops/work",
+  "file": "work_wWSNERw5oME_050_align.jpg",
+  "category": "missed",
+  "description": "work: hand label 1, predicted p=0.16 (missed); clip wWSNERw5oME, bay align"
+ },
+ {
+  "id": "ops_work_BZsVY9FUUOo_036|A",
+  "component": "ops/work",
+  "file": "work_BZsVY9FUUOo_036_A.jpg",
+  "category": "missed",
+  "description": "work: hand label 1, predicted p=0.22 (missed); clip BZsVY9FUUOo, bay A"
+ }
+]

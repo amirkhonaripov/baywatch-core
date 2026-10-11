@@ -1,0 +1,30 @@
+# BayWatch inference + API. Same pins as the deployed Modal image (serve/modal_app.py). Python 3.12, Linux, NVIDIA GPU.
+# torch comes from the PyTorch index: see scripts/setup_env.sh (cu130 for driver >= 580; use cu128 on older drivers).
+numpy==2.5.2
+pillow==12.3.0
+pydantic==2.14.0
+scipy==1.18.1
+opencv-python-headless==5.0.0.93
+onnxruntime-gpu==1.31.0
+onnx==1.23.2
+rfdetr==1.11.2
+supervision==0.30.9
+fast-alpr==0.4.0
+fast-plate-ocr==1.1.0
+open-image-models==0.6.0
+transformers==5.19.0
+accelerate==1.15.0
+pandas==3.0.6
+pyarrow==26.0.0
+timm==1.0.30
+open-clip-torch==3.3.0
+ultralytics==8.4.175
+safetensors==0.8.0
+huggingface-hub==2.2.0
+pyyaml==6.0.3
+fastapi==0.143.0
+starlette==1.7.0
+uvicorn==0.54.0
+python-multipart==0.0.32
+gdown==6.4.2
+pytest==9.1.1

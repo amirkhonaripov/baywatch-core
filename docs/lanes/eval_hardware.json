@@ -1,0 +1,11 @@
+{
+  "bench": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+  "bench_gpu": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+  "bench_nvidia_smi": "NVIDIA RTX PRO 5000 Blackwell, 595.84, 48935 MiB | NVIDIA RTX PRO 5000 Blackwell, 595.84, 48935 MiB",
+  "bench_torch": "2.14.1+cu130",
+  "bench_cuda_runtime": "13.0",
+  "bench_onnxruntime": "1.31.0",
+  "bench_cpu_threads": "32",
+  "bench_io_pressure": "full: avg10=0.00 avg60=0.16 avg300=0.41 total=17852377795",
+  "bench_gpu_contention": "0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB"
+}

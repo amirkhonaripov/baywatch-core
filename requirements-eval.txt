@@ -1,0 +1,15 @@
+# Extra packages for re-running evaluation, data preparation and training (on top of requirements.txt).
+scikit-learn==1.9.1
+imagehash==4.3.2
+matplotlib==3.11.2
+tqdm==4.70.1
+requests==2.34.2
+albumentations==2.0.8
+filterpy==1.4.5
+lap==0.5.13
+av==19.0.1
+remotezip==0.12.6
+kaggle==2.2.4
+roboflow==1.7.1
+yt-dlp==2026.8.19
+modal==1.6.1

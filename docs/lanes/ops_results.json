@@ -1,0 +1,3090 @@
+[
+ {
+  "id": "ops_work_k700_heads_v1",
+  "name": "work: Kinetics-700 val service classes vs car-context classes",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "k700",
+  "split": "K700 validation (held out by clip)",
+  "n": 1470,
+  "model": "dinov2l+geom linear head (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.8936299832418554,
+    "ci_low": 0.8694821459640917,
+    "ci_high": 0.9149090820286185,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.554641598119859,
+    "ci_low": 0.4975693925815285,
+    "ci_high": 0.6048821432566773,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.7421768707482993,
+    "ci_low": 0.7192042354408096,
+    "ci_high": 0.7638870738304823,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.39730639730639733,
+    "ci_low": 0.35873542162592137,
+    "ci_high": 0.4371970982754955,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.9182879377431906,
+    "ci_low": 0.8783193808634348,
+    "ci_high": 0.9459360920665562,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.05085957220289911,
+    "ci_low": 0.02769611144430104,
+    "ci_high": 0.07985691806311218,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     855,
+     21
+    ],
+    [
+     358,
+     236
+    ]
+   ]
+  },
+  "notes": "frames=1470 positives=594 videos/clips=490; CI bootstrap over videos"
+ },
+ {
+  "id": "ops_work_crosstask_heads_v1",
+  "name": "work proxy: inside vs outside annotated steps (CrossTask)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "crosstask",
+  "split": "test videos (split by video)",
+  "n": 8888,
+  "model": "dinov2l+geom linear head (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.7678912805998311,
+    "ci_low": 0.7021236508063324,
+    "ci_high": 0.8171361202277333,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.42907460774895934,
+    "ci_low": 0.34556236545531005,
+    "ci_high": 0.4966900629765564,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.7993924392439244,
+    "ci_low": 0.7909385921847505,
+    "ci_high": 0.8075875988912931,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.3798185941043084,
+    "ci_low": 0.3574540013771498,
+    "ci_high": 0.4027054869726453,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.493009565857248,
+    "ci_low": 0.4664860809796382,
+    "ci_high": 0.5195724587888532,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.023639366988130604,
+    "ci_low": 0.013414283503989625,
+    "ci_high": 0.0541368608356907,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     6435,
+     689
+    ],
+    [
+     1094,
+     670
+    ]
+   ]
+  },
+  "notes": "frames=8888 positives=1764 videos/clips=66; CI bootstrap over videos"
+ },
+ {
+  "id": "ops_work_coin_heads_v1",
+  "name": "work proxy: inside vs outside annotated steps (COIN)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "coin",
+  "split": "test videos (split by video)",
+  "n": 5864,
+  "model": "dinov2l+geom linear head (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.7501118862308429,
+    "ci_low": 0.690195413784483,
+    "ci_high": 0.7961028357202482,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.476029328821207,
+    "ci_low": 0.4040754221309124,
+    "ci_high": 0.5424052135694258,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.6831514324693042,
+    "ci_low": 0.6711269164872145,
+    "ci_high": 0.6949361435109505,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.3645788336933045,
+    "ci_low": 0.3452116801339354,
+    "ci_high": 0.38439467237673736,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.685621445978879,
+    "ci_low": 0.6591428445024253,
+    "ci_high": 0.710945150790871,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.06968245368381237,
+    "ci_low": 0.027499865703859858,
+    "ci_high": 0.11897701085162712,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     3162,
+     387
+    ],
+    [
+     1471,
+     844
+    ]
+   ]
+  },
+  "notes": "frames=5864 positives=2315 videos/clips=83; CI bootstrap over videos"
+ },
+ {
+  "id": "ops_raised_howto_heads_v1",
+  "name": "raised: derived step-span labels (CrossTask+COIN)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "crosstask+coin",
+  "split": "test videos (split by video)",
+  "n": 3635,
+  "model": "dinov2l+geom linear head (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.7273812248936673,
+    "ci_low": 0.64886310792708,
+    "ci_high": 0.7921604981594975,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.568939393939394,
+    "ci_low": 0.4807257927165861,
+    "ci_high": 0.6453490830139997,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.6869325997248968,
+    "ci_low": 0.6716664206522783,
+    "ci_high": 0.7018040960985218,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.4732199117832388,
+    "ci_low": 0.4487497894383318,
+    "ci_high": 0.4978193677025618,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.7132003798670465,
+    "ci_low": 0.685147363306169,
+    "ci_high": 0.7397034941734658,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.05581277580861302,
+    "ci_low": 0.022085900258630668,
+    "ci_high": 0.12315352718375404,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     1746,
+     302
+    ],
+    [
+     836,
+     751
+    ]
+   ]
+  },
+  "notes": "labels derived from step timestamps (jack up..jack down / withdraw..put wheel); frames=3635 positives=1587 videos=40"
+ },
+ {
+  "id": "ops_wheel_off_howto_heads_v1",
+  "name": "wheel_off: derived step-span labels (CrossTask+COIN)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "crosstask+coin",
+  "split": "test videos (split by video)",
+  "n": 2767,
+  "model": "dinov2l+geom linear head (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.8223389532121074,
+    "ci_low": 0.7402553142793835,
+    "ci_high": 0.8714348163343334,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.23703703703703705,
+    "ci_low": 0.17883468834688349,
+    "ci_high": 0.32056451612903225,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.8883267076255873,
+    "ci_low": 0.8760485440858599,
+    "ci_high": 0.8995281288987584,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.15286624203821655,
+    "ci_low": 0.11727821853486306,
+    "ci_high": 0.19684524160511294,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.5274725274725275,
+    "ci_low": 0.42587759658425334,
+    "ci_high": 0.6268419636394346,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.014871030377821436,
+    "ci_low": 0.009620595703120906,
+    "ci_high": 0.07509985239593893,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     2410,
+     43
+    ],
+    [
+     266,
+     48
+    ]
+   ]
+  },
+  "notes": "labels derived from step timestamps (jack up..jack down / withdraw..put wheel); frames=2767 positives=314 videos=27"
+ },
+ {
+  "id": "ops_hood_rf_car_hood_open_heads_v1",
+  "name": "hood_open: rf_car_hood_open",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "phone/web photos",
+  "dataset": "rf_car_hood_open",
+  "split": "Roboflow test split (same project)",
+  "n": 400,
+  "model": "dinov2l+geom linear head (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9371286078098472,
+    "ci_low": 0.9066571774849428,
+    "ci_high": 0.9645833244444355,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.8733624454148472,
+    "ci_low": 0.8317542552711183,
+    "ci_high": 0.9116381352282515,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.855,
+    "ci_low": 0.8171167606818923,
+    "ci_high": 0.8861295103407572,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.8064516129032258,
+    "ci_low": 0.7527595420039506,
+    "ci_high": 0.8507947763031904,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.9523809523809523,
+    "ci_low": 0.914577132446397,
+    "ci_high": 0.973931583533299,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.04938207609748073,
+    "ci_low": 0.031575702176061655,
+    "ci_high": 0.09827483975089325,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     142,
+     10
+    ],
+    [
+     48,
+     200
+    ]
+   ]
+  },
+  "notes": "positives=248"
+ },
+ {
+  "id": "ops_hood_rf_car_condition_heads_v1",
+  "name": "hood_open: rf_car_condition",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "phone/web photos",
+  "dataset": "rf_car_condition",
+  "split": "all images of another uploader's project (cross-project)",
+  "n": 399,
+  "model": "dinov2l+geom linear head (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.7258847736625514,
+    "ci_low": 0.7258847736625514,
+    "ci_high": 0.7291056910569106,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.02631578947368421,
+    "ci_low": 0.02631578947368421,
+    "ci_high": 0.02631578947368421,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.8145363408521303,
+    "ci_low": 0.7734639137047737,
+    "ci_high": 0.8496099892018306,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.013333333333333334,
+    "ci_low": 0.002357551139048661,
+    "ci_high": 0.07173365554421572,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 1.0,
+    "ci_low": 0.20654931437723745,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.1268657419937637,
+    "ci_low": 0.042025018252562246,
+    "ci_high": 0.16790461831530068,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     324,
+     0
+    ],
+    [
+     74,
+     1
+    ]
+   ]
+  },
+  "notes": "positives=75"
+ },
+ {
+  "id": "ops_hood_rf_car_open_hood_heads_v1",
+  "name": "hood_open: rf_car_open_hood",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "phone/web photos",
+  "dataset": "rf_car_open_hood",
+  "split": "Roboflow test split (classification project)",
+  "n": 212,
+  "model": "dinov2l+geom linear head (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.8413490623109497,
+    "ci_low": 0.7799623099937046,
+    "ci_high": 0.895760754880638,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.5333333333333333,
+    "ci_low": 0.3845238095238096,
+    "ci_high": 0.6526619433198381,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.8018867924528302,
+    "ci_low": 0.743069839527623,
+    "ci_high": 0.849958027775356,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.631578947368421,
+    "ci_low": 0.47283959557009003,
+    "ci_high": 0.7661578075284404,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.46153846153846156,
+    "ci_low": 0.3334047468175682,
+    "ci_high": 0.5949638867304212,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.04789063881485093,
+    "ci_low": 0.027451123794676714,
+    "ci_high": 0.10567987855615259,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     146,
+     28
+    ],
+    [
+     14,
+     24
+    ]
+   ]
+  },
+  "notes": "positives=38"
+ },
+ {
+  "id": "ops_raised_onset_heads_v1",
+  "name": "raised: step-onset error on CrossTask/COIN test videos",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "crosstask+coin",
+  "split": "test videos (split by video)",
+  "n": 36,
+  "model": "dinov2l+geom linear head (heads_v1)",
+  "metrics": [
+   {
+    "name": "onset_mae",
+    "value": 37.223055555555554,
+    "ci_low": 27.239201388888887,
+    "ci_high": 48.46688888888888,
+    "unit": "s"
+   },
+   {
+    "name": "onset_median_abs_error",
+    "value": 27.665000000000006,
+    "unit": "s"
+   },
+   {
+    "name": "onset_within_10s",
+    "value": 0.1388888888888889,
+    "ci_low": 0.06081815009132838,
+    "ci_high": 0.286595303893562,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "onset = end of the 'jack up'-type step; prediction = first frame with 5-s median filtered p>=0.5 (stand-in for Lane E HMM); videos with no predicted onset: 4 (counted as misses, excluded from MAE)"
+ },
+ {
+  "id": "ops_wheel_off_onset_heads_v1",
+  "name": "wheel_off: step-onset error on CrossTask/COIN test videos",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "crosstask+coin",
+  "split": "test videos (split by video)",
+  "n": 10,
+  "model": "dinov2l+geom linear head (heads_v1)",
+  "metrics": [
+   {
+    "name": "onset_mae",
+    "value": 32.03,
+    "ci_low": 9.609950000000001,
+    "ci_high": 60.133825,
+    "unit": "s"
+   },
+   {
+    "name": "onset_median_abs_error",
+    "value": 11.235,
+    "unit": "s"
+   },
+   {
+    "name": "onset_within_10s",
+    "value": 0.4,
+    "ci_low": 0.16818032970623614,
+    "ci_high": 0.6873262302663417,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "onset = end of the 'withdraw wheel'-type step; prediction = first frame with 5-s median filtered p>=0.5 (stand-in for Lane E HMM); videos with no predicted onset: 17 (counted as misses, excluded from MAE)"
+ },
+ {
+  "id": "ops_handcheck_car_present_student_heads_v1",
+  "name": "car_present on hand-labelled handheld test frames (student)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 70,
+  "model": "student",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 1.0,
+    "ci_low": 0.9479769375897331,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 1.0,
+    "ci_low": 0.9378821442127971,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 1.0,
+    "ci_low": 0.9378821442127971,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.020717393628081684,
+    "ci_low": 0.009241103430415133,
+    "ci_high": 0.035836380005191744,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 1.0,
+    "ci_low": 0.9479769375897331,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     12,
+     0
+    ],
+    [
+     0,
+     58
+    ]
+   ]
+  },
+  "notes": "positives=58; one annotator (Claude) labelled from the frames; "
+ },
+ {
+  "id": "ops_handcheck_raised_student_heads_v1",
+  "name": "raised on hand-labelled handheld test frames (student)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 35,
+  "model": "student",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.5714285714285714,
+    "ci_low": 0.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9142857142857143,
+    "ci_low": 0.7762072603410349,
+    "ci_high": 0.9704176317330301,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 1.0,
+    "ci_low": 0.34238022750665303,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.4,
+    "ci_low": 0.11762077423264783,
+    "ci_high": 0.769275718723987,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.12391502782246724,
+    "ci_low": 0.09700365891811663,
+    "ci_high": 0.19430767954082334,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 0.9142857142857143,
+    "ci_low": 0.7762072603410349,
+    "ci_high": 0.9704176317330301,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     30,
+     3
+    ],
+    [
+     0,
+     2
+    ]
+   ]
+  },
+  "notes": "positives=2; one annotator (Claude) labelled from the frames; "
+ },
+ {
+  "id": "ops_handcheck_wheel_off_student_heads_v1",
+  "name": "wheel_off on hand-labelled handheld test frames (student)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 45,
+  "model": "student",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9651162790697675,
+    "ci_low": 0.8863636363636364,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.6666666666666666,
+    "ci_low": 0.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9777777777777777,
+    "ci_low": 0.8843331823158513,
+    "ci_high": 0.9960664011171667,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.5,
+    "ci_low": 0.09453120573423074,
+    "ci_high": 0.9054687942657693,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 1.0,
+    "ci_low": 0.20654931437723745,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.11336006084452978,
+    "ci_low": 0.08843973915141545,
+    "ci_high": 0.1678838682946458,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 0.9777777777777777,
+    "ci_low": 0.8843331823158513,
+    "ci_high": 0.9960664011171667,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     43,
+     0
+    ],
+    [
+     1,
+     1
+    ]
+   ]
+  },
+  "notes": "positives=2; one annotator (Claude) labelled from the frames; "
+ },
+ {
+  "id": "ops_handcheck_hood_open_student_heads_v1",
+  "name": "hood_open on hand-labelled handheld test frames (student)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 42,
+  "model": "student",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.6666666666666666,
+    "ci_low": 0.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9523809523809523,
+    "ci_low": 0.8421014760304114,
+    "ci_high": 0.9868424750910944,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 1.0,
+    "ci_low": 0.34238022750665303,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.5,
+    "ci_low": 0.15003898915214947,
+    "ci_high": 0.8499610108478506,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.10000777698990354,
+    "ci_low": 0.06201122791831116,
+    "ci_high": 0.15960247259233953,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 0.9523809523809523,
+    "ci_low": 0.8421014760304114,
+    "ci_high": 0.9868424750910944,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     38,
+     2
+    ],
+    [
+     0,
+     2
+    ]
+   ]
+  },
+  "notes": "positives=2; one annotator (Claude) labelled from the frames; "
+ },
+ {
+  "id": "ops_handcheck_person_at_car_student_heads_v1",
+  "name": "person_at_car on hand-labelled handheld test frames (student)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 47,
+  "model": "student",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.946360153256705,
+    "ci_low": 0.8759395015316068,
+    "ci_high": 0.9891777816777817,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.8709677419354839,
+    "ci_low": 0.7636363636363637,
+    "ci_high": 0.9474130240856378,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.8297872340425532,
+    "ci_low": 0.6986022402737561,
+    "ci_high": 0.9111363612350974,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.9310344827586207,
+    "ci_low": 0.7803541984972431,
+    "ci_high": 0.9808787338305667,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.8181818181818182,
+    "ci_low": 0.6561176836533009,
+    "ci_high": 0.9138923179105933,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.0931727694794281,
+    "ci_low": 0.05863066553842362,
+    "ci_high": 0.19643055744087262,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 0.8297872340425532,
+    "ci_low": 0.6986022402737561,
+    "ci_high": 0.9111363612350974,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     12,
+     6
+    ],
+    [
+     2,
+     27
+    ]
+   ]
+  },
+  "notes": "positives=29; one annotator (Claude) labelled from the frames; "
+ },
+ {
+  "id": "ops_handcheck_work_student_heads_v1",
+  "name": "work on hand-labelled handheld test frames (student)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 66,
+  "model": "student",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.8923913043478261,
+    "ci_low": 0.8071816651362106,
+    "ci_high": 0.9592136854741896,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.5806451612903226,
+    "ci_low": 0.3157894736842105,
+    "ci_high": 0.7619747899159662,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.803030303030303,
+    "ci_low": 0.6916121200582055,
+    "ci_high": 0.8811136029638906,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.45,
+    "ci_low": 0.2581978582556243,
+    "ci_high": 0.6579146575496577,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.8181818181818182,
+    "ci_low": 0.523019438039156,
+    "ci_high": 0.9486323102539149,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.06710300462903374,
+    "ci_low": 0.050987730612635916,
+    "ci_high": 0.17119788591752372,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 0.803030303030303,
+    "ci_low": 0.6916121200582055,
+    "ci_high": 0.8811136029638906,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     44,
+     2
+    ],
+    [
+     11,
+     9
+    ]
+   ]
+  },
+  "notes": "positives=20; one annotator (Claude) labelled from the frames; "
+ },
+ {
+  "id": "ops_handcheck_car_present_teacher_heads_v1",
+  "name": "car_present on hand-labelled handheld test frames (teacher)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 70,
+  "model": "Qwen3-VL-8B-FP8 (teacher)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9870689655172413,
+    "ci_low": 0.9609140625,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.9655172413793104,
+    "ci_low": 0.9245243380371017,
+    "ci_high": 0.991869918699187,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9428571428571428,
+    "ci_low": 0.8620804952516177,
+    "ci_high": 0.9775562208992887,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.9655172413793104,
+    "ci_low": 0.8827085453568732,
+    "ci_high": 0.9904920716688347,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.9655172413793104,
+    "ci_low": 0.8827085453568732,
+    "ci_high": 0.9904920716688347,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.04139303152058352,
+    "ci_low": 0.016178446080511964,
+    "ci_high": 0.09949249672567129,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 0.9428571428571428,
+    "ci_low": 0.8620804952516177,
+    "ci_high": 0.9775562208992887,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     10,
+     2
+    ],
+    [
+     2,
+     56
+    ]
+   ]
+  },
+  "notes": "positives=58; one annotator (Claude) labelled from the frames; teacher labels are used as training targets where no human/derived label exists"
+ },
+ {
+  "id": "ops_handcheck_raised_teacher_heads_v1",
+  "name": "raised on hand-labelled handheld test frames (teacher)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 35,
+  "model": "Qwen3-VL-8B-FP8 (teacher)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9696969696969697,
+    "ci_low": 0.8787878787878788,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.6666666666666666,
+    "ci_low": 0.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9428571428571428,
+    "ci_low": 0.8139294257983507,
+    "ci_high": 0.9841868381428913,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 1.0,
+    "ci_low": 0.34238022750665303,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.5,
+    "ci_low": 0.15003898915214947,
+    "ci_high": 0.8499610108478506,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.05333519708007539,
+    "ci_low": 0.0011197402863818372,
+    "ci_high": 0.13778853553350726,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 0.9428571428571428,
+    "ci_low": 0.8139294257983507,
+    "ci_high": 0.9841868381428913,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     31,
+     2
+    ],
+    [
+     0,
+     2
+    ]
+   ]
+  },
+  "notes": "positives=2; one annotator (Claude) labelled from the frames; teacher labels are used as training targets where no human/derived label exists"
+ },
+ {
+  "id": "ops_handcheck_wheel_off_teacher_heads_v1",
+  "name": "wheel_off on hand-labelled handheld test frames (teacher)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 45,
+  "model": "Qwen3-VL-8B-FP8 (teacher)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.4444444444444444,
+    "ci_low": 0.0,
+    "ci_high": 0.8,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.8888888888888888,
+    "ci_low": 0.7650090300423141,
+    "ci_high": 0.9515952820543282,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 1.0,
+    "ci_low": 0.34238022750665303,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.2857142857142857,
+    "ci_low": 0.08221892400405678,
+    "ci_high": 0.6410655481673808,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.09600778238734278,
+    "ci_low": 0.023159780377983406,
+    "ci_high": 0.1801113240633299,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 0.8888888888888888,
+    "ci_low": 0.7650090300423141,
+    "ci_high": 0.9515952820543282,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     38,
+     5
+    ],
+    [
+     0,
+     2
+    ]
+   ]
+  },
+  "notes": "positives=2; one annotator (Claude) labelled from the frames; teacher labels are used as training targets where no human/derived label exists"
+ },
+ {
+  "id": "ops_handcheck_hood_open_teacher_heads_v1",
+  "name": "hood_open on hand-labelled handheld test frames (teacher)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 42,
+  "model": "Qwen3-VL-8B-FP8 (teacher)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 1.0,
+    "ci_low": 0.916201209134296,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 1.0,
+    "ci_low": 0.34238022750665303,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 1.0,
+    "ci_low": 0.34238022750665303,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.0011787408468694194,
+    "ci_low": 2.6363310414001552e-06,
+    "ci_high": 0.0034845357116945726,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 1.0,
+    "ci_low": 0.916201209134296,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     40,
+     0
+    ],
+    [
+     0,
+     2
+    ]
+   ]
+  },
+  "notes": "positives=2; one annotator (Claude) labelled from the frames; teacher labels are used as training targets where no human/derived label exists"
+ },
+ {
+  "id": "ops_handcheck_person_at_car_teacher_heads_v1",
+  "name": "person_at_car on hand-labelled handheld test frames (teacher)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 47,
+  "model": "Qwen3-VL-8B-FP8 (teacher)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.946360153256705,
+    "ci_low": 0.8683771929824562,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.9508196721311475,
+    "ci_low": 0.8846153846153846,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9361702127659575,
+    "ci_low": 0.8283738581687556,
+    "ci_high": 0.9780546147945668,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 1.0,
+    "ci_low": 0.8830302015002593,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.90625,
+    "ci_low": 0.7578184527161212,
+    "ci_high": 0.9675984487016337,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.07420804879596848,
+    "ci_low": 0.017403042329910166,
+    "ci_high": 0.15595575079812077,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 0.9361702127659575,
+    "ci_low": 0.8283738581687556,
+    "ci_high": 0.9780546147945668,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     15,
+     3
+    ],
+    [
+     0,
+     29
+    ]
+   ]
+  },
+  "notes": "positives=29; one annotator (Claude) labelled from the frames; teacher labels are used as training targets where no human/derived label exists"
+ },
+ {
+  "id": "ops_handcheck_work_teacher_heads_v1",
+  "name": "work on hand-labelled handheld test frames (teacher)",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "handheld/YouTube",
+  "dataset": "96 hand-labelled frames from K700 val + CrossTask/COIN test videos",
+  "split": "test",
+  "n": 66,
+  "model": "Qwen3-VL-8B-FP8 (teacher)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9652173913043478,
+    "ci_low": 0.9191598788638262,
+    "ci_high": 0.9947121376098649,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.8,
+    "ci_low": 0.6666666666666666,
+    "ci_high": 0.909170653907496,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.8484848484848485,
+    "ci_low": 0.7430709513021234,
+    "ci_high": 0.9155636301732872,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 1.0,
+    "ci_low": 0.8388748419471806,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.6666666666666666,
+    "ci_low": 0.4878005164454384,
+    "ci_high": 0.8076950191632386,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.13685379318087243,
+    "ci_low": 0.06730382172981117,
+    "ci_high": 0.22319602210015652,
+    "unit": "fraction"
+   },
+   {
+    "name": "agreement_with_human@0.5",
+    "value": 0.8484848484848485,
+    "ci_low": 0.7430709513021234,
+    "ci_high": 0.9155636301732872,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     36,
+     10
+    ],
+    [
+     0,
+     20
+    ]
+   ]
+  },
+  "notes": "positives=20; one annotator (Claude) labelled from the frames; teacher labels are used as training targets where no human/derived label exists"
+ },
+ {
+  "id": "ops_cctv_car_present_heads_v1",
+  "name": "car_present on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 458,
+  "model": "student (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.8752567488262911,
+    "ci_low": 0.6380456216385768,
+    "ci_high": 0.992564899688689,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.9537366548042705,
+    "ci_low": 0.9125675094393729,
+    "ci_high": 0.9846864746345467,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9148471615720524,
+    "ci_low": 0.8857086415004012,
+    "ci_high": 0.9370845329589139,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.9436619718309859,
+    "ci_low": 0.917542002659239,
+    "ci_high": 0.9618519977172589,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.9640287769784173,
+    "ci_low": 0.9415043966313605,
+    "ci_high": 0.9780818083125948,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.09337356992423798,
+    "ci_low": 0.06319548255643238,
+    "ci_high": 0.1322602810961545,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     17,
+     15
+    ],
+    [
+     24,
+     402
+    ]
+   ]
+  },
+  "notes": "positives=426; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_raised_heads_v1",
+  "name": "raised on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 362,
+  "model": "student (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9254205208047135,
+    "ci_low": 0.8024472054120616,
+    "ci_high": 0.9806692330878691,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.7377049180327869,
+    "ci_low": 0.5150279666409887,
+    "ci_high": 0.8960494184286474,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.6464088397790055,
+    "ci_low": 0.5958575472401871,
+    "ci_high": 0.6938854478312179,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.9836065573770492,
+    "ci_low": 0.9529178679740284,
+    "ci_high": 0.994409353281835,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.5901639344262295,
+    "ci_low": 0.5341816066249703,
+    "ci_high": 0.6439032923714811,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.1661591312638131,
+    "ci_low": 0.06481943617320521,
+    "ci_high": 0.3339094978978442,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     54,
+     125
+    ],
+    [
+     3,
+     180
+    ]
+   ]
+  },
+  "notes": "positives=183; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_wheel_off_heads_v1",
+  "name": "wheel_off on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 407,
+  "model": "student (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.7656677524429968,
+    "ci_low": 0.6043614810170974,
+    "ci_high": 0.9896120219354395,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.21238938053097345,
+    "ci_low": 0.0,
+    "ci_high": 0.7593260188087767,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.7813267813267813,
+    "ci_low": 0.7386406797511249,
+    "ci_high": 0.8187519472182574,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.12,
+    "ci_low": 0.06999406437019488,
+    "ci_high": 0.19812099426711421,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.9230769230769231,
+    "ci_low": 0.6668604907890041,
+    "ci_high": 0.9862895787574435,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.09698152407381402,
+    "ci_low": 0.06092556419568865,
+    "ci_high": 0.27219077423303667,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     306,
+     1
+    ],
+    [
+     88,
+     12
+    ]
+   ]
+  },
+  "notes": "positives=100; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_hood_open_heads_v1",
+  "name": "hood_open on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 443,
+  "model": "student (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9323127168809962,
+    "ci_low": 0.8672987523325415,
+    "ci_high": 0.9787160725278128,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.810304449648712,
+    "ci_low": 0.627772180280411,
+    "ci_high": 0.9164654125394726,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.8171557562076749,
+    "ci_low": 0.7784859252628787,
+    "ci_high": 0.8503724638884241,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.7521739130434782,
+    "ci_low": 0.6925388957704761,
+    "ci_high": 0.8035236954612479,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.8781725888324873,
+    "ci_low": 0.8251287363938504,
+    "ci_high": 0.916749961734026,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.10929825386667359,
+    "ci_low": 0.07900021841654167,
+    "ci_high": 0.14246272356741446,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     189,
+     24
+    ],
+    [
+     57,
+     173
+    ]
+   ]
+  },
+  "notes": "positives=230; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_person_at_car_heads_v1",
+  "name": "person_at_car on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 418,
+  "model": "student (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.7625065824117957,
+    "ci_low": 0.5964149558988239,
+    "ci_high": 0.9159148824422515,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.677570093457944,
+    "ci_low": 0.5340821946458449,
+    "ci_high": 0.7795650440524279,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.6698564593301436,
+    "ci_low": 0.6234068634219477,
+    "ci_high": 0.7132124920984347,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.6872037914691943,
+    "ci_low": 0.6217703671039596,
+    "ci_high": 0.745942645243127,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.6682027649769585,
+    "ci_low": 0.603107093555044,
+    "ci_high": 0.727446781563442,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.11691678879363687,
+    "ci_low": 0.034033066987932035,
+    "ci_high": 0.24731441353310787,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     135,
+     72
+    ],
+    [
+     66,
+     145
+    ]
+   ]
+  },
+  "notes": "positives=211; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_person_under_car_heads_v1",
+  "name": "person_under_car on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 438,
+  "model": "student (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.5074751991057705,
+    "ci_low": 0.16068564432200796,
+    "ci_high": 0.7603950292103822,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9611872146118722,
+    "ci_low": 0.9387269150650209,
+    "ci_high": 0.9756282047064563,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.1843181350088518,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.0049794005044472645,
+    "ci_low": 0.004967212245322821,
+    "ci_high": 0.04827695552696312,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     421,
+     0
+    ],
+    [
+     17,
+     0
+    ]
+   ]
+  },
+  "notes": "positives=17; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_work_heads_v1",
+  "name": "work on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 384,
+  "model": "student (heads_v1)",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.711777114209791,
+    "ci_low": 0.5521624529568181,
+    "ci_high": 0.8730074426695956,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.43410852713178294,
+    "ci_low": 0.18172616856827392,
+    "ci_high": 0.6645881043769957,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.6197916666666666,
+    "ci_low": 0.570278636852009,
+    "ci_high": 0.6669316920275892,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.3236994219653179,
+    "ci_low": 0.2584629292763359,
+    "ci_high": 0.39659533360618143,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.6588235294117647,
+    "ci_low": 0.5531313859346882,
+    "ci_high": 0.75078077803026,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.08573705932746331,
+    "ci_low": 0.06078021420306634,
+    "ci_high": 0.21879660961650893,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     182,
+     29
+    ],
+    [
+     117,
+     56
+    ]
+   ]
+  },
+  "notes": "positives=173; bay sequences=11; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_car_present_nolift_heads_v1",
+  "name": "car_present on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 458,
+  "model": "student (heads_v1), no fixed-camera lift rule",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.8752567488262911,
+    "ci_low": 0.6380456216385768,
+    "ci_high": 0.992564899688689,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.9537366548042705,
+    "ci_low": 0.9125675094393729,
+    "ci_high": 0.9846864746345467,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9148471615720524,
+    "ci_low": 0.8857086415004012,
+    "ci_high": 0.9370845329589139,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.9436619718309859,
+    "ci_low": 0.917542002659239,
+    "ci_high": 0.9618519977172589,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.9640287769784173,
+    "ci_low": 0.9415043966313605,
+    "ci_high": 0.9780818083125948,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.09337356992423798,
+    "ci_low": 0.06319548255643238,
+    "ci_high": 0.1322602810961545,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     17,
+     15
+    ],
+    [
+     24,
+     402
+    ]
+   ]
+  },
+  "notes": "positives=426; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_raised_nolift_heads_v1",
+  "name": "raised on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 362,
+  "model": "student (heads_v1), no fixed-camera lift rule",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.8633879781420765,
+    "ci_low": 0.7186059867527442,
+    "ci_high": 0.9503358493739085,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.7407407407407407,
+    "ci_low": 0.5164706914706916,
+    "ci_high": 0.8990125295715412,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.6519337016574586,
+    "ci_low": 0.6014994138734995,
+    "ci_high": 0.6991772791251283,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.9836065573770492,
+    "ci_low": 0.9529178679740284,
+    "ci_high": 0.994409353281835,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.594059405940594,
+    "ci_low": 0.5379230774956223,
+    "ci_high": 0.647840607174214,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.11130272383847947,
+    "ci_low": 0.042698778098670835,
+    "ci_high": 0.29291827834991374,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     56,
+     123
+    ],
+    [
+     3,
+     180
+    ]
+   ]
+  },
+  "notes": "positives=183; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_wheel_off_nolift_heads_v1",
+  "name": "wheel_off on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 407,
+  "model": "student (heads_v1), no fixed-camera lift rule",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.7656677524429968,
+    "ci_low": 0.6043614810170974,
+    "ci_high": 0.9896120219354395,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.21238938053097345,
+    "ci_low": 0.0,
+    "ci_high": 0.7593260188087767,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.7813267813267813,
+    "ci_low": 0.7386406797511249,
+    "ci_high": 0.8187519472182574,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.12,
+    "ci_low": 0.06999406437019488,
+    "ci_high": 0.19812099426711421,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.9230769230769231,
+    "ci_low": 0.6668604907890041,
+    "ci_high": 0.9862895787574435,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.09698152407381402,
+    "ci_low": 0.06092556419568865,
+    "ci_high": 0.27219077423303667,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     306,
+     1
+    ],
+    [
+     88,
+     12
+    ]
+   ]
+  },
+  "notes": "positives=100; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_hood_open_nolift_heads_v1",
+  "name": "hood_open on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 443,
+  "model": "student (heads_v1), no fixed-camera lift rule",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9323127168809962,
+    "ci_low": 0.8672987523325415,
+    "ci_high": 0.9787160725278128,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.810304449648712,
+    "ci_low": 0.627772180280411,
+    "ci_high": 0.9164654125394726,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.8171557562076749,
+    "ci_low": 0.7784859252628787,
+    "ci_high": 0.8503724638884241,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.7521739130434782,
+    "ci_low": 0.6925388957704761,
+    "ci_high": 0.8035236954612479,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.8781725888324873,
+    "ci_low": 0.8251287363938504,
+    "ci_high": 0.916749961734026,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.10929825386667359,
+    "ci_low": 0.07900021841654167,
+    "ci_high": 0.14246272356741446,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     189,
+     24
+    ],
+    [
+     57,
+     173
+    ]
+   ]
+  },
+  "notes": "positives=230; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_person_at_car_nolift_heads_v1",
+  "name": "person_at_car on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 418,
+  "model": "student (heads_v1), no fixed-camera lift rule",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.7625065824117957,
+    "ci_low": 0.5964149558988239,
+    "ci_high": 0.9159148824422515,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.677570093457944,
+    "ci_low": 0.5340821946458449,
+    "ci_high": 0.7795650440524279,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.6698564593301436,
+    "ci_low": 0.6234068634219477,
+    "ci_high": 0.7132124920984347,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.6872037914691943,
+    "ci_low": 0.6217703671039596,
+    "ci_high": 0.745942645243127,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.6682027649769585,
+    "ci_low": 0.603107093555044,
+    "ci_high": 0.727446781563442,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.11691678879363687,
+    "ci_low": 0.034033066987932035,
+    "ci_high": 0.24731441353310787,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     135,
+     72
+    ],
+    [
+     66,
+     145
+    ]
+   ]
+  },
+  "notes": "positives=211; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_person_under_car_nolift_heads_v1",
+  "name": "person_under_car on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 438,
+  "model": "student (heads_v1), no fixed-camera lift rule",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.5074751991057705,
+    "ci_low": 0.16068564432200796,
+    "ci_high": 0.7603950292103822,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9611872146118722,
+    "ci_low": 0.9387269150650209,
+    "ci_high": 0.9756282047064563,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.1843181350088518,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.0049794005044472645,
+    "ci_low": 0.004967212245322821,
+    "ci_high": 0.04827695552696312,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     421,
+     0
+    ],
+    [
+     17,
+     0
+    ]
+   ]
+  },
+  "notes": "positives=17; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_work_nolift_heads_v1",
+  "name": "work on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 384,
+  "model": "student (heads_v1), no fixed-camera lift rule",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.711777114209791,
+    "ci_low": 0.5521624529568181,
+    "ci_high": 0.8730074426695956,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.43410852713178294,
+    "ci_low": 0.18172616856827392,
+    "ci_high": 0.6645881043769957,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.6197916666666666,
+    "ci_low": 0.570278636852009,
+    "ci_high": 0.6669316920275892,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.3236994219653179,
+    "ci_low": 0.2584629292763359,
+    "ci_high": 0.39659533360618143,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.6588235294117647,
+    "ci_low": 0.5531313859346882,
+    "ci_high": 0.75078077803026,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.08573705932746331,
+    "ci_low": 0.06078021420306634,
+    "ci_high": 0.21879660961650893,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     182,
+     29
+    ],
+    [
+     117,
+     56
+    ]
+   ]
+  },
+  "notes": "positives=173; bay sequences=11; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_car_present_vlm",
+  "name": "car_present on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 458,
+  "model": "Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.976269072769953,
+    "ci_low": 0.9291749364223506,
+    "ci_high": 0.9998364568599717,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.9714937286202965,
+    "ci_low": 0.9313311848386826,
+    "ci_high": 0.9941310859809566,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9454148471615721,
+    "ci_low": 0.9206632679021788,
+    "ci_high": 0.9627567720436127,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 1.0,
+    "ci_low": 0.9910630797893867,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.9445676274944568,
+    "ci_low": 0.9194514809477912,
+    "ci_high": 0.9621743959889917,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.054140070949693864,
+    "ci_low": 0.01158057305229494,
+    "ci_high": 0.1227954250206404,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     7,
+     25
+    ],
+    [
+     0,
+     426
+    ]
+   ]
+  },
+  "notes": "positives=426; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_raised_vlm",
+  "name": "raised on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 362,
+  "model": "Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9731049851940043,
+    "ci_low": 0.9184754152401564,
+    "ci_high": 0.9980267403758755,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.6936416184971098,
+    "ci_low": 0.46700310098955145,
+    "ci_high": 0.8661293118391402,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.5607734806629834,
+    "ci_low": 0.509275634436855,
+    "ci_high": 0.6109950427625961,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.9836065573770492,
+    "ci_low": 0.9529178679740284,
+    "ci_high": 0.994409353281835,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.5357142857142857,
+    "ci_low": 0.48228544911535953,
+    "ci_high": 0.5883357166578923,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.41623092164754516,
+    "ci_low": 0.21412341240287064,
+    "ci_high": 0.6062367963364937,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     23,
+     156
+    ],
+    [
+     3,
+     180
+    ]
+   ]
+  },
+  "notes": "positives=183; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_wheel_off_vlm",
+  "name": "wheel_off on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 407,
+  "model": "Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9916938110749186,
+    "ci_low": 0.9642760554490982,
+    "ci_high": 0.9997894475083842,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.8711111111111111,
+    "ci_low": 0.4925045823514009,
+    "ci_high": 0.9841362126245846,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9287469287469288,
+    "ci_low": 0.899542175901868,
+    "ci_high": 0.9499339237152256,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.98,
+    "ci_low": 0.929988209271456,
+    "ci_high": 0.9944980324498376,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.784,
+    "ci_low": 0.7039729577824652,
+    "ci_high": 0.8470918985912055,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.035054751243769056,
+    "ci_low": 0.00849178228109979,
+    "ci_high": 0.11862536572377427,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     280,
+     27
+    ],
+    [
+     2,
+     98
+    ]
+   ]
+  },
+  "notes": "positives=100; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_hood_open_vlm",
+  "name": "hood_open on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 443,
+  "model": "Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9981526842212697,
+    "ci_low": 0.9872405278115183,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.9723991507430998,
+    "ci_low": 0.9016190218127625,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9706546275395034,
+    "ci_low": 0.9504452795483896,
+    "ci_high": 0.9827716182313019,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.9956521739130435,
+    "ci_low": 0.9757874866762476,
+    "ci_high": 0.9992320891930032,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.950207468879668,
+    "ci_low": 0.9149975267846534,
+    "ci_high": 0.9712902818454879,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.02244941377631976,
+    "ci_low": 0.00014150266562158463,
+    "ci_high": 0.06848854910124487,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     201,
+     12
+    ],
+    [
+     1,
+     229
+    ]
+   ]
+  },
+  "notes": "positives=230; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_person_at_car_vlm",
+  "name": "person_at_car on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 418,
+  "model": "Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9422350436156329,
+    "ci_low": 0.8870285885603137,
+    "ci_high": 0.9846052911398072,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.8788598574821853,
+    "ci_low": 0.8060771900033223,
+    "ci_high": 0.9250049212598426,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.8779904306220095,
+    "ci_low": 0.8431260794928679,
+    "ci_high": 0.9059705144820676,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.8767772511848341,
+    "ci_low": 0.8255749413350759,
+    "ci_high": 0.9145056784520984,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.8809523809523809,
+    "ci_low": 0.8301678623413272,
+    "ci_high": 0.9180500037468379,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.09008320807612008,
+    "ci_low": 0.05266968284152764,
+    "ci_high": 0.14247187472346332,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     182,
+     25
+    ],
+    [
+     26,
+     185
+    ]
+   ]
+  },
+  "notes": "positives=211; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_person_under_car_vlm",
+  "name": "person_under_car on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 438,
+  "model": "Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.7281682269107168,
+    "ci_low": 0.5388034028812718,
+    "ci_high": 0.9066048692831942,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.15,
+    "ci_low": 0.0,
+    "ci_high": 0.5517608217168012,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.8447488584474886,
+    "ci_low": 0.8078514974721942,
+    "ci_high": 0.8756515871094546,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.35294117647058826,
+    "ci_low": 0.17309720397243744,
+    "ci_high": 0.5869963651478132,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.09523809523809523,
+    "ci_low": 0.04438348427689201,
+    "ci_high": 0.19261701062836892,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.13622046144661387,
+    "ci_low": 0.022546672397154365,
+    "ci_high": 0.30948001587043683,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     364,
+     57
+    ],
+    [
+     11,
+     6
+    ]
+   ]
+  },
+  "notes": "positives=17; bay sequences=12; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ },
+ {
+  "id": "ops_cctv_work_vlm",
+  "name": "work on public workshop CCTV/timelapse clips",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "CCTV (fixed-camera public workshop clips)",
+  "dataset": "6 public YouTube clips, hand-labelled bay ROIs",
+  "split": "test only (never trained on)",
+  "n": 384,
+  "model": "Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "auroc",
+    "value": 0.9582910993616963,
+    "ci_low": 0.9246937179792685,
+    "ci_high": 0.9812693325903573,
+    "unit": "fraction"
+   },
+   {
+    "name": "f1@0.5",
+    "value": 0.8908554572271387,
+    "ci_low": 0.78108483817853,
+    "ci_high": 0.9422681282527414,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@0.5",
+    "value": 0.9036458333333334,
+    "ci_low": 0.8700102279141008,
+    "ci_high": 0.9292854454845453,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@0.5",
+    "value": 0.8728323699421965,
+    "ci_low": 0.814966861730172,
+    "ci_high": 0.9145000905346681,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@0.5",
+    "value": 0.9096385542168675,
+    "ci_low": 0.8562717896271411,
+    "ci_high": 0.9444749829472666,
+    "unit": "fraction"
+   },
+   {
+    "name": "ece",
+    "value": 0.07498209866724152,
+    "ci_low": 0.032140350582158174,
+    "ci_high": 0.12834098930083326,
+    "unit": "fraction"
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "neg",
+    "pos"
+   ],
+   "matrix": [
+    [
+     196,
+     15
+    ],
+    [
+     22,
+     151
+    ]
+   ]
+  },
+  "notes": "positives=173; bay sequences=11; labels by one annotator (Claude) from frames; CI bootstrap over bay sequences"
+ }
+]

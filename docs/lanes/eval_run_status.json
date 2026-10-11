@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-10-11T02:32:15+00:00",
+  "cuda": true,
+  "jury_media": "96 items; staged 0 new files to /home/amirkhon/seen_fast/eval/jury (0.30 GB); manifest -> /mnt/bigdrive/amirkhon/seen/runs/eval/latest/eval/manifests/jury.jsonl (pull into eval/manifests/) (1s)",
+  "adopt": "ok: 5/5 adopted (1s)",
+  "pools": "ok: 5 pools scanned; 9 jury items appear in some lane pool (excluded from the clean subset) (1s)",
+  "audit": "ok: 11 training lists audited against ['jury'], all PASS; not audited (> 30000 files, crop lists): ['ident/ocr_main (126578 files)', 'ident/ocr_real_only (62086 files)', 'ops/heads_v1 (78379 files)'] (2s)",
+  "jury": "ok (116s)",
+  "bench": "ok (849s)",
+  "cost": "ok (0s)",
+  "failures": "89 cases (10s)",
+  "lane_predictors_present": "flow, ident, inspect, ops",
+  "report": "ok: 519 components from {'eval_results.json': 3, 'flow_results.json': 316, 'ident_results.json': 104, 'inspect_results.json': 31, 'ops_cascade_results.json': 7, 'ops_results.json': 43, 'sim_results.json': 15}, 0 collection problems; lanes missing: [] (1s)"
+}

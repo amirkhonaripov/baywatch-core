@@ -1,0 +1,72 @@
+[
+ {
+  "id": "flow_router_00",
+  "component": "router.so400m.blend",
+  "file": "router_00_street_as_unknown.jpg",
+  "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'unknown' with p=0.99. Faces blurred with seen.blur.",
+  "category": "router: street -> unknown"
+ },
+ {
+  "id": "flow_router_01",
+  "component": "router.so400m.blend",
+  "file": "router_01_street_as_unknown.jpg",
+  "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'unknown' with p=0.98. Faces blurred with seen.blur.",
+  "category": "router: street -> unknown"
+ },
+ {
+  "id": "flow_router_02",
+  "component": "router.so400m.blend",
+  "file": "router_02_closeup_as_unknown.jpg",
+  "description": "held-out source commons_engines (wikimedia_commons): true scene 'closeup', router answered 'unknown' with p=0.52. Faces blurred with seen.blur.",
+  "category": "router: closeup -> unknown"
+ },
+ {
+  "id": "flow_router_03",
+  "component": "router.so400m.blend",
+  "file": "router_03_closeup_as_unknown.jpg",
+  "description": "held-out source commons_wheels (wikimedia_commons): true scene 'closeup', router answered 'unknown' with p=0.52. Faces blurred with seen.blur.",
+  "category": "router: closeup -> unknown"
+ },
+ {
+  "id": "flow_router_04",
+  "component": "router.so400m.blend",
+  "file": "router_04_wash_as_bay.jpg",
+  "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'bay' with p=0.91. Faces blurred with seen.blur.",
+  "category": "router: wash -> bay"
+ },
+ {
+  "id": "flow_router_05",
+  "component": "router.so400m.blend",
+  "file": "router_05_wash_as_bay.jpg",
+  "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'bay' with p=0.91. Faces blurred with seen.blur.",
+  "category": "router: wash -> bay"
+ },
+ {
+  "id": "flow_router_06",
+  "component": "router.so400m.blend",
+  "file": "router_06_wash_as_unknown.jpg",
+  "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'unknown' with p=0.52. Faces blurred with seen.blur.",
+  "category": "router: wash -> unknown"
+ },
+ {
+  "id": "flow_router_07",
+  "component": "router.so400m.blend",
+  "file": "router_07_wash_as_unknown.jpg",
+  "description": "held-out source rf_washing_car (roboflow:um-84bee/washing-car (via ops lane)): true scene 'wash', router answered 'unknown' with p=0.51. Faces blurred with seen.blur.",
+  "category": "router: wash -> unknown"
+ },
+ {
+  "id": "flow_router_08",
+  "component": "router.so400m.blend",
+  "file": "router_08_street_as_motorcycle.jpg",
+  "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'motorcycle' with p=0.72. Faces blurred with seen.blur.",
+  "category": "router: street -> motorcycle"
+ },
+ {
+  "id": "flow_router_09",
+  "component": "router.so400m.blend",
+  "file": "router_09_street_as_motorcycle.jpg",
+  "description": "held-out source coco_street (coco_val2017): true scene 'street', router answered 'motorcycle' with p=0.61. Faces blurred with seen.blur.",
+  "category": "router: street -> motorcycle"
+ }
+]

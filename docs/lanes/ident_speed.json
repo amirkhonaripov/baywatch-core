@@ -1,0 +1,82 @@
+[
+ {
+  "stage": "plate OCR per crop (decode=argmax, rotation search=False)",
+  "hardware": "pop-os GPU1 (RTX PRO 5000 Blackwell, shared)",
+  "runtime": "onnxruntime CUDA EP",
+  "batch": 1,
+  "p50_ms": 1.3449899852275848,
+  "p95_ms": 3.2194151310250163,
+  "fps": 743.4999598385788,
+  "notes": "299 real-UZ test crops; ONNX has a static batch of 1"
+ },
+ {
+  "stage": "plate OCR per crop (decode=auto, rotation search=True)",
+  "hardware": "pop-os GPU1 (RTX PRO 5000 Blackwell, shared)",
+  "runtime": "onnxruntime CUDA EP",
+  "batch": 1,
+  "p50_ms": 2.8386679477989674,
+  "p95_ms": 6.430668290704489,
+  "fps": 352.2779058309286,
+  "notes": "299 real-UZ test crops; ONNX has a static batch of 1"
+ },
+ {
+  "stage": "plate OCR per crop (decode=argmax, rotation search=False)",
+  "hardware": "CPU (shared box, 32 threads)",
+  "runtime": "onnxruntime CPU EP",
+  "batch": 1,
+  "p50_ms": 13.146111974492669,
+  "p95_ms": 13.407002086751163,
+  "fps": 76.068118234524,
+  "notes": "299 real-UZ test crops; ONNX has a static batch of 1"
+ },
+ {
+  "stage": "plate OCR per crop (decode=auto, rotation search=True)",
+  "hardware": "CPU (shared box, 32 threads)",
+  "runtime": "onnxruntime CPU EP",
+  "batch": 1,
+  "p50_ms": 59.460269985720515,
+  "p95_ms": 62.35816502012312,
+  "fps": 16.817952562949205,
+  "notes": "299 real-UZ test crops; ONNX has a static batch of 1"
+ },
+ {
+  "stage": "plate detector per image (small 512px)",
+  "hardware": "pop-os GPU1 (RTX PRO 5000 Blackwell, shared)",
+  "runtime": "onnxruntime CUDA EP",
+  "batch": 1,
+  "p50_ms": 5.170047632418573,
+  "p95_ms": 5.305218300782144,
+  "fps": 193.4218156385138,
+  "notes": "640x640 photos, includes resize + decode of boxes"
+ },
+ {
+  "stage": "plate detector per image (small 512px)",
+  "hardware": "CPU (shared box, 32 threads)",
+  "runtime": "onnxruntime CPU EP",
+  "batch": 1,
+  "p50_ms": 127.06678593531251,
+  "p95_ms": 434.53208656283095,
+  "fps": 7.86987718811966,
+  "notes": "640x640 photos, includes resize + decode of boxes"
+ },
+ {
+  "stage": "ident predictor per frame (detect + read + vote)",
+  "hardware": "pop-os GPU1 (RTX PRO 5000 Blackwell, shared)",
+  "runtime": "onnxruntime CUDA EP",
+  "batch": 1,
+  "p50_ms": 8.832269348204136,
+  "p95_ms": 9.034896385855973,
+  "fps": 113.22118479135035,
+  "notes": "frames = real-UZ test photos (one plate each)"
+ },
+ {
+  "stage": "ident predictor per frame (detect + read + vote)",
+  "hardware": "CPU (shared box, 32 threads)",
+  "runtime": "onnxruntime CPU EP",
+  "batch": 1,
+  "p50_ms": 232.2443313896656,
+  "p95_ms": 256.6217886749655,
+  "fps": 4.305810152679998,
+  "notes": "frames = real-UZ test photos (one plate each)"
+ }
+]

@@ -1,0 +1,82 @@
+{
+ "damage/cardd_test": {
+  "images": 543,
+  "clusters": 543,
+  "largest_cluster": 1
+ },
+ "damage/cardd_trainpart": {
+  "images": 2266,
+  "clusters": 2249,
+  "largest_cluster": 6
+ },
+ "damage/cococardamage": {
+  "images": 69,
+  "clusters": 66,
+  "largest_cluster": 2
+ },
+ "damage/hitl_test": {
+  "images": 82,
+  "clusters": 81,
+  "largest_cluster": 2
+ },
+ "damage/jijo_roboflow": {
+  "images": 2323,
+  "clusters": 1859,
+  "largest_cluster": 12
+ },
+ "damage/syndcar": {
+  "images": 231,
+  "clusters": 184,
+  "largest_cluster": 3
+ },
+ "damage/vehide_val": {
+  "images": 2322,
+  "clusters": 2316,
+  "largest_cluster": 2
+ },
+ "parts/cardamagepanel": {
+  "images": 327,
+  "clusters": 325,
+  "largest_cluster": 2
+ },
+ "parts/carparts_test": {
+  "images": 548,
+  "clusters": 420,
+  "largest_cluster": 5
+ },
+ "parts/hitl_parts_test": {
+  "images": 168,
+  "clusters": 168,
+  "largest_cluster": 1
+ },
+ "parts/syndcar_parts": {
+  "images": 231,
+  "clusters": 184,
+  "largest_cluster": 3
+ },
+ "dot/chars_test": {
+  "images": 558,
+  "clusters": 304,
+  "largest_cluster": 18
+ },
+ "dot/region_test": {
+  "images": 97,
+  "clusters": 96,
+  "largest_cluster": 2
+ },
+ "tyre/sameer": {
+  "images": 547,
+  "clusters": 539,
+  "largest_cluster": 2
+ },
+ "tyre/tyrenet_test": {
+  "images": 357,
+  "clusters": 352,
+  "largest_cluster": 2
+ },
+ "tyre/warcoder": {
+  "images": 1854,
+  "clusters": 1802,
+  "largest_cluster": 4
+ }
+}

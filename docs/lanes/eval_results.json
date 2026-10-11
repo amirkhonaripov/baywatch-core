@@ -1,0 +1,278 @@
+[
+  {
+    "id": "e2e.jury.routing",
+    "name": "Scene routing on jury-style inputs",
+    "lane": "router",
+    "n": 96,
+    "metrics": [
+      {
+        "name": "route_accuracy",
+        "value": 0.8854166666666666,
+        "ci_low": 0.8063737876272061,
+        "ci_high": 0.9348012800658358,
+        "unit": "fraction"
+      },
+      {
+        "name": "route_accuracy_excl_hard",
+        "value": 0.918918918918919,
+        "ci_low": 0.8341805755644218,
+        "ci_high": 0.9623101498061737,
+        "unit": "fraction"
+      },
+      {
+        "name": "route_primary_scene_accuracy",
+        "value": 0.625,
+        "ci_low": 0.5251071844189874,
+        "ci_high": 0.7152739186165937,
+        "unit": "fraction"
+      },
+      {
+        "name": "scene_recall_gate",
+        "value": 0.3333333333333333,
+        "ci_low": 0.1517632443971473,
+        "ci_high": 0.5828645226148023,
+        "unit": "fraction"
+      },
+      {
+        "name": "scene_recall_bay",
+        "value": 1.0,
+        "ci_low": 0.6456695649333126,
+        "ci_high": 1.0,
+        "unit": "fraction"
+      },
+      {
+        "name": "scene_recall_wash",
+        "value": 1.0,
+        "ci_low": 0.6755924351161198,
+        "ci_high": 1.0,
+        "unit": "fraction"
+      },
+      {
+        "name": "scene_recall_street",
+        "value": 0.3793103448275862,
+        "ci_low": 0.2268802210080984,
+        "ci_high": 0.5599745579401147,
+        "unit": "fraction"
+      },
+      {
+        "name": "scene_recall_closeup",
+        "value": 0.875,
+        "ci_low": 0.5291118177871464,
+        "ci_high": 0.9775825085499433,
+        "unit": "fraction"
+      },
+      {
+        "name": "scene_recall_motorcycle",
+        "value": 1.0,
+        "ci_low": 0.6755924351161198,
+        "ci_high": 1.0,
+        "unit": "fraction"
+      },
+      {
+        "name": "scene_recall_unknown",
+        "value": 0.6666666666666666,
+        "ci_low": 0.4537345197425524,
+        "ci_high": 0.8280524739491653,
+        "unit": "fraction"
+      },
+      {
+        "name": "unknown_recall",
+        "value": 0.6666666666666666,
+        "ci_low": 0.4537345197425524,
+        "ci_high": 0.8280524739491653,
+        "unit": "fraction"
+      },
+      {
+        "name": "unknown_precision",
+        "value": 0.7142857142857143,
+        "ci_low": 0.5004361928391441,
+        "ci_high": 0.8618613704787788,
+        "unit": "fraction"
+      },
+      {
+        "name": "route_accuracy_clean",
+        "value": 0.8809523809523809,
+        "ci_low": 0.794550842255297,
+        "ci_high": 0.9340345075240096,
+        "unit": "fraction"
+      }
+    ],
+    "confusion": {
+      "labels": [
+        "gate",
+        "bay",
+        "wash",
+        "street",
+        "closeup",
+        "motorcycle",
+        "unknown"
+      ],
+      "matrix": [
+        [
+          5,
+          0,
+          0,
+          7,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          11,
+          14,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          7,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          3,
+          2,
+          14
+        ]
+      ]
+    },
+    "notes": "Scene label = single annotator (Lane G agent) with a list of acceptable scenes per input; route_accuracy accepts any listed acceptable scene; route_primary_scene_accuracy and scene_recall_* use the single primary label (confusion matrix). 'hard' = toys, drawings, trains, tiny or partial vehicles. '_clean' metrics exclude inputs that appear in another lane's data pool or training list (Commons overlap, see eval_jury_pool_overlap.json).",
+    "data_kind": "real",
+    "domain": "mixed web photos and short videos (Wikimedia Commons), not CCTV",
+    "dataset": "Seen jury set v1 (96 inputs, Wikimedia Commons CC/PD)",
+    "split": "held out: eval/manifests/jury.jsonl",
+    "model": "seen.pipeline.default_pipeline [rfdetr-large-flow=rfdetr-large-flow-v1/torch, ident-plate=0.1.0, Scene router (SigLIP2 + linear probe)=siglip2-so400m-patch14-384+blend-v1, ops-cascade=ops-bay-states@0.1+none, seen-inspect=0.1.0]",
+    "predictions_csv": "runs/eval/jury/20261011T021559Z/outcomes.csv"
+  },
+  {
+    "id": "e2e.jury.visit",
+    "name": "Visit created iff a vehicle is present (jury set)",
+    "lane": "e2e",
+    "n": 96,
+    "metrics": [
+      {
+        "name": "visit_iff_vehicle_accuracy",
+        "value": 0.9166666666666666,
+        "ci_low": 0.8441009676029043,
+        "ci_high": 0.9571693758490329,
+        "unit": "fraction"
+      },
+      {
+        "name": "visit_iff_vehicle_accuracy_excl_hard",
+        "value": 0.9864864864864865,
+        "ci_low": 0.9273464348015678,
+        "ci_high": 0.9976105365965432,
+        "unit": "fraction"
+      },
+      {
+        "name": "false_visit_rate_on_no_vehicle_inputs",
+        "value": 0.2413793103448276,
+        "ci_low": 0.12218422442520088,
+        "ci_high": 0.42107601617811335,
+        "unit": "fraction"
+      },
+      {
+        "name": "missed_visit_rate_on_vehicle_inputs",
+        "value": 0.014925373134328358,
+        "ci_low": 0.0026395717340788882,
+        "ci_high": 0.07981862319778105,
+        "unit": "fraction"
+      },
+      {
+        "name": "visit_iff_vehicle_accuracy_clean",
+        "value": 0.9047619047619048,
+        "ci_low": 0.8231736440500729,
+        "ci_high": 0.9509482900904406,
+        "unit": "fraction"
+      }
+    ],
+    "notes": "A visit must be created only when a real road vehicle is in view.",
+    "data_kind": "real",
+    "domain": "mixed web photos and short videos (Wikimedia Commons), not CCTV",
+    "dataset": "Seen jury set v1 (96 inputs, Wikimedia Commons CC/PD)",
+    "split": "held out: eval/manifests/jury.jsonl",
+    "model": "seen.pipeline.default_pipeline [rfdetr-large-flow=rfdetr-large-flow-v1/torch, ident-plate=0.1.0, Scene router (SigLIP2 + linear probe)=siglip2-so400m-patch14-384+blend-v1, ops-cascade=ops-bay-states@0.1+none, seen-inspect=0.1.0]",
+    "predictions_csv": "runs/eval/jury/20261011T021559Z/outcomes.csv"
+  },
+  {
+    "id": "e2e.jury.behaviour",
+    "name": "Plate reading, module selection and latency (jury set)",
+    "lane": "e2e",
+    "n": 96,
+    "metrics": [
+      {
+        "name": "plate_read_rate_when_visible",
+        "value": 0.9411764705882353,
+        "ci_low": 0.7301796936242461,
+        "ci_high": 0.9895395990150025,
+        "unit": "fraction"
+      },
+      {
+        "name": "modules_as_expected",
+        "value": 0.4479166666666667,
+        "ci_low": 0.3523575930459819,
+        "ci_high": 0.5474836140225261,
+        "unit": "fraction"
+      },
+      {
+        "name": "latency_image_p50",
+        "value": 262.2,
+        "unit": "ms"
+      },
+      {
+        "name": "latency_video_frame_p50",
+        "value": 388.3,
+        "unit": "ms"
+      },
+      {
+        "name": "latency_video_p50",
+        "value": 6485.6,
+        "unit": "ms"
+      }
+    ],
+    "notes": "plate_read = any plate text returned when a plate is visible (correctness of text not scored: no text labels). modules_as_expected counts only modules that are deployed.",
+    "data_kind": "real",
+    "domain": "mixed web photos and short videos (Wikimedia Commons), not CCTV",
+    "dataset": "Seen jury set v1 (96 inputs, Wikimedia Commons CC/PD)",
+    "split": "held out: eval/manifests/jury.jsonl",
+    "model": "seen.pipeline.default_pipeline [rfdetr-large-flow=rfdetr-large-flow-v1/torch, ident-plate=0.1.0, Scene router (SigLIP2 + linear probe)=siglip2-so400m-patch14-384+blend-v1, ops-cascade=ops-bay-states@0.1+none, seen-inspect=0.1.0]",
+    "predictions_csv": "runs/eval/jury/20261011T021559Z/outcomes.csv"
+  }
+]

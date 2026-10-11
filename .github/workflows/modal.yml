@@ -1,0 +1,41 @@
+# Deploy the Seen API to Modal. Repo secrets needed: MODAL_TOKEN_ID, MODAL_TOKEN_SECRET.
+# Optional repo variables: SEEN_MODAL_GPU (default L4), SEEN_CORS_ORIGINS (extra origins), SEEN_DISABLED=1 (kill switch).
+name: modal
+
+on:
+  push:
+    branches: [main]
+    paths: ["serve/**", "seen/**", "lanes/**", "sim/**", "contracts/**", ".github/workflows/modal.yml"]
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: "public = L4, scale to zero (the website's API); demo = L40S, 15-min keep-warm, app seen-demo (live defence only)"
+        default: public
+        type: choice
+        options: [public, demo]
+
+concurrency:
+  group: modal-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install modal==1.6.1
+      - name: Deploy
+        run: modal deploy serve/modal_app.py
+        env:
+          MODAL_TOKEN_ID: ${{ secrets.MODAL_TOKEN_ID }}
+          MODAL_TOKEN_SECRET: ${{ secrets.MODAL_TOKEN_SECRET }}
+          SEEN_MODAL_APP: ${{ inputs.profile == 'demo' && 'seen-demo' || 'seen' }}
+          SEEN_MODAL_GPU: ${{ inputs.profile == 'demo' && 'L40S' || vars.SEEN_MODAL_GPU || 'L4' }}
+          SEEN_MODAL_VLM_GPU: ${{ inputs.profile == 'demo' && 'L40S' || 'L4' }}
+          SEEN_MODAL_SCALEDOWN: ${{ inputs.profile == 'demo' && '900' || '120' }}
+          SEEN_CORS_ORIGINS: ${{ vars.SEEN_CORS_ORIGINS }}
+          SEEN_DISABLED: ${{ vars.SEEN_DISABLED || '0' }}
+          SEEN_INSPECTION: "1"

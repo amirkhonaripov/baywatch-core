@@ -1,0 +1,66 @@
+openapi: 3.1.0
+info:
+  title: Seen API
+  version: 0.1.0
+  description: >
+    Inference API served from Modal. Bodies use the JSON types in events.schema.json /
+    workorder.schema.json / metrics.schema.json (referenced by name below).
+    Video is never uploaded: the browser samples frames (2 fps, max 720p, max 60 s) and uploads JPEGs.
+paths:
+  /health:
+    get:
+      summary: Liveness + loaded model versions
+      responses:
+        "200": { description: "{status, model_versions, gpu}" }
+  /catalogue:
+    get:
+      summary: Work-order catalogue (Catalogue)
+      responses:
+        "200": { description: Catalogue }
+  /analyze/image:
+    post:
+      summary: Analyse a single photo synchronously
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [file]
+              properties:
+                file: { type: string, format: binary }
+                zones: { type: string, description: "JSON array of Zone" }
+                work_order: { type: string, description: "JSON WorkOrder (optional)" }
+                simulate: { type: boolean, description: "Also return simulated_continuation" }
+      responses:
+        "200": { description: AnalysisResult }
+  /analyze/frames:
+    post:
+      summary: Start an async job over a sequence of sampled frames
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [files, timestamps]
+              properties:
+                files: { type: array, items: { type: string, format: binary } }
+                timestamps: { type: string, description: "JSON array of seconds, same order as files" }
+                zones: { type: string }
+                work_order: { type: string }
+                simulate: { type: boolean }
+      responses:
+        "200": { description: "JobStatus (status=queued)" }
+  /jobs/{job_id}:
+    get:
+      summary: Poll a job
+      parameters:
+        - { name: job_id, in: path, required: true, schema: { type: string } }
+      responses:
+        "200": { description: JobStatus }
+  /evidence/{name}:
+    get:
+      summary: Face-blurred evidence JPEG
+      parameters:
+        - { name: name, in: path, required: true, schema: { type: string } }
+      responses:
+        "200": { description: image/jpeg }

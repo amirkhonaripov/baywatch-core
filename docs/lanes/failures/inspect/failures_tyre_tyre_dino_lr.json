@@ -1,0 +1,86 @@
+[
+ {
+  "id": "tyre_warcoder_defective_predicted_good_00",
+  "component": "inspect.tyre_condition.tyre_dino_lr.warcoder",
+  "file": "tyre_warcoder_defective_predicted_good_00.jpg",
+  "category": "defective_predicted_good",
+  "description": "warcoder image labelled defective (source class defective), model P(defective)=0.00"
+ },
+ {
+  "id": "tyre_warcoder_defective_predicted_good_01",
+  "component": "inspect.tyre_condition.tyre_dino_lr.warcoder",
+  "file": "tyre_warcoder_defective_predicted_good_01.jpg",
+  "category": "defective_predicted_good",
+  "description": "warcoder image labelled defective (source class defective), model P(defective)=0.00"
+ },
+ {
+  "id": "tyre_warcoder_defective_predicted_good_02",
+  "component": "inspect.tyre_condition.tyre_dino_lr.warcoder",
+  "file": "tyre_warcoder_defective_predicted_good_02.jpg",
+  "category": "defective_predicted_good",
+  "description": "warcoder image labelled defective (source class defective), model P(defective)=0.00"
+ },
+ {
+  "id": "tyre_warcoder_good_predicted_defective_00",
+  "component": "inspect.tyre_condition.tyre_dino_lr.warcoder",
+  "file": "tyre_warcoder_good_predicted_defective_00.jpg",
+  "category": "good_predicted_defective",
+  "description": "warcoder image labelled good (source class good), model P(defective)=0.96"
+ },
+ {
+  "id": "tyre_warcoder_good_predicted_defective_01",
+  "component": "inspect.tyre_condition.tyre_dino_lr.warcoder",
+  "file": "tyre_warcoder_good_predicted_defective_01.jpg",
+  "category": "good_predicted_defective",
+  "description": "warcoder image labelled good (source class good), model P(defective)=0.88"
+ },
+ {
+  "id": "tyre_warcoder_good_predicted_defective_02",
+  "component": "inspect.tyre_condition.tyre_dino_lr.warcoder",
+  "file": "tyre_warcoder_good_predicted_defective_02.jpg",
+  "category": "good_predicted_defective",
+  "description": "warcoder image labelled good (source class good), model P(defective)=0.85"
+ },
+ {
+  "id": "tyre_sameer_defective_predicted_good_00",
+  "component": "inspect.tyre_condition.tyre_dino_lr.sameer",
+  "file": "tyre_sameer_defective_predicted_good_00.jpg",
+  "category": "defective_predicted_good",
+  "description": "sameer image labelled defective (source class UNUSABLE), model P(defective)=0.00"
+ },
+ {
+  "id": "tyre_sameer_defective_predicted_good_01",
+  "component": "inspect.tyre_condition.tyre_dino_lr.sameer",
+  "file": "tyre_sameer_defective_predicted_good_01.jpg",
+  "category": "defective_predicted_good",
+  "description": "sameer image labelled defective (source class UNUSABLE), model P(defective)=0.00"
+ },
+ {
+  "id": "tyre_sameer_defective_predicted_good_02",
+  "component": "inspect.tyre_condition.tyre_dino_lr.sameer",
+  "file": "tyre_sameer_defective_predicted_good_02.jpg",
+  "category": "defective_predicted_good",
+  "description": "sameer image labelled defective (source class UNUSABLE), model P(defective)=0.00"
+ },
+ {
+  "id": "tyre_sameer_good_predicted_defective_00",
+  "component": "inspect.tyre_condition.tyre_dino_lr.sameer",
+  "file": "tyre_sameer_good_predicted_defective_00.jpg",
+  "category": "good_predicted_defective",
+  "description": "sameer image labelled good (source class SERVICEABLE), model P(defective)=1.00"
+ },
+ {
+  "id": "tyre_sameer_good_predicted_defective_01",
+  "component": "inspect.tyre_condition.tyre_dino_lr.sameer",
+  "file": "tyre_sameer_good_predicted_defective_01.jpg",
+  "category": "good_predicted_defective",
+  "description": "sameer image labelled good (source class SERVICEABLE), model P(defective)=1.00"
+ },
+ {
+  "id": "tyre_sameer_good_predicted_defective_02",
+  "component": "inspect.tyre_condition.tyre_dino_lr.sameer",
+  "file": "tyre_sameer_good_predicted_defective_02.jpg",
+  "category": "good_predicted_defective",
+  "description": "sameer image labelled good (source class SERVICEABLE), model P(defective)=1.00"
+ }
+]

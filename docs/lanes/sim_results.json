@@ -1,0 +1,1570 @@
+[
+ {
+  "id": "sim.noise.a70_c10.baseline_hysteresis",
+  "name": "Noise test a70_c10: baseline_hysteresis",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario v0.1.0 default config, 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:baseline_hysteresis",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.7007352520497859,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.019854233214779568,
+    "ci_low": 0.018131207069119592,
+    "ci_high": 0.021748911218418845,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.02551824500172094,
+    "ci_low": 0.02322172592050428,
+    "ci_high": 0.02774226165320003,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 3.3620059999998375,
+    "ci_low": 2.932132424999725,
+    "ci_high": 3.9682829249999543,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.073870357227348,
+    "ci_low": 0.0676797834835849,
+    "ci_high": 0.07948992937215442,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 14.044027777777778,
+    "ci_low": 9.500461805555556,
+    "ci_high": 19.639569444444444,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.9429530201342282,
+    "ci_low": 0.9159011815553871,
+    "ci_high": 0.9689191365979382,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.9790209790209791,
+    "ci_low": 0.9640900183079343,
+    "ci_high": 0.9932223256455338,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 0.08333333333333333,
+    "ci_low": 0.0,
+    "ci_high": 0.2727272727272727,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.8825503355704698,
+    "ci_low": 0.8481848184818482,
+    "ci_high": 0.9159567159051872,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 0.9429530201342282,
+    "ci_low": 0.9159011815553871,
+    "ci_high": 0.9689191365979382,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 0.08333333333333333,
+    "ci_low": 0.0,
+    "ci_high": 0.2727272727272727,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.7 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=298; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.a70_c10.hmm_generic",
+  "name": "Noise test a70_c10: hmm_generic",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario v0.1.0 default config, 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:hmm_generic",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.7007352520497859,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.27517612929962704,
+    "ci_low": 0.24653265164522428,
+    "ci_high": 0.3050026140181865,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.49896394529631166,
+    "ci_low": 0.46826012123868704,
+    "ci_high": 0.5303018550770688,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 8.443620999999894,
+    "ci_low": 7.3470796500001025,
+    "ci_high": 9.734845549999932,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.25687710271126063,
+    "ci_low": 0.22944950852321586,
+    "ci_high": 0.28503441329528284,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_precision_iou50",
+    "value": 0.7628865979381443,
+    "ci_low": 0.6818181818181818,
+    "ci_high": 0.8542728559870549,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.891566265060241,
+    "ci_low": 0.8239069952305247,
+    "ci_high": 0.9565217391304348,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_precision",
+    "value": 0.9028398463282551,
+    "ci_low": 0.8575689895029315,
+    "ci_high": 0.9339056280332679,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.9181567306090966,
+    "ci_low": 0.8851357399640611,
+    "ci_high": 0.9423938929893724,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 1.880772341805555,
+    "ci_low": 1.3795540366458323,
+    "ci_high": 2.3905267994166657,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.9362416107382551,
+    "ci_low": 0.89805952153567,
+    "ci_high": 0.9683608665160134,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.9370629370629371,
+    "ci_low": 0.8965475092250923,
+    "ci_high": 0.9705326086956522,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 0.9166666666666666,
+    "ci_low": 0.7067857142857145,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.889261744966443,
+    "ci_low": 0.8494495720758517,
+    "ci_high": 0.9269390966308774,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 0.9865771812080537,
+    "ci_low": 0.9717314487632509,
+    "ci_high": 0.9967904256415542,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 0.9166666666666666,
+    "ci_low": 0.7067857142857145,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.7 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=298; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.a70_c10.hmm_fitted",
+  "name": "Noise test a70_c10: hmm_fitted",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario v0.1.0 default config, 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:hmm_fitted",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.7007352520497859,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.36400268636668903,
+    "ci_low": 0.33184780506720646,
+    "ci_high": 0.3977189843113903,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.6012984105663757,
+    "ci_low": 0.5733685332910193,
+    "ci_high": 0.6273099010651605,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 6.707502999999633,
+    "ci_low": 6.02397800000108,
+    "ci_high": 7.839839000000211,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.3329268292682927,
+    "ci_low": 0.29937420398986686,
+    "ci_high": 0.3665605164602609,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_precision_iou50",
+    "value": 0.8461538461538461,
+    "ci_low": 0.7631498725196763,
+    "ci_high": 0.9184166666666665,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.927710843373494,
+    "ci_low": 0.8692934782608696,
+    "ci_high": 0.978021978021978,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_precision",
+    "value": 0.9390599675407147,
+    "ci_low": 0.9046104973348257,
+    "ci_high": 0.9599951225683504,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.9456911830058249,
+    "ci_low": 0.9180307590604924,
+    "ci_high": 0.9667248623032504,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 1.2600171466666665,
+    "ci_low": 0.8600349089652778,
+    "ci_high": 1.6407619870173613,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.8791946308724832,
+    "ci_low": 0.8278145695364238,
+    "ci_high": 0.9261872539370078,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.8741258741258742,
+    "ci_low": 0.8192302955665025,
+    "ci_high": 0.9226717476906312,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.8322147651006712,
+    "ci_low": 0.7797936687394008,
+    "ci_high": 0.8767022296811315,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 0.9899328859060402,
+    "ci_low": 0.9785267159937531,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.7 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=298; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.a80_c10.baseline_hysteresis",
+  "name": "Noise test a80_c10: baseline_hysteresis",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario v0.1.0 default config, 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:baseline_hysteresis",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.7999363095960209,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.022396080108166825,
+    "ci_low": 0.020369011893389643,
+    "ci_high": 0.024383986198874004,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.024961575352755595,
+    "ci_low": 0.022747173452960213,
+    "ci_high": 0.02719571265379096,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 1.088171999999986,
+    "ci_low": 0.9936457499998312,
+    "ci_high": 1.2265959999999723,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.08312507853183855,
+    "ci_low": 0.07664540507308708,
+    "ci_high": 0.08987227851802469,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 14.044027777777778,
+    "ci_low": 9.500461805555556,
+    "ci_high": 19.639569444444444,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.9563758389261745,
+    "ci_low": 0.9318153017582765,
+    "ci_high": 0.9762001457877746,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.993006993006993,
+    "ci_low": 0.9825464169976366,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 0.08333333333333333,
+    "ci_low": 0.0,
+    "ci_high": 0.2727272727272727,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.8959731543624161,
+    "ci_low": 0.866954489418533,
+    "ci_high": 0.9250892857142857,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 0.9563758389261745,
+    "ci_low": 0.9318153017582765,
+    "ci_high": 0.9762001457877746,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 0.08333333333333333,
+    "ci_low": 0.0,
+    "ci_high": 0.2727272727272727,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.8 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=298; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.a80_c10.hmm_generic",
+  "name": "Noise test a80_c10: hmm_generic",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario v0.1.0 default config, 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:hmm_generic",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.7999363095960209,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.5397550342536849,
+    "ci_low": 0.5108538711345413,
+    "ci_high": 0.5674577083645787,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.7618849906580859,
+    "ci_low": 0.7367850505884782,
+    "ci_high": 0.786068759628102,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 3.9400519999999233,
+    "ci_low": 3.5302059250004847,
+    "ci_high": 4.644746387500134,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.46261682242990654,
+    "ci_low": 0.43202121775340996,
+    "ci_high": 0.49159886488603566,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_precision_iou50",
+    "value": 0.8888888888888888,
+    "ci_low": 0.8252427184466019,
+    "ci_high": 0.9576948924731183,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.963855421686747,
+    "ci_low": 0.9225524475524476,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_precision",
+    "value": 0.9774314803533092,
+    "ci_low": 0.9636262164132368,
+    "ci_high": 0.986518157631034,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.9668907212338185,
+    "ci_low": 0.951899282353163,
+    "ci_high": 0.9785796219014051,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 0.6088591841666664,
+    "ci_low": 0.39037269463194346,
+    "ci_high": 0.8351798683090267,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.8926174496644296,
+    "ci_low": 0.8380545142143081,
+    "ci_high": 0.9352693807898587,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.8881118881118881,
+    "ci_low": 0.8321736529053603,
+    "ci_high": 0.9328732144640894,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.8456375838926175,
+    "ci_low": 0.7927454609554028,
+    "ci_high": 0.8972163241506776,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 0.9966442953020134,
+    "ci_low": 0.9893038256227759,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.8 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=298; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.a80_c10.hmm_fitted",
+  "name": "Noise test a80_c10: hmm_fitted",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario v0.1.0 default config, 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:hmm_fitted",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.7999363095960209,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.6550237171194481,
+    "ci_low": 0.6275254003282474,
+    "ci_high": 0.6801024527123268,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.8391548081069427,
+    "ci_low": 0.8189802268573548,
+    "ci_high": 0.8618519505522767,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 2.9942049999999654,
+    "ci_low": 2.6691489874998355,
+    "ci_high": 3.246628437500044,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.5215701515740381,
+    "ci_low": 0.4915487714510874,
+    "ci_high": 0.5497635011720295,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_precision_iou50",
+    "value": 0.9529411764705882,
+    "ci_low": 0.896875,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.9759036144578314,
+    "ci_low": 0.9377316960148286,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_precision",
+    "value": 0.9890695447559097,
+    "ci_low": 0.9826576605405236,
+    "ci_high": 0.9935152447120073,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.9739257550758035,
+    "ci_low": 0.9594427494811725,
+    "ci_high": 0.9854070763305907,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 0.43669785013888834,
+    "ci_low": 0.24925045363194398,
+    "ci_high": 0.6480577230104163,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.8389261744966443,
+    "ci_low": 0.7754975700069429,
+    "ci_high": 0.8966805743035955,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.8321678321678322,
+    "ci_low": 0.7671711672473868,
+    "ci_high": 0.8914277389277389,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.8053691275167785,
+    "ci_low": 0.7503893442622951,
+    "ci_high": 0.8596575511209658,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.8 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=298; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.a90_c10.baseline_hysteresis",
+  "name": "Noise test a90_c10: baseline_hysteresis",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario v0.1.0 default config, 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:baseline_hysteresis",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.9004971846101477,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.032397408207343416,
+    "ci_low": 0.029379667307969353,
+    "ci_high": 0.03536163992983244,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.033239893999969364,
+    "ci_low": 0.03010555982257903,
+    "ci_high": 0.036286807558242214,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 0.6980119999998351,
+    "ci_low": 0.6533886624998786,
+    "ci_high": 0.754435575000025,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.118054928585616,
+    "ci_low": 0.10937102855247802,
+    "ci_high": 0.12652166609384055,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 14.044027777777778,
+    "ci_low": 9.500461805555556,
+    "ci_high": 19.639569444444444,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.9697986577181208,
+    "ci_low": 0.9507347389991372,
+    "ci_high": 0.9864446512910676,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.993006993006993,
+    "ci_low": 0.9819494584837545,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 0.4166666666666667,
+    "ci_low": 0.14285714285714285,
+    "ci_high": 0.6872549019607834,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.9093959731543624,
+    "ci_low": 0.8792743327013612,
+    "ci_high": 0.9369516113149019,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 0.9697986577181208,
+    "ci_low": 0.9507347389991372,
+    "ci_high": 0.9864446512910676,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 0.4166666666666667,
+    "ci_low": 0.14285714285714285,
+    "ci_high": 0.6872549019607834,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.9 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=298; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.a90_c10.hmm_generic",
+  "name": "Noise test a90_c10: hmm_generic",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario v0.1.0 default config, 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:hmm_generic",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.9004971846101477,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.8291852797277175,
+    "ci_low": 0.8096544217491382,
+    "ci_high": 0.8492726103265851,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.9538396085939161,
+    "ci_low": 0.9436897671960789,
+    "ci_high": 0.9645021312189682,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 1.5682369999999537,
+    "ci_low": 1.4756918500000324,
+    "ci_high": 1.7032250000002023,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.6632302405498282,
+    "ci_low": 0.6373093634298356,
+    "ci_high": 0.6905994557100603,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_precision_iou50",
+    "value": 0.9761904761904762,
+    "ci_low": 0.9358974358974359,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.9879518072289156,
+    "ci_low": 0.9612383411059294,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_precision",
+    "value": 0.9919177257052504,
+    "ci_low": 0.9825156122203678,
+    "ci_high": 0.9970811816625073,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.9946805661758161,
+    "ci_low": 0.9876092756896291,
+    "ci_high": 0.998375896291104,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 0.17001127805555555,
+    "ci_low": 0.06959849899999997,
+    "ci_high": 0.30597075091666665,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.8758389261744967,
+    "ci_low": 0.8232077205882352,
+    "ci_high": 0.9267237536221116,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.8741258741258742,
+    "ci_low": 0.8191724236732355,
+    "ci_high": 0.9270951135116887,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 0.9166666666666666,
+    "ci_low": 0.7067857142857145,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.8489932885906041,
+    "ci_low": 0.7986999019390757,
+    "ci_high": 0.8932963028794881,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 0.9966442953020134,
+    "ci_low": 0.9894542253521127,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 0.9166666666666666,
+    "ci_low": 0.7067857142857145,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.9 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=298; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.a90_c10.hmm_fitted",
+  "name": "Noise test a90_c10: hmm_fitted",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario v0.1.0 default config, 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:hmm_fitted",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.9004971846101477,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.8906484057350739,
+    "ci_low": 0.8716903014583579,
+    "ci_high": 0.9071621815315154,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.9745345602396748,
+    "ci_low": 0.9643165475853751,
+    "ci_high": 0.9833526583086794,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 1.3185589999998228,
+    "ci_low": 1.1998873374999448,
+    "ci_high": 1.4710102875000786,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.6884441087613293,
+    "ci_low": 0.663927260659066,
+    "ci_high": 0.7174577410188409,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_precision_iou50",
+    "value": 0.9879518072289156,
+    "ci_low": 0.9594594594594594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.9879518072289156,
+    "ci_low": 0.9612383411059294,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_precision",
+    "value": 0.9951430192692614,
+    "ci_low": 0.9868173383300952,
+    "ci_high": 0.9988053077311475,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.9950803094929636,
+    "ci_low": 0.9883103850457455,
+    "ci_high": 0.9986897922442051,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 0.12485256152777764,
+    "ci_low": 0.03467421425347217,
+    "ci_high": 0.26256152923958337,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.7751677852348994,
+    "ci_low": 0.7099462457337884,
+    "ci_high": 0.8342353951890035,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.7657342657342657,
+    "ci_low": 0.6972258168877387,
+    "ci_high": 0.8279622579586478,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.7550335570469798,
+    "ci_low": 0.6906129400315446,
+    "ci_high": 0.8115507241363406,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.9 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=298; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.mismatch_a80_c10.baseline_hysteresis",
+  "name": "Noise test mismatch_a80_c10: baseline_hysteresis",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario MISMATCH config (durations x1.6, pauses x1.9, absences x2, uniform job mix), 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:baseline_hysteresis",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.800697451687167,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.014758948258732193,
+    "ci_low": 0.013546055494192372,
+    "ci_high": 0.016118368997223912,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.016317575927697406,
+    "ci_low": 0.015036288973827474,
+    "ci_high": 0.017786362244679013,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 1.0727220000007947,
+    "ci_low": 0.983064000000013,
+    "ci_high": 1.2194113750001179,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.12014225670869706,
+    "ci_low": 0.11168193823400303,
+    "ci_high": 0.12944210194587968,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 26.229583333333334,
+    "ci_low": 18.987788194444445,
+    "ci_high": 33.15421875,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.9324324324324325,
+    "ci_low": 0.9056260213426337,
+    "ci_high": 0.9576371628463591,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 0.047619047619047616,
+    "ci_low": 0.0,
+    "ci_high": 0.14912037037037032,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.8986486486486487,
+    "ci_low": 0.8677573055318777,
+    "ci_high": 0.9261871721103402,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 0.9324324324324325,
+    "ci_low": 0.9056260213426337,
+    "ci_high": 0.9576371628463591,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 0.047619047619047616,
+    "ci_low": 0.0,
+    "ci_high": 0.14912037037037032,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.8 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=296; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.mismatch_a80_c10.hmm_generic",
+  "name": "Noise test mismatch_a80_c10: hmm_generic",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario MISMATCH config (durations x1.6, pauses x1.9, absences x2, uniform job mix), 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:hmm_generic",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.800697451687167,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.5462105462105462,
+    "ci_low": 0.515750027655887,
+    "ci_high": 0.571728554527185,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.7363447363447363,
+    "ci_low": 0.7104948707771142,
+    "ci_high": 0.761616023407653,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 3.3642670000008366,
+    "ci_low": 2.8561489999992773,
+    "ci_high": 3.8360331375000896,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.351858407079646,
+    "ci_low": 0.33660243799318723,
+    "ci_high": 0.3708532386594762,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_precision_iou50",
+    "value": 0.8343949044585988,
+    "ci_low": 0.7685258849302433,
+    "ci_high": 0.8981829082188794,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.9703703703703703,
+    "ci_low": 0.9400022492127755,
+    "ci_high": 0.9928571428571429,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_precision",
+    "value": 0.9630207212270387,
+    "ci_low": 0.9433826422446403,
+    "ci_high": 0.9764135498760774,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.982530404325057,
+    "ci_low": 0.9721953299818175,
+    "ci_high": 0.9897032486064975,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 1.2363011262500005,
+    "ci_low": 0.8826033084305562,
+    "ci_high": 1.6395370444930562,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.8581081081081081,
+    "ci_low": 0.8079788124246887,
+    "ci_high": 0.9018344965104685,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.8581818181818182,
+    "ci_low": 0.8033592811803054,
+    "ci_high": 0.9050250626566416,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 0.8571428571428571,
+    "ci_low": 0.6938963210702341,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.831081081081081,
+    "ci_low": 0.7799205227396717,
+    "ci_high": 0.8743736308082555,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 0.9864864864864865,
+    "ci_low": 0.971197622265913,
+    "ci_high": 0.9967110317589136,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 0.8095238095238095,
+    "ci_low": 0.6190476190476191,
+    "ci_high": 0.9535173160173159,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.8 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=296; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.noise.mismatch_a80_c10.hmm_fitted",
+  "name": "Noise test mismatch_a80_c10: hmm_fitted",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (simulated per-frame noise on scenario-engine timelines)",
+  "dataset": "sim.scenario MISMATCH config (durations x1.6, pauses x1.9, absences x2, uniform job mix), 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "visit_engine:hmm_fitted",
+  "metrics": [
+   {
+    "name": "frame_accuracy_measured",
+    "value": 0.800697451687167,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s",
+    "value": 0.6386049308478653,
+    "ci_low": 0.6103380534838406,
+    "ci_high": 0.6676107526417336,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s",
+    "value": 0.8318300260573261,
+    "ci_low": 0.8108294304944317,
+    "ci_high": 0.8534069973500383,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_median_abs_onset_error",
+    "value": 2.646622999999636,
+    "ci_low": 2.321617999999944,
+    "ci_high": 3.0230504249995755,
+    "unit": "s"
+   },
+   {
+    "name": "fine_event_f1_at_10s",
+    "value": 0.3853649893692417,
+    "ci_low": 0.36919405506764197,
+    "ci_high": 0.40583287012879476,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_precision_iou50",
+    "value": 0.9172413793103448,
+    "ci_low": 0.8726834692364714,
+    "ci_high": 0.9618760611205432,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_segment_recall_iou50",
+    "value": 0.9851851851851852,
+    "ci_low": 0.9633627629884071,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_precision",
+    "value": 0.9821755697153527,
+    "ci_low": 0.9704238553963174,
+    "ci_high": 0.9903871611914304,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_time_recall",
+    "value": 0.9875644034513618,
+    "ci_low": 0.9792539364636265,
+    "ci_high": 0.9924069074632941,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_minutes_per_visit_mae",
+    "value": 0.6476131609722231,
+    "ci_low": 0.42153446477083434,
+    "ci_high": 0.9200258211597223,
+    "unit": "min"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.7871621621621622,
+    "ci_low": 0.7271098355569345,
+    "ci_high": 0.8454132016632017,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_found_recall",
+    "value": 0.7709090909090909,
+    "ci_low": 0.7048843505676435,
+    "ci_high": 0.832090321502201,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_evidence_vs_performed_accuracy",
+    "value": 0.7736486486486487,
+    "ci_low": 0.7185781544256121,
+    "ci_high": 0.823868778280543,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_not_observed_recall_keyed_spans",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "noise acc=0.8 corr_s=10.0 drop=0.1 fps=0.5-2.0; n_lines=296; CIs = visit-level percentile bootstrap (500). Same generator for HMM priors (seed 1000) and test visits (different seed): optimistic for the fitted HMM."
+ },
+ {
+  "id": "sim.continuation.eta",
+  "name": "Scenario continuation: ready-time ETA from a bay cut",
+  "lane": "sim",
+  "data_kind": "synthetic",
+  "domain": "perception-free simulation (perfect observation of the prefix)",
+  "dataset": "sim.scenario v0.1.0 default config, 120 visits",
+  "split": "test (seed 2000)",
+  "n": 120,
+  "model": "sim.scenario.continue_visit",
+  "metrics": [
+   {
+    "name": "eta_ready_mae",
+    "value": 13.989028647239131,
+    "ci_low": 11.662763957699225,
+    "ci_high": 16.64034563707251,
+    "unit": "min"
+   },
+   {
+    "name": "naive_median_eta_mae",
+    "value": 12.445796591199006,
+    "ci_low": 10.377495178355616,
+    "ci_high": 14.449783665560846,
+    "unit": "min"
+   },
+   {
+    "name": "eta_p10_p90_coverage",
+    "value": 0.6083333333333333,
+    "ci_low": 0.525,
+    "ci_high": 0.6916666666666667,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "Cut uniformly in the 20-80% of the bay stay; prefix events observed perfectly; ETA from 100 Monte-Carlo continuations with the same generator that produced the truth (optimistic). Naive = one global median remaining time of the same test visits (uses test information). Without visits that carry a not-performed (phantom) line: n=90, MAE 11.9 min vs naive 12.3 min, p10-p90 coverage 0.68; bias +6.7 min overall."
+ },
+ {
+  "id": "e2e.synthetic.default_pipeline.test",
+  "name": "Synthetic end-to-end (default_pipeline, test split)",
+  "lane": "e2e",
+  "data_kind": "synthetic",
+  "domain": "rendered (Blender 5.0.1 Cycles, Kenney CC0 assets, CCTV-like high camera)",
+  "dataset": "bay_v1: 14 bay clips",
+  "split": "test",
+  "n": 14,
+  "model": "rfdetr-coco:pretrained + fast-alpr-global:pretrained + visit_engine:hmm",
+  "metrics": [
+   {
+    "name": "frames",
+    "value": 15410.0,
+    "unit": "count"
+   },
+   {
+    "name": "key_event_f1_at_10s_all_states",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_10s_covered_states",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "key_event_f1_at_30s_covered_states",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "idle_seg_recall_iou50",
+    "value": 0.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "car_present_cue_frame_accuracy",
+    "value": 0.3779364049318624,
+    "ci_low": 0.37031221992767477,
+    "ci_high": 0.385621431650974,
+    "unit": "fraction"
+   },
+   {
+    "name": "car_present_cue_recall_when_raised",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0006496806734033924,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle",
+    "value": 0.17543859649122806,
+    "ci_low": 0.0981885223970996,
+    "ci_high": 0.29367352829693927,
+    "unit": "fraction"
+   },
+   {
+    "name": "workorder_line_status_accuracy_vs_oracle_keyed_spans",
+    "value": 0.17543859649122806,
+    "ci_low": 0.0981885223970996,
+    "ci_high": 0.29367352829693927,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "States reported by the deployed predictors: none (car_present from the vehicle detector when no state predictor runs). 'covered' = GT events of those states only. One frame per 4 simulated seconds; 57 camera-verifiable work-order lines; CIs = bootstrap over bay clips. Wall time 431s for 15410 frames. Synthetic only; not evidence of real-CCTV accuracy."
+ },
+ {
+  "id": "e2e.synthetic.detector_probe",
+  "name": "COCO RF-DETR on rendered cars (why the default pipeline sees no cars)",
+  "lane": "e2e",
+  "data_kind": "synthetic",
+  "domain": "rendered (Blender 5.0.1 Cycles, Kenney CC0 low-poly cars)",
+  "dataset": "renders/bay_v1: 25 sampled frames each of ep00_train, ep02_train, ep06_test, ep08_test",
+  "split": "train+test sample",
+  "n": 117,
+  "model": "rfdetr-coco base (seen/baseline.py), threshold 0.05 for the probe",
+  "metrics": [
+   {
+    "name": "gt_car_localised_iou30_any_class",
+    "value": 1.0,
+    "ci_low": 0.9682107543372667,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "gt_car_detected_as_vehicle_conf_ge_0.4",
+    "value": 0.02564102564102564,
+    "ci_low": 0.00875805570382017,
+    "ci_high": 0.07268302351467049,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "Every rendered car gets a box (IoU > 0.3) but labelled toilet/bed/tv/airplane/train/truck at median confidence 0.12-0.22; per-episode classes in runs/sim/detector_probe/out.json. Generated by sim/detector_probe.py."
+ }
+]

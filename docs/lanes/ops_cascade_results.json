@@ -1,0 +1,394 @@
+[
+ {
+  "id": "ops_cascade_car_present",
+  "name": "Bay state 'car_present': fast heads + Qwen3-VL on uncertain frames",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "fixed CCTV (public workshop clips, hand-labelled)",
+  "dataset": "ops CCTV real-domain set (6 clips)",
+  "split": "test",
+  "n": 458,
+  "model": "DINOv2-L+geometry heads v0.1 / Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "accuracy@escalate_0pct",
+    "value": 0.9148471615720524,
+    "ci_low": 0.8857086415004012,
+    "ci_high": 0.9370845329589139,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_10pct",
+    "value": 0.9519650655021834,
+    "ci_low": 0.9283442170619765,
+    "ci_high": 0.9680672940594881,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_20pct",
+    "value": 0.9606986899563319,
+    "ci_low": 0.9387357428864033,
+    "ci_high": 0.9749977298026259,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_30pct",
+    "value": 0.962882096069869,
+    "ci_low": 0.9413656473808117,
+    "ci_high": 0.9766983157001085,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_50pct",
+    "value": 0.962882096069869,
+    "ci_low": 0.9413656473808117,
+    "ci_high": 0.9766983157001085,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_100pct",
+    "value": 0.9454148471615721,
+    "ci_low": 0.9206632679021788,
+    "ci_high": 0.9627567720436127,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "Escalation = frames whose fast probability is closest to 0.5. Single annotator (Claude). ~12 independent bay sequences: CIs are optimistic about independence."
+ },
+ {
+  "id": "ops_cascade_raised",
+  "name": "Bay state 'raised': fast heads + Qwen3-VL on uncertain frames",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "fixed CCTV (public workshop clips, hand-labelled)",
+  "dataset": "ops CCTV real-domain set (6 clips)",
+  "split": "test",
+  "n": 362,
+  "model": "DINOv2-L+geometry heads v0.1 / Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "accuracy@escalate_0pct",
+    "value": 0.6464088397790055,
+    "ci_low": 0.5958575472401871,
+    "ci_high": 0.6938854478312179,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_10pct",
+    "value": 0.6022099447513812,
+    "ci_low": 0.5509715730432998,
+    "ci_high": 0.6513018386103226,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_20pct",
+    "value": 0.5883977900552486,
+    "ci_low": 0.5370325479311615,
+    "ci_high": 0.6379066189044038,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_30pct",
+    "value": 0.5828729281767956,
+    "ci_low": 0.5314683290275375,
+    "ci_high": 0.6325371398808051,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_50pct",
+    "value": 0.5828729281767956,
+    "ci_low": 0.5314683290275375,
+    "ci_high": 0.6325371398808051,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_100pct",
+    "value": 0.5607734806629834,
+    "ci_low": 0.509275634436855,
+    "ci_high": 0.6109950427625961,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "Escalation = frames whose fast probability is closest to 0.5. Single annotator (Claude). ~12 independent bay sequences: CIs are optimistic about independence."
+ },
+ {
+  "id": "ops_cascade_wheel_off",
+  "name": "Bay state 'wheel_off': fast heads + Qwen3-VL on uncertain frames",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "fixed CCTV (public workshop clips, hand-labelled)",
+  "dataset": "ops CCTV real-domain set (6 clips)",
+  "split": "test",
+  "n": 407,
+  "model": "DINOv2-L+geometry heads v0.1 / Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "accuracy@escalate_0pct",
+    "value": 0.7813267813267813,
+    "ci_low": 0.7386406797511249,
+    "ci_high": 0.8187519472182574,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_10pct",
+    "value": 0.8255528255528255,
+    "ci_low": 0.7856870821189867,
+    "ci_high": 0.8593305866447087,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_20pct",
+    "value": 0.828009828009828,
+    "ci_low": 0.7883236443734137,
+    "ci_high": 0.8615620822677438,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_30pct",
+    "value": 0.8574938574938575,
+    "ci_low": 0.8201842702621353,
+    "ci_high": 0.8881181509085646,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_50pct",
+    "value": 0.9115479115479116,
+    "ci_low": 0.8799744031005883,
+    "ci_high": 0.9354252913742724,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_100pct",
+    "value": 0.9287469287469288,
+    "ci_low": 0.899542175901868,
+    "ci_high": 0.9499339237152256,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "Escalation = frames whose fast probability is closest to 0.5. Single annotator (Claude). ~12 independent bay sequences: CIs are optimistic about independence."
+ },
+ {
+  "id": "ops_cascade_hood_open",
+  "name": "Bay state 'hood_open': fast heads + Qwen3-VL on uncertain frames",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "fixed CCTV (public workshop clips, hand-labelled)",
+  "dataset": "ops CCTV real-domain set (6 clips)",
+  "split": "test",
+  "n": 443,
+  "model": "DINOv2-L+geometry heads v0.1 / Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "accuracy@escalate_0pct",
+    "value": 0.8171557562076749,
+    "ci_low": 0.7784859252628787,
+    "ci_high": 0.8503724638884241,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_10pct",
+    "value": 0.871331828442438,
+    "ci_low": 0.836930319810119,
+    "ci_high": 0.8993487194453211,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_20pct",
+    "value": 0.9255079006772009,
+    "ci_low": 0.8972311763065765,
+    "ci_high": 0.9464685130530007,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_30pct",
+    "value": 0.9503386004514672,
+    "ci_low": 0.9259555820272865,
+    "ci_high": 0.9669785719633537,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_50pct",
+    "value": 0.981941309255079,
+    "ci_low": 0.9647745962076528,
+    "ci_high": 0.9908216036770674,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_100pct",
+    "value": 0.9706546275395034,
+    "ci_low": 0.9504452795483896,
+    "ci_high": 0.9827716182313019,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "Escalation = frames whose fast probability is closest to 0.5. Single annotator (Claude). ~12 independent bay sequences: CIs are optimistic about independence."
+ },
+ {
+  "id": "ops_cascade_person_at_car",
+  "name": "Bay state 'person_at_car': fast heads + Qwen3-VL on uncertain frames",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "fixed CCTV (public workshop clips, hand-labelled)",
+  "dataset": "ops CCTV real-domain set (6 clips)",
+  "split": "test",
+  "n": 418,
+  "model": "DINOv2-L+geometry heads v0.1 / Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "accuracy@escalate_0pct",
+    "value": 0.6698564593301436,
+    "ci_low": 0.6234068634219477,
+    "ci_high": 0.7132124920984347,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_10pct",
+    "value": 0.7105263157894737,
+    "ci_low": 0.665288645766383,
+    "ci_high": 0.7519297103715558,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_20pct",
+    "value": 0.7368421052631579,
+    "ci_low": 0.6926087707839945,
+    "ci_high": 0.7767618798711866,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_30pct",
+    "value": 0.7631578947368421,
+    "ci_low": 0.7201202807463769,
+    "ci_high": 0.8014026644260466,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_50pct",
+    "value": 0.8110047846889952,
+    "ci_low": 0.7707051379767171,
+    "ci_high": 0.8456401608634196,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_100pct",
+    "value": 0.8779904306220095,
+    "ci_low": 0.8431260794928679,
+    "ci_high": 0.9059705144820676,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "Escalation = frames whose fast probability is closest to 0.5. Single annotator (Claude). ~12 independent bay sequences: CIs are optimistic about independence."
+ },
+ {
+  "id": "ops_cascade_person_under_car",
+  "name": "Bay state 'person_under_car': fast heads + Qwen3-VL on uncertain frames",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "fixed CCTV (public workshop clips, hand-labelled)",
+  "dataset": "ops CCTV real-domain set (6 clips)",
+  "split": "test",
+  "n": 438,
+  "model": "DINOv2-L+geometry heads v0.1 / Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "accuracy@escalate_0pct",
+    "value": 0.9611872146118722,
+    "ci_low": 0.9387269150650209,
+    "ci_high": 0.9756282047064563,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_10pct",
+    "value": 0.9611872146118722,
+    "ci_low": 0.9387269150650209,
+    "ci_high": 0.9756282047064563,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_20pct",
+    "value": 0.958904109589041,
+    "ci_low": 0.9359793868046372,
+    "ci_high": 0.9738492224729217,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_30pct",
+    "value": 0.958904109589041,
+    "ci_low": 0.9359793868046372,
+    "ci_high": 0.9738492224729217,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_50pct",
+    "value": 0.9315068493150684,
+    "ci_low": 0.9039061195667805,
+    "ci_high": 0.95160436378376,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_100pct",
+    "value": 0.8447488584474886,
+    "ci_low": 0.8078514974721942,
+    "ci_high": 0.8756515871094546,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "Escalation = frames whose fast probability is closest to 0.5. Single annotator (Claude). ~12 independent bay sequences: CIs are optimistic about independence."
+ },
+ {
+  "id": "ops_cascade_work",
+  "name": "Bay state 'work': fast heads + Qwen3-VL on uncertain frames",
+  "lane": "ops",
+  "data_kind": "real",
+  "domain": "fixed CCTV (public workshop clips, hand-labelled)",
+  "dataset": "ops CCTV real-domain set (6 clips)",
+  "split": "test",
+  "n": 384,
+  "model": "DINOv2-L+geometry heads v0.1 / Qwen3-VL-8B zero-shot",
+  "metrics": [
+   {
+    "name": "accuracy@escalate_0pct",
+    "value": 0.6197916666666666,
+    "ci_low": 0.570278636852009,
+    "ci_high": 0.6669316920275892,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_10pct",
+    "value": 0.6640625,
+    "ci_low": 0.6154032768764127,
+    "ci_high": 0.709471738763037,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_20pct",
+    "value": 0.6822916666666666,
+    "ci_low": 0.6341147664413662,
+    "ci_high": 0.7268574731580222,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_30pct",
+    "value": 0.7109375,
+    "ci_low": 0.6636836691154626,
+    "ci_high": 0.7540127795638298,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_50pct",
+    "value": 0.7760416666666666,
+    "ci_low": 0.7317272137218516,
+    "ci_high": 0.8148878919572224,
+    "unit": "fraction"
+   },
+   {
+    "name": "accuracy@escalate_100pct",
+    "value": 0.9036458333333334,
+    "ci_low": 0.8700102279141008,
+    "ci_high": 0.9292854454845453,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "Escalation = frames whose fast probability is closest to 0.5. Single annotator (Claude). ~12 independent bay sequences: CIs are optimistic about independence."
+ }
+]

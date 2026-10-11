@@ -1,0 +1,47 @@
+[
+  {
+    "file": "/mnt/bigdrive/amirkhon/seen/code/docs/lanes/inspect_manifests/inspect_damage.jsonl",
+    "component": "inspect_damage",
+    "n": 5570,
+    "errors": [],
+    "hashed": 5570,
+    "status": "adopted",
+    "written": "/mnt/bigdrive/amirkhon/seen/runs/eval/latest/eval/manifests/inspect_damage.jsonl"
+  },
+  {
+    "file": "/mnt/bigdrive/amirkhon/seen/code/docs/lanes/inspect_manifests/inspect_damage_A_only.jsonl",
+    "component": "inspect_damage_A_only",
+    "n": 2266,
+    "errors": [],
+    "hashed": 2266,
+    "status": "adopted",
+    "written": "/mnt/bigdrive/amirkhon/seen/runs/eval/latest/eval/manifests/inspect_damage_A_only.jsonl"
+  },
+  {
+    "file": "/mnt/bigdrive/amirkhon/seen/code/docs/lanes/inspect_manifests/inspect_dot.jsonl",
+    "component": "inspect_dot",
+    "n": 655,
+    "errors": [],
+    "hashed": 655,
+    "status": "adopted",
+    "written": "/mnt/bigdrive/amirkhon/seen/runs/eval/latest/eval/manifests/inspect_dot.jsonl"
+  },
+  {
+    "file": "/mnt/bigdrive/amirkhon/seen/code/docs/lanes/inspect_manifests/inspect_parts.jsonl",
+    "component": "inspect_parts",
+    "n": 1274,
+    "errors": [],
+    "hashed": 1274,
+    "status": "adopted",
+    "written": "/mnt/bigdrive/amirkhon/seen/runs/eval/latest/eval/manifests/inspect_parts.jsonl"
+  },
+  {
+    "file": "/mnt/bigdrive/amirkhon/seen/code/docs/lanes/inspect_manifests/inspect_tyre.jsonl",
+    "component": "inspect_tyre",
+    "n": 2758,
+    "errors": [],
+    "hashed": 2758,
+    "status": "adopted",
+    "written": "/mnt/bigdrive/amirkhon/seen/runs/eval/latest/eval/manifests/inspect_tyre.jsonl"
+  }
+]

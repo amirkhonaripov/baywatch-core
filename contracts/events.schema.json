@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://seen.local/contracts/events.schema.json",
+  "title": "SeenContracts",
+  "description": "Shared contract for visits, events, routing and analysis results. Frozen: change only via contracts/ + scripts/codegen.sh.",
+  "type": "object",
+  "properties": {
+    "analysis": { "$ref": "#/$defs/AnalysisResult" }
+  },
+  "$defs": {
+    "Source": {
+      "type": "string",
+      "enum": ["observed_real", "observed_synthetic", "simulated"],
+      "description": "observed_real = produced by our models on real input; observed_synthetic = produced by our models on rendered input; simulated = filled in by the scenario engine (no model ran)."
+    },
+    "ZoneKind": {
+      "type": "string",
+      "enum": ["gate", "reception", "waiting", "bay", "wash", "ready", "exit", "frame", "other"]
+    },
+    "Zone": {
+      "type": "object",
+      "required": ["id", "kind"],
+      "properties": {
+        "id": { "type": "string" },
+        "kind": { "$ref": "#/$defs/ZoneKind" },
+        "label": { "type": "string" },
+        "polygon": {
+          "type": "array",
+          "description": "Normalised [x,y] points in 0..1 image coordinates. Empty/absent = whole frame.",
+          "items": { "type": "array", "items": { "type": "number" }, "minItems": 2, "maxItems": 2 }
+        }
+      }
+    },
+    "BayState": {
+      "type": "string",
+      "enum": ["car_present", "raised", "wheel_off", "hood_open", "person_at_car", "person_under_car", "work", "idle", "washing"]
+    },
+    "EventType": {
+      "type": "string",
+      "enum": [
+        "arrived", "plate_read", "vin_read", "entered_zone", "left_zone",
+        "state_started", "state_ended", "operation_detected",
+        "idle_started", "idle_ended", "ready", "handed_over",
+        "inspection_finding", "unknown_input"
+      ]
+    },
+    "Evidence": {
+      "type": "object",
+      "required": ["model", "model_version", "confidence"],
+      "properties": {
+        "frame_uri": { "type": "string", "description": "URL or relative path of a face-blurred evidence JPEG." },
+        "video_time_s": { "type": "number" },
+        "bbox": { "type": "array", "items": { "type": "number" }, "minItems": 4, "maxItems": 4, "description": "Normalised [x1,y1,x2,y2]." },
+        "model": { "type": "string" },
+        "model_version": { "type": "string" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "Event": {
+      "type": "object",
+      "required": ["event_id", "visit_id", "type", "t", "source"],
+      "properties": {
+        "event_id": { "type": "string" },
+        "visit_id": { "type": "string" },
+        "type": { "$ref": "#/$defs/EventType" },
+        "t": { "type": "string", "format": "date-time", "description": "Wall-clock time of the event (ISO 8601)." },
+        "source": { "$ref": "#/$defs/Source" },
+        "zone": { "$ref": "#/$defs/Zone" },
+        "state": { "$ref": "#/$defs/BayState" },
+        "operation": { "type": "string", "description": "Operation code from workorder catalogue, e.g. 'wheel_removal', 'lift_raise', 'hood_open', 'under_car_work', 'wash'." },
+        "evidence": { "$ref": "#/$defs/Evidence" },
+        "payload": { "type": "object", "additionalProperties": true }
+      }
+    },
+    "Vehicle": {
+      "type": "object",
+      "properties": {
+        "plate_text": { "type": "string" },
+        "plate_confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "plate_format": { "type": "string", "description": "e.g. uz_private, uz_legal, uz_ev, uz_moto, foreign, unknown" },
+        "plate_format_valid": { "type": "boolean" },
+        "vin": { "type": "string" },
+        "vehicle_type": { "type": "string", "enum": ["car", "motorcycle", "truck", "bus", "unknown"] }
+      }
+    },
+    "LineStatus": {
+      "type": "string",
+      "enum": ["evidence_found", "not_observed", "not_camera_verifiable"]
+    },
+    "LineVerification": {
+      "type": "object",
+      "required": ["line_code", "status"],
+      "properties": {
+        "line_code": { "type": "string" },
+        "title": { "type": "string" },
+        "status": { "$ref": "#/$defs/LineStatus" },
+        "evidence_event_ids": { "type": "array", "items": { "type": "string" } },
+        "note": { "type": "string" }
+      }
+    },
+    "Visit": {
+      "type": "object",
+      "required": ["visit_id", "created_at", "events"],
+      "properties": {
+        "visit_id": { "type": "string" },
+        "site_id": { "type": "string" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "vehicle": { "$ref": "#/$defs/Vehicle" },
+        "work_order_id": { "type": "string" },
+        "current_stage": { "type": "string" },
+        "events": { "type": "array", "items": { "$ref": "#/$defs/Event" } },
+        "verifications": { "type": "array", "items": { "$ref": "#/$defs/LineVerification" } }
+      }
+    },
+    "SkippedModule": {
+      "type": "object",
+      "required": ["module", "reason"],
+      "properties": {
+        "module": { "type": "string" },
+        "reason": { "type": "string" }
+      }
+    },
+    "Route": {
+      "type": "object",
+      "required": ["scene", "confidence", "ran", "skipped"],
+      "properties": {
+        "scene": { "type": "string", "enum": ["gate", "bay", "wash", "street", "closeup", "motorcycle", "unknown"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "ran": { "type": "array", "items": { "type": "string" } },
+        "skipped": { "type": "array", "items": { "$ref": "#/$defs/SkippedModule" } }
+      }
+    },
+    "Detection": {
+      "type": "object",
+      "required": ["cls", "confidence", "bbox"],
+      "properties": {
+        "cls": { "type": "string" },
+        "confidence": { "type": "number" },
+        "bbox": { "type": "array", "items": { "type": "number" }, "minItems": 4, "maxItems": 4 },
+        "track_id": { "type": "integer" },
+        "text": { "type": "string", "description": "For plates/VIN: OCR text." },
+        "part": { "type": "string", "description": "For damage: car part it lies on." }
+      }
+    },
+    "FrameResult": {
+      "type": "object",
+      "required": ["frame_index", "t_s", "detections"],
+      "properties": {
+        "frame_index": { "type": "integer" },
+        "t_s": { "type": "number" },
+        "detections": { "type": "array", "items": { "$ref": "#/$defs/Detection" } },
+        "states": { "type": "object", "additionalProperties": { "type": "number" }, "description": "BayState -> probability" },
+        "frame_uri": { "type": "string" }
+      }
+    },
+    "AnalysisResult": {
+      "type": "object",
+      "required": ["input_id", "input_kind", "route", "frames", "timings_ms", "model_versions"],
+      "properties": {
+        "input_id": { "type": "string" },
+        "input_kind": { "type": "string", "enum": ["image", "frames"] },
+        "route": { "$ref": "#/$defs/Route" },
+        "frames": { "type": "array", "items": { "$ref": "#/$defs/FrameResult" } },
+        "visit": { "$ref": "#/$defs/Visit" },
+        "simulated_continuation": { "$ref": "#/$defs/Visit", "description": "Same visit extended by the scenario engine; every added event has source=simulated." },
+        "timings_ms": { "type": "object", "additionalProperties": { "type": "number" } },
+        "model_versions": { "type": "object", "additionalProperties": { "type": "string" } },
+        "warnings": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "JobStatus": {
+      "type": "object",
+      "required": ["job_id", "status"],
+      "properties": {
+        "job_id": { "type": "string" },
+        "status": { "type": "string", "enum": ["queued", "running", "done", "error"] },
+        "progress": { "type": "number" },
+        "result": { "$ref": "#/$defs/AnalysisResult" },
+        "error": { "type": "string" }
+      }
+    }
+  }
+}

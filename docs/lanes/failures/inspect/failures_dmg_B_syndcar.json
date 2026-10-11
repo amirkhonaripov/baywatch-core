@@ -1,0 +1,44 @@
+[
+ {
+  "id": "dmg_B_syndcar_missed_damage_00",
+  "component": "inspect.damage.dmg_B.syndcar",
+  "file": "dmg_B_syndcar_missed_damage_00.jpg",
+  "description": "missed glass_shatter (box area 4.590% of image)",
+  "category": "missed_damage"
+ },
+ {
+  "id": "dmg_B_syndcar_missed_damage_01",
+  "component": "inspect.damage.dmg_B.syndcar",
+  "file": "dmg_B_syndcar_missed_damage_01.jpg",
+  "description": "missed glass_shatter (box area 3.001% of image)",
+  "category": "missed_damage"
+ },
+ {
+  "id": "dmg_B_syndcar_false_positive_02",
+  "component": "inspect.damage.dmg_B.syndcar",
+  "file": "dmg_B_syndcar_false_positive_02.jpg",
+  "description": "unmatched glass_shatter prediction, score 0.82 (may be unlabelled damage)",
+  "category": "false_positive"
+ },
+ {
+  "id": "dmg_B_syndcar_false_positive_03",
+  "component": "inspect.damage.dmg_B.syndcar",
+  "file": "dmg_B_syndcar_false_positive_03.jpg",
+  "description": "unmatched glass_shatter prediction, score 0.80 (may be unlabelled damage)",
+  "category": "false_positive"
+ },
+ {
+  "id": "dmg_B_syndcar_wrong_class_04",
+  "component": "inspect.damage.dmg_B.syndcar",
+  "file": "dmg_B_syndcar_wrong_class_04.jpg",
+  "description": "crack predicted as scratch",
+  "category": "wrong_class"
+ },
+ {
+  "id": "dmg_B_syndcar_wrong_class_05",
+  "component": "inspect.damage.dmg_B.syndcar",
+  "file": "dmg_B_syndcar_wrong_class_05.jpg",
+  "description": "crack predicted as scratch",
+  "category": "wrong_class"
+ }
+]

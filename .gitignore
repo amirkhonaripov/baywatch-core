@@ -1,0 +1,25 @@
+# deps / builds
+web/node_modules/
+web/dist/
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# data, weights and run outputs live on the GPU box / Modal volume, never in git
+data/
+runs/
+artifacts/
+logs/
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.engine
+
+# local tooling / scratch
+.claude/
+docs/deck/render/
+~$*

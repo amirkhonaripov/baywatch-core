@@ -1,0 +1,3974 @@
+[
+ {
+  "id": "ident.ocr.baseline_cct_s.test_synth_uz.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed, disjoint texts",
+  "n": 3000,
+  "model": "cct_s_v2_global",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.097,
+    "ci_low": 0.08691909125536426,
+    "ci_high": 0.10811166081724846,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.5942083333333333,
+    "ci_low": 0.5848364583333334,
+    "ci_high": 0.603597619047619,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.15866666666666668,
+    "ci_low": 0.14603007630073594,
+    "ci_high": 0.1721762844290866,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 8.50 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_cct_s]",
+  "predictions_csv": "runs/ident/baseline_cct_s/preds_test_synth_uz_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_cct_s_v2_global.test_autoria_kz.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KZ plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KZ",
+  "split": "test (native split)",
+  "n": 279,
+  "model": "cct_s_v2_global",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.30824372759856633,
+    "ci_low": 0.25697050047064773,
+    "ci_high": 0.36472569482499284,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.7432795698924731,
+    "ci_low": 0.7138984895033282,
+    "ci_high": 0.7725470430107525,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.5232974910394266,
+    "ci_low": 0.46477329455732025,
+    "ci_high": 0.5811888499394713,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 0.85 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_cct_s_v2_global]",
+  "predictions_csv": "runs/ident/baseline_cct_s_v2_global/preds_test_autoria_kz_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_cct_s_v2_global.test_autoria_kg.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KG plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KG",
+  "split": "test (native split)",
+  "n": 1068,
+  "model": "cct_s_v2_global",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6769662921348315,
+    "ci_low": 0.6483292340208949,
+    "ci_high": 0.7043348627904925,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9093097913322632,
+    "ci_low": 0.900626170411985,
+    "ci_high": 0.9179545378544677,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.7134831460674157,
+    "ci_low": 0.6856396142796486,
+    "ci_high": 0.7397964390166283,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 0.18 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_cct_s_v2_global]",
+  "predictions_csv": "runs/ident/baseline_cct_s_v2_global/preds_test_autoria_kg_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_cct_s_v2_global.test_autoria_ru.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, RU plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR RU",
+  "split": "test (native split)",
+  "n": 2845,
+  "model": "cct_s_v2_global",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.27311072056239016,
+    "ci_low": 0.25705251754658265,
+    "ci_high": 0.28978081148871504,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.7985842608865455,
+    "ci_low": 0.7922327182190977,
+    "ci_high": 0.8050527240773286,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.481195079086116,
+    "ci_low": 0.4628729319084284,
+    "ci_high": 0.4995679404438387,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 0.18 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_cct_s_v2_global]",
+  "predictions_csv": "runs/ident/baseline_cct_s_v2_global/preds_test_autoria_ru_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_cct_s_v2_global.test_synth_uz.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed, disjoint texts",
+  "n": 3000,
+  "model": "cct_s_v2_global",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.097,
+    "ci_low": 0.08691909125536426,
+    "ci_high": 0.10811166081724846,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.5942083333333333,
+    "ci_low": 0.5848364583333334,
+    "ci_high": 0.603597619047619,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.15866666666666668,
+    "ci_low": 0.14603007630073594,
+    "ci_high": 0.1721762844290866,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 0.18 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_cct_s_v2_global]",
+  "predictions_csv": "runs/ident/baseline_cct_s_v2_global/preds_test_synth_uz_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_cct_s_v2_global.test_uz_real.argmax_upright",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops upright",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "cct_s_v2_global",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.33444816053511706,
+    "ci_low": 0.2833698131053931,
+    "ci_high": 0.3897264651072416,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.7612876254180602,
+    "ci_low": 0.7366220735785953,
+    "ci_high": 0.7851170568561873,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.4013377926421405,
+    "ci_low": 0.3473690991489438,
+    "ci_high": 0.4578094908969698,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 4.80 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_cct_s_v2_global]",
+  "predictions_csv": "runs/ident/baseline_cct_s_v2_global/preds_test_uz_real_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_cct_s_v2_global.test_uz_real_raw.argmax_orient_search",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops in raw orientation",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "cct_s_v2_global",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.33444816053511706,
+    "ci_low": 0.2833698131053931,
+    "ci_high": 0.3897264651072416,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.5631270903010034,
+    "ci_low": 0.5146216555183947,
+    "ci_high": 0.6082880434782608,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.3879598662207358,
+    "ci_low": 0.33448144277641473,
+    "ci_high": 0.44428068490284317,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=True; wall time 15.05 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_cct_s_v2_global]",
+  "predictions_csv": "runs/ident/baseline_cct_s_v2_global/preds_test_uz_real_raw_argmax.csv"
+ },
+ {
+  "id": "ident.e2e.baseline_e2e.uz_real",
+  "name": "End-to-end plate read: detector + OCR on real Uzbek photos",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos (stretched 640x640)",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "det=fastalpr; ocr=cct_s_v2_global; mode=argmax; orient=False",
+  "metrics": [
+   {
+    "name": "e2e_exact_match(all GT plates)",
+    "value": 0.15719063545150502,
+    "ci_low": 0.12031526509084847,
+    "ci_high": 0.20276288676359736,
+    "unit": "fraction"
+   },
+   {
+    "name": "detected@IoU0.5",
+    "value": 0.46153846153846156,
+    "ci_low": 0.4058778411105375,
+    "ci_high": 0.5181748295853271,
+    "unit": "fraction"
+   },
+   {
+    "name": "exact_match|detected",
+    "value": 0.34057971014492755,
+    "ci_low": 0.2667881717590257,
+    "ci_high": 0.423006332853186,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "labels verified by Claude (AI), pending human spot-check; 2 unreadable/partial crops excluded; det conf>=0.25 [run: baseline_e2e]"
+ },
+ {
+  "id": "ident.det.baseline_fastalpr.uz_real_test",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos (stretched 640x640)",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars",
+  "n": 301,
+  "model": "fastalpr",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 0.46179401993355484,
+    "ci_low": 0.40630930632322093,
+    "ci_high": 0.5182416386533006,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.7354497354497355,
+    "ci_low": 0.6683274714969182,
+    "ci_high": 0.7931915428492297,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.443788167053508,
+    "ci_low": 0.3804262586461797,
+    "ci_high": 0.4964290222182281,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.18604651162790697,
+    "ci_low": 0.14614008559665997,
+    "ci_high": 0.23386550573214726,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 10.842446004971862,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 15.365171246230602,
+    "unit": "ms"
+   }
+  ],
+  "notes": "301 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: baseline_fastalpr]"
+ },
+ {
+  "id": "ident.det.baseline_fastalpr.rodosol_test",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "fixed toll cameras (BR/Mercosur), day+night, rain",
+  "dataset": "RodoSol-ALPR (cars only, Kaggle mirror)",
+  "split": "block-split test",
+  "n": 1000,
+  "model": "fastalpr",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 0.996,
+    "ci_low": 0.9897604437227377,
+    "ci_high": 0.9984434118595916,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9871159563924677,
+    "ci_low": 0.9780816714404047,
+    "ci_high": 0.9924552190464438,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.9978091381165878,
+    "ci_low": 0.9947070627343,
+    "ci_high": 0.9998772427590886,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.95,
+    "ci_low": 0.9346861797557492,
+    "ci_high": 0.9618697376072513,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 11.192705016583204,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 19.104901701211926,
+    "unit": "ms"
+   }
+  ],
+  "notes": "1000 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: baseline_fastalpr]"
+ },
+ {
+  "id": "ident.det.baseline_fastalpr.ccpd_db",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "CCPD-DB: very bright/dark/uneven illumination (Chinese plates)",
+  "dataset": "CCPD2019 ccpd_db",
+  "split": "subset sample",
+  "n": 511,
+  "model": "fastalpr",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 0.898238747553816,
+    "ci_low": 0.8689833046206181,
+    "ci_high": 0.9215513211888147,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9,
+    "ci_low": 0.8708987191375436,
+    "ci_high": 0.9231205118843976,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.90298011930386,
+    "ci_low": 0.8754782220936325,
+    "ci_high": 0.9319862007179348,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.7162426614481409,
+    "ci_low": 0.6756540617233249,
+    "ci_high": 0.7536042977456792,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 14.152768533676863,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 23.423439473845065,
+    "unit": "ms"
+   }
+  ],
+  "notes": "511 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: baseline_fastalpr]"
+ },
+ {
+  "id": "ident.det.baseline_fastalpr.ccpd_weather",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "CCPD-Weather: rain/snow/fog (Chinese plates)",
+  "dataset": "CCPD2019 ccpd_weather",
+  "split": "subset sample",
+  "n": 511,
+  "model": "fastalpr",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 1.0,
+    "ci_low": 0.9925385596771995,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9826923076923076,
+    "ci_low": 0.9674370454587842,
+    "ci_high": 0.9908681660648224,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.9998971053514875,
+    "ci_low": 0.9997372491522619,
+    "ci_high": 0.9999885335127201,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.9178082191780822,
+    "ci_low": 0.8907620846236967,
+    "ci_high": 0.9386194515449221,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 15.577400452457368,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 24.50816403143108,
+    "unit": "ms"
+   }
+  ],
+  "notes": "511 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: baseline_fastalpr]"
+ },
+ {
+  "id": "ident.det.baseline_fastalpr.ccpd_challenge",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "CCPD-Challenge: hardest cases (Chinese plates)",
+  "dataset": "CCPD2019 ccpd_challenge",
+  "split": "subset sample",
+  "n": 597,
+  "model": "fastalpr",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 0.981574539363484,
+    "ci_low": 0.9673102716553088,
+    "ci_high": 0.9896809471740065,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9361022364217252,
+    "ci_low": 0.9141579430419859,
+    "ci_high": 0.9527268775005078,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.9805374084058156,
+    "ci_low": 0.9642059767566357,
+    "ci_high": 0.9939546573524357,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.8743718592964824,
+    "ci_low": 0.8453696110510638,
+    "ci_high": 0.8985870408040735,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 16.67994714807719,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 26.36410492705181,
+    "unit": "ms"
+   }
+  ],
+  "notes": "597 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: baseline_fastalpr]"
+ },
+ {
+  "id": "ident.ocr.baseline_global_mobile_vit_v2_ocr.test_autoria_kz.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KZ plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KZ",
+  "split": "test (native split)",
+  "n": 279,
+  "model": "global_mobile_vit_v2_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6594982078853047,
+    "ci_low": 0.6020635528408578,
+    "ci_high": 0.712600359483329,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9189068100358423,
+    "ci_low": 0.9005376344086021,
+    "ci_high": 0.9359318996415771,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.8709677419354839,
+    "ci_low": 0.8265373414371049,
+    "ci_high": 0.9053214209348803,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 14.60 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_global_mobile_vit_v2_ocr]",
+  "predictions_csv": "runs/ident/baseline_global_mobile_vit_v2_ocr/preds_test_autoria_kz_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_global_mobile_vit_v2_ocr.test_autoria_kg.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KG plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KG",
+  "split": "test (native split)",
+  "n": 1068,
+  "model": "global_mobile_vit_v2_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6582397003745318,
+    "ci_low": 0.6292723156902412,
+    "ci_high": 0.6860728290776131,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9100900659889424,
+    "ci_low": 0.9007816680042804,
+    "ci_high": 0.9183835495808811,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.7883895131086143,
+    "ci_low": 0.7628816772325095,
+    "ci_high": 0.8118301842378997,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 0.09 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_global_mobile_vit_v2_ocr]",
+  "predictions_csv": "runs/ident/baseline_global_mobile_vit_v2_ocr/preds_test_autoria_kg_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_global_mobile_vit_v2_ocr.test_autoria_ru.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, RU plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR RU",
+  "split": "test (native split)",
+  "n": 2845,
+  "model": "global_mobile_vit_v2_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.4080843585237258,
+    "ci_low": 0.39016030052320705,
+    "ci_high": 0.42625629985282754,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.8762351103300138,
+    "ci_low": 0.8714064635813318,
+    "ci_high": 0.8810441075961726,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.680140597539543,
+    "ci_low": 0.6627685124288804,
+    "ci_high": 0.6970268692433271,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 0.07 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_global_mobile_vit_v2_ocr]",
+  "predictions_csv": "runs/ident/baseline_global_mobile_vit_v2_ocr/preds_test_autoria_ru_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_global_mobile_vit_v2_ocr.test_synth_uz.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed, disjoint texts",
+  "n": 3000,
+  "model": "global_mobile_vit_v2_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.030666666666666665,
+    "ci_low": 0.025072069611626467,
+    "ci_high": 0.03746167639187949,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.5406369047619047,
+    "ci_low": 0.5315459821428572,
+    "ci_high": 0.549673511904762,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.087,
+    "ci_low": 0.07743563308366241,
+    "ci_high": 0.09762069596345682,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 0.07 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_global_mobile_vit_v2_ocr]",
+  "predictions_csv": "runs/ident/baseline_global_mobile_vit_v2_ocr/preds_test_synth_uz_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_global_mobile_vit_v2_ocr.test_uz_real.argmax_upright",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops upright",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "global_mobile_vit_v2_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.26755852842809363,
+    "ci_low": 0.22056171330958435,
+    "ci_high": 0.3204522530697715,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.8051839464882943,
+    "ci_low": 0.7846989966555183,
+    "ci_high": 0.8240071070234113,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.5418060200668896,
+    "ci_low": 0.4851571752088279,
+    "ci_high": 0.5973942696869712,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 5.80 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_global_mobile_vit_v2_ocr]",
+  "predictions_csv": "runs/ident/baseline_global_mobile_vit_v2_ocr/preds_test_uz_real_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.baseline_global_mobile_vit_v2_ocr.test_uz_real_raw.argmax_orient_search",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops in raw orientation",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "global_mobile_vit_v2_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.26755852842809363,
+    "ci_low": 0.22056171330958435,
+    "ci_high": 0.3204522530697715,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.6446488294314381,
+    "ci_low": 0.6036789297658863,
+    "ci_high": 0.6868729096989966,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.49498327759197325,
+    "ci_low": 0.43873648293717665,
+    "ci_high": 0.5513573436753275,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=True; wall time 2.66 ms/crop incl. decode (batch 256, cuda:0) [run: baseline_global_mobile_vit_v2_ocr]",
+  "predictions_csv": "runs/ident/baseline_global_mobile_vit_v2_ocr/preds_test_uz_real_raw_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_autoria_kz.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KZ plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KZ",
+  "split": "test (native split)",
+  "n": 279,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.992831541218638,
+    "ci_low": 0.9742441898213665,
+    "ci_high": 0.9980319437646041,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9991039426523297,
+    "ci_low": 0.9977598566308243,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9864183318926757,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9864183318926757,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 2.23 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_autoria_kz_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_autoria_kz.constrained",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KZ plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KZ",
+  "split": "test (native split)",
+  "n": 279,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.013581668107324387,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.5076378221539511,
+    "ci_low": 0.5016614396654719,
+    "ci_high": 0.5138040834613415,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.013581668107324387,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9864183318926757,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=False; wall time 1.72 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_autoria_kz_constrained.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_autoria_kz.auto",
+  "name": "Plate OCR exact-match/char-acc [auto]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KZ plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KZ",
+  "split": "test (native split)",
+  "n": 279,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.992831541218638,
+    "ci_low": 0.9742441898213665,
+    "ci_high": 0.9980319437646041,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9991039426523297,
+    "ci_low": 0.9977598566308243,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9864183318926757,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9864183318926757,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; orientation_search=False; wall time 1.57 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_autoria_kz_auto.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_autoria_kg.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KG plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KG",
+  "split": "test (native split)",
+  "n": 1068,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9887640449438202,
+    "ci_low": 0.9804636217666461,
+    "ci_high": 0.9935610265695668,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9976201622971287,
+    "ci_low": 0.9959312856696987,
+    "ci_high": 0.9989526206081686,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.99812734082397,
+    "ci_low": 0.9931978253553438,
+    "ci_high": 0.9994862990026355,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9964160195623327,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 1.59 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_autoria_kg_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_autoria_kg.constrained",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KG plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KG",
+  "split": "test (native split)",
+  "n": 1068,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.32209737827715357,
+    "ci_low": 0.29475335852194223,
+    "ci_high": 0.3507165970644937,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.8399110486891387,
+    "ci_low": 0.8311926219457821,
+    "ci_high": 0.8484517400124845,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.702247191011236,
+    "ci_low": 0.6741376437513336,
+    "ci_high": 0.7289070383188236,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9964160195623327,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=False; wall time 1.57 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_autoria_kg_constrained.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_autoria_kg.auto",
+  "name": "Plate OCR exact-match/char-acc [auto]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KG plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KG",
+  "split": "test (native split)",
+  "n": 1068,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9850187265917603,
+    "ci_low": 0.9758031376034514,
+    "ci_high": 0.9907577203240548,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9970851168182627,
+    "ci_low": 0.9953127786695203,
+    "ci_high": 0.9984953239254505,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.99812734082397,
+    "ci_low": 0.9931978253553438,
+    "ci_high": 0.9994862990026355,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9964160195623327,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; orientation_search=False; wall time 1.62 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_autoria_kg_auto.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_autoria_ru.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, RU plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR RU",
+  "split": "test (native split)",
+  "n": 2845,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9961335676625659,
+    "ci_low": 0.9930894857821415,
+    "ci_high": 0.9978396483258016,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9995020503807851,
+    "ci_low": 0.9991797256395235,
+    "ci_high": 0.999780316344464,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9996485061511423,
+    "ci_low": 0.9980115817891847,
+    "ci_high": 0.9999379500099236,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9986515715682247,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 1.51 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_autoria_ru_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_autoria_ru.constrained",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, RU plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR RU",
+  "split": "test (native split)",
+  "n": 2845,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0013484284317753276,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.4774165202108963,
+    "ci_low": 0.47644014840851395,
+    "ci_high": 0.47844171060339774,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0013484284317753276,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9986515715682247,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=False; wall time 1.60 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_autoria_ru_constrained.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_autoria_ru.auto",
+  "name": "Plate OCR exact-match/char-acc [auto]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, RU plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR RU",
+  "split": "test (native split)",
+  "n": 2845,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9961335676625659,
+    "ci_low": 0.9930894857821415,
+    "ci_high": 0.9978396483258016,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9995020503807851,
+    "ci_low": 0.9991797256395235,
+    "ci_high": 0.999780316344464,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9996485061511423,
+    "ci_low": 0.9980115817891847,
+    "ci_high": 0.9999379500099236,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9986515715682247,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; orientation_search=False; wall time 1.52 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_autoria_ru_auto.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_synth_uz.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed, disjoint texts",
+  "n": 3000,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6633333333333333,
+    "ci_low": 0.6462235976439563,
+    "ci_high": 0.6800253117724373,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.8874761904761905,
+    "ci_low": 0.8794699404761906,
+    "ci_high": 0.8946556547619048,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.7943333333333333,
+    "ci_low": 0.7794978626474269,
+    "ci_high": 0.8084159884029312,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.9886666666666667,
+    "ci_low": 0.9842050842176286,
+    "ci_high": 0.991878387628153,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.9472908219683007,
+    "ci_low": 0.938232260649658,
+    "ci_high": 0.9550844958803653,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 1.56 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_synth_uz_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_synth_uz.constrained",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed, disjoint texts",
+  "n": 3000,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.665,
+    "ci_low": 0.6479088226026989,
+    "ci_high": 0.6816691573179435,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.8866190476190478,
+    "ci_low": 0.8784339285714285,
+    "ci_high": 0.893893005952381,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.793,
+    "ci_low": 0.7781316884144889,
+    "ci_high": 0.8071189062324702,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.9886666666666667,
+    "ci_low": 0.9842050842176286,
+    "ci_high": 0.991878387628153,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.9915223000368596,
+    "ci_low": 0.987310446845803,
+    "ci_high": 0.9943441842483761,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=False; wall time 1.61 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_synth_uz_constrained.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_synth_uz.auto",
+  "name": "Plate OCR exact-match/char-acc [auto]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed, disjoint texts",
+  "n": 3000,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.665,
+    "ci_low": 0.6479088226026989,
+    "ci_high": 0.6816691573179435,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.8866190476190478,
+    "ci_low": 0.8784339285714285,
+    "ci_high": 0.893893005952381,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.793,
+    "ci_low": 0.7781316884144889,
+    "ci_high": 0.8071189062324702,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.9886666666666667,
+    "ci_low": 0.9842050842176286,
+    "ci_high": 0.991878387628153,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.9915223000368596,
+    "ci_low": 0.987310446845803,
+    "ci_high": 0.9943441842483761,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; orientation_search=False; wall time 1.61 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_synth_uz_auto.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_uz_real.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops upright",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9899665551839465,
+    "ci_low": 0.9709209652392736,
+    "ci_high": 0.9965819689394939,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9987458193979933,
+    "ci_low": 0.9970735785953178,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.7792642140468228,
+    "ci_low": 0.7288766976266388,
+    "ci_high": 0.8225669542773004,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 1.65 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_uz_real_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_uz_real.constrained",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops upright",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9899665551839465,
+    "ci_low": 0.9709209652392736,
+    "ci_high": 0.9965819689394939,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9987458193979933,
+    "ci_low": 0.9970735785953178,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.7792642140468228,
+    "ci_low": 0.7288766976266388,
+    "ci_high": 0.8225669542773004,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=False; wall time 1.58 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_uz_real_constrained.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_uz_real.auto",
+  "name": "Plate OCR exact-match/char-acc [auto]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops upright",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9899665551839465,
+    "ci_low": 0.9709209652392736,
+    "ci_high": 0.9965819689394939,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9987458193979933,
+    "ci_low": 0.9970735785953178,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.7792642140468228,
+    "ci_low": 0.7288766976266388,
+    "ci_high": 0.8225669542773004,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; orientation_search=False; wall time 1.51 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_uz_real_auto.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_uz_real_raw.argmax_orient_search",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops in raw orientation",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9866220735785953,
+    "ci_low": 0.9661132015647418,
+    "ci_high": 0.9947856170223619,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9954013377926422,
+    "ci_low": 0.987876254180602,
+    "ci_high": 0.9995819397993311,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9966555183946488,
+    "ci_low": 0.9813017926534328,
+    "ci_high": 0.9994093727086627,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.7759197324414716,
+    "ci_low": 0.7253270903559244,
+    "ci_high": 0.819512445956351,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.9966555183946488,
+    "ci_low": 0.9813017926534328,
+    "ci_high": 0.9994093727086627,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=True; wall time 3.79 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_uz_real_raw_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_uz_real_raw.constrained_orient_search",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops in raw orientation",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9866220735785953,
+    "ci_low": 0.9661132015647418,
+    "ci_high": 0.9947856170223619,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9954013377926422,
+    "ci_low": 0.987876254180602,
+    "ci_high": 0.9995819397993311,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9966555183946488,
+    "ci_low": 0.9813017926534328,
+    "ci_high": 0.9994093727086627,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.7759197324414716,
+    "ci_low": 0.7253270903559244,
+    "ci_high": 0.819512445956351,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.9966555183946488,
+    "ci_low": 0.9813017926534328,
+    "ci_high": 0.9994093727086627,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=True; wall time 3.29 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_uz_real_raw_constrained.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_uz_real_raw.auto_orient_search",
+  "name": "Plate OCR exact-match/char-acc [auto]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops in raw orientation",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9866220735785953,
+    "ci_low": 0.9661132015647418,
+    "ci_high": 0.9947856170223619,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9954013377926422,
+    "ci_low": 0.987876254180602,
+    "ci_high": 0.9995819397993311,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9966555183946488,
+    "ci_low": 0.9813017926534328,
+    "ci_high": 0.9994093727086627,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.7759197324414716,
+    "ci_low": 0.7253270903559244,
+    "ci_high": 0.819512445956351,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.9966555183946488,
+    "ci_low": 0.9813017926534328,
+    "ci_high": 0.9994093727086627,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; orientation_search=True; wall time 3.54 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_uz_real_raw_auto.csv"
+ },
+ {
+  "id": "ident.ocr.final.test_uz_real_raw.argmax_no_orient_search",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops in raw orientation",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.4782608695652174,
+    "ci_low": 0.42227597081584667,
+    "ci_high": 0.5347972778383376,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.552257525083612,
+    "ci_low": 0.5050062709030101,
+    "ci_high": 0.6015990802675585,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.4816053511705686,
+    "ci_low": 0.4255630909313263,
+    "ci_high": 0.5381142733145219,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.35785953177257523,
+    "ci_low": 0.30564264311120615,
+    "ci_high": 0.4136824442430762,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.4816053511705686,
+    "ci_low": 0.4255630909313263,
+    "ci_high": 0.5381142733145219,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 2.20 ms/crop incl. decode (batch 256, cuda:0) [run: final]",
+  "predictions_csv": "runs/ident/final/preds_test_uz_real_raw_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.width300.auto",
+  "name": "Real-UZ crops degraded: width=300",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9866220735785953,
+    "ci_low": 0.9661132015647418,
+    "ci_high": 0.9947856170223619,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9983277591973244,
+    "ci_low": 0.9966555183946488,
+    "ci_high": 0.9995819397993311,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.width160.auto",
+  "name": "Real-UZ crops degraded: width=160",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9866220735785953,
+    "ci_low": 0.9661132015647418,
+    "ci_high": 0.9947856170223619,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9983277591973244,
+    "ci_low": 0.9966555183946488,
+    "ci_high": 0.9995819397993311,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.width100.auto",
+  "name": "Real-UZ crops degraded: width=100",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.959866220735786,
+    "ci_low": 0.9311707234156454,
+    "ci_high": 0.9768951704381468,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9945652173913043,
+    "ci_low": 0.9912207357859532,
+    "ci_high": 0.9974916387959866,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9966555183946488,
+    "ci_low": 0.9813017926534328,
+    "ci_high": 0.9994093727086627,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.width70.auto",
+  "name": "Real-UZ crops degraded: width=70",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.7591973244147158,
+    "ci_low": 0.7076415913098243,
+    "ci_high": 0.8041773670441313,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.947324414715719,
+    "ci_low": 0.9331103678929766,
+    "ci_high": 0.9602842809364549,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9163879598662207,
+    "ci_low": 0.8794863641403519,
+    "ci_high": 0.942726027021809,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.width50.auto",
+  "name": "Real-UZ crops degraded: width=50",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.3277591973244147,
+    "ci_low": 0.2770324273345312,
+    "ci_high": 0.3828556196947756,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.8085284280936454,
+    "ci_low": 0.7851170568561873,
+    "ci_high": 0.8294523411371236,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.5819397993311036,
+    "ci_low": 0.5253387995930184,
+    "ci_high": 0.636462032402748,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.width35.auto",
+  "name": "Real-UZ crops degraded: width=35",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.013377926421404682,
+    "ci_low": 0.005214382977638083,
+    "ci_high": 0.03388679843525821,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.5209030100334449,
+    "ci_low": 0.4962270066889632,
+    "ci_high": 0.5464046822742475,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.09364548494983277,
+    "ci_low": 0.06558556658022505,
+    "ci_high": 0.13201438903260587,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.blur1.0.auto",
+  "name": "Real-UZ crops degraded: blur=1.0",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9866220735785953,
+    "ci_low": 0.9661132015647418,
+    "ci_high": 0.9947856170223619,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9983277591973244,
+    "ci_low": 0.9966555183946488,
+    "ci_high": 0.9995819397993311,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.blur2.0.auto",
+  "name": "Real-UZ crops degraded: blur=2.0",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.8963210702341137,
+    "ci_low": 0.8565942963567016,
+    "ci_high": 0.9259934012554755,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9828595317725752,
+    "ci_low": 0.9749163879598662,
+    "ci_high": 0.9895484949832776,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9832775919732442,
+    "ci_low": 0.9614581273416436,
+    "ci_high": 0.992836575653796,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.blur3.0.auto",
+  "name": "Real-UZ crops degraded: blur=3.0",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.5518394648829431,
+    "ci_low": 0.4951682891753708,
+    "ci_high": 0.6071955024954203,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.8946488294314381,
+    "ci_low": 0.8754180602006689,
+    "ci_high": 0.9122178093645484,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.7926421404682275,
+    "ci_low": 0.7431190615983557,
+    "ci_high": 0.8347410526722393,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.jpeg30.auto",
+  "name": "Real-UZ crops degraded: jpeg=30",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9832775919732442,
+    "ci_low": 0.9614581273416436,
+    "ci_high": 0.992836575653796,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9979096989966555,
+    "ci_low": 0.995819397993311,
+    "ci_high": 0.9995819397993311,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.jpeg10.auto",
+  "name": "Real-UZ crops degraded: jpeg=10",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9632107023411371,
+    "ci_low": 0.9353346055559926,
+    "ci_high": 0.9793354038894635,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9937290969899666,
+    "ci_low": 0.9895484949832776,
+    "ci_high": 0.9970735785953178,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9866220735785953,
+    "ci_low": 0.9661132015647418,
+    "ci_high": 0.9947856170223619,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.noise8.auto",
+  "name": "Real-UZ crops degraded: noise=8",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9899665551839465,
+    "ci_low": 0.9709209652392736,
+    "ci_high": 0.9965819689394939,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9987458193979933,
+    "ci_low": 0.9970735785953178,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.stress_uz_real.noise16.auto",
+  "name": "Real-UZ crops degraded: noise=16",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "real Uzbek test crops with artificial degradation (resize to width / gaussian blur sigma / JPEG quality / gaussian noise sigma)",
+  "dataset": "Roboflow Uzbek_Plates valid originals + synthetic degradation",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "plate_ocr",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9866220735785953,
+    "ci_low": 0.9661132015647418,
+    "ci_high": 0.9947856170223619,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9983277591973244,
+    "ci_low": 0.9966555183946488,
+    "ci_high": 0.9995819397993311,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "median native crop width 255px; decoding=auto; labels verified by Claude (AI), pending human spot-check [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.degradation_dirt.auto",
+  "name": "Synthetic UZ OCR exact match, subset: degradation dirt",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 584,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6386986301369864,
+    "ci_low": 0.598948692993006,
+    "ci_high": 0.676635816349017,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.degradation_glare.auto",
+  "name": "Synthetic UZ OCR exact match, subset: degradation glare",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 669,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.5082212257100149,
+    "ci_low": 0.47039938639394,
+    "ci_high": 0.5459491900140596,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.degradation_occlusion.auto",
+  "name": "Synthetic UZ OCR exact match, subset: degradation occlusion",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 356,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6292134831460674,
+    "ci_low": 0.5779089339138526,
+    "ci_high": 0.6777592158916506,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.degradation_rain.auto",
+  "name": "Synthetic UZ OCR exact match, subset: degradation rain",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 396,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6161616161616161,
+    "ci_low": 0.567364671161003,
+    "ci_high": 0.6627265261634263,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.degradation_shadow.auto",
+  "name": "Synthetic UZ OCR exact match, subset: degradation shadow",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 845,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6378698224852071,
+    "ci_low": 0.6049078226847998,
+    "ci_high": 0.6695839538169156,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.format_uz_ev.auto",
+  "name": "Synthetic UZ OCR exact match, subset: format uz_ev",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 287,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.5958188153310104,
+    "ci_low": 0.5381408543996131,
+    "ci_high": 0.6509656100742427,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.format_uz_legal.auto",
+  "name": "Synthetic UZ OCR exact match, subset: format uz_legal",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 653,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6707503828483921,
+    "ci_low": 0.6337993179811459,
+    "ci_high": 0.7057042212753113,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.format_uz_moto.auto",
+  "name": "Synthetic UZ OCR exact match, subset: format uz_moto",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 176,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6647727272727273,
+    "ci_low": 0.5921697235779447,
+    "ci_high": 0.7303365571224764,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.format_uz_private.auto",
+  "name": "Synthetic UZ OCR exact match, subset: format uz_private",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 1884,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6735668789808917,
+    "ci_low": 0.6520586830277975,
+    "ci_high": 0.694368712633141,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.scenario_day.auto",
+  "name": "Synthetic UZ OCR exact match, subset: scenario day",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 1158,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6683937823834197,
+    "ci_low": 0.6407604195076508,
+    "ci_high": 0.6949136064441019,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.scenario_dusk.auto",
+  "name": "Synthetic UZ OCR exact match, subset: scenario dusk",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 371,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6684636118598383,
+    "ci_low": 0.6190486709337741,
+    "ci_high": 0.7144256474974586,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.scenario_night.auto",
+  "name": "Synthetic UZ OCR exact match, subset: scenario night",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 361,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6038781163434903,
+    "ci_low": 0.5525861677728169,
+    "ci_high": 0.6529825749967916,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.scenario_night_ir.auto",
+  "name": "Synthetic UZ OCR exact match, subset: scenario night_ir",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 364,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6758241758241759,
+    "ci_low": 0.6261200673122064,
+    "ci_high": 0.721855934116154,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.scenario_overcast.auto",
+  "name": "Synthetic UZ OCR exact match, subset: scenario overcast",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 372,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6747311827956989,
+    "ci_low": 0.6255493505738526,
+    "ci_high": 0.7203411757345294,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.scenario_overexposed.auto",
+  "name": "Synthetic UZ OCR exact match, subset: scenario overexposed",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 374,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6898395721925134,
+    "ci_low": 0.6412293691914858,
+    "ci_high": 0.7345896328926306,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.width_120-199_px.auto",
+  "name": "Synthetic UZ OCR exact match, subset: width 120-199 px",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 799,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.7133917396745932,
+    "ci_low": 0.681075847823242,
+    "ci_high": 0.7436655457028222,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.width_80-119_px.auto",
+  "name": "Synthetic UZ OCR exact match, subset: width 80-119 px",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 656,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.4725609756097561,
+    "ci_low": 0.4346275452973036,
+    "ci_high": 0.5108138944322623,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.width_<80_px.auto",
+  "name": "Synthetic UZ OCR exact match, subset: width <80 px",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 367,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.2506811989100817,
+    "ci_low": 0.20907716716829663,
+    "ci_high": 0.2974504994470952,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.ocr.final.synth_breakdown.width_>=200_px.auto",
+  "name": "Synthetic UZ OCR exact match, subset: width >=200 px",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed",
+  "n": 1178,
+  "model": "final",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.868421052631579,
+    "ci_low": 0.8479143638049931,
+    "ci_high": 0.8865327090419333,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=auto; subsets overlap (a crop can be in several degradation groups) [run: final]"
+ },
+ {
+  "id": "ident.vote.final.single_frame_argmax(all frames)",
+  "name": "Track voting [single_frame_argmax(all frames)]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 4000,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6175,
+    "ci_low": 0.6023331225420133,
+    "ci_high": 0.6324414082849069,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.8733125,
+    "ci_low": 0.8664375,
+    "ci_high": 0.88,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.76125,
+    "ci_low": 0.7477917663103361,
+    "ci_high": 0.7742069245707949,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames; unit = frame, not track; frames are correlated within a track [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first3_best_conf_frame",
+  "name": "Track voting [first3_best_conf_frame]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.6725,
+    "ci_low": 0.6250583013725689,
+    "ci_high": 0.7166599570820987,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.92375,
+    "ci_low": 0.9096875,
+    "ci_high": 0.93625,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.8325,
+    "ci_low": 0.7927798983351753,
+    "ci_high": 0.8658944259325176,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first3_majority",
+  "name": "Track voting [first3_majority]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.675,
+    "ci_low": 0.6276239644145414,
+    "ci_high": 0.7190467325684549,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9240625,
+    "ci_low": 0.9103046874999999,
+    "ci_high": 0.9365703124999999,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.8325,
+    "ci_low": 0.7927798983351753,
+    "ci_high": 0.8658944259325176,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first3_pooled",
+  "name": "Track voting [first3_pooled]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.73,
+    "ci_low": 0.684457128728908,
+    "ci_high": 0.7711672158773156,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9446875,
+    "ci_low": 0.9334296875,
+    "ci_high": 0.9546953125,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.8875,
+    "ci_low": 0.8527764306768796,
+    "ci_high": 0.9148515412140404,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first3_pooled+constrained",
+  "name": "Track voting [first3_pooled+constrained]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.735,
+    "ci_low": 0.6896629392432349,
+    "ci_high": 0.7758662824196457,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9446875,
+    "ci_low": 0.9334375,
+    "ci_high": 0.9546875,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.88,
+    "ci_low": 0.8444860470597602,
+    "ci_high": 0.9082846092461745,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first5_best_conf_frame",
+  "name": "Track voting [first5_best_conf_frame]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.885,
+    "ci_low": 0.850008455984224,
+    "ci_high": 0.9126670773783676,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9821875,
+    "ci_low": 0.9765625,
+    "ci_high": 0.9875,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.98,
+    "ci_low": 0.96103658423074,
+    "ci_high": 0.9898316132083353,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first5_majority",
+  "name": "Track voting [first5_majority]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.915,
+    "ci_low": 0.8835678157264721,
+    "ci_high": 0.9385369799760619,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.985625,
+    "ci_low": 0.9803125,
+    "ci_high": 0.990625,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9775,
+    "ci_low": 0.9577973424412419,
+    "ci_high": 0.988118416469505,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first5_pooled",
+  "name": "Track voting [first5_pooled]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.955,
+    "ci_low": 0.9299952708096761,
+    "ci_high": 0.971348541346114,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.993125,
+    "ci_low": 0.9896875,
+    "ci_high": 0.99625,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9925,
+    "ci_low": 0.9781842792759678,
+    "ci_high": 0.9974461108047501,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first5_pooled+constrained",
+  "name": "Track voting [first5_pooled+constrained]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9575,
+    "ci_low": 0.9329979456752499,
+    "ci_high": 0.9732983050088689,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9934375,
+    "ci_low": 0.99,
+    "ci_high": 0.9965625,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9925,
+    "ci_low": 0.9781842792759678,
+    "ci_high": 0.9974461108047501,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first10_best_conf_frame",
+  "name": "Track voting [first10_best_conf_frame]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9825,
+    "ci_low": 0.964322927074442,
+    "ci_high": 0.991497708892962,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9975,
+    "ci_low": 0.9953125,
+    "ci_high": 0.9990625,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9975,
+    "ci_low": 0.9859767149241766,
+    "ci_high": 0.9995585522131983,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first10_majority",
+  "name": "Track voting [first10_majority]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.99,
+    "ci_low": 0.9745734353473804,
+    "ci_high": 0.996104516205009,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9984375,
+    "ci_low": 0.9965625,
+    "ci_high": 0.9996875,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9975,
+    "ci_low": 0.9859767149241766,
+    "ci_high": 0.9995585522131983,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first10_pooled",
+  "name": "Track voting [first10_pooled]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9975,
+    "ci_low": 0.9859767149241766,
+    "ci_high": 0.9995585522131983,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9996875,
+    "ci_low": 0.9990625,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9904877056657034,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.vote.final.first10_pooled+constrained",
+  "name": "Track voting [first10_pooled+constrained]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates, K frames per track, rising resolution",
+  "dataset": "synthetic UZ tracks (ours)",
+  "split": "held-out seed",
+  "n": 400,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9975,
+    "ci_low": 0.9859767149241766,
+    "ci_high": 0.9995585522131983,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9996875,
+    "ci_low": 0.9990625,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9904877056657034,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "400 synthetic tracks x 10 frames;  [run: final]"
+ },
+ {
+  "id": "ident.e2e.ours_e2e.uz_real",
+  "name": "End-to-end plate read: detector + OCR on real Uzbek photos",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos (stretched 640x640)",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars",
+  "n": 299,
+  "model": "det=onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det; ocr=/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_ocr; mode=auto; orient=True",
+  "metrics": [
+   {
+    "name": "e2e_exact_match(all GT plates)",
+    "value": 0.9866220735785953,
+    "ci_low": 0.9661132015647418,
+    "ci_high": 0.9947856170223619,
+    "unit": "fraction"
+   },
+   {
+    "name": "detected@IoU0.5",
+    "value": 1.0,
+    "ci_low": 0.9873152809537594,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "exact_match|detected",
+    "value": 0.9866220735785953,
+    "ci_low": 0.9661132015647418,
+    "ci_high": 0.9947856170223619,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "labels verified by Claude (AI), pending human spot-check; 2 unreadable/partial crops excluded; det conf>=0.25 [run: ours_e2e]"
+ },
+ {
+  "id": "ident.det.ours_plate_det.uz_real_test",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos (stretched 640x640)",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars",
+  "n": 301,
+  "model": "onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 1.0,
+    "ci_low": 0.9873985026985662,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9966887417218543,
+    "ci_low": 0.9814851273417871,
+    "ci_high": 0.9994152422705656,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.9999889991419331,
+    "ci_low": 0.9999344290959958,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.9003322259136213,
+    "ci_low": 0.861283999572168,
+    "ci_high": 0.9292908813260197,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 8.806232479400933,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 14.71038704039529,
+    "unit": "ms"
+   }
+  ],
+  "notes": "301 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: ours_plate_det]"
+ },
+ {
+  "id": "ident.det.ours_plate_det.rodosol_test",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "fixed toll cameras (BR/Mercosur), day+night, rain",
+  "dataset": "RodoSol-ALPR (cars only, Kaggle mirror)",
+  "split": "block-split test",
+  "n": 1000,
+  "model": "onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 1.0,
+    "ci_low": 0.996173241514445,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.999000999000999,
+    "ci_low": 0.9943630560780164,
+    "ci_high": 0.9998236300211522,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 1.0,
+    "ci_low": 0.996173241514445,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 10.192679008468986,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 17.7911554928869,
+    "unit": "ms"
+   }
+  ],
+  "notes": "1000 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: ours_plate_det]"
+ },
+ {
+  "id": "ident.det.ours_plate_det.ccpd_db",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "CCPD-DB: very bright/dark/uneven illumination (Chinese plates)",
+  "dataset": "CCPD2019 ccpd_db",
+  "split": "subset sample",
+  "n": 511,
+  "model": "onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 0.9921722113502935,
+    "ci_low": 0.9800479589017593,
+    "ci_high": 0.9969518366317657,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9883040935672515,
+    "ci_low": 0.9747205415250876,
+    "ci_high": 0.9946289397320073,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.9900518214392178,
+    "ci_low": 0.9790611429330519,
+    "ci_high": 0.9980430528375733,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.9471624266144814,
+    "ci_low": 0.9242161177674518,
+    "ci_high": 0.9634357839399456,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 6.481032469309866,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 15.328050358220935,
+    "unit": "ms"
+   }
+  ],
+  "notes": "511 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: ours_plate_det]"
+ },
+ {
+  "id": "ident.det.ours_plate_det.ccpd_weather",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "CCPD-Weather: rain/snow/fog (Chinese plates)",
+  "dataset": "CCPD2019 ccpd_weather",
+  "split": "subset sample",
+  "n": 511,
+  "model": "onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 1.0,
+    "ci_low": 0.9925385596771995,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 1.0,
+    "ci_low": 0.9925385596771995,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 1.0,
+    "ci_low": 0.9925385596771995,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 6.431560614146292,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 12.374664715025574,
+    "unit": "ms"
+   }
+  ],
+  "notes": "511 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: ours_plate_det]"
+ },
+ {
+  "id": "ident.det.ours_plate_det.ccpd_challenge",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "CCPD-Challenge: hardest cases (Chinese plates)",
+  "dataset": "CCPD2019 ccpd_challenge",
+  "split": "subset sample",
+  "n": 597,
+  "model": "onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 0.9916247906197655,
+    "ci_low": 0.9805457518435797,
+    "ci_high": 0.9964174576395647,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9833887043189369,
+    "ci_low": 0.9696948538115963,
+    "ci_high": 0.9909525094984305,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.9915433690875811,
+    "ci_low": 0.9820208751294238,
+    "ci_high": 0.9998409138763621,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.9782244556113903,
+    "ci_low": 0.9631030337171611,
+    "ci_high": 0.987230854894211,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 6.2870674300938845,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 12.330310186371205,
+    "unit": "ms"
+   }
+  ],
+  "notes": "597 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: ours_plate_det]"
+ },
+ {
+  "id": "ident.det.ours_plate_det_uz_only.uz_real_test",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos (stretched 640x640)",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars",
+  "n": 301,
+  "model": "onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det_uz_only",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 1.0,
+    "ci_low": 0.9873985026985662,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9901315789473685,
+    "ci_low": 0.9713924756686084,
+    "ci_high": 0.9966382799729624,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.9997793975929641,
+    "ci_low": 0.9991019259104635,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.9401993355481728,
+    "ci_low": 0.9074623771107596,
+    "ci_high": 0.9618419525075795,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 14.015824533998966,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 22.035272035282105,
+    "unit": "ms"
+   }
+  ],
+  "notes": "301 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: ours_plate_det_uz_only]"
+ },
+ {
+  "id": "ident.det.ours_plate_det_uz_only.rodosol_test",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "fixed toll cameras (BR/Mercosur), day+night, rain",
+  "dataset": "RodoSol-ALPR (cars only, Kaggle mirror)",
+  "split": "block-split test",
+  "n": 1000,
+  "model": "onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det_uz_only",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 0.992,
+    "ci_low": 0.9842936654690199,
+    "ci_high": 0.995940804181194,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9979879275653923,
+    "ci_low": 0.9926935348146702,
+    "ci_high": 0.9994480436381217,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.9977155233256253,
+    "ci_low": 0.9946725874062032,
+    "ci_high": 0.9999594955383827,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.846,
+    "ci_low": 0.8223081403024968,
+    "ci_high": 0.8670437428254991,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 13.884286861866713,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 20.90711260680109,
+    "unit": "ms"
+   }
+  ],
+  "notes": "1000 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: ours_plate_det_uz_only]"
+ },
+ {
+  "id": "ident.det.ours_plate_det_uz_only.ccpd_db",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "CCPD-DB: very bright/dark/uneven illumination (Chinese plates)",
+  "dataset": "CCPD2019 ccpd_db",
+  "split": "subset sample",
+  "n": 511,
+  "model": "onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det_uz_only",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 0.6555772994129159,
+    "ci_low": 0.6133542147473556,
+    "ci_high": 0.6954787226081722,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9128065395095368,
+    "ci_low": 0.8795002619562792,
+    "ci_high": 0.9375604867624984,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.7858674546280449,
+    "ci_low": 0.7534481456642954,
+    "ci_high": 0.8238877894600816,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.5420743639921722,
+    "ci_low": 0.49872265446427044,
+    "ci_high": 0.5847982028079792,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 13.605425017885864,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 20.14927612617612,
+    "unit": "ms"
+   }
+  ],
+  "notes": "511 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: ours_plate_det_uz_only]"
+ },
+ {
+  "id": "ident.det.ours_plate_det_uz_only.ccpd_weather",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "CCPD-Weather: rain/snow/fog (Chinese plates)",
+  "dataset": "CCPD2019 ccpd_weather",
+  "split": "subset sample",
+  "n": 511,
+  "model": "onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det_uz_only",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 0.9882583170254403,
+    "ci_low": 0.974622537811028,
+    "ci_high": 0.99460787565066,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9980237154150198,
+    "ci_low": 0.9888915454522635,
+    "ci_high": 0.9996510520167501,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.9998642034353526,
+    "ci_low": 0.9996812487926737,
+    "ci_high": 0.9999847411527296,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.9647749510763209,
+    "ci_low": 0.9450098926686894,
+    "ci_high": 0.9776042283619755,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 11.816720012575388,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 18.457883095834404,
+    "unit": "ms"
+   }
+  ],
+  "notes": "511 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: ours_plate_det_uz_only]"
+ },
+ {
+  "id": "ident.det.ours_plate_det_uz_only.ccpd_challenge",
+  "name": "Plate detection recall/precision @IoU0.5, AP50",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "CCPD-Challenge: hardest cases (Chinese plates)",
+  "dataset": "CCPD2019 ccpd_challenge",
+  "split": "subset sample",
+  "n": 597,
+  "model": "onnx:/mnt/bigdrive/amirkhon/seen/artifacts/ident/plate_det_uz_only",
+  "metrics": [
+   {
+    "name": "recall@IoU0.5(conf>=0.25)",
+    "value": 0.8425460636515912,
+    "ci_low": 0.811150401104577,
+    "ci_high": 0.8695616136801011,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision@IoU0.5(conf>=0.25)",
+    "value": 0.9562737642585551,
+    "ci_low": 0.9352426715570191,
+    "ci_high": 0.9706887009489568,
+    "unit": "fraction"
+   },
+   {
+    "name": "AP@IoU0.5",
+    "value": 0.9314647907116013,
+    "ci_low": 0.9100247186307276,
+    "ci_high": 0.9498475191323369,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall@IoU0.75(conf>=0.25)",
+    "value": 0.7638190954773869,
+    "ci_low": 0.7281291009374306,
+    "ci_high": 0.7961356537255856,
+    "unit": "fraction"
+   },
+   {
+    "name": "latency_p50_ms_per_image",
+    "value": 14.23529360909015,
+    "unit": "ms"
+   },
+   {
+    "name": "latency_p95_ms_per_image",
+    "value": 21.960115910042074,
+    "unit": "ms"
+   }
+  ],
+  "notes": "597 GT plates; recall/precision at conf>=0.25; AP over conf>=0.05; latency = batch-1 per image incl. pre/post-processing on cuda:0 [run: ours_plate_det_uz_only]"
+ },
+ {
+  "id": "ident.ocr.real_only.test_autoria_kz.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KZ plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KZ",
+  "split": "test (native split)",
+  "n": 279,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.996415770609319,
+    "ci_low": 0.9799802176790067,
+    "ci_high": 0.9993670150603164,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9995519713261649,
+    "ci_low": 0.9986559139784946,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 1.0,
+    "ci_low": 0.9864183318926757,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9864183318926757,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 4.42 ms/crop incl. decode (batch 256, cuda:0) [run: real_only]",
+  "predictions_csv": "runs/ident/real_only/preds_test_autoria_kz_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.real_only.test_autoria_kz.constrained",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KZ plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KZ",
+  "split": "test (native split)",
+  "n": 279,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.013581668107324387,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.5070404505888377,
+    "ci_low": 0.501152073732719,
+    "ci_high": 0.5130568356374808,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.013581668107324387,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9864183318926757,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=False; wall time 3.44 ms/crop incl. decode (batch 256, cuda:0) [run: real_only]",
+  "predictions_csv": "runs/ident/real_only/preds_test_autoria_kz_constrained.csv"
+ },
+ {
+  "id": "ident.ocr.real_only.test_autoria_kg.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KG plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KG",
+  "split": "test (native split)",
+  "n": 1068,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9878277153558053,
+    "ci_low": 0.9792858982649765,
+    "ci_high": 0.9928728024690597,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.997909978598181,
+    "ci_low": 0.996661399812734,
+    "ci_high": 0.999036082129481,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.99812734082397,
+    "ci_low": 0.9931978253553438,
+    "ci_high": 0.9994862990026355,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9964160195623327,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 3.56 ms/crop incl. decode (batch 256, cuda:0) [run: real_only]",
+  "predictions_csv": "runs/ident/real_only/preds_test_autoria_kg_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.real_only.test_autoria_kg.constrained",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, KG plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR KG",
+  "split": "test (native split)",
+  "n": 1068,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.3202247191011236,
+    "ci_low": 0.29293018556530215,
+    "ci_high": 0.34880787481678044,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.8407838416265383,
+    "ci_low": 0.8318505885500269,
+    "ci_high": 0.8493383549580882,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.7088014981273408,
+    "ci_low": 0.6808446937280477,
+    "ci_high": 0.735261621557346,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9964160195623327,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=False; wall time 3.65 ms/crop incl. decode (batch 256, cuda:0) [run: real_only]",
+  "predictions_csv": "runs/ident/real_only/preds_test_autoria_kg_constrained.csv"
+ },
+ {
+  "id": "ident.ocr.real_only.test_autoria_ru.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, RU plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR RU",
+  "split": "test (native split)",
+  "n": 2845,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.9950790861159929,
+    "ci_low": 0.9917566046133489,
+    "ci_high": 0.9970664101872447,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9992384299941418,
+    "ci_low": 0.9987648896699864,
+    "ci_high": 0.9996387424331187,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9992970123022847,
+    "ci_low": 0.9974402977861982,
+    "ci_high": 0.9998071942437934,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9986515715682247,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 3.47 ms/crop incl. decode (batch 256, cuda:0) [run: real_only]",
+  "predictions_csv": "runs/ident/real_only/preds_test_autoria_ru_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.real_only.test_autoria_ru.constrained",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "AUTO.RIA crops, RU plates (marketplace photos)",
+  "dataset": "AUTO.RIA OCR RU",
+  "split": "test (native split)",
+  "n": 2845,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0013484284317753276,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.4772944737355985,
+    "ci_low": 0.4762839289201328,
+    "ci_high": 0.47832967193907444,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0013484284317753276,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 1.0,
+    "ci_low": 0.9986515715682247,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=False; wall time 3.58 ms/crop incl. decode (batch 256, cuda:0) [run: real_only]",
+  "predictions_csv": "runs/ident/real_only/preds_test_autoria_ru_constrained.csv"
+ },
+ {
+  "id": "ident.ocr.real_only.test_synth_uz.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed, disjoint texts",
+  "n": 3000,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.24466666666666667,
+    "ci_low": 0.22961645979168055,
+    "ci_high": 0.2603699389573859,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.6724583333333334,
+    "ci_low": 0.6621291666666667,
+    "ci_high": 0.6825735119047618,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.37566666666666665,
+    "ci_low": 0.3585060851735021,
+    "ci_high": 0.393145255209529,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0012788487253259629,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.31146332473276817,
+    "ci_low": 0.29431448994833925,
+    "ci_high": 0.32914531972194744,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 3.41 ms/crop incl. decode (batch 256, cuda:0) [run: real_only]",
+  "predictions_csv": "runs/ident/real_only/preds_test_synth_uz_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.real_only.test_synth_uz.constrained",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "synthetic",
+  "domain": "rendered Uzbek plates + augmentations",
+  "dataset": "synthetic UZ (ours)",
+  "split": "held-out seed, disjoint texts",
+  "n": 3000,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.31966666666666665,
+    "ci_low": 0.3032186447731798,
+    "ci_high": 0.33657592666708774,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.6182559523809523,
+    "ci_low": 0.6065653273809524,
+    "ci_high": 0.629643005952381,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.3923333333333333,
+    "ci_low": 0.375009448236831,
+    "ci_high": 0.40993259718868913,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0012788487253259629,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.5241430151124217,
+    "ci_low": 0.5053295615627307,
+    "ci_high": 0.5428881949702042,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=False; wall time 3.52 ms/crop incl. decode (batch 256, cuda:0) [run: real_only]",
+  "predictions_csv": "runs/ident/real_only/preds_test_synth_uz_constrained.csv"
+ },
+ {
+  "id": "ident.ocr.real_only.test_uz_real.argmax",
+  "name": "Plate OCR exact-match/char-acc [argmax]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops upright",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.8662207357859532,
+    "ci_low": 0.8229551895011694,
+    "ci_high": 0.9001954677860323,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9761705685618729,
+    "ci_low": 0.967391304347826,
+    "ci_high": 0.9845317725752508,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9665551839464883,
+    "ci_low": 0.9395402928281286,
+    "ci_high": 0.9817338322089914,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.012684719046240528,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.8695652173913043,
+    "ci_low": 0.8266583302531351,
+    "ci_high": 0.9030964426257305,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=argmax; orientation_search=False; wall time 3.96 ms/crop incl. decode (batch 256, cuda:0) [run: real_only]",
+  "predictions_csv": "runs/ident/real_only/preds_test_uz_real_argmax.csv"
+ },
+ {
+  "id": "ident.ocr.real_only.test_uz_real.constrained",
+  "name": "Plate OCR exact-match/char-acc [constrained]",
+  "lane": "ident",
+  "data_kind": "real",
+  "domain": "Uzbek vehicle-inspection station photos, GT-box crops upright",
+  "dataset": "Roboflow Uzbek_Plates valid originals",
+  "split": "held-out cars (test)",
+  "n": 299,
+  "model": "model",
+  "metrics": [
+   {
+    "name": "exact_match",
+    "value": 0.959866220735786,
+    "ci_low": 0.9311707234156454,
+    "ci_high": 0.9768951704381468,
+    "unit": "fraction"
+   },
+   {
+    "name": "char_accuracy",
+    "value": 0.9887123745819398,
+    "ci_low": 0.9807692307692307,
+    "ci_high": 0.9954013377926422,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_1_char",
+    "value": 0.9732441471571907,
+    "ci_low": 0.9481010257624443,
+    "ci_high": 0.9863813304580036,
+    "unit": "fraction"
+   },
+   {
+    "name": "format_head_acc(5-class visual head)",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.012684719046240528,
+    "unit": "fraction"
+   },
+   {
+    "name": "text_layout_format_acc(private/legal/moto from decoded text)",
+    "value": 0.9732441471571907,
+    "ci_low": 0.9481010257624443,
+    "ci_high": 0.9863813304580036,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "decoding=constrained; orientation_search=False; wall time 3.20 ms/crop incl. decode (batch 256, cuda:0) [run: real_only]",
+  "predictions_csv": "runs/ident/real_only/preds_test_uz_real_constrained.csv"
+ }
+]

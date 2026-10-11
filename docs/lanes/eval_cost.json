@@ -1,0 +1,110 @@
+[
+  {
+    "item": "Modal L4 container price (GPU + 2 cores + 8 GiB)",
+    "value": 0.957456,
+    "unit": "USD/hour",
+    "assumptions": "L4 $0.000222/s + CPU $1.31e-05/core/s x 2 + memory $2.22e-06/GiB/s x 8. modal.com/pricing and modal.com/docs/guide/cold-start, read 2026-10-10; base region, preemptible."
+  },
+  {
+    "item": "Modal L4: marginal cost per photo (warm container, 1 frame)",
+    "value": 5.2e-05,
+    "unit": "USD",
+    "assumptions": "warm pipeline latency 196 ms/frame x container price; measured on NVIDIA L4 (Modal, deployed sanjar--seen-api.modal.run)"
+  },
+  {
+    "item": "Modal L4: marginal cost per 1,000 frames (warm)",
+    "value": 0.052022,
+    "unit": "USD",
+    "assumptions": "as above x 1,000"
+  },
+  {
+    "item": "Modal L4: marginal cost per 60 s phone video (2 fps = 120 frames)",
+    "value": 0.006243,
+    "unit": "USD",
+    "assumptions": "browser samples phone video at 2 fps (plan); frames processed sequentially in one warm container"
+  },
+  {
+    "item": "Modal L4: cost of one isolated photo request (cold start + idle tail)",
+    "value": 0.039098,
+    "unit": "USD",
+    "assumptions": "first-call time 26.8s (deployed API /analyze/image, first call (client end-to-end) on NVIDIA L4 (Modal, deployed sanjar--seen-api.modal.run)) + inference + 120s idle window (deployed setting), all billed"
+  },
+  {
+    "item": "Modal L4 running 24/7 for bay cameras: cost per camera-month",
+    "value": 232.98096,
+    "unit": "USD/camera/month",
+    "assumptions": "3 bay cameras at 1 fps per L4 (ESTIMATE: 16 measured on NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1) x 0.22, conservative spec ratio); 730 h/month; shows why continuous video stays on site"
+  },
+  {
+    "item": "Edge box (RTX 4060 Ti PC, Tashkent) purchase price, midpoint",
+    "value": 1135.0,
+    "unit": "USD",
+    "assumptions": "range $925-1345; research/competitors_legal.md: OLX.uz, 10 Oct 2026: used gaming PC with RTX 4060 Ti 11-16M UZS (~$925-1,345); new i5-13400F + RTX 4060 Ti PC 12.1M UZS (~$1,020)"
+  },
+  {
+    "item": "Edge box amortisation",
+    "value": 31.527778,
+    "unit": "USD/month",
+    "assumptions": "midpoint price / 36 months, no residual value, no financing cost"
+  },
+  {
+    "item": "Edge box electricity",
+    "value": 17.043839,
+    "unit": "USD/month",
+    "assumptions": "250 W assumed average wall power x 730 h = 182 kWh x 1100 UZS/kWh / 11778.45 UZS/USD. kun.uz 15 May 2026 'Uzbekistan to raise electricity and natural gas tariffs from June 1': legal entities in groups I, II, IV pay UZS 1,100 per kWh from 1 Jun 2026 (Interfax 15 May 2026 agrees). Central Bank of Uzbekistan official rate for 6 Oct 2026 (via zamin.uz)"
+  },
+  {
+    "item": "Edge box total running cost",
+    "value": 48.571616,
+    "unit": "USD/month",
+    "assumptions": "amortisation + electricity; excludes cameras, NVR, installation, internet, support"
+  },
+  {
+    "item": "Edge box: cameras per box (bay @ 1 fps), conservative",
+    "value": 3.0,
+    "unit": "cameras",
+    "assumptions": "PROXY ESTIMATE: 16 cameras measured on RTX PRO 5000 Blackwell (4 worker thread(s)) x 0.21 (conservative) / x 0.33 (optimistic). RTX 4060 Ti/RTX PRO 5000 Blackwell: FP32 ratio 0.33, memory-bandwidth ratio 0.21; conservative = min, optimistic = max. Assumes the pipeline is GPU-bound; CPU-side Python work does not scale with the GPU. The 4060 Ti itself was not measured; one pipeline instance held 19472.0 MiB of GPU memory on the box (4060 Ti: 8 or 16 GB), which also caps the number of workers."
+  },
+  {
+    "item": "Edge box: cameras per box (bay @ 1 fps), optimistic",
+    "value": 5.0,
+    "unit": "cameras",
+    "assumptions": "PROXY ESTIMATE: 16 cameras measured on RTX PRO 5000 Blackwell (4 worker thread(s)) x 0.21 (conservative) / x 0.33 (optimistic). RTX 4060 Ti/RTX PRO 5000 Blackwell: FP32 ratio 0.33, memory-bandwidth ratio 0.21; conservative = min, optimistic = max. Assumes the pipeline is GPU-bound; CPU-side Python work does not scale with the GPU. The 4060 Ti itself was not measured; one pipeline instance held 19472.0 MiB of GPU memory on the box (4060 Ti: 8 or 16 GB), which also caps the number of workers."
+  },
+  {
+    "item": "Edge box: cost per bay camera-month (conservative)",
+    "value": 16.190539,
+    "unit": "USD/camera/month",
+    "assumptions": "$48.57/month / 3 cameras"
+  },
+  {
+    "item": "Edge box: cost per bay camera-month (optimistic)",
+    "value": 9.714323,
+    "unit": "USD/camera/month",
+    "assumptions": "$48.57/month / 5 cameras"
+  },
+  {
+    "item": "Edge box: cameras per box (gate @ 5 fps), conservative",
+    "value": 0.0,
+    "unit": "cameras",
+    "assumptions": "PROXY ESTIMATE: 2 cameras measured on RTX PRO 5000 Blackwell (1 worker thread(s)) x 0.21 (conservative) / x 0.33 (optimistic). RTX 4060 Ti/RTX PRO 5000 Blackwell: FP32 ratio 0.33, memory-bandwidth ratio 0.21; conservative = min, optimistic = max. Assumes the pipeline is GPU-bound; CPU-side Python work does not scale with the GPU. The 4060 Ti itself was not measured; one pipeline instance held 19472.0 MiB of GPU memory on the box (4060 Ti: 8 or 16 GB), which also caps the number of workers."
+  },
+  {
+    "item": "Edge box: cameras per box (gate @ 5 fps), optimistic",
+    "value": 0.0,
+    "unit": "cameras",
+    "assumptions": "PROXY ESTIMATE: 2 cameras measured on RTX PRO 5000 Blackwell (1 worker thread(s)) x 0.21 (conservative) / x 0.33 (optimistic). RTX 4060 Ti/RTX PRO 5000 Blackwell: FP32 ratio 0.33, memory-bandwidth ratio 0.21; conservative = min, optimistic = max. Assumes the pipeline is GPU-bound; CPU-side Python work does not scale with the GPU. The 4060 Ti itself was not measured; one pipeline instance held 19472.0 MiB of GPU memory on the box (4060 Ti: 8 or 16 GB), which also caps the number of workers."
+  },
+  {
+    "item": "Example 12-bay site (6 bay cameras + 1 gate camera): edge boxes needed (conservative)",
+    "value": 3.0,
+    "unit": "boxes",
+    "assumptions": "load = 6/3 + 1/1 = 3.00 box-equivalents"
+  },
+  {
+    "item": "Example 12-bay site: running cost (conservative)",
+    "value": 145.714849,
+    "unit": "USD/month",
+    "assumptions": "3 box(es) x $48.57; compare: Russian cloud video $2.4-10 per camera-month (research/competitors_legal.md), which is storage only, no analytics"
+  }
+]

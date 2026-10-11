@@ -1,0 +1,29 @@
+[
+  {
+    "stage": "deployed API /analyze/image, first call (client end-to-end)",
+    "hardware": "NVIDIA L4 (Modal, deployed sanjar--seen-api.modal.run)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 26808.1,
+    "cold_start_s": 26.81,
+    "notes": "first request after the probe started; health said last GPU load at 1791655087.0801728, pipeline_load_s 21.14. Cold only if no container was warm (compare modal_roundtrip of the first and later calls in eval_modal_probe.json). Client = the developer Mac over the public internet."
+  },
+  {
+    "stage": "deployed API /analyze/image, warm (client end-to-end)",
+    "hardware": "NVIDIA L4 (Modal, deployed sanjar--seen-api.modal.run)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 2330.8,
+    "p95_ms": 2598.8,
+    "notes": "n=7 sequential photo requests incl. upload and internet round trip"
+  },
+  {
+    "stage": "pipeline total (1 frame, analyze()) on Modal, server-side",
+    "hardware": "NVIDIA L4 (Modal, deployed sanjar--seen-api.modal.run)",
+    "runtime": "as deployed",
+    "batch": 1,
+    "p50_ms": 195.6,
+    "p95_ms": 579.4,
+    "notes": "AnalysisResult.timings_ms.total on the GPU container, n=7; models {'rfdetr-coco': 'pretrained', 'fast-alpr-global': 'pretrained'}"
+  }
+]

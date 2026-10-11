@@ -1,0 +1,3898 @@
+[
+ {
+  "id": "inspect.damage_to_part.assign_B",
+  "name": "Damage assigned to the car part it lies on (SYNDCAR, family level)",
+  "lane": "inspect",
+  "data_kind": "synthetic",
+  "domain": "phone photos of ONE micro-car (Citroen Ami) with digitally generated damage; no fixed-camera data",
+  "dataset": "SYNDCAR (Mendeley hzpj48krdt, CC BY 4.0)",
+  "split": "all 245 images (test only)",
+  "n": 231,
+  "model": "parts: /mnt/bigdrive/amirkhon/seen/runs/inspect/parts_yolo/weights/best.pt; damage preds: /mnt/bigdrive/amirkhon/seen/runs/inspect/dmg_B/preds_syndcar.json",
+  "metrics": [
+   {
+    "name": "oracle_damage.part_accuracy",
+    "value": 0.7019305019305019,
+    "ci_low": 0.6764503725427621,
+    "ci_high": 0.7262161703583759,
+    "unit": "fraction"
+   },
+   {
+    "name": "oracle_damage.part_accuracy_clear_subset",
+    "value": 0.7014694508894045,
+    "ci_low": 0.6759595485207254,
+    "ci_high": 0.7257857816091277,
+    "unit": "fraction"
+   },
+   {
+    "name": "oracle_damage.n_damage_instances",
+    "value": 1295.0
+   },
+   {
+    "name": "end_to_end.part_accuracy",
+    "value": 0.75,
+    "ci_low": 0.6684443704768313,
+    "ci_high": 0.8169871513864144,
+    "unit": "fraction"
+   },
+   {
+    "name": "end_to_end.part_accuracy_clear_subset",
+    "value": 0.75,
+    "ci_low": 0.6684443704768313,
+    "ci_high": 0.8169871513864144,
+    "unit": "fraction"
+   },
+   {
+    "name": "end_to_end.n_damage_instances",
+    "value": 128.0
+   },
+   {
+    "name": "end_to_end.damage_matched_rate",
+    "value": 0.09884169884169884,
+    "ci_low": 0.08375403131838752,
+    "ci_high": 0.11630230123556537,
+    "unit": "fraction"
+   },
+   {
+    "name": "oracle_damage.pred_part_unknown_rate",
+    "value": 0.02471042471042471,
+    "ci_low": 0.017557301509623268,
+    "ci_high": 0.034674984702037975,
+    "unit": "fraction"
+   }
+  ],
+  "notes": "Reference part = GT part polygon with max overlap of the GT damage box (>=10% of box). Accuracy = predicted part family == reference family. (a) GT damage boxes + predicted parts; (b) predicted damage (conf>=0.25) matched to GT at IoU>=0.5, then assigned. Damage on SYNDCAR is synthetic; single vehicle model; see docs/lanes/inspect_notes.md."
+ },
+ {
+  "id": "inspect.damage.dmg_A.cardd_trainpart",
+  "name": "Exterior damage (yolo11m-seg) on CarDD train portion (cross-source for model A only; model B trained on it)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (Flickr/Shutterstock web photos); no fixed-camera damage data exists",
+  "dataset": "CarDD (HF FiftyOne mirror)",
+  "split": "the 80 % CarDD portion that model B trains on",
+  "n": 2266,
+  "model": "yolo11m-seg fine-tuned (dmg_A) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.4095582455291497,
+    "ci_low": 0.39855418526920855,
+    "ci_high": 0.4223684727720165
+   },
+   {
+    "name": "AP50_box[dent]",
+    "value": 0.4106034768654563,
+    "ci_low": 0.3823355052530897,
+    "ci_high": 0.44017673571644234
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.3979812560389462,
+    "ci_low": 0.37317255650362696,
+    "ci_high": 0.4234096648025085
+   },
+   {
+    "name": "AP50_box[crack]",
+    "value": 0.08885897049326705,
+    "ci_low": 0.07369428417556392,
+    "ci_high": 0.11351432411838697
+   },
+   {
+    "name": "AP50_box[glass_shatter]",
+    "value": 0.9809514299120914,
+    "ci_low": 0.9677489674785761,
+    "ci_high": 0.9932602069549802
+   },
+   {
+    "name": "AP50_box[lamp_broken]",
+    "value": 0.5789543398651376,
+    "ci_low": 0.5257391161473882,
+    "ci_high": 0.6317205190263524
+   },
+   {
+    "name": "AP50_box[tire_flat]",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.45419098756299514,
+    "ci_low": 0.43827295648032605,
+    "ci_high": 0.47058404495371947
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.21792583779496333,
+    "ci_low": 0.20232343328950927,
+    "ci_high": 0.2346645191864201
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.37180249851279,
+    "ci_low": 0.35403648811715605,
+    "ci_high": 0.38766397266636854
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.4517152488598057,
+    "ci_low": 0.43494356111931565,
+    "ci_high": 0.46972271020064715
+   },
+   {
+    "name": "recall_box[dent]@0.5FP/img",
+    "value": 0.48538409245411285,
+    "ci_low": 0.45643006669324165,
+    "ci_high": 0.5150665273321362
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.43705122067975105,
+    "ci_low": 0.4137843196550092,
+    "ci_high": 0.46329016970985315
+   },
+   {
+    "name": "recall_box[crack]@0.5FP/img",
+    "value": 0.3240223463687151,
+    "ci_low": 0.2773611968714624,
+    "ci_high": 0.36687077924054223
+   },
+   {
+    "name": "recall_box[glass_shatter]@0.5FP/img",
+    "value": 0.9921052631578947,
+    "ci_low": 0.9826799100449775,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_box[lamp_broken]@0.5FP/img",
+    "value": 0.8060453400503779,
+    "ci_low": 0.761110140877867,
+    "ci_high": 0.8434443168771527
+   },
+   {
+    "name": "recall_box[tire_flat]@0.5FP/img",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "mAP50_mask",
+    "value": 0.35789986727687145,
+    "ci_low": 0.3455232804607878,
+    "ci_high": 0.37199169230319307
+   },
+   {
+    "name": "AP50_mask[dent]",
+    "value": 0.3819180028343373,
+    "ci_low": 0.3523002997464796,
+    "ci_high": 0.40773077836037935
+   },
+   {
+    "name": "AP50_mask[scratch]",
+    "value": 0.363499138695974,
+    "ci_low": 0.33776601765159225,
+    "ci_high": 0.3887247614244442
+   },
+   {
+    "name": "AP50_mask[crack]",
+    "value": 0.07872889864923534,
+    "ci_low": 0.06482899148755325,
+    "ci_high": 0.1045416254150083
+   },
+   {
+    "name": "AP50_mask[glass_shatter]",
+    "value": 0.9508187314117521,
+    "ci_low": 0.9301531920253155,
+    "ci_high": 0.9718198259429248
+   },
+   {
+    "name": "AP50_mask[lamp_broken]",
+    "value": 0.3724344320699302,
+    "ci_low": 0.31776947084571894,
+    "ci_high": 0.42539436995592383
+   },
+   {
+    "name": "AP50_mask[tire_flat]",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "AP50_mask[any_damage]",
+    "value": 0.4008212458585736,
+    "ci_low": 0.3851239054083471,
+    "ci_high": 0.4190943118673269
+   },
+   {
+    "name": "recall_mask[any_damage]@0.1FP/img",
+    "value": 0.19413047789014476,
+    "ci_low": 0.1766264513685193,
+    "ci_high": 0.21206653822055632
+   },
+   {
+    "name": "recall_mask[any_damage]@0.5FP/img",
+    "value": 0.3422565932976403,
+    "ci_low": 0.32664916705310454,
+    "ci_high": 0.3597937290934265
+   },
+   {
+    "name": "recall_mask[any_damage]@1FP/img",
+    "value": 0.41582391433670435,
+    "ci_low": 0.3973228309107426,
+    "ci_high": 0.4341742139439508
+   },
+   {
+    "name": "recall_mask[dent]@0.5FP/img",
+    "value": 0.46227056424201224,
+    "ci_low": 0.43819230109739365,
+    "ci_high": 0.49292066847697324
+   },
+   {
+    "name": "recall_mask[scratch]@0.5FP/img",
+    "value": 0.41311632359980854,
+    "ci_low": 0.38663575700233144,
+    "ci_high": 0.4400176027509415
+   },
+   {
+    "name": "recall_mask[crack]@0.5FP/img",
+    "value": 0.30726256983240224,
+    "ci_low": 0.2699959106576052,
+    "ci_high": 0.35660667375707944
+   },
+   {
+    "name": "recall_mask[glass_shatter]@0.5FP/img",
+    "value": 0.9657894736842105,
+    "ci_low": 0.9493973404255319,
+    "ci_high": 0.9821721391290801
+   },
+   {
+    "name": "recall_mask[lamp_broken]@0.5FP/img",
+    "value": 0.6297229219143576,
+    "ci_low": 0.5769097941704655,
+    "ci_high": 0.669891800210551
+   },
+   {
+    "name": "recall_mask[tire_flat]@0.5FP/img",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 5043.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 2249.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: crack, dent, glass_shatter, lamp_broken, scratch, tire_flat"
+ },
+ {
+  "id": "inspect.damage.dmg_A.cardd_test",
+  "name": "Exterior damage (yolo11m-seg) on CarDD held-out 20 % (in-source for model B, cross-source for model A)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (Flickr/Shutterstock web photos); no fixed-camera damage data exists",
+  "dataset": "CarDD (HF FiftyOne mirror)",
+  "split": "20 % clustered hold-out",
+  "n": 543,
+  "model": "yolo11m-seg fine-tuned (dmg_A) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.4134681890415384,
+    "ci_low": 0.3970628465895788,
+    "ci_high": 0.4395708861413551
+   },
+   {
+    "name": "AP50_box[dent]",
+    "value": 0.4657785965317234,
+    "ci_low": 0.41251676659511166,
+    "ci_high": 0.5269183077664332
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.40442016439135287,
+    "ci_low": 0.35479871523466155,
+    "ci_high": 0.46655961442570626
+   },
+   {
+    "name": "AP50_box[crack]",
+    "value": 0.08880472014537573,
+    "ci_low": 0.06133660548395036,
+    "ci_high": 0.1495794006883985
+   },
+   {
+    "name": "AP50_box[glass_shatter]",
+    "value": 0.9669832647203451,
+    "ci_low": 0.9394374759360827,
+    "ci_high": 0.9908682967556476
+   },
+   {
+    "name": "AP50_box[lamp_broken]",
+    "value": 0.5548223884604336,
+    "ci_low": 0.47272039971054575,
+    "ci_high": 0.6756115361885061
+   },
+   {
+    "name": "AP50_box[tire_flat]",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.46938968242845575,
+    "ci_low": 0.4408833658162502,
+    "ci_high": 0.5025239112958696
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.22695652173913045,
+    "ci_low": 0.19940183041943693,
+    "ci_high": 0.2656142400393507
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.4043478260869565,
+    "ci_low": 0.3733801529255319,
+    "ci_high": 0.4392057219029888
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.48,
+    "ci_low": 0.45088574474270765,
+    "ci_high": 0.516406891184378
+   },
+   {
+    "name": "recall_box[dent]@0.5FP/img",
+    "value": 0.5299401197604791,
+    "ci_low": 0.469957264957265,
+    "ci_high": 0.5880816246056781
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.4593406593406593,
+    "ci_low": 0.40355461919855645,
+    "ci_high": 0.5126149907301139
+   },
+   {
+    "name": "recall_box[crack]@0.5FP/img",
+    "value": 0.3274336283185841,
+    "ci_low": 0.2520996818663839,
+    "ci_high": 0.4243843069873997
+   },
+   {
+    "name": "recall_box[glass_shatter]@0.5FP/img",
+    "value": 0.9894736842105263,
+    "ci_low": 0.9624706985466479,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_box[lamp_broken]@0.5FP/img",
+    "value": 0.8350515463917526,
+    "ci_low": 0.7602056359482102,
+    "ci_high": 0.91
+   },
+   {
+    "name": "recall_box[tire_flat]@0.5FP/img",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "mAP50_mask",
+    "value": 0.369075698894624,
+    "ci_low": 0.3505265048598823,
+    "ci_high": 0.39838356749438275
+   },
+   {
+    "name": "AP50_mask[dent]",
+    "value": 0.39937757255259115,
+    "ci_low": 0.3460329144859681,
+    "ci_high": 0.4630137190521673
+   },
+   {
+    "name": "AP50_mask[scratch]",
+    "value": 0.3859868477311019,
+    "ci_low": 0.33434889813424457,
+    "ci_high": 0.4472320882842584
+   },
+   {
+    "name": "AP50_mask[crack]",
+    "value": 0.09407274665272274,
+    "ci_low": 0.06168142862994433,
+    "ci_high": 0.15823009666923984
+   },
+   {
+    "name": "AP50_mask[glass_shatter]",
+    "value": 0.9669832647203451,
+    "ci_low": 0.9394374759360827,
+    "ci_high": 0.9908682967556476
+   },
+   {
+    "name": "AP50_mask[lamp_broken]",
+    "value": 0.3680337617109828,
+    "ci_low": 0.2765226311946351,
+    "ci_high": 0.4990407067199991
+   },
+   {
+    "name": "AP50_mask[tire_flat]",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "AP50_mask[any_damage]",
+    "value": 0.42620014259072314,
+    "ci_low": 0.39541695512100056,
+    "ci_high": 0.46048150682021977
+   },
+   {
+    "name": "recall_mask[any_damage]@0.1FP/img",
+    "value": 0.20608695652173914,
+    "ci_low": 0.17822353097497304,
+    "ci_high": 0.23816451252580886
+   },
+   {
+    "name": "recall_mask[any_damage]@0.5FP/img",
+    "value": 0.37565217391304345,
+    "ci_low": 0.3434293669571239,
+    "ci_high": 0.4087264536569715
+   },
+   {
+    "name": "recall_mask[any_damage]@1FP/img",
+    "value": 0.45652173913043476,
+    "ci_low": 0.4222852629807313,
+    "ci_high": 0.4855298003713352
+   },
+   {
+    "name": "recall_mask[dent]@0.5FP/img",
+    "value": 0.48502994011976047,
+    "ci_low": 0.42658002959598046,
+    "ci_high": 0.545467641582805
+   },
+   {
+    "name": "recall_mask[scratch]@0.5FP/img",
+    "value": 0.45274725274725275,
+    "ci_low": 0.39505522673253485,
+    "ci_high": 0.50653440161734
+   },
+   {
+    "name": "recall_mask[crack]@0.5FP/img",
+    "value": 0.336283185840708,
+    "ci_low": 0.2543792903812753,
+    "ci_high": 0.44172339108910874
+   },
+   {
+    "name": "recall_mask[glass_shatter]@0.5FP/img",
+    "value": 0.9894736842105263,
+    "ci_low": 0.9624706985466479,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[lamp_broken]@0.5FP/img",
+    "value": 0.6391752577319587,
+    "ci_low": 0.5347121578099839,
+    "ci_high": 0.7287045454545454
+   },
+   {
+    "name": "recall_mask[tire_flat]@0.5FP/img",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 1150.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 543.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: crack, dent, glass_shatter, lamp_broken, scratch, tire_flat"
+ },
+ {
+  "id": "inspect.damage.dmg_A.syndcar",
+  "name": "Exterior damage (yolo11m-seg) on SYNDCAR (cross-source)",
+  "lane": "inspect",
+  "data_kind": "synthetic",
+  "domain": "phone/web photo (see notes); no fixed-camera damage data exists; DIGITALLY GENERATED damage on real photos of ONE vehicle",
+  "dataset": "SYNDCAR (Mendeley hzpj48krdt, CC BY 4.0)",
+  "split": "all 245 (never trained on)",
+  "n": 231,
+  "model": "yolo11m-seg fine-tuned (dmg_A) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.18354120714188743,
+    "ci_low": 0.16846091367885244,
+    "ci_high": 0.20340960775219813
+   },
+   {
+    "name": "AP50_box[glass_shatter]",
+    "value": 0.26301322483352957,
+    "ci_low": 0.21345350079889783,
+    "ci_high": 0.31503993700783267
+   },
+   {
+    "name": "AP50_box[lamp_broken]",
+    "value": 0.001747578425001369,
+    "ci_low": 0.00017329342738043563,
+    "ci_high": 0.007822821075983961
+   },
+   {
+    "name": "AP50_box[crack]",
+    "value": 0.021125435077265067,
+    "ci_low": 0.011190082585353945,
+    "ci_high": 0.04183671782903172
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.44827859023175376,
+    "ci_low": 0.3988645942883464,
+    "ci_high": 0.5002601395909905
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.2290657646955701,
+    "ci_low": 0.21083455121807848,
+    "ci_high": 0.25211158741204914
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.09420849420849421,
+    "ci_low": 0.07813335823018921,
+    "ci_high": 0.11351244559346958
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.15366795366795366,
+    "ci_low": 0.13956429205864693,
+    "ci_high": 0.17300327938220667
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.18455598455598454,
+    "ci_low": 0.16526112734026469,
+    "ci_high": 0.20272999538032974
+   },
+   {
+    "name": "recall_box[glass_shatter]@0.5FP/img",
+    "value": 0.26791277258566976,
+    "ci_low": 0.21357919753712915,
+    "ci_high": 0.3172713581599123
+   },
+   {
+    "name": "recall_box[lamp_broken]@0.5FP/img",
+    "value": 0.019933554817275746,
+    "ci_low": 0.0032619225037257824,
+    "ci_high": 0.038786236838506766
+   },
+   {
+    "name": "recall_box[crack]@0.5FP/img",
+    "value": 0.056074766355140186,
+    "ci_low": 0.033546457482627697,
+    "ci_high": 0.07928111318702767
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.4090909090909091,
+    "ci_low": 0.34960055027928333,
+    "ci_high": 0.4614297161172161
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 1295.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 184.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: crack, glass_shatter, lamp_broken, scratch; mask AP not computed (GT is boxes only)"
+ },
+ {
+  "id": "inspect.damage.dmg_A.cococardamage",
+  "name": "Exterior damage (yolo11m-seg) on Kaggle Coco Car Damage (cross-source, class-agnostic)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (web photos); no fixed-camera damage data exists",
+  "dataset": "Kaggle lplenka/coco-car-damage-detection-dataset (CC0)",
+  "split": "70 annotated images (never trained on)",
+  "n": 69,
+  "model": "yolo11m-seg fine-tuned (dmg_A) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.1995853993493939,
+    "ci_low": 0.13307469034459524,
+    "ci_high": 0.2891872462978533
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.04938271604938271,
+    "ci_low": 0.021671963276836157,
+    "ci_high": 0.113563872255489
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.14814814814814814,
+    "ci_low": 0.07104978354978354,
+    "ci_high": 0.26578073824909265
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.2345679012345679,
+    "ci_low": 0.15799657870383355,
+    "ci_high": 0.3379820301117047
+   },
+   {
+    "name": "AP50_mask[any_damage]",
+    "value": 0.18197466009197005,
+    "ci_low": 0.12450085997013545,
+    "ci_high": 0.2589279305589528
+   },
+   {
+    "name": "recall_mask[any_damage]@0.1FP/img",
+    "value": 0.04938271604938271,
+    "ci_low": 0.021671963276836157,
+    "ci_high": 0.1143459702217187
+   },
+   {
+    "name": "recall_mask[any_damage]@0.5FP/img",
+    "value": 0.13580246913580246,
+    "ci_low": 0.0726115565479211,
+    "ci_high": 0.24463266319185886
+   },
+   {
+    "name": "recall_mask[any_damage]@1FP/img",
+    "value": 0.2222222222222222,
+    "ci_low": 0.14659450517836595,
+    "ci_high": 0.3227978752017212
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 162.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 66.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Class-agnostic: all predicted classes count as 'damage'."
+ },
+ {
+  "id": "inspect.damage.dmg_A.jijo_roboflow",
+  "name": "Exterior damage (yolo11m-seg) on Roboflow jijo/car-damage-new (cross-source, 416x416 stretched)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (web photos, aspect-stretched to 416x416); no fixed-camera damage data exists",
+  "dataset": "Roboflow Universe jijo/car-damage-new v2 (CC BY label, provenance unknown)",
+  "split": "all (never trained on)",
+  "n": 2323,
+  "model": "yolo11m-seg fine-tuned (dmg_A) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.14507220741449492,
+    "ci_low": 0.13239825151168186,
+    "ci_high": 0.15910919139080745
+   },
+   {
+    "name": "AP50_box[dent]",
+    "value": 0.17003070216849758,
+    "ci_low": 0.14647320660072918,
+    "ci_high": 0.19330398923978892
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.12011371266049224,
+    "ci_low": 0.10615662997700355,
+    "ci_high": 0.13845498639929926
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.14949797371916684,
+    "ci_low": 0.1353513672819844,
+    "ci_high": 0.16453746321378065
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.0554675118858954,
+    "ci_low": 0.04525090342865064,
+    "ci_high": 0.06470948298378783
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.1301109350237718,
+    "ci_low": 0.11512864406072296,
+    "ci_high": 0.1447826065585388
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.17733755942947702,
+    "ci_low": 0.16236244190737512,
+    "ci_high": 0.19218821353215668
+   },
+   {
+    "name": "recall_box[dent]@0.5FP/img",
+    "value": 0.2237442922374429,
+    "ci_low": 0.20123866782663935,
+    "ci_high": 0.24747864129440567
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.13436275639548284,
+    "ci_low": 0.11825909447690308,
+    "ci_high": 0.15174906737056745
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 6310.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 1859.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: dent, scratch; mask AP not computed (GT is boxes only)"
+ },
+ {
+  "id": "inspect.damage.dmg_A.vehide_val",
+  "name": "Exterior damage (yolo11m-seg) on VehiDE official validation split (in-source)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (web photos, Vietnam); no fixed-camera damage data exists",
+  "dataset": "VehiDE (Kaggle copy of official release)",
+  "split": "official val 2,324 (never trained on)",
+  "n": 2322,
+  "model": "yolo11m-seg fine-tuned (dmg_A) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.4863834043638951,
+    "ci_low": 0.4702667417354323,
+    "ci_high": 0.5022173663140549
+   },
+   {
+    "name": "AP50_box[dent]",
+    "value": 0.285570640410886,
+    "ci_low": 0.25452962654818445,
+    "ci_high": 0.31646201791642115
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.34608884670259543,
+    "ci_low": 0.32212808244386515,
+    "ci_high": 0.36696386798191627
+   },
+   {
+    "name": "AP50_box[crack]",
+    "value": 0.3207991286338514,
+    "ci_low": 0.28865350776218257,
+    "ci_high": 0.3540827999370713
+   },
+   {
+    "name": "AP50_box[glass_shatter]",
+    "value": 0.8197023456093819,
+    "ci_low": 0.7778192382763682,
+    "ci_high": 0.8588011358169019
+   },
+   {
+    "name": "AP50_box[lamp_broken]",
+    "value": 0.5698035555808164,
+    "ci_low": 0.5287153699886225,
+    "ci_high": 0.6228472740889733
+   },
+   {
+    "name": "AP50_box[other]",
+    "value": 0.5763359092458396,
+    "ci_low": 0.5396801832339954,
+    "ci_high": 0.611086533202052
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.47281407570736866,
+    "ci_low": 0.4569581519589768,
+    "ci_high": 0.48629423667140725
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.20912106135986733,
+    "ci_low": 0.1941745002379819,
+    "ci_high": 0.22794394484873512
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.37512437810945276,
+    "ci_low": 0.3575821211352846,
+    "ci_high": 0.39134295643815437
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.45107794361525705,
+    "ci_low": 0.43516768507081033,
+    "ci_high": 0.4678642360072927
+   },
+   {
+    "name": "recall_box[dent]@0.5FP/img",
+    "value": 0.4140061791967044,
+    "ci_low": 0.3763376950936491,
+    "ci_high": 0.44267778665851526
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.3704793944491169,
+    "ci_low": 0.3438553323042584,
+    "ci_high": 0.3910422638945825
+   },
+   {
+    "name": "recall_box[crack]@0.5FP/img",
+    "value": 0.46002076843198336,
+    "ci_low": 0.4236676408757627,
+    "ci_high": 0.4950013200022468
+   },
+   {
+    "name": "recall_box[glass_shatter]@0.5FP/img",
+    "value": 0.9040404040404041,
+    "ci_low": 0.8740369845208555,
+    "ci_high": 0.9339932662851859
+   },
+   {
+    "name": "recall_box[lamp_broken]@0.5FP/img",
+    "value": 0.7336244541484717,
+    "ci_low": 0.6909893654114365,
+    "ci_high": 0.7775601374570447
+   },
+   {
+    "name": "recall_box[other]@0.5FP/img",
+    "value": 0.6921296296296297,
+    "ci_low": 0.6632007093356794,
+    "ci_high": 0.724467310298103
+   },
+   {
+    "name": "mAP50_mask",
+    "value": 0.4446654890765262,
+    "ci_low": 0.4289982682375346,
+    "ci_high": 0.4628561732911686
+   },
+   {
+    "name": "AP50_mask[dent]",
+    "value": 0.26414160230457434,
+    "ci_low": 0.23308144036215436,
+    "ci_high": 0.29360537627107347
+   },
+   {
+    "name": "AP50_mask[scratch]",
+    "value": 0.2840329330171472,
+    "ci_low": 0.2652078007505677,
+    "ci_high": 0.30730464675331143
+   },
+   {
+    "name": "AP50_mask[crack]",
+    "value": 0.2969526215918793,
+    "ci_low": 0.2658393700931426,
+    "ci_high": 0.32986717746004546
+   },
+   {
+    "name": "AP50_mask[glass_shatter]",
+    "value": 0.7643540958429531,
+    "ci_low": 0.7211253120660225,
+    "ci_high": 0.8126935105884124
+   },
+   {
+    "name": "AP50_mask[lamp_broken]",
+    "value": 0.4803495540019328,
+    "ci_low": 0.4321965394347893,
+    "ci_high": 0.5345885917428299
+   },
+   {
+    "name": "AP50_mask[other]",
+    "value": 0.5781621277006705,
+    "ci_low": 0.543063171644961,
+    "ci_high": 0.6132604954120807
+   },
+   {
+    "name": "AP50_mask[any_damage]",
+    "value": 0.42046512265789127,
+    "ci_low": 0.4055576942074165,
+    "ci_high": 0.4346213737941364
+   },
+   {
+    "name": "recall_mask[any_damage]@0.1FP/img",
+    "value": 0.19419568822553898,
+    "ci_low": 0.18169654305834926,
+    "ci_high": 0.20769402456669644
+   },
+   {
+    "name": "recall_mask[any_damage]@0.5FP/img",
+    "value": 0.34626865671641793,
+    "ci_low": 0.32942956632808873,
+    "ci_high": 0.36212113104156857
+   },
+   {
+    "name": "recall_mask[any_damage]@1FP/img",
+    "value": 0.4218905472636816,
+    "ci_low": 0.4059807125423388,
+    "ci_high": 0.43684471726791874
+   },
+   {
+    "name": "recall_mask[dent]@0.5FP/img",
+    "value": 0.3903192584963955,
+    "ci_low": 0.35595655041712343,
+    "ci_high": 0.4172409609318127
+   },
+   {
+    "name": "recall_mask[scratch]@0.5FP/img",
+    "value": 0.33263246425567705,
+    "ci_low": 0.31200359877561074,
+    "ci_high": 0.3542008900139968
+   },
+   {
+    "name": "recall_mask[crack]@0.5FP/img",
+    "value": 0.4444444444444444,
+    "ci_low": 0.4091128287955699,
+    "ci_high": 0.4778935587399579
+   },
+   {
+    "name": "recall_mask[glass_shatter]@0.5FP/img",
+    "value": 0.8560606060606061,
+    "ci_low": 0.8226259386733417,
+    "ci_high": 0.8900698406452882
+   },
+   {
+    "name": "recall_mask[lamp_broken]@0.5FP/img",
+    "value": 0.6397379912663755,
+    "ci_low": 0.5893031314168378,
+    "ci_high": 0.6826453321878578
+   },
+   {
+    "name": "recall_mask[other]@0.5FP/img",
+    "value": 0.6851851851851852,
+    "ci_low": 0.6505122190370486,
+    "ci_high": 0.7174201036694511
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 6030.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 2316.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: crack, dent, glass_shatter, lamp_broken, other, scratch"
+ },
+ {
+  "id": "inspect.damage.dmg_A.hitl_test",
+  "name": "Exterior damage (yolo11m-seg) on Humans in the Loop damage, held-out 10 % (in-source)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (web/phone photos); no fixed-camera damage data exists",
+  "dataset": "Humans in the Loop Car Damages (CC0)",
+  "split": "10 % clustered hold-out",
+  "n": 82,
+  "model": "yolo11m-seg fine-tuned (dmg_A) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.16067441147809658,
+    "ci_low": 0.13990998856314882,
+    "ci_high": 0.19344362027855
+   },
+   {
+    "name": "AP50_box[dent]",
+    "value": 0.21642837291448444,
+    "ci_low": 0.15526297663850147,
+    "ci_high": 0.29949368883040994
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.13477104160885867,
+    "ci_low": 0.09579340093191557,
+    "ci_high": 0.18884716269949303
+   },
+   {
+    "name": "AP50_box[crack]",
+    "value": 0.010781671159029648,
+    "ci_low": 0.0,
+    "ci_high": 0.05782467532467529
+   },
+   {
+    "name": "AP50_box[other]",
+    "value": 0.28071656023001346,
+    "ci_low": 0.2326202505630315,
+    "ci_high": 0.34873115099767166
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.2468006458726694,
+    "ci_low": 0.216068825324177,
+    "ci_high": 0.2887025625398168
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.029988465974625143,
+    "ci_low": 0.015908802867902666,
+    "ci_high": 0.06518196202531643
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.08881199538638986,
+    "ci_low": 0.06183877766069547,
+    "ci_high": 0.13327174479047713
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.14186851211072665,
+    "ci_low": 0.1098774303134476,
+    "ci_high": 0.18308235347322718
+   },
+   {
+    "name": "recall_box[dent]@0.5FP/img",
+    "value": 0.21019108280254778,
+    "ci_low": 0.15115853658536585,
+    "ci_high": 0.2971153846153845
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.08414239482200647,
+    "ci_low": 0.055639170518063254,
+    "ci_high": 0.12922372859154466
+   },
+   {
+    "name": "recall_box[crack]@0.5FP/img",
+    "value": 0.14285714285714285,
+    "ci_low": 0.0,
+    "ci_high": 0.5
+   },
+   {
+    "name": "recall_box[other]@0.5FP/img",
+    "value": 0.1802030456852792,
+    "ci_low": 0.12233129726585223,
+    "ci_high": 0.2611604702022963
+   },
+   {
+    "name": "mAP50_mask",
+    "value": 0.14264756967296166,
+    "ci_low": 0.12299435250555805,
+    "ci_high": 0.17578977659536538
+   },
+   {
+    "name": "AP50_mask[dent]",
+    "value": 0.2041249546737031,
+    "ci_low": 0.14936960391863885,
+    "ci_high": 0.282276157474477
+   },
+   {
+    "name": "AP50_mask[scratch]",
+    "value": 0.10145875794142314,
+    "ci_low": 0.07266686943405731,
+    "ci_high": 0.15275659132626365
+   },
+   {
+    "name": "AP50_mask[crack]",
+    "value": 0.010781671159029648,
+    "ci_low": 0.0,
+    "ci_high": 0.05782467532467529
+   },
+   {
+    "name": "AP50_mask[other]",
+    "value": 0.2542248949176907,
+    "ci_low": 0.20540462568320542,
+    "ci_high": 0.317302646650472
+   },
+   {
+    "name": "AP50_mask[any_damage]",
+    "value": 0.2120251453755819,
+    "ci_low": 0.1815935558338584,
+    "ci_high": 0.2507546307025711
+   },
+   {
+    "name": "recall_mask[any_damage]@0.1FP/img",
+    "value": 0.02768166089965398,
+    "ci_low": 0.015422263616647683,
+    "ci_high": 0.06306011459010989
+   },
+   {
+    "name": "recall_mask[any_damage]@0.5FP/img",
+    "value": 0.08189158016147635,
+    "ci_low": 0.05735292979432617,
+    "ci_high": 0.11650080607374581
+   },
+   {
+    "name": "recall_mask[any_damage]@1FP/img",
+    "value": 0.12687427912341406,
+    "ci_low": 0.09589732825469638,
+    "ci_high": 0.1685198826597131
+   },
+   {
+    "name": "recall_mask[dent]@0.5FP/img",
+    "value": 0.21019108280254778,
+    "ci_low": 0.15204336804604002,
+    "ci_high": 0.2854357491027904
+   },
+   {
+    "name": "recall_mask[scratch]@0.5FP/img",
+    "value": 0.07766990291262135,
+    "ci_low": 0.04840892381214962,
+    "ci_high": 0.11531455686514618
+   },
+   {
+    "name": "recall_mask[crack]@0.5FP/img",
+    "value": 0.14285714285714285,
+    "ci_low": 0.0,
+    "ci_high": 0.5
+   },
+   {
+    "name": "recall_mask[other]@0.5FP/img",
+    "value": 0.1700507614213198,
+    "ci_low": 0.11421806365224775,
+    "ci_high": 0.2409050179211469
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 867.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 81.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: crack, dent, other, scratch"
+ },
+ {
+  "id": "inspect.damage.dmg_B.vehide_val",
+  "name": "Exterior damage (yolo11m-seg) on VehiDE official validation split (in-source)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (web photos, Vietnam); no fixed-camera damage data exists",
+  "dataset": "VehiDE (Kaggle copy of official release)",
+  "split": "official val 2,324 (never trained on)",
+  "n": 2322,
+  "model": "yolo11m-seg fine-tuned (dmg_B) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.4330223452006883,
+    "ci_low": 0.4194051639208438,
+    "ci_high": 0.4488368588699619
+   },
+   {
+    "name": "AP50_box[dent]",
+    "value": 0.2369253600009929,
+    "ci_low": 0.20915962749818134,
+    "ci_high": 0.2649268241084075
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.3197955963602829,
+    "ci_low": 0.3000300189799071,
+    "ci_high": 0.34204170128119415
+   },
+   {
+    "name": "AP50_box[crack]",
+    "value": 0.26492293812319256,
+    "ci_low": 0.2368762033940606,
+    "ci_high": 0.2969158079764781
+   },
+   {
+    "name": "AP50_box[glass_shatter]",
+    "value": 0.7685948286956397,
+    "ci_low": 0.7238265541892321,
+    "ci_high": 0.8127548602445284
+   },
+   {
+    "name": "AP50_box[lamp_broken]",
+    "value": 0.468680965634878,
+    "ci_low": 0.425663791384553,
+    "ci_high": 0.520136385294073
+   },
+   {
+    "name": "AP50_box[other]",
+    "value": 0.5392143823891438,
+    "ci_low": 0.5032981472546317,
+    "ci_high": 0.5763544332122623
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.42821996932923945,
+    "ci_low": 0.4137974690933904,
+    "ci_high": 0.4416138422412606
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.17860696517412936,
+    "ci_low": 0.16436432079688895,
+    "ci_high": 0.1932371748226305
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.3250414593698176,
+    "ci_low": 0.3109550749969542,
+    "ci_high": 0.33940108787015216
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.4084577114427861,
+    "ci_low": 0.3930494376218859,
+    "ci_high": 0.42188314938331795
+   },
+   {
+    "name": "recall_box[dent]@0.5FP/img",
+    "value": 0.38105046343975285,
+    "ci_low": 0.3525597736270792,
+    "ci_high": 0.4091659811694747
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.3490328006728343,
+    "ci_low": 0.3273127235332414,
+    "ci_high": 0.3706243101346084
+   },
+   {
+    "name": "recall_box[crack]@0.5FP/img",
+    "value": 0.42990654205607476,
+    "ci_low": 0.3913945824336088,
+    "ci_high": 0.4626039177067658
+   },
+   {
+    "name": "recall_box[glass_shatter]@0.5FP/img",
+    "value": 0.8661616161616161,
+    "ci_low": 0.8312635105590216,
+    "ci_high": 0.8985099241755622
+   },
+   {
+    "name": "recall_box[lamp_broken]@0.5FP/img",
+    "value": 0.7052401746724891,
+    "ci_low": 0.6641777720752616,
+    "ci_high": 0.7493635046424979
+   },
+   {
+    "name": "recall_box[other]@0.5FP/img",
+    "value": 0.6655092592592593,
+    "ci_low": 0.6315361436521846,
+    "ci_high": 0.6974030189904236
+   },
+   {
+    "name": "mAP50_mask",
+    "value": 0.39550884853236973,
+    "ci_low": 0.38177945414460684,
+    "ci_high": 0.4142057018520374
+   },
+   {
+    "name": "AP50_mask[dent]",
+    "value": 0.22598991651540165,
+    "ci_low": 0.19601136853556864,
+    "ci_high": 0.25202899101836956
+   },
+   {
+    "name": "AP50_mask[scratch]",
+    "value": 0.25926314610844714,
+    "ci_low": 0.24200143166655166,
+    "ci_high": 0.2791508584494104
+   },
+   {
+    "name": "AP50_mask[crack]",
+    "value": 0.25124943109035336,
+    "ci_low": 0.22159999578965006,
+    "ci_high": 0.2834261829559685
+   },
+   {
+    "name": "AP50_mask[glass_shatter]",
+    "value": 0.726320811926224,
+    "ci_low": 0.6809635770682354,
+    "ci_high": 0.772598313969116
+   },
+   {
+    "name": "AP50_mask[lamp_broken]",
+    "value": 0.3662943371994268,
+    "ci_low": 0.3225420346257179,
+    "ci_high": 0.4236201413371383
+   },
+   {
+    "name": "AP50_mask[other]",
+    "value": 0.5439354483543656,
+    "ci_low": 0.5047860853893824,
+    "ci_high": 0.5796385191006211
+   },
+   {
+    "name": "AP50_mask[any_damage]",
+    "value": 0.37865299634448973,
+    "ci_low": 0.36550903405047297,
+    "ci_high": 0.39278065111671956
+   },
+   {
+    "name": "recall_mask[any_damage]@0.1FP/img",
+    "value": 0.16401326699834162,
+    "ci_low": 0.1534721479420357,
+    "ci_high": 0.18198621904286305
+   },
+   {
+    "name": "recall_mask[any_damage]@0.5FP/img",
+    "value": 0.3049751243781095,
+    "ci_low": 0.2917649355462029,
+    "ci_high": 0.32052963188872524
+   },
+   {
+    "name": "recall_mask[any_damage]@1FP/img",
+    "value": 0.37645107794361526,
+    "ci_low": 0.36092520055160343,
+    "ci_high": 0.3894360145652524
+   },
+   {
+    "name": "recall_mask[dent]@0.5FP/img",
+    "value": 0.36560247167868176,
+    "ci_low": 0.33348214285714284,
+    "ci_high": 0.3913940013633264
+   },
+   {
+    "name": "recall_mask[scratch]@0.5FP/img",
+    "value": 0.3086627417998318,
+    "ci_low": 0.2880910797570435,
+    "ci_high": 0.3284869222295699
+   },
+   {
+    "name": "recall_mask[crack]@0.5FP/img",
+    "value": 0.4174454828660436,
+    "ci_low": 0.3804002560367688,
+    "ci_high": 0.4489783619827537
+   },
+   {
+    "name": "recall_mask[glass_shatter]@0.5FP/img",
+    "value": 0.8308080808080808,
+    "ci_low": 0.7942916666666666,
+    "ci_high": 0.8673842000568343
+   },
+   {
+    "name": "recall_mask[lamp_broken]@0.5FP/img",
+    "value": 0.5917030567685589,
+    "ci_low": 0.5395645161290322,
+    "ci_high": 0.6405907296939021
+   },
+   {
+    "name": "recall_mask[other]@0.5FP/img",
+    "value": 0.6678240740740741,
+    "ci_low": 0.6321602421882273,
+    "ci_high": 0.7024457164582629
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 6030.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 2316.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: crack, dent, glass_shatter, lamp_broken, other, scratch"
+ },
+ {
+  "id": "inspect.damage.dmg_B.hitl_test",
+  "name": "Exterior damage (yolo11m-seg) on Humans in the Loop damage, held-out 10 % (in-source)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (web/phone photos); no fixed-camera damage data exists",
+  "dataset": "Humans in the Loop Car Damages (CC0)",
+  "split": "10 % clustered hold-out",
+  "n": 82,
+  "model": "yolo11m-seg fine-tuned (dmg_B) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.13690935257861184,
+    "ci_low": 0.12034499792332982,
+    "ci_high": 0.16585062619143484
+   },
+   {
+    "name": "AP50_box[dent]",
+    "value": 0.203852565201424,
+    "ci_low": 0.15103632687250154,
+    "ci_high": 0.27995880786420196
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.1184519502156277,
+    "ci_low": 0.08190715660439578,
+    "ci_high": 0.16691496052471258
+   },
+   {
+    "name": "AP50_box[crack]",
+    "value": 0.0015360983102918587,
+    "ci_low": 0.0,
+    "ci_high": 0.013525114155251133
+   },
+   {
+    "name": "AP50_box[other]",
+    "value": 0.22379679658710386,
+    "ci_low": 0.1897433315576508,
+    "ci_high": 0.2826621022588961
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.21068534222516777,
+    "ci_low": 0.1855689949476991,
+    "ci_high": 0.2478849261726641
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.025374855824682813,
+    "ci_low": 0.012583787180561376,
+    "ci_high": 0.04161649678132932
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.06113033448673587,
+    "ci_low": 0.04219076567162028,
+    "ci_high": 0.09133775508871798
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.1118800461361015,
+    "ci_low": 0.08351209623201597,
+    "ci_high": 0.14535440613026812
+   },
+   {
+    "name": "recall_box[dent]@0.5FP/img",
+    "value": 0.18471337579617833,
+    "ci_low": 0.13242786985880908,
+    "ci_high": 0.2584589207583859
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.0970873786407767,
+    "ci_low": 0.054933941491034914,
+    "ci_high": 0.13246559588320142
+   },
+   {
+    "name": "recall_box[crack]@0.5FP/img",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "recall_box[other]@0.5FP/img",
+    "value": 0.116751269035533,
+    "ci_low": 0.0772127659574468,
+    "ci_high": 0.1774054672864775
+   },
+   {
+    "name": "mAP50_mask",
+    "value": 0.1217512004772707,
+    "ci_low": 0.105179863349788,
+    "ci_high": 0.15047971289970097
+   },
+   {
+    "name": "AP50_mask[dent]",
+    "value": 0.20742396765238602,
+    "ci_low": 0.15056354292873217,
+    "ci_high": 0.2868749000749763
+   },
+   {
+    "name": "AP50_mask[scratch]",
+    "value": 0.08034171267415606,
+    "ci_low": 0.053879094272768366,
+    "ci_high": 0.12612141324396386
+   },
+   {
+    "name": "AP50_mask[crack]",
+    "value": 0.0015360983102918587,
+    "ci_low": 0.0,
+    "ci_high": 0.013525114155251133
+   },
+   {
+    "name": "AP50_mask[other]",
+    "value": 0.19770302327224887,
+    "ci_low": 0.16121612339857608,
+    "ci_high": 0.254334604037114
+   },
+   {
+    "name": "AP50_mask[any_damage]",
+    "value": 0.17822698884312738,
+    "ci_low": 0.15056598018313222,
+    "ci_high": 0.21362081019808668
+   },
+   {
+    "name": "recall_mask[any_damage]@0.1FP/img",
+    "value": 0.025374855824682813,
+    "ci_low": 0.012583787180561376,
+    "ci_high": 0.04295712814666347
+   },
+   {
+    "name": "recall_mask[any_damage]@0.5FP/img",
+    "value": 0.06228373702422145,
+    "ci_low": 0.04306277056277056,
+    "ci_high": 0.085736979840005
+   },
+   {
+    "name": "recall_mask[any_damage]@1FP/img",
+    "value": 0.09919261822376009,
+    "ci_low": 0.07368479801559177,
+    "ci_high": 0.13284067688378035
+   },
+   {
+    "name": "recall_mask[dent]@0.5FP/img",
+    "value": 0.18471337579617833,
+    "ci_low": 0.12866944076484477,
+    "ci_high": 0.2663893728222996
+   },
+   {
+    "name": "recall_mask[scratch]@0.5FP/img",
+    "value": 0.08090614886731391,
+    "ci_low": 0.0422694493006993,
+    "ci_high": 0.1107781282860147
+   },
+   {
+    "name": "recall_mask[crack]@0.5FP/img",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "recall_mask[other]@0.5FP/img",
+    "value": 0.11421319796954314,
+    "ci_low": 0.07619712295497612,
+    "ci_high": 0.16181261770244815
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 867.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 81.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: crack, dent, other, scratch"
+ },
+ {
+  "id": "inspect.damage.dmg_B.cardd_test",
+  "name": "Exterior damage (yolo11m-seg) on CarDD held-out 20 % (in-source for model B, cross-source for model A)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (Flickr/Shutterstock web photos); no fixed-camera damage data exists",
+  "dataset": "CarDD (HF FiftyOne mirror)",
+  "split": "20 % clustered hold-out",
+  "n": 543,
+  "model": "yolo11m-seg fine-tuned (dmg_B) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.6994920914303139,
+    "ci_low": 0.6779641990205885,
+    "ci_high": 0.7267868981941773
+   },
+   {
+    "name": "AP50_box[dent]",
+    "value": 0.5741962896886579,
+    "ci_low": 0.5268318539968939,
+    "ci_high": 0.6277974294647759
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.5664248113740129,
+    "ci_low": 0.5211612652746206,
+    "ci_high": 0.6193718684219761
+   },
+   {
+    "name": "AP50_box[crack]",
+    "value": 0.2805796081635742,
+    "ci_low": 0.21506049992133136,
+    "ci_high": 0.3769688057244037
+   },
+   {
+    "name": "AP50_box[glass_shatter]",
+    "value": 0.9853984308971775,
+    "ci_low": 0.9689204995476813,
+    "ci_high": 0.9972701555648187
+   },
+   {
+    "name": "AP50_box[lamp_broken]",
+    "value": 0.8722786013192925,
+    "ci_low": 0.8105293800401704,
+    "ci_high": 0.9313437203912106
+   },
+   {
+    "name": "AP50_box[tire_flat]",
+    "value": 0.9180748071391689,
+    "ci_low": 0.8285318453036674,
+    "ci_high": 0.9752254577481282
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.6753993064316159,
+    "ci_low": 0.6535165245077578,
+    "ci_high": 0.7047160745502425
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.4182608695652174,
+    "ci_low": 0.37964370972512507,
+    "ci_high": 0.46460394123148774
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.6017391304347826,
+    "ci_low": 0.5682727943754498,
+    "ci_high": 0.6350044306601683
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.6617391304347826,
+    "ci_low": 0.6311992286253442,
+    "ci_high": 0.6931418613448479
+   },
+   {
+    "name": "recall_box[dent]@0.5FP/img",
+    "value": 0.6347305389221557,
+    "ci_low": 0.5891410013932021,
+    "ci_high": 0.6955471486244419
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.6065934065934065,
+    "ci_low": 0.5608387191539366,
+    "ci_high": 0.6566339066339066
+   },
+   {
+    "name": "recall_box[crack]@0.5FP/img",
+    "value": 0.5575221238938053,
+    "ci_low": 0.46041314507308345,
+    "ci_high": 0.6456521739130434
+   },
+   {
+    "name": "recall_box[glass_shatter]@0.5FP/img",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_box[lamp_broken]@0.5FP/img",
+    "value": 0.9690721649484536,
+    "ci_low": 0.922949604743083,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_box[tire_flat]@0.5FP/img",
+    "value": 0.9464285714285714,
+    "ci_low": 0.8534878048780488,
+    "ci_high": 1.0
+   },
+   {
+    "name": "mAP50_mask",
+    "value": 0.7009036450999084,
+    "ci_low": 0.6772707786921749,
+    "ci_high": 0.7244703303808129
+   },
+   {
+    "name": "AP50_mask[dent]",
+    "value": 0.5659102262585833,
+    "ci_low": 0.5174418590490809,
+    "ci_high": 0.6187563895680467
+   },
+   {
+    "name": "AP50_mask[scratch]",
+    "value": 0.5596938589742754,
+    "ci_low": 0.5042093624647006,
+    "ci_high": 0.6144547008515998
+   },
+   {
+    "name": "AP50_mask[crack]",
+    "value": 0.298103562344809,
+    "ci_low": 0.2256285439739932,
+    "ci_high": 0.3822101641915155
+   },
+   {
+    "name": "AP50_mask[glass_shatter]",
+    "value": 0.9853984308971775,
+    "ci_low": 0.9689204995476813,
+    "ci_high": 0.9972701555648187
+   },
+   {
+    "name": "AP50_mask[lamp_broken]",
+    "value": 0.8782409849854369,
+    "ci_low": 0.8217406228059119,
+    "ci_high": 0.9335566546718991
+   },
+   {
+    "name": "AP50_mask[tire_flat]",
+    "value": 0.9180748071391689,
+    "ci_low": 0.8285318453036674,
+    "ci_high": 0.9752254577481282
+   },
+   {
+    "name": "AP50_mask[any_damage]",
+    "value": 0.6631437441622166,
+    "ci_low": 0.6372741699173359,
+    "ci_high": 0.6911582856739185
+   },
+   {
+    "name": "recall_mask[any_damage]@0.1FP/img",
+    "value": 0.42434782608695654,
+    "ci_low": 0.3776713042354395,
+    "ci_high": 0.4661449510802349
+   },
+   {
+    "name": "recall_mask[any_damage]@0.5FP/img",
+    "value": 0.591304347826087,
+    "ci_low": 0.5628772721819979,
+    "ci_high": 0.6256388236823794
+   },
+   {
+    "name": "recall_mask[any_damage]@1FP/img",
+    "value": 0.6530434782608696,
+    "ci_low": 0.6242599357101111,
+    "ci_high": 0.6875399468920159
+   },
+   {
+    "name": "recall_mask[dent]@0.5FP/img",
+    "value": 0.6227544910179641,
+    "ci_low": 0.5748764559250135,
+    "ci_high": 0.6822238445986687
+   },
+   {
+    "name": "recall_mask[scratch]@0.5FP/img",
+    "value": 0.6,
+    "ci_low": 0.5494975744975745,
+    "ci_high": 0.6542953667953667
+   },
+   {
+    "name": "recall_mask[crack]@0.5FP/img",
+    "value": 0.5663716814159292,
+    "ci_low": 0.48026438279649974,
+    "ci_high": 0.6453576391428362
+   },
+   {
+    "name": "recall_mask[glass_shatter]@0.5FP/img",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[lamp_broken]@0.5FP/img",
+    "value": 0.9690721649484536,
+    "ci_low": 0.9225524475524476,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[tire_flat]@0.5FP/img",
+    "value": 0.9464285714285714,
+    "ci_low": 0.8534878048780488,
+    "ci_high": 1.0
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 1150.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 543.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: crack, dent, glass_shatter, lamp_broken, scratch, tire_flat"
+ },
+ {
+  "id": "inspect.damage.dmg_B.syndcar",
+  "name": "Exterior damage (yolo11m-seg) on SYNDCAR (cross-source)",
+  "lane": "inspect",
+  "data_kind": "synthetic",
+  "domain": "phone/web photo (see notes); no fixed-camera damage data exists; DIGITALLY GENERATED damage on real photos of ONE vehicle",
+  "dataset": "SYNDCAR (Mendeley hzpj48krdt, CC BY 4.0)",
+  "split": "all 245 (never trained on)",
+  "n": 231,
+  "model": "yolo11m-seg fine-tuned (dmg_B) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.17712158673437728,
+    "ci_low": 0.1639446188541865,
+    "ci_high": 0.19972384048088582
+   },
+   {
+    "name": "AP50_box[glass_shatter]",
+    "value": 0.12812912725242978,
+    "ci_low": 0.09632403391591493,
+    "ci_high": 0.16936389697380558
+   },
+   {
+    "name": "AP50_box[lamp_broken]",
+    "value": 0.04636505373540736,
+    "ci_low": 0.029363995741782067,
+    "ci_high": 0.08330822524353332
+   },
+   {
+    "name": "AP50_box[crack]",
+    "value": 0.050563801703002724,
+    "ci_low": 0.029744284637637466,
+    "ci_high": 0.0783470259810916
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.48342836424666924,
+    "ci_low": 0.43890145597417335,
+    "ci_high": 0.5334514638255544
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.21301990007238697,
+    "ci_low": 0.19437137781320407,
+    "ci_high": 0.23493946381584568
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.061003861003861,
+    "ci_low": 0.04252765239752742,
+    "ci_high": 0.07508543657331136
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.12355212355212356,
+    "ci_low": 0.1063996273222828,
+    "ci_high": 0.14628794824775876
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.16293436293436295,
+    "ci_low": 0.14429256854256856,
+    "ci_high": 0.17950483117877059
+   },
+   {
+    "name": "recall_box[glass_shatter]@0.5FP/img",
+    "value": 0.13707165109034267,
+    "ci_low": 0.1041356781081132,
+    "ci_high": 0.17980498120300747
+   },
+   {
+    "name": "recall_box[lamp_broken]@0.5FP/img",
+    "value": 0.10963455149501661,
+    "ci_low": 0.06800978535353536,
+    "ci_high": 0.1534705882352941
+   },
+   {
+    "name": "recall_box[crack]@0.5FP/img",
+    "value": 0.09968847352024922,
+    "ci_low": 0.06315481958615972,
+    "ci_high": 0.13376914555950833
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.4119318181818182,
+    "ci_low": 0.3618079426607182,
+    "ci_high": 0.46470588235294114
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 1295.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 184.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: crack, glass_shatter, lamp_broken, scratch; mask AP not computed (GT is boxes only)"
+ },
+ {
+  "id": "inspect.damage.dmg_B.cococardamage",
+  "name": "Exterior damage (yolo11m-seg) on Kaggle Coco Car Damage (cross-source, class-agnostic)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (web photos); no fixed-camera damage data exists",
+  "dataset": "Kaggle lplenka/coco-car-damage-detection-dataset (CC0)",
+  "split": "70 annotated images (never trained on)",
+  "n": 69,
+  "model": "yolo11m-seg fine-tuned (dmg_B) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.21815554436656837,
+    "ci_low": 0.15000456534975104,
+    "ci_high": 0.31420568876762844
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.05555555555555555,
+    "ci_low": 0.024015151515151514,
+    "ci_high": 0.1381127450980392
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.18518518518518517,
+    "ci_low": 0.09650250129377264,
+    "ci_high": 0.29741613341089773
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.2777777777777778,
+    "ci_low": 0.17592879256965943,
+    "ci_high": 0.3764478417266186
+   },
+   {
+    "name": "AP50_mask[any_damage]",
+    "value": 0.20749363062504703,
+    "ci_low": 0.1514266257160412,
+    "ci_high": 0.29221712607801803
+   },
+   {
+    "name": "recall_mask[any_damage]@0.1FP/img",
+    "value": 0.09259259259259259,
+    "ci_low": 0.03104707792207792,
+    "ci_high": 0.14869102416570756
+   },
+   {
+    "name": "recall_mask[any_damage]@0.5FP/img",
+    "value": 0.18518518518518517,
+    "ci_low": 0.09827227589908749,
+    "ci_high": 0.2979728610245874
+   },
+   {
+    "name": "recall_mask[any_damage]@1FP/img",
+    "value": 0.2654320987654321,
+    "ci_low": 0.17750245510662177,
+    "ci_high": 0.3563665501165501
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 162.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 66.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Class-agnostic: all predicted classes count as 'damage'."
+ },
+ {
+  "id": "inspect.damage.dmg_B.jijo_roboflow",
+  "name": "Exterior damage (yolo11m-seg) on Roboflow jijo/car-damage-new (cross-source, 416x416 stretched)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (web photos, aspect-stretched to 416x416); no fixed-camera damage data exists",
+  "dataset": "Roboflow Universe jijo/car-damage-new v2 (CC BY label, provenance unknown)",
+  "split": "all (never trained on)",
+  "n": 2323,
+  "model": "yolo11m-seg fine-tuned (dmg_B) @ imgsz 1024",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.17732181790056575,
+    "ci_low": 0.16384066393025323,
+    "ci_high": 0.1917689604094744
+   },
+   {
+    "name": "AP50_box[dent]",
+    "value": 0.19616083375158075,
+    "ci_low": 0.17145067379092208,
+    "ci_high": 0.21984705292511403
+   },
+   {
+    "name": "AP50_box[scratch]",
+    "value": 0.15848280204955076,
+    "ci_low": 0.14334936430309564,
+    "ci_high": 0.17630320763196583
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.18536532434319364,
+    "ci_low": 0.1720103159895814,
+    "ci_high": 0.20058460551639176
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.08114104595879557,
+    "ci_low": 0.06826249950457192,
+    "ci_high": 0.09157078057435714
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.1670364500792393,
+    "ci_low": 0.15276459839546955,
+    "ci_high": 0.18284514758627657
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.2133122028526149,
+    "ci_low": 0.19900790698303616,
+    "ci_high": 0.23095600995718032
+   },
+   {
+    "name": "recall_box[dent]@0.5FP/img",
+    "value": 0.24911212582445458,
+    "ci_low": 0.22723956118445665,
+    "ci_high": 0.27358097598911246
+   },
+   {
+    "name": "recall_box[scratch]@0.5FP/img",
+    "value": 0.1769993085964508,
+    "ci_low": 0.15748394474943467,
+    "ci_high": 0.19759395191723292
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 6310.0
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 1859.0
+   },
+   {
+    "name": "n_images_without_gt",
+    "value": 0.0
+   }
+  ],
+  "notes": "Predictions restricted to the test set's label space: dent, scratch; mask AP not computed (GT is boxes only)"
+ },
+ {
+  "id": "inspect.dot_chars.dot_chars",
+  "name": "Tyre sidewall character reading (TyreAI) with week/year validity check",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone close-ups of embossed tyre text; rectified/cropped by the dataset (no scene search)",
+  "dataset": "Roboflow Universe tyreai/ocr-yphpv v3 (CC BY label)",
+  "split": "15 % pHash-cluster hold-out of train+valid",
+  "n": 558,
+  "model": "YOLO11s character detector (dot_chars) @ 640",
+  "metrics": [
+   {
+    "name": "string_exact_match",
+    "value": 0.6953405017921147,
+    "ci_low": 0.6401382933104631,
+    "ci_high": 0.7514517677567503
+   },
+   {
+    "name": "char_error_rate",
+    "value": 0.0713947243721371,
+    "unit": "fraction"
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 304.0
+   },
+   {
+    "name": "date_code_exact_match[digit-serial subset]",
+    "value": 0.896551724137931,
+    "ci_low": 0.8,
+    "ci_high": 0.9699304230726069
+   },
+   {
+    "name": "validator_rejects_wrong_readings",
+    "value": 0.3333333333333333,
+    "ci_low": 0.1517632443971473,
+    "ci_high": 0.5828645226148023,
+    "unit": "fraction"
+   },
+   {
+    "name": "validator_accepts_correct_readings",
+    "value": 1.0,
+    "ci_low": 0.9712984388055687,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "date_code_precision_when_valid",
+    "value": 0.9285714285714286,
+    "ci_low": 0.8735102126286542,
+    "ci_high": 0.9607416156261346,
+    "unit": "fraction"
+   },
+   {
+    "name": "n_digit_serial_subset",
+    "value": 145.0
+   }
+  ],
+  "notes": "GT string = TyreAI character boxes in reading order (principal-axis ordering, same function as for predictions). Date-code subset = images whose GT string is all digits, >= 6 chars, ending in a valid WWYY. Not measured: the stage that finds the DOT region in a full tyre photo end-to-end, night/rain, tilted close-ups beyond the dataset's own variation."
+ },
+ {
+  "id": "inspect.dot_region.dot_region",
+  "name": "DOT-code region detection on an independent source",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone photos of tyre sidewalls (Roboflow uploader dot-code-6shg0, 512x512 stretched)",
+  "dataset": "Roboflow subhams-workspace-l47ut/dot-code-6shg0 (CC BY label)",
+  "split": "all 97 images (cross-source; trained on tire-dot-finder + tyre-sidewall-text-label)",
+  "n": 97,
+  "model": "YOLO11s one-class detector (dot_region) @ 640",
+  "metrics": [
+   {
+    "name": "mAP50_box",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "AP50_box[dot_code]",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "AP50_box[any_damage]",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "recall_box[any_damage]@0.1FP/img",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "recall_box[any_damage]@0.5FP/img",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "recall_box[any_damage]@1FP/img",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "recall_box[dot_code]@0.5FP/img",
+    "value": 0.0,
+    "ci_low": 0.0,
+    "ci_high": 0.0
+   },
+   {
+    "name": "n_gt_instances",
+    "value": 97.0
+   }
+  ],
+  "notes": "Box IoU 0.5. Training sources are tiny (about 150 images): expect high variance; see the CIs."
+ },
+ {
+  "id": "inspect.parts.parts.carparts_test",
+  "name": "Car-part segmentation on Ultralytics carparts-seg + HITL-parts pool, held-out 10 % (in-source)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (web photos); no fixed-camera data",
+  "dataset": "Ultralytics carparts-seg (CC BY 4.0)",
+  "split": "carparts_test",
+  "n": 548,
+  "model": "yolo11m-seg fine-tuned (parts) @ imgsz 800",
+  "metrics": [
+   {
+    "name": "mAP50_mask",
+    "value": 0.9477810575357629,
+    "ci_low": 0.9373424292041588,
+    "ci_high": 0.9601730832052553
+   },
+   {
+    "name": "AP50_mask[front_bumper]",
+    "value": 0.9877656371314161,
+    "ci_low": 0.9792330109334965,
+    "ci_high": 0.994115264675124
+   },
+   {
+    "name": "AP50_mask[back_bumper]",
+    "value": 0.9785899977916513,
+    "ci_low": 0.9414464915269702,
+    "ci_high": 0.9953358676874683
+   },
+   {
+    "name": "AP50_mask[hood]",
+    "value": 0.9838653788388596,
+    "ci_low": 0.9690256323494251,
+    "ci_high": 0.9967494858463747
+   },
+   {
+    "name": "AP50_mask[trunk]",
+    "value": 0.9885088919288646,
+    "ci_low": 0.9642400601017107,
+    "ci_high": 1.0
+   },
+   {
+    "name": "AP50_mask[front_door]",
+    "value": 0.994467384205443,
+    "ci_low": 0.9885836986952583,
+    "ci_high": 0.9985370005655518
+   },
+   {
+    "name": "AP50_mask[back_door]",
+    "value": 0.9798216753411961,
+    "ci_low": 0.9546173562220518,
+    "ci_high": 0.9943965403345932
+   },
+   {
+    "name": "AP50_mask[headlight]",
+    "value": 0.9684652827649787,
+    "ci_low": 0.9509181065286301,
+    "ci_high": 0.9840765585086603
+   },
+   {
+    "name": "AP50_mask[tail_light]",
+    "value": 0.9436760606701637,
+    "ci_low": 0.9093936755613101,
+    "ci_high": 0.9692225604077827
+   },
+   {
+    "name": "AP50_mask[mirror]",
+    "value": 0.9385707717320665,
+    "ci_low": 0.8886393809321638,
+    "ci_high": 0.9735144105329223
+   },
+   {
+    "name": "AP50_mask[windshield]",
+    "value": 0.9984969281186613,
+    "ci_low": 0.9965647896439959,
+    "ci_high": 0.9999779611080809
+   },
+   {
+    "name": "AP50_mask[back_windshield]",
+    "value": 0.9799228800610891,
+    "ci_low": 0.952487737457199,
+    "ci_high": 0.9970894898594019
+   },
+   {
+    "name": "AP50_mask[wheel]",
+    "value": 0.6312218018447652,
+    "ci_low": 0.5345798938741558,
+    "ci_high": 0.7339650216162795
+   },
+   {
+    "name": "AP50_mask[any_part]",
+    "value": 0.9772703049839281,
+    "ci_low": 0.9711597959157525,
+    "ci_high": 0.9826292605476886
+   },
+   {
+    "name": "recall_mask[any_part]@0.5FP/img",
+    "value": 0.9602649006622517,
+    "ci_low": 0.9467578631470069,
+    "ci_high": 0.9692543648924716
+   },
+   {
+    "name": "recall_mask[front_bumper]@0.5FP/img",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[back_bumper]@0.5FP/img",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[hood]@0.5FP/img",
+    "value": 0.9937694704049844,
+    "ci_low": 0.9839743589743589,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[trunk]@0.5FP/img",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[front_door]@0.5FP/img",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[back_door]@0.5FP/img",
+    "value": 0.9839357429718876,
+    "ci_low": 0.9599010989010989,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[headlight]@0.5FP/img",
+    "value": 0.9710144927536232,
+    "ci_low": 0.9559616103119746,
+    "ci_high": 0.9859047845763745
+   },
+   {
+    "name": "recall_mask[tail_light]@0.5FP/img",
+    "value": 0.9801136363636364,
+    "ci_low": 0.9634805744579839,
+    "ci_high": 0.9946391392390622
+   },
+   {
+    "name": "recall_mask[mirror]@0.5FP/img",
+    "value": 0.992,
+    "ci_low": 0.974664281783159,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[windshield]@0.5FP/img",
+    "value": 1.0,
+    "ci_low": 1.0,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[back_windshield]@0.5FP/img",
+    "value": 0.9869281045751634,
+    "ci_low": 0.9596591183429095,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[wheel]@0.5FP/img",
+    "value": 0.9203539823008849,
+    "ci_low": 0.8427380952380953,
+    "ci_high": 0.9753641281731169
+   },
+   {
+    "name": "mAP50_box",
+    "value": 0.9455976905666089,
+    "ci_low": 0.9365523316416798,
+    "ci_high": 0.9577588500997821
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 420.0
+   }
+  ],
+  "notes": "label level: unified; images without GT instances removed. Mask AP50 per class with image-level bootstrap CIs. "
+ },
+ {
+  "id": "inspect.parts.parts.hitl_parts_test",
+  "name": "Car-part segmentation on Humans in the Loop parts, held-out (in-source)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (web/phone photos); no fixed-camera data",
+  "dataset": "Humans in the Loop Car Parts (CC0)",
+  "split": "hitl_parts_test",
+  "n": 168,
+  "model": "yolo11m-seg fine-tuned (parts) @ imgsz 800",
+  "metrics": [
+   {
+    "name": "mAP50_mask",
+    "value": 0.9085304245634956,
+    "ci_low": 0.8971295085079618,
+    "ci_high": 0.9243638541021401
+   },
+   {
+    "name": "AP50_mask[front_bumper]",
+    "value": 0.9633547893757586,
+    "ci_low": 0.92610034579676,
+    "ci_high": 0.9921189296756254
+   },
+   {
+    "name": "AP50_mask[back_bumper]",
+    "value": 0.8855268957624359,
+    "ci_low": 0.8226652477866473,
+    "ci_high": 0.9425740485665901
+   },
+   {
+    "name": "AP50_mask[hood]",
+    "value": 0.9736769089496362,
+    "ci_low": 0.9465136816220742,
+    "ci_high": 0.9992487386897698
+   },
+   {
+    "name": "AP50_mask[trunk]",
+    "value": 0.6882255225474185,
+    "ci_low": 0.5788710599945791,
+    "ci_high": 0.821325170047171
+   },
+   {
+    "name": "AP50_mask[front_door]",
+    "value": 0.9721809652434247,
+    "ci_low": 0.9462867760805617,
+    "ci_high": 0.9936108493960747
+   },
+   {
+    "name": "AP50_mask[back_door]",
+    "value": 0.9625775484293372,
+    "ci_low": 0.9328223033300177,
+    "ci_high": 0.9925632253186688
+   },
+   {
+    "name": "AP50_mask[fender]",
+    "value": 0.9485151736234045,
+    "ci_low": 0.9142250706853665,
+    "ci_high": 0.9768240069134666
+   },
+   {
+    "name": "AP50_mask[quarter_panel]",
+    "value": 0.8710290372032572,
+    "ci_low": 0.8150196521361934,
+    "ci_high": 0.9270895356284621
+   },
+   {
+    "name": "AP50_mask[headlight]",
+    "value": 0.9297802693548696,
+    "ci_low": 0.8949304221571375,
+    "ci_high": 0.957659158618578
+   },
+   {
+    "name": "AP50_mask[tail_light]",
+    "value": 0.8269199286087638,
+    "ci_low": 0.7510312000752687,
+    "ci_high": 0.9099072387714836
+   },
+   {
+    "name": "AP50_mask[mirror]",
+    "value": 0.9501297477447598,
+    "ci_low": 0.9152922593681813,
+    "ci_high": 0.978486480151775
+   },
+   {
+    "name": "AP50_mask[windshield]",
+    "value": 0.9904882154882154,
+    "ci_low": 0.9716562966295971,
+    "ci_high": 1.0
+   },
+   {
+    "name": "AP50_mask[back_windshield]",
+    "value": 0.9637410464709992,
+    "ci_low": 0.9108411533220983,
+    "ci_high": 0.9971875307841509
+   },
+   {
+    "name": "AP50_mask[front_window]",
+    "value": 0.922618067838187,
+    "ci_low": 0.8858033986151287,
+    "ci_high": 0.9645849327254589
+   },
+   {
+    "name": "AP50_mask[back_window]",
+    "value": 0.940226274315655,
+    "ci_low": 0.9144745742946621,
+    "ci_high": 0.9694370639282394
+   },
+   {
+    "name": "AP50_mask[wheel]",
+    "value": 0.9985994147463066,
+    "ci_low": 0.9958153266586504,
+    "ci_high": 0.9999880896884439
+   },
+   {
+    "name": "AP50_mask[roof]",
+    "value": 0.8778740180495894,
+    "ci_low": 0.8214153984535542,
+    "ci_high": 0.937899380963052
+   },
+   {
+    "name": "AP50_mask[grille]",
+    "value": 0.8114115242245064,
+    "ci_low": 0.7200609103398308,
+    "ci_high": 0.902086303776959
+   },
+   {
+    "name": "AP50_mask[rocker_panel]",
+    "value": 0.8911007392090471,
+    "ci_low": 0.8328017930803475,
+    "ci_high": 0.9407360315741926
+   },
+   {
+    "name": "AP50_mask[license_plate]",
+    "value": 0.8026324040843427,
+    "ci_low": 0.7281134061108655,
+    "ci_high": 0.8917648280528143
+   },
+   {
+    "name": "AP50_mask[any_part]",
+    "value": 0.9387218922340836,
+    "ci_low": 0.9300785382897774,
+    "ci_high": 0.9481083297010394
+   },
+   {
+    "name": "recall_mask[any_part]@0.5FP/img",
+    "value": 0.798499061913696,
+    "ci_low": 0.7657831066604309,
+    "ci_high": 0.8368991727136686
+   },
+   {
+    "name": "recall_mask[front_bumper]@0.5FP/img",
+    "value": 0.9661016949152542,
+    "ci_low": 0.9290612495159417,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[back_bumper]@0.5FP/img",
+    "value": 0.9315068493150684,
+    "ci_low": 0.875,
+    "ci_high": 0.9855072463768116
+   },
+   {
+    "name": "recall_mask[hood]@0.5FP/img",
+    "value": 0.9752066115702479,
+    "ci_low": 0.948110632183908,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[trunk]@0.5FP/img",
+    "value": 0.8461538461538461,
+    "ci_low": 0.75,
+    "ci_high": 0.9232394366197184
+   },
+   {
+    "name": "recall_mask[front_door]@0.5FP/img",
+    "value": 0.9746835443037974,
+    "ci_low": 0.9487012987012987,
+    "ci_high": 0.9939440993788821
+   },
+   {
+    "name": "recall_mask[back_door]@0.5FP/img",
+    "value": 0.975,
+    "ci_low": 0.9486111111111111,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[fender]@0.5FP/img",
+    "value": 0.9426751592356688,
+    "ci_low": 0.9044081093677179,
+    "ci_high": 0.974512987012987
+   },
+   {
+    "name": "recall_mask[quarter_panel]@0.5FP/img",
+    "value": 0.9214285714285714,
+    "ci_low": 0.8840254872563719,
+    "ci_high": 0.9644432773109244
+   },
+   {
+    "name": "recall_mask[headlight]@0.5FP/img",
+    "value": 0.9426751592356688,
+    "ci_low": 0.8957812500000001,
+    "ci_high": 0.9694117524310337
+   },
+   {
+    "name": "recall_mask[tail_light]@0.5FP/img",
+    "value": 0.8515625,
+    "ci_low": 0.7644906743185078,
+    "ci_high": 0.9444974554707379
+   },
+   {
+    "name": "recall_mask[mirror]@0.5FP/img",
+    "value": 0.9627329192546584,
+    "ci_low": 0.9328783651308348,
+    "ci_high": 0.9877356049966738
+   },
+   {
+    "name": "recall_mask[windshield]@0.5FP/img",
+    "value": 0.9907407407407407,
+    "ci_low": 0.9716775050375527,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[back_windshield]@0.5FP/img",
+    "value": 0.9791666666666666,
+    "ci_low": 0.9230263157894737,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[front_window]@0.5FP/img",
+    "value": 0.9556962025316456,
+    "ci_low": 0.9197152341020265,
+    "ci_high": 0.9872631621381924
+   },
+   {
+    "name": "recall_mask[back_window]@0.5FP/img",
+    "value": 0.9742268041237113,
+    "ci_low": 0.9427008344240838,
+    "ci_high": 0.9947368421052631
+   },
+   {
+    "name": "recall_mask[wheel]@0.5FP/img",
+    "value": 1.0,
+    "ci_low": 0.9931912906007473,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[roof]@0.5FP/img",
+    "value": 0.8978102189781022,
+    "ci_low": 0.8320585494642025,
+    "ci_high": 0.9542405702739112
+   },
+   {
+    "name": "recall_mask[grille]@0.5FP/img",
+    "value": 0.88,
+    "ci_low": 0.7877362736273628,
+    "ci_high": 0.9515231139217957
+   },
+   {
+    "name": "recall_mask[rocker_panel]@0.5FP/img",
+    "value": 0.922077922077922,
+    "ci_low": 0.8775076697345605,
+    "ci_high": 0.9610514485514485
+   },
+   {
+    "name": "recall_mask[license_plate]@0.5FP/img",
+    "value": 0.8636363636363636,
+    "ci_low": 0.7967292444029851,
+    "ci_high": 0.946067789100576
+   },
+   {
+    "name": "mAP50_box",
+    "value": 0.9121373678940957,
+    "ci_low": 0.9013874070362291,
+    "ci_high": 0.9261888851846597
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 168.0
+   }
+  ],
+  "notes": "label level: unified; images without GT instances removed. Mask AP50 per class with image-level bootstrap CIs. "
+ },
+ {
+  "id": "inspect.parts.parts.cardamagepanel",
+  "name": "Car-part segmentation on CarDamagePanel 565 (cross-source)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (photos of damaged cars); no fixed-camera data",
+  "dataset": "HF kadireks/cardamagepanel-originals (licence: other)",
+  "split": "cardamagepanel",
+  "n": 327,
+  "model": "yolo11m-seg fine-tuned (parts) @ imgsz 800",
+  "metrics": [
+   {
+    "name": "mAP50_mask",
+    "value": 0.8687063997792039,
+    "ci_low": 0.8466168871483233,
+    "ci_high": 0.8884551059700991
+   },
+   {
+    "name": "AP50_mask[front_bumper]",
+    "value": 0.943755342528785,
+    "ci_low": 0.911061035027315,
+    "ci_high": 0.9688356836770389
+   },
+   {
+    "name": "AP50_mask[back_bumper]",
+    "value": 0.8900718872998047,
+    "ci_low": 0.8298859553726331,
+    "ci_high": 0.9363242460647396
+   },
+   {
+    "name": "AP50_mask[hood]",
+    "value": 0.9498620497178123,
+    "ci_low": 0.9192813934343043,
+    "ci_high": 0.9783468542188307
+   },
+   {
+    "name": "AP50_mask[trunk]",
+    "value": 0.7666180256150488,
+    "ci_low": 0.6767578016194087,
+    "ci_high": 0.8525906505533736
+   },
+   {
+    "name": "AP50_mask[front_door]",
+    "value": 0.9436676529154249,
+    "ci_low": 0.9076649916749007,
+    "ci_high": 0.966520879307784
+   },
+   {
+    "name": "AP50_mask[back_door]",
+    "value": 0.9309543598464971,
+    "ci_low": 0.8932324161421344,
+    "ci_high": 0.9617047553579124
+   },
+   {
+    "name": "AP50_mask[fender]",
+    "value": 0.9172576710377844,
+    "ci_low": 0.8776387288235722,
+    "ci_high": 0.9421381292718438
+   },
+   {
+    "name": "AP50_mask[quarter_panel]",
+    "value": 0.7758607980884829,
+    "ci_low": 0.7131368786365309,
+    "ci_high": 0.8172564067957822
+   },
+   {
+    "name": "AP50_mask[headlight]",
+    "value": 0.9075691699683797,
+    "ci_low": 0.8660209404725518,
+    "ci_high": 0.9533031800004772
+   },
+   {
+    "name": "AP50_mask[tail_light]",
+    "value": 0.8204093785433229,
+    "ci_low": 0.7653963520375341,
+    "ci_high": 0.8770163145779193
+   },
+   {
+    "name": "AP50_mask[mirror]",
+    "value": 0.8207375118645897,
+    "ci_low": 0.7639747207616209,
+    "ci_high": 0.8683227153607017
+   },
+   {
+    "name": "AP50_mask[windshield]",
+    "value": 0.9623999156525832,
+    "ci_low": 0.934160235369889,
+    "ci_high": 0.9842009660218465
+   },
+   {
+    "name": "AP50_mask[back_windshield]",
+    "value": 0.8806329769708033,
+    "ci_low": 0.7918330424506625,
+    "ci_high": 0.9391619196744675
+   },
+   {
+    "name": "AP50_mask[front_window]",
+    "value": 0.8563378679090647,
+    "ci_low": 0.8120155820213614,
+    "ci_high": 0.8968809132534383
+   },
+   {
+    "name": "AP50_mask[back_window]",
+    "value": 0.8724895479893495,
+    "ci_low": 0.8207091030484571,
+    "ci_high": 0.9155089398550663
+   },
+   {
+    "name": "AP50_mask[wheel]",
+    "value": 0.9257086626220674,
+    "ci_low": 0.8914357818757433,
+    "ci_high": 0.953159227011384
+   },
+   {
+    "name": "AP50_mask[roof]",
+    "value": 0.6999384280504952,
+    "ci_low": 0.6301495618399291,
+    "ci_high": 0.7694285444216988
+   },
+   {
+    "name": "AP50_mask[grille]",
+    "value": 0.8094132594189649,
+    "ci_low": 0.7389139635197388,
+    "ci_high": 0.8761335408513434
+   },
+   {
+    "name": "AP50_mask[rocker_panel]",
+    "value": 0.8663278474963065,
+    "ci_low": 0.8236880380371062,
+    "ci_high": 0.9021252608277893
+   },
+   {
+    "name": "AP50_mask[license_plate]",
+    "value": 0.8341156420485079,
+    "ci_low": 0.7751473131497706,
+    "ci_high": 0.8947380367793184
+   },
+   {
+    "name": "AP50_mask[any_part]",
+    "value": 0.9005640996490949,
+    "ci_low": 0.8786081755441235,
+    "ci_high": 0.919186864186277
+   },
+   {
+    "name": "recall_mask[any_part]@0.5FP/img",
+    "value": 0.7380952380952381,
+    "ci_low": 0.696471500339797,
+    "ci_high": 0.7698440271897337
+   },
+   {
+    "name": "recall_mask[front_bumper]@0.5FP/img",
+    "value": 0.9617224880382775,
+    "ci_low": 0.9305503731343284,
+    "ci_high": 0.9842446862348178
+   },
+   {
+    "name": "recall_mask[back_bumper]@0.5FP/img",
+    "value": 0.9026548672566371,
+    "ci_low": 0.8440366972477065,
+    "ci_high": 0.9474215842636895
+   },
+   {
+    "name": "recall_mask[hood]@0.5FP/img",
+    "value": 0.9629629629629629,
+    "ci_low": 0.9305217551622419,
+    "ci_high": 0.9862416597164303
+   },
+   {
+    "name": "recall_mask[trunk]@0.5FP/img",
+    "value": 0.9019607843137255,
+    "ci_low": 0.8350490441397258,
+    "ci_high": 0.9511854741896759
+   },
+   {
+    "name": "recall_mask[front_door]@0.5FP/img",
+    "value": 0.946236559139785,
+    "ci_low": 0.9100474166121648,
+    "ci_high": 0.9706117856395227
+   },
+   {
+    "name": "recall_mask[back_door]@0.5FP/img",
+    "value": 0.9473684210526315,
+    "ci_low": 0.9148707389613361,
+    "ci_high": 0.9732620320855615
+   },
+   {
+    "name": "recall_mask[fender]@0.5FP/img",
+    "value": 0.9304029304029304,
+    "ci_low": 0.8999074074074074,
+    "ci_high": 0.9547913642960814
+   },
+   {
+    "name": "recall_mask[quarter_panel]@0.5FP/img",
+    "value": 0.8488888888888889,
+    "ci_low": 0.7920212431321562,
+    "ci_high": 0.8898938726471767
+   },
+   {
+    "name": "recall_mask[headlight]@0.5FP/img",
+    "value": 0.9290780141843972,
+    "ci_low": 0.8851221413721413,
+    "ci_high": 0.9664185365120704
+   },
+   {
+    "name": "recall_mask[tail_light]@0.5FP/img",
+    "value": 0.867816091954023,
+    "ci_low": 0.8141302367941713,
+    "ci_high": 0.9312680697278912
+   },
+   {
+    "name": "recall_mask[mirror]@0.5FP/img",
+    "value": 0.8970588235294118,
+    "ci_low": 0.8519916773367477,
+    "ci_high": 0.9329408512990603
+   },
+   {
+    "name": "recall_mask[windshield]@0.5FP/img",
+    "value": 0.9707317073170731,
+    "ci_low": 0.9490439046866772,
+    "ci_high": 0.9947368421052631
+   },
+   {
+    "name": "recall_mask[back_windshield]@0.5FP/img",
+    "value": 0.9021739130434783,
+    "ci_low": 0.8217376237623762,
+    "ci_high": 0.9609124331550802
+   },
+   {
+    "name": "recall_mask[front_window]@0.5FP/img",
+    "value": 0.896797153024911,
+    "ci_low": 0.8532871287128714,
+    "ci_high": 0.9351789993464528
+   },
+   {
+    "name": "recall_mask[back_window]@0.5FP/img",
+    "value": 0.9157608695652174,
+    "ci_low": 0.867757703845105,
+    "ci_high": 0.9521260151437875
+   },
+   {
+    "name": "recall_mask[wheel]@0.5FP/img",
+    "value": 0.9348230912476723,
+    "ci_low": 0.9009136754765297,
+    "ci_high": 0.9611507774140753
+   },
+   {
+    "name": "recall_mask[roof]@0.5FP/img",
+    "value": 0.8475609756097561,
+    "ci_low": 0.7873445449406444,
+    "ci_high": 0.9119634433962265
+   },
+   {
+    "name": "recall_mask[grille]@0.5FP/img",
+    "value": 0.8930817610062893,
+    "ci_low": 0.8301429388221842,
+    "ci_high": 0.9562925586635967
+   },
+   {
+    "name": "recall_mask[rocker_panel]@0.5FP/img",
+    "value": 0.8987854251012146,
+    "ci_low": 0.8658289386947924,
+    "ci_high": 0.9346938775510204
+   },
+   {
+    "name": "recall_mask[license_plate]@0.5FP/img",
+    "value": 0.9256756756756757,
+    "ci_low": 0.8708802953750486,
+    "ci_high": 0.9727909824911549
+   },
+   {
+    "name": "mAP50_box",
+    "value": 0.8654749716663124,
+    "ci_low": 0.8420601992152907,
+    "ci_high": 0.885910303459427
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 325.0
+   }
+  ],
+  "notes": "label level: unified; images without GT instances removed. Mask AP50 per class with image-level bootstrap CIs. "
+ },
+ {
+  "id": "inspect.parts.parts.syndcar_parts",
+  "name": "Car-part segmentation on SYNDCAR parts, family level (cross-source, ONE micro-car)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone/web photo (phone photos of one Citroen Ami in parking lots); no fixed-camera data",
+  "dataset": "SYNDCAR (Mendeley hzpj48krdt, CC BY 4.0)",
+  "split": "syndcar_parts",
+  "n": 231,
+  "model": "yolo11m-seg fine-tuned (parts) @ imgsz 800",
+  "metrics": [
+   {
+    "name": "mAP50_mask",
+    "value": 0.6105835676426232,
+    "ci_low": 0.5869967237701165,
+    "ci_high": 0.6387918617961315
+   },
+   {
+    "name": "AP50_mask[door]",
+    "value": 0.8153194440844738,
+    "ci_low": 0.7513815568934437,
+    "ci_high": 0.8878417022032244
+   },
+   {
+    "name": "AP50_mask[front_end]",
+    "value": 0.3217478917137113,
+    "ci_low": 0.2467678993356919,
+    "ci_high": 0.41789628384416716
+   },
+   {
+    "name": "AP50_mask[lamp]",
+    "value": 0.3716629019216094,
+    "ci_low": 0.30474748645691424,
+    "ci_high": 0.45400003231720315
+   },
+   {
+    "name": "AP50_mask[license_plate]",
+    "value": 0.6759221669354607,
+    "ci_low": 0.5940032394994726,
+    "ci_high": 0.7628433037228832
+   },
+   {
+    "name": "AP50_mask[mirror]",
+    "value": 0.6739554385365902,
+    "ci_low": 0.5989464703373006,
+    "ci_high": 0.7522118458980197
+   },
+   {
+    "name": "AP50_mask[rear_end]",
+    "value": 0.23890493188682776,
+    "ci_low": 0.1802760701027015,
+    "ci_high": 0.3168360952184046
+   },
+   {
+    "name": "AP50_mask[rocker_panel]",
+    "value": 0.9075435349133931,
+    "ci_low": 0.8667545696869998,
+    "ci_high": 0.9449734610341972
+   },
+   {
+    "name": "AP50_mask[roof]",
+    "value": 0.7829963122362952,
+    "ci_low": 0.7175846830048045,
+    "ci_high": 0.8432816086996547
+   },
+   {
+    "name": "AP50_mask[side_panel]",
+    "value": 0.6432571874331705,
+    "ci_low": 0.5882472451339589,
+    "ci_high": 0.7053269516432507
+   },
+   {
+    "name": "AP50_mask[wheel]",
+    "value": 0.9121246146184954,
+    "ci_low": 0.882686233239469,
+    "ci_high": 0.9350223036470866
+   },
+   {
+    "name": "AP50_mask[window]",
+    "value": 0.6096388883328989,
+    "ci_low": 0.5508571906144107,
+    "ci_high": 0.6830556969800613
+   },
+   {
+    "name": "AP50_mask[windshield]",
+    "value": 0.3739294990985521,
+    "ci_low": 0.3062431471678269,
+    "ci_high": 0.44019973022018893
+   },
+   {
+    "name": "AP50_mask[any_part]",
+    "value": 0.7124987646181957,
+    "ci_low": 0.6779603418733994,
+    "ci_high": 0.7438283610592225
+   },
+   {
+    "name": "recall_mask[any_part]@0.5FP/img",
+    "value": 0.1883594499520307,
+    "ci_low": 0.1456040142769014,
+    "ci_high": 0.2587026200729807
+   },
+   {
+    "name": "recall_mask[door]@0.5FP/img",
+    "value": 0.9878048780487805,
+    "ci_low": 0.9622353249475891,
+    "ci_high": 1.0
+   },
+   {
+    "name": "recall_mask[front_end]@0.5FP/img",
+    "value": 0.4024390243902439,
+    "ci_low": 0.33322981366459625,
+    "ci_high": 0.48509554964145785
+   },
+   {
+    "name": "recall_mask[lamp]@0.5FP/img",
+    "value": 0.40059347181008903,
+    "ci_low": 0.33425177660349853,
+    "ci_high": 0.47404620720519136
+   },
+   {
+    "name": "recall_mask[license_plate]@0.5FP/img",
+    "value": 0.807909604519774,
+    "ci_low": 0.734618282270216,
+    "ci_high": 0.8750548245614035
+   },
+   {
+    "name": "recall_mask[mirror]@0.5FP/img",
+    "value": 0.7777777777777778,
+    "ci_low": 0.7042279196724508,
+    "ci_high": 0.8471946539632129
+   },
+   {
+    "name": "recall_mask[rear_end]@0.5FP/img",
+    "value": 0.3393939393939394,
+    "ci_low": 0.24996468926553672,
+    "ci_high": 0.4231451612903226
+   },
+   {
+    "name": "recall_mask[rocker_panel]@0.5FP/img",
+    "value": 0.9759036144578314,
+    "ci_low": 0.9529271708683473,
+    "ci_high": 0.9943518606192596
+   },
+   {
+    "name": "recall_mask[roof]@0.5FP/img",
+    "value": 0.8514851485148515,
+    "ci_low": 0.7940082956259427,
+    "ci_high": 0.9091136363636363
+   },
+   {
+    "name": "recall_mask[side_panel]@0.5FP/img",
+    "value": 0.6542056074766355,
+    "ci_low": 0.5471338587206627,
+    "ci_high": 0.7509794353433252
+   },
+   {
+    "name": "recall_mask[wheel]@0.5FP/img",
+    "value": 0.9665924276169265,
+    "ci_low": 0.9484194945350846,
+    "ci_high": 0.9798327707509494
+   },
+   {
+    "name": "recall_mask[window]@0.5FP/img",
+    "value": 0.4811715481171548,
+    "ci_low": 0.35934436274509807,
+    "ci_high": 0.5918011528021858
+   },
+   {
+    "name": "recall_mask[windshield]@0.5FP/img",
+    "value": 0.45185185185185184,
+    "ci_low": 0.37948848794119433,
+    "ci_high": 0.5169253310180162
+   },
+   {
+    "name": "mAP50_box",
+    "value": 0.6012244411865293,
+    "ci_low": 0.5794824502133006,
+    "ci_high": 0.6309282761295412
+   },
+   {
+    "name": "n_near_duplicate_clusters",
+    "value": 184.0
+   }
+  ],
+  "notes": "label level: family; images without GT instances removed. Mask AP50 per class with image-level bootstrap CIs. "
+ },
+ {
+  "id": "inspect.tread_depth.tread_dino_ridge.left_only",
+  "name": "Tread depth (mm) from a stereo pair, left_only",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "lab-style close-range stereo pair (Raspberry Pi 5 + IMX219 stereo camera); NOT a phone photo and NOT fixed CCTV",
+  "dataset": "Kaggle maxfinkenbeiner/tyrecv-two-views-are-all-you-need (MIT label)",
+  "split": "grouped 5-fold CV (group = stereo pair)",
+  "n": 508,
+  "model": "DINOv2 ViT-B/14 @448 frozen features + ridge (alpha by inner CV)",
+  "metrics": [
+   {
+    "name": "mae_mm",
+    "value": 0.6830177358754976,
+    "ci_low": 0.6352947950832488,
+    "ci_high": 0.7290832082938961,
+    "unit": "mm"
+   },
+   {
+    "name": "rmse_mm",
+    "value": 0.8660931382606993,
+    "unit": "mm"
+   },
+   {
+    "name": "within_1mm_rate",
+    "value": 0.7519685039370079,
+    "ci_low": 0.7126157221526365,
+    "ci_high": 0.7875391511744197,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_0.5mm_rate",
+    "value": 0.44881889763779526,
+    "ci_low": 0.40611263868487546,
+    "ci_high": 0.4922934026705661,
+    "unit": "fraction"
+   },
+   {
+    "name": "bucket_accuracy_nearest_mm",
+    "value": 0.43700787401574803,
+    "ci_low": 0.3945069717810075,
+    "ci_high": 0.4804543098872283,
+    "unit": "fraction"
+   },
+   {
+    "name": "pearson_r",
+    "value": 0.717336190002079
+   }
+  ],
+  "notes": "Label range 1.5-8 mm in 0.5 mm steps (few extreme depths). Group = stereo pair uuid; physical tyre identity unknown, so CV may be optimistic. Single-camera phone accuracy is NOT measured. External reference (unreproducible): HF Space reports about 0.35 mm MAE on 730 single-view photos."
+ },
+ {
+  "id": "inspect.tread_depth.tread_dino_ridge.mean_of_views",
+  "name": "Tread depth (mm) from a stereo pair, mean_of_views",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "lab-style close-range stereo pair (Raspberry Pi 5 + IMX219 stereo camera); NOT a phone photo and NOT fixed CCTV",
+  "dataset": "Kaggle maxfinkenbeiner/tyrecv-two-views-are-all-you-need (MIT label)",
+  "split": "grouped 5-fold CV (group = stereo pair)",
+  "n": 508,
+  "model": "DINOv2 ViT-B/14 @448 frozen features + ridge (alpha by inner CV)",
+  "metrics": [
+   {
+    "name": "mae_mm",
+    "value": 0.6209289229760958,
+    "ci_low": 0.5804867621716552,
+    "ci_high": 0.662981267273426,
+    "unit": "mm"
+   },
+   {
+    "name": "rmse_mm",
+    "value": 0.7818996113986254,
+    "unit": "mm"
+   },
+   {
+    "name": "within_1mm_rate",
+    "value": 0.812992125984252,
+    "ci_low": 0.77678196619637,
+    "ci_high": 0.8445041655145828,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_0.5mm_rate",
+    "value": 0.4862204724409449,
+    "ci_low": 0.44302401768824506,
+    "ci_high": 0.5296237626766814,
+    "unit": "fraction"
+   },
+   {
+    "name": "bucket_accuracy_nearest_mm",
+    "value": 0.4822834645669291,
+    "ci_low": 0.4391272248906323,
+    "ci_high": 0.5257056355785589,
+    "unit": "fraction"
+   },
+   {
+    "name": "pearson_r",
+    "value": 0.7743420334549793
+   }
+  ],
+  "notes": "Label range 1.5-8 mm in 0.5 mm steps (few extreme depths). Group = stereo pair uuid; physical tyre identity unknown, so CV may be optimistic. Single-camera phone accuracy is NOT measured. External reference (unreproducible): HF Space reports about 0.35 mm MAE on 730 single-view photos."
+ },
+ {
+  "id": "inspect.tread_depth.tread_dino_ridge.concat_left_right",
+  "name": "Tread depth (mm) from a stereo pair, concat_left_right",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "lab-style close-range stereo pair (Raspberry Pi 5 + IMX219 stereo camera); NOT a phone photo and NOT fixed CCTV",
+  "dataset": "Kaggle maxfinkenbeiner/tyrecv-two-views-are-all-you-need (MIT label)",
+  "split": "grouped 5-fold CV (group = stereo pair)",
+  "n": 508,
+  "model": "DINOv2 ViT-B/14 @448 frozen features + ridge (alpha by inner CV)",
+  "metrics": [
+   {
+    "name": "mae_mm",
+    "value": 0.6344154566291749,
+    "ci_low": 0.5952547302982939,
+    "ci_high": 0.6756886178818274,
+    "unit": "mm"
+   },
+   {
+    "name": "rmse_mm",
+    "value": 0.797898118683286,
+    "unit": "mm"
+   },
+   {
+    "name": "within_1mm_rate",
+    "value": 0.8051181102362205,
+    "ci_low": 0.7684358841230232,
+    "ci_high": 0.8372204077964591,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_0.5mm_rate",
+    "value": 0.468503937007874,
+    "ci_low": 0.4255094976076814,
+    "ci_high": 0.5119711432264364,
+    "unit": "fraction"
+   },
+   {
+    "name": "bucket_accuracy_nearest_mm",
+    "value": 0.44881889763779526,
+    "ci_low": 0.40611263868487546,
+    "ci_high": 0.4922934026705661,
+    "unit": "fraction"
+   },
+   {
+    "name": "pearson_r",
+    "value": 0.761481778895604
+   }
+  ],
+  "notes": "Label range 1.5-8 mm in 0.5 mm steps (few extreme depths). Group = stereo pair uuid; physical tyre identity unknown, so CV may be optimistic. Single-camera phone accuracy is NOT measured. External reference (unreproducible): HF Space reports about 0.35 mm MAE on 730 single-view photos."
+ },
+ {
+  "id": "inspect.tread_depth.tread_dino_ridge.baseline_train_median",
+  "name": "Tread depth (mm) from a stereo pair, baseline_train_median",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "lab-style close-range stereo pair (Raspberry Pi 5 + IMX219 stereo camera); NOT a phone photo and NOT fixed CCTV",
+  "dataset": "Kaggle maxfinkenbeiner/tyrecv-two-views-are-all-you-need (MIT label)",
+  "split": "grouped 5-fold CV (group = stereo pair)",
+  "n": 508,
+  "model": "predict training-fold median",
+  "metrics": [
+   {
+    "name": "mae_mm",
+    "value": 1.062992125984252,
+    "ci_low": 0.9975393700787402,
+    "ci_high": 1.125492125984252,
+    "unit": "mm"
+   },
+   {
+    "name": "rmse_mm",
+    "value": 1.3018762958759866,
+    "unit": "mm"
+   },
+   {
+    "name": "within_1mm_rate",
+    "value": 0.6043307086614174,
+    "ci_low": 0.5611777299824635,
+    "ci_high": 0.6459176472545208,
+    "unit": "fraction"
+   },
+   {
+    "name": "within_0.5mm_rate",
+    "value": 0.3090551181102362,
+    "ci_low": 0.27042937593114225,
+    "ci_high": 0.3505470091256978,
+    "unit": "fraction"
+   },
+   {
+    "name": "bucket_accuracy_nearest_mm",
+    "value": 0.2637795275590551,
+    "ci_low": 0.22733399272501148,
+    "ci_high": 0.30377081353087304,
+    "unit": "fraction"
+   },
+   {
+    "name": "pearson_r",
+    "value": -0.06358318602492638
+   }
+  ],
+  "notes": "Label range 1.5-8 mm in 0.5 mm steps (few extreme depths). Group = stereo pair uuid; physical tyre identity unknown, so CV may be optimistic. Single-camera phone accuracy is NOT measured. External reference (unreproducible): HF Space reports about 0.35 mm MAE on 730 single-view photos."
+ },
+ {
+  "id": "inspect.tyre_condition.tyre_dino_lr.tyrenet_test",
+  "name": "Tyre condition good/defective on TyreNet held-out 20 % (in-source)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone photo close-ups of tyres (service stations / workshops); not fixed camera",
+  "dataset": "Mendeley TyreNet (CC BY 4.0)",
+  "split": "tyrenet_test",
+  "n": 357,
+  "model": "DINOv2 ViT-B/14 @448 frozen + logistic regression (C=0.03, chosen on TyreNet val AUROC=1.000)",
+  "metrics": [
+   {
+    "name": "accuracy",
+    "value": 0.988795518207283,
+    "ci_low": 0.9715493559281422,
+    "ci_high": 0.9956344071034272,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[defective]",
+    "value": 0.9798994974874372,
+    "ci_low": 0.9494658790228638,
+    "ci_high": 0.9921562188976523,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[good]",
+    "value": 1.0,
+    "ci_low": 0.9762640620723142,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision[defective]",
+    "value": 1.0,
+    "ci_low": 0.9806807954262788,
+    "ci_high": 1.0,
+    "unit": "fraction"
+   },
+   {
+    "name": "auroc",
+    "value": 0.9999045862222504,
+    "ci_low": 0.9996169487222638,
+    "ci_high": 1.0
+   },
+   {
+    "name": "f1[defective]",
+    "value": 0.9898477157360406,
+    "ci_low": 0.9786636704972125,
+    "ci_high": 0.9976083908078871
+   },
+   {
+    "name": "balanced_accuracy",
+    "value": 0.9899497487437185
+   },
+   {
+    "name": "ece",
+    "value": 0.018736028203777268
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "good",
+    "defective"
+   ],
+   "matrix": [
+    [
+     158,
+     0
+    ],
+    [
+     4,
+     195
+    ]
+   ]
+  },
+  "notes": "Threshold 0.5 on P(defective). In-source: same sources as training, optimistic. accuracy_coverage: [{\"coverage\": 1.0, \"n\": 357, \"threshold\": 0.5247994661331177, \"accuracy\": 0.988795518207283, \"ci_low\": 0.9715493559281422, \"ci_high\": 0.9956344071034272}, {\"coverage\": 0.9, \"n\": 321, \"threshold\": 0.9523112773895264, \"accuracy\": 1.0, \"ci_low\": 0.9881743579325122, \"ci_high\": 1.0}, {\"coverage\": 0.8, \"n\": 286, \"threshold\": 0.9851978421211243, \"accuracy\": 1.0, \"ci_low\": 0.986746344583262, \"ci_high\": 1.0}, {\"coverage\": 0.7, \"n\": 250, \"threshold\": 0.9945697784423828, \"accuracy\": 1.0, \"ci_low\": 0.9848667005045553, \"ci_high\": 1.0}, {\"coverage\": 0.5, \"n\": 178, \"threshold\": 0.9987694621086121, \"accuracy\": 1.0, \"ci_low\": 0.978874681023748, \"ci_high\": 1.0}]"
+ },
+ {
+  "id": "inspect.tyre_condition.tyre_dino_lr.warcoder",
+  "name": "Tyre condition good/defective on Kaggle warcoder tyre-quality, minus TyreNet near-duplicates (cross-dataset)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone photo close-ups of tyres (service stations / workshops); not fixed camera",
+  "dataset": "Kaggle warcoder/tyre-quality-classification (CC BY 4.0)",
+  "split": "warcoder",
+  "n": 1854,
+  "model": "DINOv2 ViT-B/14 @448 frozen + logistic regression (C=0.03, chosen on TyreNet val AUROC=1.000)",
+  "metrics": [
+   {
+    "name": "accuracy",
+    "value": 0.8705501618122977,
+    "ci_low": 0.854499948058856,
+    "ci_high": 0.8850680024121045,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[defective]",
+    "value": 0.7711781888997079,
+    "ci_low": 0.744504176987915,
+    "ci_high": 0.7958310949725478,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[good]",
+    "value": 0.9939540507859734,
+    "ci_low": 0.9859255844859246,
+    "ci_high": 0.9974148486692279,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision[defective]",
+    "value": 0.9937264742785445,
+    "ci_low": 0.9853989202810086,
+    "ci_high": 0.9973174355366873,
+    "unit": "fraction"
+   },
+   {
+    "name": "auroc",
+    "value": 0.9717000125981804,
+    "ci_low": 0.9649841534696908,
+    "ci_high": 0.9781746476635196
+   },
+   {
+    "name": "f1[defective]",
+    "value": 0.868421052631579,
+    "ci_low": 0.8508732306033701,
+    "ci_high": 0.8841108238551397
+   },
+   {
+    "name": "balanced_accuracy",
+    "value": 0.8825661198428407
+   },
+   {
+    "name": "ece",
+    "value": 0.0904860242542197
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "good",
+    "defective"
+   ],
+   "matrix": [
+    [
+     822,
+     5
+    ],
+    [
+     235,
+     792
+    ]
+   ]
+  },
+  "notes": "Threshold 0.5 on P(defective). 2 of 1856 source images were pHash near-duplicates of TyreNet and were removed. accuracy_coverage: [{\"coverage\": 1.0, \"n\": 1854, \"threshold\": 0.5027462244033813, \"accuracy\": 0.8705501618122977, \"ci_low\": 0.854499948058856, \"ci_high\": 0.8850680024121045}, {\"coverage\": 0.9, \"n\": 1669, \"threshold\": 0.8381109237670898, \"accuracy\": 0.9059316956261234, \"ci_low\": 0.8909793940254047, \"ci_high\": 0.919019660490638}, {\"coverage\": 0.8, \"n\": 1483, \"threshold\": 0.9559924602508545, \"accuracy\": 0.9251517194875253, \"ci_low\": 0.910632657917238, \"ci_high\": 0.9374739055089506}, {\"coverage\": 0.7, \"n\": 1298, \"threshold\": 0.987514078617096, \"accuracy\": 0.9429892141756548, \"ci_low\": 0.9290193171982928, \"ci_high\": 0.954344776185057}, {\"coverage\": 0.5, \"n\": 927, \"threshold\": 0.998708963394165, \"accuracy\": 0.970873786407767, \"ci_low\": 0.9579544337689201, \"ci_high\": 0.9799066721448897}]"
+ },
+ {
+  "id": "inspect.tyre_condition.tyre_dino_lr.sameer",
+  "name": "Tyre condition good/defective on Kaggle sameersambhare1 tyre-condition (NEW+SERVICEABLE=good, UNUSABLE=defective) (cross-dataset)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone photo close-ups of tyres (service stations / workshops); not fixed camera",
+  "dataset": "Kaggle sameersambhare1/tyre-condition-classification-dataset (CC BY-SA 4.0)",
+  "split": "sameer",
+  "n": 547,
+  "model": "DINOv2 ViT-B/14 @448 frozen + logistic regression (C=0.03, chosen on TyreNet val AUROC=1.000)",
+  "metrics": [
+   {
+    "name": "accuracy",
+    "value": 0.56672760511883,
+    "ci_low": 0.5248785013867344,
+    "ci_high": 0.6076460187470388,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[defective]",
+    "value": 0.8082191780821918,
+    "ci_low": 0.7034449738686679,
+    "ci_high": 0.8821763910901279,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[good]",
+    "value": 0.5295358649789029,
+    "ci_low": 0.48454530848322724,
+    "ci_high": 0.5740515325466481,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision[defective]",
+    "value": 0.20921985815602837,
+    "ci_low": 0.16581244077719906,
+    "ci_high": 0.26044293632372806,
+    "unit": "fraction"
+   },
+   {
+    "name": "auroc",
+    "value": 0.6977775851106872,
+    "ci_low": 0.6270722821005931,
+    "ci_high": 0.769565714099806
+   },
+   {
+    "name": "f1[defective]",
+    "value": 0.3323943661971831,
+    "ci_low": 0.258305531167691,
+    "ci_high": 0.3965784158835122
+   },
+   {
+    "name": "balanced_accuracy",
+    "value": 0.6688775215305474
+   },
+   {
+    "name": "ece",
+    "value": 0.3179954555178473
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "good",
+    "defective"
+   ],
+   "matrix": [
+    [
+     251,
+     223
+    ],
+    [
+     14,
+     59
+    ]
+   ]
+  },
+  "notes": "Threshold 0.5 on P(defective). 0 of 547 source images were pHash near-duplicates of TyreNet and were removed. accuracy_coverage: [{\"coverage\": 1.0, \"n\": 547, \"threshold\": 0.5009127855300903, \"accuracy\": 0.56672760511883, \"ci_low\": 0.5248785013867344, \"ci_high\": 0.6076460187470388}, {\"coverage\": 0.9, \"n\": 492, \"threshold\": 0.6118847131729126, \"accuracy\": 0.5548780487804879, \"ci_low\": 0.5107071798412625, \"ci_high\": 0.5981985984864177}, {\"coverage\": 0.8, \"n\": 438, \"threshold\": 0.7226972579956055, \"accuracy\": 0.5821917808219178, \"ci_low\": 0.5354844990778541, \"ci_high\": 0.6274698787032013}, {\"coverage\": 0.7, \"n\": 383, \"threshold\": 0.8288049101829529, \"accuracy\": 0.5953002610966057, \"ci_low\": 0.5454326702492038, \"ci_high\": 0.6432751280890203}, {\"coverage\": 0.5, \"n\": 274, \"threshold\": 0.9264857769012451, \"accuracy\": 0.6021897810218978, \"ci_low\": 0.5432083772856228, \"ci_high\": 0.6583454161536054}] Mean P(defective) by original class: NEW=0.27 (n=168), SERVICEABLE=0.58 (n=306), UNUSABLE=0.76 (n=73)"
+ },
+ {
+  "id": "inspect.tyre_condition3.tyre_dino_lr3.sameer_only",
+  "name": "Tyre condition good/worn/defective, 5-fold CV inside sameer (sameer_only)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "smartphone photos from Indian tyre workshops (one source); not fixed camera",
+  "dataset": "Kaggle sameersambhare1/tyre-condition-classification-dataset (CC BY-SA 4.0)",
+  "split": "5-fold CV grouped by pHash cluster",
+  "n": 547,
+  "model": "DINOv2 ViT-B/14 @448 frozen + logistic regression (C=0.01)",
+  "metrics": [
+   {
+    "name": "accuracy_3class",
+    "value": 0.850091407678245,
+    "ci_low": 0.8177388358868252,
+    "ci_high": 0.8775610437191348,
+    "unit": "fraction"
+   },
+   {
+    "name": "macro_f1",
+    "value": 0.8359960277118598,
+    "ci_low": 0.7954147724149191,
+    "ci_high": 0.8676839082074966
+   },
+   {
+    "name": "recall[good]",
+    "value": 0.8630952380952381,
+    "ci_low": 0.8029461382737866,
+    "ci_high": 0.9070105906626189,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[worn]",
+    "value": 0.8627450980392157,
+    "ci_low": 0.819668401521832,
+    "ci_high": 0.8968270631102006,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[defective]",
+    "value": 0.7671232876712328,
+    "ci_low": 0.6583273395609572,
+    "ci_high": 0.8492111767366657,
+    "unit": "fraction"
+   },
+   {
+    "name": "majority_class_baseline_accuracy",
+    "value": 0.5594149908592322
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "good",
+    "worn",
+    "defective"
+   ],
+   "matrix": [
+    [
+     145,
+     22,
+     1
+    ],
+    [
+     33,
+     264,
+     9
+    ],
+    [
+     3,
+     14,
+     56
+    ]
+   ]
+  },
+  "notes": "Mapping NEW->good, SERVICEABLE->worn, UNUSABLE->defective is ours (from the dataset README). 'worn' labels exist in this ONE source only, so this is an in-source CV and says nothing about other workshops, tyre types or lighting."
+ },
+ {
+  "id": "inspect.tyre_condition3.tyre_dino_lr3.tyrenet_plus_sameer",
+  "name": "Tyre condition good/worn/defective, 5-fold CV inside sameer (tyrenet_plus_sameer)",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "smartphone photos from Indian tyre workshops (one source); not fixed camera",
+  "dataset": "Kaggle sameersambhare1/tyre-condition-classification-dataset (CC BY-SA 4.0) + TyreNet good/defective in training (CC BY 4.0)",
+  "split": "5-fold CV grouped by pHash cluster",
+  "n": 547,
+  "model": "DINOv2 ViT-B/14 @448 frozen + logistic regression (C=0.01)",
+  "metrics": [
+   {
+    "name": "accuracy_3class",
+    "value": 0.8098720292504571,
+    "ci_low": 0.7748706556377188,
+    "ci_high": 0.8405514310108987,
+    "unit": "fraction"
+   },
+   {
+    "name": "macro_f1",
+    "value": 0.7693195777998315,
+    "ci_low": 0.7272517958019336,
+    "ci_high": 0.808368893017922
+   },
+   {
+    "name": "recall[good]",
+    "value": 0.7619047619047619,
+    "ci_low": 0.6921003998024535,
+    "ci_high": 0.8199995358238061,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[worn]",
+    "value": 0.8790849673202614,
+    "ci_low": 0.8377797575364548,
+    "ci_high": 0.9109902775744981,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[defective]",
+    "value": 0.6301369863013698,
+    "ci_low": 0.5154938517000784,
+    "ci_high": 0.7317685023936353,
+    "unit": "fraction"
+   },
+   {
+    "name": "majority_class_baseline_accuracy",
+    "value": 0.5594149908592322
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "good",
+    "worn",
+    "defective"
+   ],
+   "matrix": [
+    [
+     128,
+     36,
+     4
+    ],
+    [
+     21,
+     269,
+     16
+    ],
+    [
+     4,
+     23,
+     46
+    ]
+   ]
+  },
+  "notes": "Mapping NEW->good, SERVICEABLE->worn, UNUSABLE->defective is ours (from the dataset README). 'worn' labels exist in this ONE source only, so this is an in-source CV and says nothing about other workshops, tyre types or lighting."
+ },
+ {
+  "id": "inspect.tyre_condition3_final_head.tyre_dino_lr3.warcoder",
+  "name": "Final good/worn/defective head viewed as good-vs-defective on warcoder",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone photo close-ups of tyres",
+  "dataset": "Kaggle warcoder tyre-quality (CC BY 4.0), TyreNet near-duplicates removed",
+  "split": "warcoder",
+  "n": 1854,
+  "model": "DINOv2 ViT-B/14 @448 frozen + 3-class logistic regression trained on TyreNet(train+val) + all of sameer (C=0.01)",
+  "metrics": [
+   {
+    "name": "accuracy",
+    "value": 0.8295577130528586,
+    "ci_low": 0.8117643027103096,
+    "ci_high": 0.8459882704159738,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[defective]",
+    "value": 0.7098344693281402,
+    "ci_low": 0.6813367727024356,
+    "ci_high": 0.7367682582041343,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[good]",
+    "value": 0.9782345828295043,
+    "ci_low": 0.9658581483946839,
+    "ci_high": 0.9861887091643439,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision[defective]",
+    "value": 0.9759036144578314,
+    "ci_low": 0.9622331477490443,
+    "ci_high": 0.984704440269509,
+    "unit": "fraction"
+   },
+   {
+    "name": "auroc",
+    "value": 0.950331379241731,
+    "ci_low": 0.9407097211492325,
+    "ci_high": 0.95910409328784
+   },
+   {
+    "name": "f1[defective]",
+    "value": 0.8218714768883878,
+    "ci_low": 0.8006710814721106,
+    "ci_high": 0.8402912016595394
+   },
+   {
+    "name": "balanced_accuracy",
+    "value": 0.8440345260788222
+   },
+   {
+    "name": "ece",
+    "value": 0.09759185923727587
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "good",
+    "defective"
+   ],
+   "matrix": [
+    [
+     809,
+     18
+    ],
+    [
+     298,
+     729
+    ]
+   ]
+  },
+  "notes": "Predicted 3-way counts [good, worn, defective] = [1015, 79, 760]. worn counts as not defective. Cross-dataset: warcoder never used in training."
+ },
+ {
+  "id": "inspect.tyre_condition3_final_head.tyre_dino_lr3.tyrenet_test",
+  "name": "Final good/worn/defective head viewed as good-vs-defective on tyrenet_test",
+  "lane": "inspect",
+  "data_kind": "real",
+  "domain": "phone photo close-ups of tyres",
+  "dataset": "TyreNet held-out 20 % (in-source)",
+  "split": "tyrenet_test",
+  "n": 357,
+  "model": "DINOv2 ViT-B/14 @448 frozen + 3-class logistic regression trained on TyreNet(train+val) + all of sameer (C=0.01)",
+  "metrics": [
+   {
+    "name": "accuracy",
+    "value": 0.9831932773109243,
+    "ci_low": 0.9638234168191719,
+    "ci_high": 0.9922751454899725,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[defective]",
+    "value": 0.9748743718592965,
+    "ci_low": 0.9425410290483589,
+    "ci_high": 0.9892211516164451,
+    "unit": "fraction"
+   },
+   {
+    "name": "recall[good]",
+    "value": 0.9936708860759493,
+    "ci_low": 0.9650244082110109,
+    "ci_high": 0.998881880923679,
+    "unit": "fraction"
+   },
+   {
+    "name": "precision[defective]",
+    "value": 0.9948717948717949,
+    "ci_low": 0.9715283593010307,
+    "ci_high": 0.9990941715567736,
+    "unit": "fraction"
+   },
+   {
+    "name": "auroc",
+    "value": 0.9993957127409198,
+    "ci_low": 0.9982592397951635,
+    "ci_high": 1.0
+   },
+   {
+    "name": "f1[defective]",
+    "value": 0.9847715736040609,
+    "ci_low": 0.9703945533971559,
+    "ci_high": 0.9963201094391244
+   },
+   {
+    "name": "balanced_accuracy",
+    "value": 0.9842726289676229
+   },
+   {
+    "name": "ece",
+    "value": 0.025185163949384096
+   }
+  ],
+  "confusion": {
+   "labels": [
+    "good",
+    "defective"
+   ],
+   "matrix": [
+    [
+     157,
+     1
+    ],
+    [
+     5,
+     194
+    ]
+   ]
+  },
+  "notes": "Predicted 3-way counts [good, worn, defective] = [160, 0, 197]. worn counts as not defective. In-source."
+ }
+]

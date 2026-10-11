@@ -1,0 +1,142 @@
+{
+ "version": "v1",
+ "archive": {
+  "name": "baywatch_weights_v1.tar.gz",
+  "bytes": 1913695052,
+  "sha256": "909499d427a6b35180f38e307c3b25a1ccad6b456752e592d3453739997907a3",
+  "url": "https://drive.google.com/uc?id=1KpbW-ugJR57_R8ynkiZJYNz3xykOsDtC",
+  "page": "https://drive.google.com/file/d/1KpbW-ugJR57_R8ynkiZJYNz3xykOsDtC/view",
+  "folder": "https://drive.google.com/drive/folders/1R-s7FKONv_iGv3URnUctRn7nQCSA2C7y?usp=sharing"
+ },
+ "files": [
+  {
+   "path": "artifacts/flow/rfdetr-large-flow/checkpoint.pth",
+   "bytes": 134843355,
+   "sha256": "77256dabd03f137605d4c87149253d63c4590ae0a41939f14c3b2f46233e4961"
+  },
+  {
+   "path": "artifacts/flow/rfdetr-large-flow/classes.json",
+   "bytes": 47,
+   "sha256": "08009b84cfedb436b5853b9b80cb835196e215f2b83815e65d9306f0f4756067"
+  },
+  {
+   "path": "artifacts/flow/rfdetr-large-flow/model_card.json",
+   "bytes": 567,
+   "sha256": "2a17295c2880f9b8e476a228cf3ece4f696a8f2e5aa3f84318fb843b31bbcb20"
+  },
+  {
+   "path": "artifacts/flow/router/probe.json",
+   "bytes": 2021,
+   "sha256": "0a873ae03a36d69cb9c42983b2fba7cdf57777184917b20d92a72a43235571be"
+  },
+  {
+   "path": "artifacts/flow/router/probe.npz",
+   "bytes": 33542,
+   "sha256": "55dca2ac7b69dae879b5103936fc0138f76ac83ab517d8f6db12dba9cc286773"
+  },
+  {
+   "path": "artifacts/ident/plate_det/model.onnx",
+   "bytes": 121714828,
+   "sha256": "4c6671494ea54487dd366eaf4664ab129bc640483d5f1b12298791618ee45c30"
+  },
+  {
+   "path": "artifacts/ident/plate_det/model_card.json",
+   "bytes": 1263,
+   "sha256": "b7747ca3d0572b534ca0c9250eb7d45755d89654a4a078769486b92c39d47974"
+  },
+  {
+   "path": "artifacts/ident/plate_ocr/model.onnx",
+   "bytes": 5030816,
+   "sha256": "79e8333d8fa3cfbda3bfe17127923a2e46229cfa13979805fd145f7417f8dbce"
+  },
+  {
+   "path": "artifacts/ident/plate_ocr/model_card.json",
+   "bytes": 1727,
+   "sha256": "610389f9432a4d5f66dc930bac9be79112b0ea3281e7f1f6f151b297c9a73ecb"
+  },
+  {
+   "path": "artifacts/ident/plate_ocr/plate_config.yaml",
+   "bytes": 246,
+   "sha256": "4894ac45f2f7de45d4030e8c89c5bc465aacfe7468fad0937b05dd52d2e7a99f"
+  },
+  {
+   "path": "artifacts/inspect/damage_seg/model.onnx",
+   "bytes": 89943870,
+   "sha256": "5edc1efddb764ef8667e12028b7f748c5ceda3a64983fd349f1ee33291a0eb45"
+  },
+  {
+   "path": "artifacts/inspect/damage_seg/model_card.json",
+   "bytes": 902,
+   "sha256": "96e6e35a4c135d07de03cf8c23486193de1def4615c9dfaf022bca1213652921"
+  },
+  {
+   "path": "artifacts/inspect/dot_chars/model.onnx",
+   "bytes": 37987497,
+   "sha256": "275eea6a08994161d1da81c27ded0643a415ee1ff13aac01b8fb57b9096e1cb5"
+  },
+  {
+   "path": "artifacts/inspect/dot_chars/model_card.json",
+   "bytes": 1076,
+   "sha256": "6f8919931c4dc6e2cf3800854bc4415d36199c1faf009a68ff3bdb92f425f2b1"
+  },
+  {
+   "path": "artifacts/inspect/parts_seg/model.onnx",
+   "bytes": 89816164,
+   "sha256": "e9479b9531e84a9ddd0e78fc1a207aa7483fa15adb8fd1d1a876e4e85d27b443"
+  },
+  {
+   "path": "artifacts/inspect/parts_seg/model_card.json",
+   "bytes": 1047,
+   "sha256": "d3ebcc3f503984f49831a235d558b57f27e51e209938cd46eaf8fd33d6a1f114"
+  },
+  {
+   "path": "artifacts/inspect/tyre_cond/model.onnx",
+   "bytes": 345443726,
+   "sha256": "7ee445256e5019859b3535e9f5f223fff29ec701e340eb46998c10400b02e4b3"
+  },
+  {
+   "path": "artifacts/inspect/tyre_cond/model_card.json",
+   "bytes": 783,
+   "sha256": "d059f904a9092bf9a5febe8cc4412b80a0b5b7adf1b50a2fc1a22dd7c23c3456"
+  },
+  {
+   "path": "artifacts/ops/states/backbone_hf/config.json",
+   "bytes": 549,
+   "sha256": "12df51c069a2dc1305e34ba71ef58bc2407ea553b75f4722a1715c1bce3bbed0"
+  },
+  {
+   "path": "artifacts/ops/states/backbone_hf/model.safetensors",
+   "bytes": 1217522888,
+   "sha256": "399fba97a95f22c36834418bc69373364a99af3a1153da1c0fb31db567c92e23"
+  },
+  {
+   "path": "artifacts/ops/states/head.onnx",
+   "bytes": 66521,
+   "sha256": "ef6ea80171e32fc9f5876bd2cb6ae0ce6b9bd1c7d6a1e2392b2031b0a439c64b"
+  },
+  {
+   "path": "artifacts/ops/states/hood_yolo.pt",
+   "bytes": 19176730,
+   "sha256": "b50ad23ed2dcb62ffcb4e8dca656ac3eba3c276fdc618ef960c6df161281dc2b"
+  },
+  {
+   "path": "artifacts/ops/states/model_card.json",
+   "bytes": 2230,
+   "sha256": "c815ea507e6b585ab5016b6bc133f20802713fcaf7560d9a25553fb30ab31b51"
+  },
+  {
+   "path": "artifacts/ops/states/parts_yolo.pt",
+   "bytes": 19193370,
+   "sha256": "dccd47ad2793d46d6be373896cc11d6e789f2d9e3d5940bdc2cbdea3dfef3510"
+  },
+  {
+   "path": "cache/open-image-models/yolo-v9-t-384-license-plate-end2end/yolo-v9-t-384-license-plates-end2end.onnx",
+   "bytes": 7771218,
+   "sha256": "888397b96d761c89db40bc9c305838e8652660f5e282c2cadebbe8d2951a77a8"
+  }
+ ],
+ "huggingface": {
+  "google/siglip2-so400m-patch14-384": "e8e487298228002f3d8a82e0cd5c8ea9c567f57f",
+  "Qwen/Qwen3-VL-8B-Instruct": "0c351dd01ed87e9c1b53cbc748cba10e6187ff3b"
+ }
+}

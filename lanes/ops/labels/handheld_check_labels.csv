@@ -1,0 +1,89 @@
+item_id,stratum,source,exclude,car_present,raised,wheel_off,hood_open,person_at_car,person_under_car,work
+OuiHraJO0mk_00142.5|crosstask,Change a Tire,yt:OuiHraJO0mk,0,1,,,0,1,0,1
+S_n8K7fuBBA_000039_000049_1|k700,changing oil,yt:S_n8K7fuBBA,0,1,,,1,1,0,1
+kzUnfsHu0MQ_000056_000066_2|k700,pushing car,yt:kzUnfsHu0MQ,0,0,0,0,0,0,0,0
+rRQ-_Jffc1k_000189_000199_1|k700,repairing puncture,yt:rRQ-_Jffc1k,0,1,,0,,0,0,0
+uDY1ky3Tf_c_000189_000199_1|k700,changing gear in car,yt:uDY1ky3Tf_c,0,1,,,,,0,0
+BVucvYCLjcc_00075.2|crosstask,Change a Tire,yt:BVucvYCLjcc,1,,,,,,,
+6JUvHsQ1PbM_00148.5|crosstask,Change a Tire,yt:6JUvHsQ1PbM,1,,,,,,,
+1aZ6bF8f6Fk_00196.6|crosstask,Change a Tire,yt:1aZ6bF8f6Fk,0,1,,0,0,1,0,1
+FzqjoFAXA5I_00132.5|crosstask,Change a Tire,yt:FzqjoFAXA5I,0,0,0,0,0,0,0,0
+dBQfLg2ZOak_000026_000036_2|k700,changing wheel (not on bike),yt:dBQfLg2ZOak,0,1,,0,0,1,0,1
+tK3H7ekvNNk_000137_000147_2|k700,repairing puncture,yt:tK3H7ekvNNk,0,1,,0,,1,0,1
+7kyidanyUbs_000175_000185_0|k700,changing oil,yt:7kyidanyUbs,0,0,0,0,0,0,0,0
+PFSO49KDc1o_000156_000166_2|k700,driving car,yt:PFSO49KDc1o,0,1,,,,,0,0
+bvm3JLD-k7Q_000030_000040_0|k700,vacuuming car,yt:bvm3JLD-k7Q,1,,,,,,,
+PAG4g1nFlNg_00086.5|crosstask,Change a Tire,yt:PAG4g1nFlNg,0,1,,0,0,1,0,0
+OM4FiQVq5y8_000006_000016_0|k700,pushing car,yt:OM4FiQVq5y8,0,0,0,0,0,0,0,0
+350jCX0uffs_00060.5|crosstask,Change a Tire,yt:350jCX0uffs,0,1,0,0,0,1,0,0
+8KGhu21xszg_00152.5|crosstask,Change a Tire,yt:8KGhu21xszg,0,1,,0,0,1,0,1
+waYzbDEPl_U_000020_000030_1|k700,pumping gas,yt:waYzbDEPl_U,0,1,0,0,0,1,0,0
+DzApE5-UH4s_000000_000010_2|k700,changing wheel (not on bike),yt:DzApE5-UH4s,0,1,1,1,,1,0,1
+EICbrqullzg_000015_000025_0|k700,steering car,yt:EICbrqullzg,0,1,,,,,0,0
+QfTjpkCnwbY_000026_000036_1|k700,changing gear in car,yt:QfTjpkCnwbY,0,1,,,,,0,0
+qm7RxZq2Jow_000017_000027_0|k700,changing gear in car,yt:qm7RxZq2Jow,1,,,,,,,
+gZMIZdHBPpk_000068_000078_0|k700,steering car,yt:gZMIZdHBPpk,0,1,,,,,0,0
+ctMcsGnutho_000144_000154_1|k700,changing wheel (not on bike),yt:ctMcsGnutho,0,1,1,1,0,1,0,1
+r5xl_Gtc6uY_000004_000014_2|k700,pushing car,yt:r5xl_Gtc6uY,0,0,0,0,0,0,0,0
+5bxCkx9O_Y0_000088_000098_0|k700,changing oil,yt:5bxCkx9O_Y0,1,,,,,,,
+UIhWvHscZDM_000162_000172_2|k700,changing gear in car,yt:UIhWvHscZDM,0,1,,,,,0,0
+RcrPalOXQF8_000013_000023_1|k700,pushing car,yt:RcrPalOXQF8,0,1,0,0,0,,0,0
+Oq7KFOGtuu0_000004_000014_2|k700,repairing puncture,yt:Oq7KFOGtuu0,0,0,0,0,0,0,0,0
+gXnHPtzJmFM_000086_000096_0|k700,pushing car,yt:gXnHPtzJmFM,0,0,0,0,0,0,0,0
+Rr5yWalqKj8_000060_000070_0|k700,pumping gas,yt:Rr5yWalqKj8,0,1,0,0,0,1,0,0
+O290zq880LA_000002_000012_2|k700,pushing car,yt:O290zq880LA,0,1,0,0,0,1,0,0
+g4Hd9cI3Zjg_000016_000026_2|k700,steering car,yt:g4Hd9cI3Zjg,0,1,,,,,0,0
+TDvwEv6dgNg_000031_000041_0|k700,pumping gas,yt:TDvwEv6dgNg,0,1,0,0,0,0,0,0
+tsiLA0MAx6I_000161_000171_1|k700,repairing puncture,yt:tsiLA0MAx6I,1,,,,,,,
+N3LfhMeClTg_000115_000125_1|k700,checking tires,yt:N3LfhMeClTg,0,1,0,0,0,1,0,1
+n6jSTM8q3nw_000007_000017_1|k700,pushing car,yt:n6jSTM8q3nw,0,0,0,0,0,0,0,0
+nxYhw8skm14_000040_000050_1|k700,driving car,yt:nxYhw8skm14,0,1,0,0,0,0,0,0
+AmyAy-IaJuI_000047_000057_0|k700,vacuuming car,yt:AmyAy-IaJuI,0,1,,,,,0,
+8B_ReqT1c1k_000005_000015_2|k700,vacuuming car,yt:8B_ReqT1c1k,0,1,0,0,0,1,0,1
+ahSPO1d6g6w_000068_000078_2|k700,vacuuming car,yt:ahSPO1d6g6w,0,1,,,,,0,
+pln95etMGM0_000035_000045_1|k700,repairing puncture,yt:pln95etMGM0,0,0,0,0,0,0,0,0
+K-mYCRq1aP8_000047_000057_2|k700,checking tires,yt:K-mYCRq1aP8,0,1,0,0,0,1,0,1
+AtCfrmF11og_000023_000033_1|k700,vacuuming car,yt:AtCfrmF11og,0,1,,,,,0,
+uh2O0yuaO10_000061_000071_2|k700,changing gear in car,yt:uh2O0yuaO10,1,,,,,,,
+8-ki7L2KWF0_000045_000055_0|k700,checking tires,yt:8-ki7L2KWF0,1,,,,,,,
+COeGZk6cXms_000118_000128_0|k700,changing wheel (not on bike),yt:COeGZk6cXms,0,1,0,0,0,1,0,1
+pbLgdLfYX30_000009_000019_1|k700,pushing car,yt:pbLgdLfYX30,0,1,0,0,0,0,0,0
+FoKyE6Khhu4_000092_000102_0|k700,checking tires,yt:FoKyE6Khhu4,1,,,,,,,
+qd0JOj0unuI_000000_000010_1|k700,driving car,yt:qd0JOj0unuI,0,1,,,,,0,0
+COINZK8gUhU_000000_000010_1|k700,changing wheel (not on bike),yt:COINZK8gUhU,1,,,,,,,
+r-h70kvaqcs_000050_000060_0|k700,repairing puncture,yt:r-h70kvaqcs,0,0,0,0,0,0,0,0
+Arbl3EMz9NI_000048_000058_0|k700,vacuuming car,yt:Arbl3EMz9NI,0,1,,,,,0,
+4AEBIstrurk_000083_000093_0|k700,changing oil,yt:4AEBIstrurk,1,,,,,,,
+ypK7gD83N1o_000072_000082_2|k700,driving car,yt:ypK7gD83N1o,0,1,,,,,0,0
+Dea9BGBCrwk_000026_000036_2|k700,changing wheel (not on bike),yt:Dea9BGBCrwk,0,1,,0,0,1,0,1
+FlSM5h-_IJQ_000016_000026_1|k700,changing wheel (not on bike),yt:FlSM5h-_IJQ,0,1,0,0,0,1,0,1
+SeqKWPE5jYw_000323_000333_0|k700,changing gear in car,yt:SeqKWPE5jYw,0,1,,,,,0,0
+UsRXURksqmQ_000085_000095_2|k700,changing gear in car,yt:UsRXURksqmQ,0,1,,,,,0,0
+QaBgEKyTQ0U_000006_000016_1|k700,changing gear in car,yt:QaBgEKyTQ0U,0,1,,,,,0,0
+1R-iyqeRHVo_000660_000670_1|k700,changing oil,yt:1R-iyqeRHVo,0,1,,,1,1,0,1
+E3eJYorUtb4_000009_000019_1|k700,changing wheel (not on bike),yt:E3eJYorUtb4,0,1,0,0,0,1,0,1
+aRmOHtSSM6Q_000036_000046_2|k700,vacuuming car,yt:aRmOHtSSM6Q,1,,,,,,,
+h0jm7V3nJKI_000007_000017_2|k700,steering car,yt:h0jm7V3nJKI,0,1,,,,,0,0
+e6Ty62iayBI_000023_000033_0|k700,steering car,yt:e6Ty62iayBI,0,1,,,,,0,0
+tVNVXcXqMck_000075_000085_0|k700,driving car,yt:tVNVXcXqMck,0,1,0,0,0,0,0,0
+c1tr0gX14bQ_000026_000036_1|k700,vacuuming car,yt:c1tr0gX14bQ,1,,,,,,,
+-B6Aogi3klU_000005_000015_1|k700,changing oil,yt:-B6Aogi3klU,0,0,0,0,0,0,0,0
+peL8ikt_T1w_000004_000014_1|k700,repairing puncture,yt:peL8ikt_T1w,0,1,,0,,1,0,1
+u8lQw7vLQ44_000189_000199_0|k700,repairing puncture,yt:u8lQw7vLQ44,1,,,,,,,
+TLpVpZ0LpeM_000036_000046_1|k700,pumping gas,yt:TLpVpZ0LpeM,0,1,0,0,0,1,0,0
+aUsaZVsCWLo_000030_000040_1|k700,checking tires,yt:aUsaZVsCWLo,0,1,,0,,1,0,1
+1L0Vs6l8Xpc_000003_000013_0|k700,checking tires,yt:1L0Vs6l8Xpc,0,1,0,0,0,1,0,0
+WZsZTTstzMY_000001_000011_1|k700,pumping gas,yt:WZsZTTstzMY,0,1,0,0,0,1,0,0
+hOvDYJhauwc_000027_000037_2|k700,changing oil,yt:hOvDYJhauwc,0,0,0,0,0,0,0,0
+GdPiYfzw7fQ_000004_000014_2|k700,steering car,yt:GdPiYfzw7fQ,0,1,,,,,0,0
+ZpAzDFic0e0_000023_000033_0|k700,pumping gas,yt:ZpAzDFic0e0,1,,,,,,,
+2DJP40oQM2Q_000015_000025_0|k700,changing oil,yt:2DJP40oQM2Q,1,,,,,,,
+OEcC3CUJEBs_000000_000010_2|k700,driving car,yt:OEcC3CUJEBs,0,1,,,,,0,0
+UduQpcBZSh0_000020_000030_2|k700,pumping gas,yt:UduQpcBZSh0,1,,,,,,,
+q1YhnmuRESk_000000_000010_2|k700,driving car,yt:q1YhnmuRESk,1,,,,,,,
+ra4i-FoycjI_000015_000025_1|k700,driving car,yt:ra4i-FoycjI,0,1,0,0,0,0,0,0
+2tgEZK3DQ_Q_000023_000033_2|k700,checking tires,yt:2tgEZK3DQ_Q,0,1,0,0,0,1,0,1
+Z78H0R5WinA_000011_000021_2|k700,checking tires,yt:Z78H0R5WinA,0,1,,0,,1,0,1
+XTpO0RWhBpE_000056_000066_1|k700,pumping gas,yt:XTpO0RWhBpE,0,1,0,0,0,1,0,0
+hiwmrWPmZaE_000074_000084_1|k700,steering car,yt:hiwmrWPmZaE,0,1,,,,,0,0
+Fvt3Na8D7DU_000009_000019_1|k700,steering car,yt:Fvt3Na8D7DU,0,1,,,,,0,0

@@ -1,0 +1,68 @@
+{
+ "model_versions": {
+  "damage_seg": "0.1.0",
+  "parts_seg": "0.1.0",
+  "tyre_cond": "0.1.0",
+  "dot_chars": "0.1.0"
+ },
+ "role": "inspection",
+ "name": "seen-inspect",
+ "version": "0.1.0",
+ "damage_syndcar": {
+  "frames": 30,
+  "detections": 45,
+  "by_class": {
+   "damage:scratch": 14,
+   "damage:glass_shatter": 19,
+   "damage:crack": 3,
+   "damage:dent": 3,
+   "damage:tire_flat": 6
+  },
+  "with_part": 44,
+  "parts_seen": {
+   "back_door": 6,
+   "front_bumper": 3,
+   "windshield": 2,
+   "null": 1,
+   "back_windshield": 1,
+   "quarter_panel": 4,
+   "back_bumper": 3,
+   "back_window": 15,
+   "fender": 1,
+   "front_window": 1,
+   "front_door": 2,
+   "wheel": 6
+  },
+  "bbox_in_unit_range": true
+ },
+ "tyre_parity_vs_sklearn_pipeline": {
+  "tyrenet_test": {
+   "n": 40,
+   "mean_abs_diff_p_defective": 0.006804999999999989,
+   "max_abs_diff": 0.07690000000000008
+  },
+  "warcoder": {
+   "n": 40,
+   "mean_abs_diff_p_defective": 0.010649999999999996,
+   "max_abs_diff": 0.0797
+  },
+  "sameer": {
+   "n": 40,
+   "mean_abs_diff_p_defective": 0.0082875,
+   "max_abs_diff": 0.04429999999999999
+  }
+ },
+ "dot_through_predictor": {
+  "digit_serial_images": 145,
+  "dot_emitted": 135,
+  "date_code_correct": 124
+ },
+ "latency_predict_damage_plus_part_ms": {
+  "n": 40,
+  "p50": 1362.1803825953975,
+  "p95": 1662.294958136044,
+  "mean": 1371.5978433261625,
+  "min": 1027.2521278820932,
+  "max": 1816.9933680910617
+ }
+}

@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-10-10T18:17:37+00:00",
+  "url": "https://sanjar--seen-api.modal.run",
+  "health": {
+    "status": "ok",
+    "backend": "modal",
+    "api_version": "0.1.0",
+    "model_versions": {
+      "rfdetr-coco": "pretrained",
+      "fast-alpr-global": "pretrained"
+    },
+    "gpu": {
+      "type": "L4",
+      "torch": "2.14.1+cu130",
+      "cuda_available": true,
+      "name": "NVIDIA L4",
+      "onnxruntime_providers": [
+        "TensorrtExecutionProvider",
+        "CUDAExecutionProvider",
+        "CPUExecutionProvider"
+      ]
+    },
+    "pipeline_load_s": 21.14,
+    "last_gpu_load_at": 1791655087.0801728,
+    "limits": {
+      "max_frames": 120,
+      "max_image_bytes": 10485760,
+      "max_total_bytes": 83886080,
+      "max_video_s": 60.0,
+      "max_side_px": 1920
+    },
+    "error": null,
+    "disabled": false
+  },
+  "health_s": 0.9671337604522705,
+  "calls": [
+    {
+      "file": "jury_001.jpg",
+      "client_ms": 26808.126791846007,
+      "server_total_ms": 246.0821100000885,
+      "modal_roundtrip_ms": 25464.371854999852,
+      "scene": "street",
+      "visit": true,
+      "model_versions": {
+        "rfdetr-coco": "pretrained",
+        "fast-alpr-global": "pretrained"
+      }
+    },
+    {
+      "file": "jury_002.jpg",
+      "client_ms": 2615.2253751643,
+      "server_total_ms": 683.9404439999726,
+      "modal_roundtrip_ms": 986.3783399998738,
+      "scene": "street",
+      "visit": true,
+      "model_versions": {
+        "rfdetr-coco": "pretrained",
+        "fast-alpr-global": "pretrained"
+      }
+    },
+    {
+      "file": "jury_003.jpg",
+      "client_ms": 1699.6912909671664,
+      "server_total_ms": 217.8738100001283,
+      "modal_roundtrip_ms": 552.3473870000544,
+      "scene": "street",
+      "visit": true,
+      "model_versions": {
+        "rfdetr-coco": "pretrained",
+        "fast-alpr-global": "pretrained"
+      }
+    },
+    {
+      "file": "jury_004.jpg",
+      "client_ms": 2330.7859171181917,
+      "server_total_ms": 171.19892100004108,
+      "modal_roundtrip_ms": 538.7284570001611,
+      "scene": "street",
+      "visit": true,
+      "model_versions": {
+        "rfdetr-coco": "pretrained",
+        "fast-alpr-global": "pretrained"
+      }
+    },
+    {
+      "file": "jury_005.jpg",
+      "client_ms": 2000.2171667292714,
+      "server_total_ms": 126.95937600005891,
+      "modal_roundtrip_ms": 460.5780419999519,
+      "scene": "street",
+      "visit": true,
+      "model_versions": {
+        "rfdetr-coco": "pretrained",
+        "fast-alpr-global": "pretrained"
+      }
+    },
+    {
+      "file": "jury_006.jpg",
+      "client_ms": 2386.5806250832975,
+      "server_total_ms": 195.64684599981774,
+      "modal_roundtrip_ms": 1008.6836089999451,
+      "scene": "street",
+      "visit": true,
+      "model_versions": {
+        "rfdetr-coco": "pretrained",
+        "fast-alpr-global": "pretrained"
+      }
+    },
+    {
+      "file": "jury_007.jpg",
+      "client_ms": 1986.6592497564852,
+      "server_total_ms": 140.45064200013258,
+      "modal_roundtrip_ms": 429.27890999999363,
+      "scene": "street",
+      "visit": true,
+      "model_versions": {
+        "rfdetr-coco": "pretrained",
+        "fast-alpr-global": "pretrained"
+      }
+    },
+    {
+      "file": "jury_008.jpg",
+      "client_ms": 2560.3412091732025,
+      "server_total_ms": 335.5824550001216,
+      "modal_roundtrip_ms": 759.743447000119,
+      "scene": "street",
+      "visit": true,
+      "model_versions": {
+        "rfdetr-coco": "pretrained",
+        "fast-alpr-global": "pretrained"
+      }
+    }
+  ],
+  "speed": [
+    {
+      "stage": "deployed API /analyze/image, first call (client end-to-end)",
+      "hardware": "NVIDIA L4 (Modal, deployed sanjar--seen-api.modal.run)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 26808.1,
+      "cold_start_s": 26.81,
+      "notes": "first request after the probe started; health said last GPU load at 1791655087.0801728, pipeline_load_s 21.14. Cold only if no container was warm (compare modal_roundtrip of the first and later calls in eval_modal_probe.json). Client = the developer Mac over the public internet."
+    },
+    {
+      "stage": "deployed API /analyze/image, warm (client end-to-end)",
+      "hardware": "NVIDIA L4 (Modal, deployed sanjar--seen-api.modal.run)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 2330.8,
+      "p95_ms": 2598.8,
+      "notes": "n=7 sequential photo requests incl. upload and internet round trip"
+    },
+    {
+      "stage": "pipeline total (1 frame, analyze()) on Modal, server-side",
+      "hardware": "NVIDIA L4 (Modal, deployed sanjar--seen-api.modal.run)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 195.6,
+      "p95_ms": 579.4,
+      "notes": "AnalysisResult.timings_ms.total on the GPU container, n=7; models {'rfdetr-coco': 'pretrained', 'fast-alpr-global': 'pretrained'}"
+    }
+  ]
+}

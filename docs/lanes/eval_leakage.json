@@ -1,0 +1,233 @@
+[
+  {
+    "lane": "flow",
+    "exp": "ft_large",
+    "n_train": 9216,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/flow_ft_large.json"
+  },
+  {
+    "lane": "ident",
+    "exp": "det_full_small",
+    "n_train": 5704,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/ident_det_full_small.json"
+  },
+  {
+    "lane": "ident",
+    "exp": "det_uz_only_small",
+    "n_train": 2304,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/ident_det_uz_only_small.json"
+  },
+  {
+    "lane": "inspect",
+    "exp": "dmg_A",
+    "n_train": 12244,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/inspect_dmg_A.json"
+  },
+  {
+    "lane": "inspect",
+    "exp": "dmg_B",
+    "n_train": 14516,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/inspect_dmg_B.json"
+  },
+  {
+    "lane": "inspect",
+    "exp": "dot_chars",
+    "n_train": 3496,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/inspect_dot_chars.json"
+  },
+  {
+    "lane": "inspect",
+    "exp": "dot_region",
+    "n_train": 158,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/inspect_dot_region.json"
+  },
+  {
+    "lane": "inspect",
+    "exp": "parts",
+    "n_train": 3968,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/inspect_parts.json"
+  },
+  {
+    "lane": "inspect",
+    "exp": "tyre_dino_lr",
+    "n_train": 1341,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/inspect_tyre_dino_lr.json"
+  },
+  {
+    "lane": "inspect",
+    "exp": "tyre_dino_lr3",
+    "n_train": 1888,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/inspect_tyre_dino_lr3.json"
+  },
+  {
+    "lane": "ops",
+    "exp": "heads_v0",
+    "n_train": 21069,
+    "verdict": "PASS",
+    "components": {
+      "jury": {
+        "n_test": 96,
+        "n_test_hashed": 95,
+        "path_overlap": 0,
+        "near_dup_strict_train_files": 0,
+        "near_dup_strict_test_items": 0,
+        "near_dup_loose_train_files": 0,
+        "near_dup_loose_test_items": 0,
+        "leaked_strict_test_ids": [],
+        "leaked_loose_test_ids": [],
+        "verdict": "PASS"
+      }
+    },
+    "report": "/mnt/bigdrive/amirkhon/seen/runs/eval/leakage/ops_heads_v0.json"
+  }
+]

@@ -1,0 +1,975 @@
+{
+  "generated_at": "2026-10-11T02:32:05+00:00",
+  "speed": [
+    {
+      "stage": "pipeline total (1 frame, analyze())",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed (seen.pipeline.default_pipeline)",
+      "batch": 1,
+      "p50_ms": 100.08,
+      "p95_ms": 137.39,
+      "fps": 9.99,
+      "notes": "models: {'rfdetr-large-flow': 'rfdetr-large-flow-v1/torch', 'ident-plate': '0.1.0', 'Scene router (SigLIP2 + linear probe)': 'siglip2-so400m-patch14-384+blend-v1', 'ops-cascade': 'ops-bay-states@0.1+none', 'seen-inspect': '0.1.0'}; GPU memory held by the process after warm-up: 19472.0 MiB GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "pipeline stage: vehicle_detector",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 13.54,
+      "p95_ms": 22.22,
+      "fps": 73.86,
+      "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "pipeline stage: ident_det",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 7.8,
+      "p95_ms": 9.65,
+      "fps": 128.21,
+      "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "pipeline stage: ident_ocr",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 3.19,
+      "p95_ms": 5.44,
+      "fps": 313.31,
+      "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "pipeline stage: router",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 26.2,
+      "p95_ms": 43.83,
+      "fps": 38.17,
+      "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "pipeline stage: ops_parts",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 12.03,
+      "p95_ms": 16.06,
+      "fps": 83.12,
+      "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "pipeline stage: ops_embed",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 5.98,
+      "p95_ms": 7.23,
+      "fps": 167.14,
+      "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "pipeline stage: ops_head",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 0.17,
+      "p95_ms": 0.22,
+      "fps": 5724.17,
+      "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "pipeline stage: inspect.damage_ms",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 45.81,
+      "p95_ms": 60.86,
+      "fps": 21.83,
+      "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "pipeline stage: inspect.tyre_dot_ms",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 13.44,
+      "p95_ms": 15.94,
+      "fps": 74.38,
+      "notes": "from AnalysisResult.timings_ms GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "ident.get_predictor: ident-plate",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as shipped by lane",
+      "batch": 1,
+      "p50_ms": 8.51,
+      "p95_ms": 9.12,
+      "fps": 117.51,
+      "notes": "version 0.1.0; context = baseline RF-DETR detections GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "flow.get_predictor: rfdetr-large-flow",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as shipped by lane",
+      "batch": 1,
+      "p50_ms": 6.53,
+      "p95_ms": 6.97,
+      "fps": 153.11,
+      "notes": "version rfdetr-large-flow-v1/torch; context = baseline RF-DETR detections GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "flow.get_router: Scene router (SigLIP2 + linear probe)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as shipped by lane",
+      "batch": 1,
+      "p50_ms": 7.99,
+      "p95_ms": 8.16,
+      "fps": 125.16,
+      "notes": "version siglip2-so400m-patch14-384+blend-v1; context = baseline RF-DETR detections GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "ops.get_predictor: ops-bay-states",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as shipped by lane",
+      "batch": 1,
+      "p50_ms": 18.34,
+      "p95_ms": 24.27,
+      "fps": 54.52,
+      "notes": "version 0.1; context = baseline RF-DETR detections GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "inspect.get_predictor: seen-inspect",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as shipped by lane",
+      "batch": 1,
+      "p50_ms": 47.92,
+      "p95_ms": 53.87,
+      "fps": 20.87,
+      "notes": "version 0.1.0; context = baseline RF-DETR detections GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "pipeline cold start (new process to first result)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "as deployed",
+      "batch": 1,
+      "p50_ms": 1159.4,
+      "cold_start_s": 8.88,
+      "notes": "median of 2 fresh processes, weights cached on local disk: interpreter 0.0s, imports 0.6s, model load 7.1s, first inference 1.16s (p50_ms = first inference), second inference 89 ms. Excludes container start and weight download. GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB. IO pressure at start of bench: full: avg10=0.00 avg60=0.16 avg300=0.41 total=17852377795 (shared HDD; model load is IO-bound)."
+    },
+    {
+      "stage": "streams: gate cameras @ 5 fps per camera",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "default pipeline x 1 worker thread(s)",
+      "batch": 1,
+      "p50_ms": 155.9,
+      "p95_ms": 240.9,
+      "fps": 9.82,
+      "notes": "max sustained cameras = 2 (<=1% dropped/late, p95 end-to-end <= 1s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "streams: bay cameras @ 1 fps per camera",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "default pipeline x 1 worker thread(s)",
+      "batch": 1,
+      "p50_ms": 394.8,
+      "p95_ms": 651.0,
+      "fps": 9.66,
+      "notes": "max sustained cameras = 10 (<=1% dropped/late, p95 end-to-end <= 2s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "streams: gate cameras @ 5 fps per camera",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "default pipeline x 2 worker thread(s)",
+      "batch": 1,
+      "p50_ms": 108.7,
+      "p95_ms": 152.8,
+      "fps": 9.87,
+      "notes": "max sustained cameras = 2 (<=1% dropped/late, p95 end-to-end <= 1s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "streams: bay cameras @ 1 fps per camera",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "default pipeline x 2 worker thread(s)",
+      "batch": 1,
+      "p50_ms": 238.8,
+      "p95_ms": 423.1,
+      "fps": 13.64,
+      "notes": "max sustained cameras = 14 (<=1% dropped/late, p95 end-to-end <= 2s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "streams: gate cameras @ 5 fps per camera",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "default pipeline x 4 worker thread(s)",
+      "batch": 1,
+      "p50_ms": 106.8,
+      "p95_ms": 164.3,
+      "fps": 9.85,
+      "notes": "max sustained cameras = 2 (<=1% dropped/late, p95 end-to-end <= 1s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "streams: bay cameras @ 1 fps per camera",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "default pipeline x 4 worker thread(s)",
+      "batch": 1,
+      "p50_ms": 378.9,
+      "p95_ms": 897.2,
+      "fps": 15.01,
+      "notes": "max sustained cameras = 16 (<=1% dropped/late, p95 end-to-end <= 2s, 20s per trial; frames pre-decoded 1280x720, decode excluded) GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "plate (fast-alpr detector + OCR, per frame)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "ONNX Runtime CUDA EP (fp32, reference)",
+      "batch": 1,
+      "p50_ms": 3.32,
+      "p95_ms": 4.38,
+      "fps": 301.0,
+      "notes": "10 plates on 24 images; identical plate texts to the CUDA fp32 reference on 24/24 images; active providers [['CUDAExecutionProvider', 'CPUExecutionProvider'], ['CUDAExecutionProvider', 'CPUExecutionProvider']] GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "plate (fast-alpr detector + OCR, per frame)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "library default providers (as in seen.baseline)",
+      "batch": 1,
+      "p50_ms": 3.33,
+      "p95_ms": 4.39,
+      "fps": 300.73,
+      "notes": "10 plates on 24 images; identical plate texts to the CUDA fp32 reference on 24/24 images; active providers [['CUDAExecutionProvider', 'CPUExecutionProvider'], ['CUDAExecutionProvider', 'CPUExecutionProvider']] GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "plate (fast-alpr detector + OCR, per frame)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "ONNX Runtime CPU EP",
+      "batch": 1,
+      "p50_ms": 14.12,
+      "p95_ms": 21.37,
+      "fps": 70.8,
+      "notes": "10 plates on 24 images; identical plate texts to the CUDA fp32 reference on 23/24 images; active providers [['CPUExecutionProvider'], ['CPUExecutionProvider']] GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "plate (fast-alpr detector + OCR, per frame)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "ONNX Runtime TensorRT EP (fp16)",
+      "batch": 1,
+      "p50_ms": 1.66,
+      "p95_ms": 2.1,
+      "fps": 601.29,
+      "notes": "10 plates on 24 images; identical plate texts to the CUDA fp32 reference on 23/24 images; active providers [['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'CPUExecutionProvider'], ['TensorrtExecutionProvider', 'CUDAExecutionProvider', 'CPUExecutionProvider']] GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "vehicle_detector (RF-DETR base, 560px)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "PyTorch (rfdetr.predict, fp32)",
+      "batch": 1,
+      "p50_ms": 5.89,
+      "p95_ms": 6.04,
+      "fps": 169.73,
+      "notes": "reference for parity GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "vehicle_detector (RF-DETR base, 560px)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "PyTorch fp16 (rfdetr.inference, torchscript)",
+      "batch": 1,
+      "p50_ms": 3.89,
+      "p95_ms": 3.92,
+      "fps": 257.24,
+      "notes": "parity vs PyTorch fp32 on 24 images: mAP50 1.000, matched 1.000, mean |dconf| 0.0018; trace+cast 1.2s GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "vehicle_detector (RF-DETR base, 560px)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "ONNX Runtime CUDA EP (fp32)",
+      "batch": 1,
+      "p50_ms": 6.17,
+      "p95_ms": 7.96,
+      "fps": 162.04,
+      "notes": "parity vs PyTorch on 24 images: mAP50 1.000, matched 1.000, mean |dconf| 0.0030; first call incl. session/engine build 1.3s GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "vehicle_detector (RF-DETR base, 560px)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "ONNX Runtime TensorRT EP (fp32/tf32)",
+      "batch": 1,
+      "p50_ms": 4.71,
+      "p95_ms": 5.37,
+      "fps": 212.24,
+      "notes": "parity vs PyTorch on 24 images: mAP50 1.000, matched 1.000, mean |dconf| 0.0028; first call incl. session/engine build 1.2s GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "vehicle_detector (RF-DETR base, 560px)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "ONNX Runtime TensorRT EP (fp16)",
+      "batch": 1,
+      "p50_ms": 3.51,
+      "p95_ms": 3.63,
+      "fps": 285.08,
+      "notes": "parity vs PyTorch on 24 images: mAP50 0.175, matched 0.263, mean |dconf| 0.3455; first call incl. session/engine build 0.7s GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    },
+    {
+      "stage": "vehicle_detector (RF-DETR base, 560px)",
+      "hardware": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "runtime": "ONNX Runtime TensorRT EP (fp16, LayerNorm in fp32)",
+      "batch": 1,
+      "p50_ms": 3.48,
+      "p95_ms": 3.53,
+      "fps": 287.04,
+      "notes": "parity vs PyTorch on 24 images: mAP50 0.246, matched 0.271, mean |dconf| 0.3012; first call incl. session/engine build 0.8s GPU sharing at start: 0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB; at end: 0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB."
+    }
+  ],
+  "details": {
+    "inputs": "24 jury images with vehicles, resized to 1280x720",
+    "hardware": {
+      "gpu": "NVIDIA RTX PRO 5000 Blackwell (CUDA_VISIBLE_DEVICES=1)",
+      "nvidia_smi": "NVIDIA RTX PRO 5000 Blackwell, 595.84, 48935 MiB | NVIDIA RTX PRO 5000 Blackwell, 595.84, 48935 MiB",
+      "torch": "2.14.1+cu130",
+      "cuda_runtime": "13.0",
+      "onnxruntime": "1.31.0",
+      "cpu_threads": "32",
+      "io_pressure": "full: avg10=0.00 avg60=0.16 avg300=0.41 total=17852377795",
+      "gpu_contention": "0 other processes on the GPU, utilisation 7 %, memory used 15746 MiB"
+    },
+    "pipeline": {
+      "model_versions": {
+        "rfdetr-large-flow": "rfdetr-large-flow-v1/torch",
+        "ident-plate": "0.1.0",
+        "Scene router (SigLIP2 + linear probe)": "siglip2-so400m-patch14-384+blend-v1",
+        "ops-cascade": "ops-bay-states@0.1+none",
+        "seen-inspect": "0.1.0"
+      },
+      "gpu_mem_mib": 19472.0
+    },
+    "lanes": {
+      "ident.get_predictor": "ok",
+      "flow.get_predictor": "ok",
+      "flow.get_router": "ok",
+      "ops.get_predictor": "ok",
+      "inspect.get_predictor": "ok"
+    },
+    "cold": [
+      {
+        "interpreter_start_s": 0.04018878936767578,
+        "imports_s": 0.6368052959442139,
+        "model_load_s": 5.442549228668213,
+        "first_inference_s": 1.1812725067138672,
+        "second_inference_s": 0.09055757522583008,
+        "total_s": 7.30081582069397
+      },
+      {
+        "interpreter_start_s": 0.0387263298034668,
+        "imports_s": 0.570655107498169,
+        "model_load_s": 8.721015691757202,
+        "first_inference_s": 1.1375696659088135,
+        "second_inference_s": 0.08794140815734863,
+        "total_s": 10.467966794967651
+      }
+    ],
+    "streams": [
+      {
+        "profile": "gate",
+        "n_cams": 1,
+        "fps": 5.0,
+        "workers": 1,
+        "offered": 100,
+        "processed": 100,
+        "dropped": 0,
+        "lat_p50_ms": 72.7,
+        "lat_p95_ms": 103.2,
+        "achieved_fps": 4.94,
+        "ok": true
+      },
+      {
+        "profile": "gate",
+        "n_cams": 2,
+        "fps": 5.0,
+        "workers": 1,
+        "offered": 200,
+        "processed": 200,
+        "dropped": 0,
+        "lat_p50_ms": 155.9,
+        "lat_p95_ms": 240.9,
+        "achieved_fps": 9.82,
+        "ok": true
+      },
+      {
+        "profile": "gate",
+        "n_cams": 4,
+        "fps": 5.0,
+        "workers": 1,
+        "offered": 400,
+        "processed": 208,
+        "dropped": 192,
+        "lat_p50_ms": 1069.1,
+        "lat_p95_ms": 1119.5,
+        "achieved_fps": 9.82,
+        "ok": false
+      },
+      {
+        "profile": "gate",
+        "n_cams": 3,
+        "fps": 5.0,
+        "workers": 1,
+        "offered": 300,
+        "processed": 210,
+        "dropped": 90,
+        "lat_p50_ms": 1043.2,
+        "lat_p95_ms": 1108.6,
+        "achieved_fps": 9.87,
+        "ok": false
+      },
+      {
+        "profile": "bay",
+        "n_cams": 1,
+        "fps": 1.0,
+        "workers": 1,
+        "offered": 20,
+        "processed": 20,
+        "dropped": 0,
+        "lat_p50_ms": 71.6,
+        "lat_p95_ms": 113.7,
+        "achieved_fps": 0.99,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 2,
+        "fps": 1.0,
+        "workers": 1,
+        "offered": 40,
+        "processed": 40,
+        "dropped": 0,
+        "lat_p50_ms": 98.7,
+        "lat_p95_ms": 127.1,
+        "achieved_fps": 1.99,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 4,
+        "fps": 1.0,
+        "workers": 1,
+        "offered": 80,
+        "processed": 80,
+        "dropped": 0,
+        "lat_p50_ms": 82.9,
+        "lat_p95_ms": 108.6,
+        "achieved_fps": 3.97,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 8,
+        "fps": 1.0,
+        "workers": 1,
+        "offered": 160,
+        "processed": 160,
+        "dropped": 0,
+        "lat_p50_ms": 155.2,
+        "lat_p95_ms": 294.3,
+        "achieved_fps": 7.9,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 16,
+        "fps": 1.0,
+        "workers": 1,
+        "offered": 320,
+        "processed": 217,
+        "dropped": 103,
+        "lat_p50_ms": 2012.9,
+        "lat_p95_ms": 2105.5,
+        "achieved_fps": 9.79,
+        "ok": false
+      },
+      {
+        "profile": "bay",
+        "n_cams": 12,
+        "fps": 1.0,
+        "workers": 1,
+        "offered": 240,
+        "processed": 214,
+        "dropped": 26,
+        "lat_p50_ms": 1875.0,
+        "lat_p95_ms": 2082.4,
+        "achieved_fps": 9.66,
+        "ok": false
+      },
+      {
+        "profile": "bay",
+        "n_cams": 10,
+        "fps": 1.0,
+        "workers": 1,
+        "offered": 200,
+        "processed": 200,
+        "dropped": 0,
+        "lat_p50_ms": 394.8,
+        "lat_p95_ms": 651.0,
+        "achieved_fps": 9.66,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 11,
+        "fps": 1.0,
+        "workers": 1,
+        "offered": 220,
+        "processed": 211,
+        "dropped": 9,
+        "lat_p50_ms": 1666.4,
+        "lat_p95_ms": 2068.5,
+        "achieved_fps": 9.52,
+        "ok": false
+      },
+      {
+        "profile": "gate",
+        "n_cams": 1,
+        "fps": 5.0,
+        "workers": 2,
+        "offered": 100,
+        "processed": 100,
+        "dropped": 0,
+        "lat_p50_ms": 72.4,
+        "lat_p95_ms": 95.4,
+        "achieved_fps": 4.94,
+        "ok": true
+      },
+      {
+        "profile": "gate",
+        "n_cams": 2,
+        "fps": 5.0,
+        "workers": 2,
+        "offered": 200,
+        "processed": 200,
+        "dropped": 0,
+        "lat_p50_ms": 108.7,
+        "lat_p95_ms": 152.8,
+        "achieved_fps": 9.87,
+        "ok": true
+      },
+      {
+        "profile": "gate",
+        "n_cams": 4,
+        "fps": 5.0,
+        "workers": 2,
+        "offered": 400,
+        "processed": 323,
+        "dropped": 77,
+        "lat_p50_ms": 1064.0,
+        "lat_p95_ms": 1155.9,
+        "achieved_fps": 15.25,
+        "ok": false
+      },
+      {
+        "profile": "gate",
+        "n_cams": 3,
+        "fps": 5.0,
+        "workers": 2,
+        "offered": 300,
+        "processed": 299,
+        "dropped": 1,
+        "lat_p50_ms": 675.4,
+        "lat_p95_ms": 1034.8,
+        "achieved_fps": 14.1,
+        "ok": false
+      },
+      {
+        "profile": "bay",
+        "n_cams": 1,
+        "fps": 1.0,
+        "workers": 2,
+        "offered": 20,
+        "processed": 20,
+        "dropped": 0,
+        "lat_p50_ms": 75.3,
+        "lat_p95_ms": 157.1,
+        "achieved_fps": 0.99,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 2,
+        "fps": 1.0,
+        "workers": 2,
+        "offered": 40,
+        "processed": 40,
+        "dropped": 0,
+        "lat_p50_ms": 94.0,
+        "lat_p95_ms": 152.2,
+        "achieved_fps": 1.99,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 4,
+        "fps": 1.0,
+        "workers": 2,
+        "offered": 80,
+        "processed": 80,
+        "dropped": 0,
+        "lat_p50_ms": 78.6,
+        "lat_p95_ms": 113.9,
+        "achieved_fps": 3.97,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 8,
+        "fps": 1.0,
+        "workers": 2,
+        "offered": 160,
+        "processed": 160,
+        "dropped": 0,
+        "lat_p50_ms": 122.7,
+        "lat_p95_ms": 194.4,
+        "achieved_fps": 7.92,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 16,
+        "fps": 1.0,
+        "workers": 2,
+        "offered": 320,
+        "processed": 316,
+        "dropped": 4,
+        "lat_p50_ms": 1286.1,
+        "lat_p95_ms": 2044.2,
+        "achieved_fps": 14.24,
+        "ok": false
+      },
+      {
+        "profile": "bay",
+        "n_cams": 12,
+        "fps": 1.0,
+        "workers": 2,
+        "offered": 240,
+        "processed": 240,
+        "dropped": 0,
+        "lat_p50_ms": 173.9,
+        "lat_p95_ms": 369.7,
+        "achieved_fps": 11.83,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 14,
+        "fps": 1.0,
+        "workers": 2,
+        "offered": 280,
+        "processed": 280,
+        "dropped": 0,
+        "lat_p50_ms": 238.8,
+        "lat_p95_ms": 423.1,
+        "achieved_fps": 13.64,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 15,
+        "fps": 1.0,
+        "workers": 2,
+        "offered": 300,
+        "processed": 256,
+        "dropped": 43,
+        "lat_p50_ms": 972.0,
+        "lat_p95_ms": 2080.1,
+        "achieved_fps": 11.58,
+        "ok": false
+      },
+      {
+        "profile": "gate",
+        "n_cams": 1,
+        "fps": 5.0,
+        "workers": 4,
+        "offered": 100,
+        "processed": 100,
+        "dropped": 0,
+        "lat_p50_ms": 73.9,
+        "lat_p95_ms": 124.5,
+        "achieved_fps": 4.94,
+        "ok": true
+      },
+      {
+        "profile": "gate",
+        "n_cams": 2,
+        "fps": 5.0,
+        "workers": 4,
+        "offered": 200,
+        "processed": 200,
+        "dropped": 0,
+        "lat_p50_ms": 106.8,
+        "lat_p95_ms": 164.3,
+        "achieved_fps": 9.85,
+        "ok": true
+      },
+      {
+        "profile": "gate",
+        "n_cams": 4,
+        "fps": 5.0,
+        "workers": 4,
+        "offered": 400,
+        "processed": 324,
+        "dropped": 74,
+        "lat_p50_ms": 1120.8,
+        "lat_p95_ms": 1282.5,
+        "achieved_fps": 15.26,
+        "ok": false
+      },
+      {
+        "profile": "gate",
+        "n_cams": 3,
+        "fps": 5.0,
+        "workers": 4,
+        "offered": 300,
+        "processed": 274,
+        "dropped": 23,
+        "lat_p50_ms": 207.5,
+        "lat_p95_ms": 1069.9,
+        "achieved_fps": 12.94,
+        "ok": false
+      },
+      {
+        "profile": "bay",
+        "n_cams": 1,
+        "fps": 1.0,
+        "workers": 4,
+        "offered": 20,
+        "processed": 20,
+        "dropped": 0,
+        "lat_p50_ms": 73.1,
+        "lat_p95_ms": 173.1,
+        "achieved_fps": 0.99,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 2,
+        "fps": 1.0,
+        "workers": 4,
+        "offered": 40,
+        "processed": 40,
+        "dropped": 0,
+        "lat_p50_ms": 97.4,
+        "lat_p95_ms": 141.3,
+        "achieved_fps": 1.99,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 4,
+        "fps": 1.0,
+        "workers": 4,
+        "offered": 80,
+        "processed": 80,
+        "dropped": 0,
+        "lat_p50_ms": 77.1,
+        "lat_p95_ms": 125.3,
+        "achieved_fps": 3.98,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 8,
+        "fps": 1.0,
+        "workers": 4,
+        "offered": 160,
+        "processed": 159,
+        "dropped": 0,
+        "lat_p50_ms": 123.0,
+        "lat_p95_ms": 247.5,
+        "achieved_fps": 7.88,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 16,
+        "fps": 1.0,
+        "workers": 4,
+        "offered": 320,
+        "processed": 318,
+        "dropped": 0,
+        "lat_p50_ms": 378.9,
+        "lat_p95_ms": 897.2,
+        "achieved_fps": 15.01,
+        "ok": true
+      },
+      {
+        "profile": "bay",
+        "n_cams": 32,
+        "fps": 1.0,
+        "workers": 4,
+        "offered": 640,
+        "processed": 327,
+        "dropped": 311,
+        "lat_p50_ms": 2072.8,
+        "lat_p95_ms": 2168.3,
+        "achieved_fps": 14.67,
+        "ok": false
+      },
+      {
+        "profile": "bay",
+        "n_cams": 24,
+        "fps": 1.0,
+        "workers": 4,
+        "offered": 480,
+        "processed": 318,
+        "dropped": 160,
+        "lat_p50_ms": 2048.0,
+        "lat_p95_ms": 2163.0,
+        "achieved_fps": 14.31,
+        "ok": false
+      },
+      {
+        "profile": "bay",
+        "n_cams": 20,
+        "fps": 1.0,
+        "workers": 4,
+        "offered": 400,
+        "processed": 334,
+        "dropped": 64,
+        "lat_p50_ms": 2028.2,
+        "lat_p95_ms": 2200.3,
+        "achieved_fps": 15.05,
+        "ok": false
+      },
+      {
+        "profile": "bay",
+        "n_cams": 18,
+        "fps": 1.0,
+        "workers": 4,
+        "offered": 360,
+        "processed": 328,
+        "dropped": 30,
+        "lat_p50_ms": 1897.2,
+        "lat_p95_ms": 2130.4,
+        "achieved_fps": 14.72,
+        "ok": false
+      }
+    ],
+    "alpr": {
+      "ONNX Runtime CUDA EP (fp32, reference)": {
+        "active_providers": [
+          [
+            "CUDAExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          [
+            "CUDAExecutionProvider",
+            "CPUExecutionProvider"
+          ]
+        ],
+        "same_texts_as_reference": "24/24 images",
+        "plates_found": 10,
+        "first_call_s": 0.06
+      },
+      "library default providers (as in seen.baseline)": {
+        "active_providers": [
+          [
+            "CUDAExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          [
+            "CUDAExecutionProvider",
+            "CPUExecutionProvider"
+          ]
+        ],
+        "same_texts_as_reference": "24/24 images",
+        "plates_found": 10,
+        "first_call_s": 0.06
+      },
+      "ONNX Runtime CPU EP": {
+        "active_providers": [
+          [
+            "CPUExecutionProvider"
+          ],
+          [
+            "CPUExecutionProvider"
+          ]
+        ],
+        "same_texts_as_reference": "23/24 images",
+        "plates_found": 10,
+        "first_call_s": 0.01
+      },
+      "ONNX Runtime TensorRT EP (fp16)": {
+        "active_providers": [
+          [
+            "TensorrtExecutionProvider",
+            "CUDAExecutionProvider",
+            "CPUExecutionProvider"
+          ],
+          [
+            "TensorrtExecutionProvider",
+            "CUDAExecutionProvider",
+            "CPUExecutionProvider"
+          ]
+        ],
+        "same_texts_as_reference": "23/24 images",
+        "plates_found": 10,
+        "first_call_s": 0.01
+      }
+    },
+    "runtimes": {
+      "PyTorch fp16 (rfdetr.inference, torchscript)": {
+        "parity_map50_vs_torch": 1.0,
+        "matched_fraction": 1.0,
+        "mean_abs_dconf": 0.001817375197446436,
+        "n_images": 24,
+        "first_call_s": 1.22
+      },
+      "ONNX Runtime CUDA EP (fp32)": {
+        "parity_map50_vs_torch": 1.0,
+        "matched_fraction": 1.0,
+        "mean_abs_dconf": 0.0030275908179749223,
+        "n_images": 24,
+        "active_providers": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "first_call_s": 1.25
+      },
+      "ONNX Runtime TensorRT EP (fp32/tf32)": {
+        "parity_map50_vs_torch": 1.0,
+        "matched_fraction": 1.0,
+        "mean_abs_dconf": 0.0028102857277805646,
+        "n_images": 24,
+        "active_providers": [
+          "TensorrtExecutionProvider",
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "first_call_s": 1.23
+      },
+      "ONNX Runtime TensorRT EP (fp16)": {
+        "parity_map50_vs_torch": 0.17499084249084249,
+        "matched_fraction": 0.2631578947368421,
+        "mean_abs_dconf": 0.3454676491873605,
+        "n_images": 24,
+        "active_providers": [
+          "TensorrtExecutionProvider",
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "first_call_s": 0.72
+      },
+      "ONNX Runtime TensorRT EP (fp16, LayerNorm in fp32)": {
+        "parity_map50_vs_torch": 0.2461103552532124,
+        "matched_fraction": 0.2706766917293233,
+        "mean_abs_dconf": 0.3011550307273865,
+        "n_images": 24,
+        "active_providers": [
+          "TensorrtExecutionProvider",
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ],
+        "first_call_s": 0.76
+      }
+    },
+    "io_pressure_end": "full: avg10=3.42 avg60=0.75 avg300=0.16 total=17853920563",
+    "gpu_contention_end": "0 other processes on the GPU, utilisation 0 %, memory used 1900 MiB"
+  }
+}

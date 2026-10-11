@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://seen.local/contracts/metrics.schema.json",
+  "title": "EvalReport",
+  "type": "object",
+  "required": ["generated_at", "components"],
+  "properties": {
+    "generated_at": { "type": "string", "format": "date-time" },
+    "hardware": { "type": "object", "additionalProperties": { "type": "string" } },
+    "components": { "type": "array", "items": { "$ref": "#/$defs/ComponentResult" } },
+    "speed": { "type": "array", "items": { "$ref": "#/$defs/SpeedResult" } },
+    "cost": { "type": "array", "items": { "$ref": "#/$defs/CostLine" } },
+    "jury_set": { "$ref": "#/$defs/JurySet" },
+    "failures": { "type": "array", "items": { "$ref": "#/$defs/FailureCase" } }
+  },
+  "$defs": {
+    "Metric": {
+      "type": "object",
+      "required": ["name", "value"],
+      "properties": {
+        "name": { "type": "string" },
+        "value": { "type": "number" },
+        "ci_low": { "type": "number" },
+        "ci_high": { "type": "number" },
+        "unit": { "type": "string" }
+      }
+    },
+    "ComponentResult": {
+      "type": "object",
+      "required": ["id", "name", "lane", "data_kind", "dataset", "n", "metrics"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "lane": { "type": "string", "enum": ["ident", "flow", "ops", "inspect", "sim", "e2e", "router"] },
+        "data_kind": { "type": "string", "enum": ["real", "synthetic"] },
+        "domain": { "type": "string", "description": "e.g. 'fixed CCTV', 'handheld/YouTube', 'phone photo', 'rendered'." },
+        "dataset": { "type": "string" },
+        "split": { "type": "string" },
+        "n": { "type": "integer" },
+        "model": { "type": "string" },
+        "metrics": { "type": "array", "items": { "$ref": "#/$defs/Metric" } },
+        "confusion": { "type": "object", "description": "{labels:[...], matrix:[[...]]}" },
+        "predictions_csv": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "SpeedResult": {
+      "type": "object",
+      "required": ["stage", "hardware", "p50_ms"],
+      "properties": {
+        "stage": { "type": "string" },
+        "hardware": { "type": "string" },
+        "runtime": { "type": "string" },
+        "batch": { "type": "integer" },
+        "p50_ms": { "type": "number" },
+        "p95_ms": { "type": "number" },
+        "fps": { "type": "number" },
+        "cold_start_s": { "type": "number" },
+        "notes": { "type": "string" }
+      }
+    },
+    "CostLine": {
+      "type": "object",
+      "required": ["item", "value", "unit"],
+      "properties": {
+        "item": { "type": "string" },
+        "value": { "type": "number" },
+        "unit": { "type": "string" },
+        "assumptions": { "type": "string" }
+      }
+    },
+    "JurySet": {
+      "type": "object",
+      "properties": {
+        "n": { "type": "integer" },
+        "outcomes": { "type": "array", "items": { "type": "object", "additionalProperties": true } },
+        "summary": { "type": "object", "additionalProperties": { "type": "number" } }
+      }
+    },
+    "FailureCase": {
+      "type": "object",
+      "required": ["id", "component", "description"],
+      "properties": {
+        "id": { "type": "string" },
+        "component": { "type": "string" },
+        "image_uri": { "type": "string" },
+        "description": { "type": "string" },
+        "category": { "type": "string" }
+      }
+    }
+  }
+}
